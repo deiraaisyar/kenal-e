@@ -1,0 +1,45 @@
+{
+  "space_id": "ayaayaa/still-e-okay-ai",
+  "url": "https://huggingface.co/spaces/ayaayaa/still-e-okay-ai",
+  "visibility": "private",
+  "hardware": "zero-a10g",
+  "health": {
+    "status": "ready",
+    "encoder_ready": true,
+    "reference_ready": true,
+    "models": {
+      "vit": {
+        "model_id": "google/vit-base-patch16-224-in21k",
+        "revision": "b4569560a39a0f1af58e3ddaf17facf20ab919b0",
+        "dimensions": 768,
+        "tta_views": [
+          "identity"
+        ]
+      },
+      "dinov3": {
+        "model_id": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+        "revision": "5931719e67bbdb9737e363e781fb0c67687896bc",
+        "dimensions": 768,
+        "tta_views": [
+          "identity",
+          "hflip",
+          "rotate+10",
+          "rotate-10"
+        ]
+      }
+    },
+    "recognition_validated": false
+  },
+  "embedding_checks": {
+    "vit": {
+      "dimensions": 768,
+      "norm": 1.0
+    },
+    "dinov3": {
+      "dimensions": 768,
+      "norm": 1.0
+    }
+  },
+  "predict_status": "unknown",
+  "test_input": "Synthetic solid-color image; API integration only, not an accuracy test."
+}

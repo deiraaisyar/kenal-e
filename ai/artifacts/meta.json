@@ -1,0 +1,218 @@
+{
+  "0": {
+    "nama": "Microwave",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "1": {
+    "nama": "Mesin cuci",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "2": {
+    "nama": "Printer termal & dot-matrix",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "3": {
+    "nama": "Saklar & stopkontak",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "4": {
+    "nama": "Baterai silinder",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "5": {
+    "nama": "Ponsel layar gelap (campuran)",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "6": {
+    "nama": "Aki timbal-asam",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "7": {
+    "nama": "Baterai ponsel",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "8": {
+    "nama": "Pemutar piringan hitam",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "9": {
+    "nama": "Keyboard",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "10": {
+    "nama": "Laptop tertutup",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "11": {
+    "nama": "CD player portabel",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "12": {
+    "nama": "Perangkat audio rak",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "13": {
+    "nama": "Papan sirkuit (PCB)",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "14": {
+    "nama": "TV tabung CRT",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "15": {
+    "nama": "TV/monitor LCD-LED",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "16": {
+    "nama": "Monitor bekas & layar rusak",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "17": {
+    "nama": "Komputer desktop",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "18": {
+    "nama": "Timbunan e-waste",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "19": {
+    "nama": "Printer inkjet/laser",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "20": {
+    "nama": "Mouse",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "21": {
+    "nama": "Perangkat genggam",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "22": {
+    "nama": "Baterai laptop",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "23": {
+    "nama": "Laptop",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "24": {
+    "nama": "Radio & boombox",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "25": {
+    "nama": "TV di dalam ruangan",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  },
+  "26": {
+    "nama": "Noise (tidak terkelompok)",
+    "harga_utuh": null,
+    "harga_rongsok": null,
+    "satuan": null,
+    "faktor_kondisi": {},
+    "status_harga": "belum_tersedia"
+  }
+}
