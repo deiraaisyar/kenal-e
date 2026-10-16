@@ -69,3 +69,14 @@ Free service tidur setelah 15 menit tidak menerima trafik dan bangun sekitar sat
 Metadata tambahan bisa diisi kemudian melalui `be/data/meta.json` dan `drop_points.json`, lalu commit dan redeploy. Tidak perlu membuat embedding baru untuk memperbarui harga atau lokasi. Harga/lokasi kosong dan threshold belum terkalibrasi tetap ditandai sesuai kondisi saat ini.
 
 Rujukan: [FastAPI di Render](https://render.com/docs/deploy-fastapi), [Free instances](https://render.com/docs/free), [Compute plans](https://render.com/docs/compute-plans).
+
+## Diagnosis koneksi AI
+
+`/api/ready` hanya memeriksa backend dan referensi. Untuk koneksi HF, buka `/api/health`:
+
+- `space_diagnostic.token_configured`: apakah token tersedia di proses Render (nilainya tidak ditampilkan).
+- `hf_http_status` 401/403: akses HF ditolak; periksa token dan izin Space. 404 juga bisa berarti Space privat atau ID salah.
+- `reason` `network_timeout`/`network_error`: koneksi jaringan ke HF gagal; ini terpisah dari masalah token.
+- `stage` `RUNNING` dan `space` `running`: Space dapat diakses. Kegagalan inferensi selanjutnya dicatat dengan tipe exception di log Render tanpa isi token.
+
+Perubahan environment membutuhkan restart/redeploy. Nama secret harus `HF_TOKEN`, nilainya hanya token, bukan `HF_TOKEN=...`, bukan awalan `Bearer`, dan tanpa tanda kutip. `HF_SPACE_ID` adalah `ayaayaa/still-e-okay-ai`; URL HF penuh juga dinormalisasi oleh backend.

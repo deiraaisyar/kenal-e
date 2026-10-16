@@ -118,7 +118,10 @@ def drop_points(city:str=''):
 
 @app.get('/api/health')
 async def health():
-    return {'backend':'ok','space':await run_in_threadpool(space.health),'recognition_validated':False,'feature_explain':False}
+    diagnostic = await run_in_threadpool(space.runtime_status)
+    return {'backend':'ok','space':diagnostic['state'],
+            'space_diagnostic':{key:value for key,value in diagnostic.items() if key != 'state'},
+            'recognition_validated':False,'feature_explain':False}
 
 @app.get('/api/ready')
 def ready():
