@@ -41,16 +41,16 @@ Environment variables:
 | --- | --- |
 | `HF_TOKEN` | Token yang sudah ada di `.env`, masukkan sebagai secret Render |
 | `HF_SPACE_ID` | `ayaayaa/still-e-okay-ai` |
-| `CORS_ORIGINS` | URL frontend Vercel yang benar, contoh `https://kenal-e-fe.vercel.app`; beberapa origin dipisah koma, tanpa slash penutup |
+| `CORS_ORIGINS` | `https://kenal-e.vercel.app`; tambahkan origin lokal jika perlu, dipisah koma dan tanpa slash penutup |
 | `PYTHON_VERSION` | `3.12.12` |
 | `AI_TIMEOUT_SECONDS` | `180` |
 | `OPENBLAS_NUM_THREADS` | `1` |
 | `OMP_NUM_THREADS` | `1` |
 | `MALLOC_ARENA_MAX` | `2` |
 
-Blueprint meminta nilai `HF_TOKEN` dan `CORS_ORIGINS` saat pembuatan. Jika dibuat manual, isi seluruh pengaturan di atas. `/api/ready` hanya mengecek kesiapan backend; `/api/health` juga mengecek status Space.
+Blueprint meminta nilai `HF_TOKEN` saat pembuatan; `CORS_ORIGINS` sudah berisi domain frontend dan origin lokal. Jika dibuat manual, isi seluruh pengaturan di atas. `/api/ready` hanya mengecek kesiapan backend; `/api/health` juga mengecek status Space.
 
-Setelah backend live, buka `/api/ready`, `/api/taxonomy`, dan `/docs`. Di proyek frontend Vercel, isi `VITE_API_BASE_URL` dengan URL HTTPS backend lalu redeploy frontend. Jangan memberi frontend token HF.
+Backend deployment: `https://still-e-okay.onrender.com`. Cek `/api/ready`, `/api/taxonomy`, dan `/docs`. Frontend production memakai URL ini secara default. Jika Vercel sudah memiliki `VITE_API_BASE_URL`, samakan nilainya dengan URL tersebut atau hapus override lama, kemudian redeploy frontend. Jangan memberi frontend token HF.
 
 ## RAM dan data sementara
 

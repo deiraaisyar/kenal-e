@@ -49,4 +49,4 @@ Rujukan implementasi: [FastAPI uploads](https://fastapi.tiangolo.com/tutorial/re
 
 Konfigurasi `render.yaml` tersedia di root. Ikuti [DEPLOY_RENDER.md](DEPLOY_RENDER.md) untuk pengaturan, file NPZ/JSON wajib, dan secret. Backend tetap memakai satu worker dan satu thread NumPy agar sesuai anggaran RAM 512 MB. Health check `/api/ready` tidak memanggil Space. Uji memory lokal tersedia lewat `python -m be.scripts.profile_memory`.
 
-Frontend Vercel memakai `VITE_API_BASE_URL` ke URL HTTPS backend; tambahkan origin frontend ke `CORS_ORIGINS`. Konfigurasi ini disiapkan lokal, belum mengonfirmasi deployment Render.
+URL deployment yang diberikan pengguna: `https://still-e-okay.onrender.com`. Frontend production otomatis memakai URL ini, dengan opsi override `VITE_API_BASE_URL`; tambahkan origin frontend yang aktif ke `CORS_ORIGINS` di Render.

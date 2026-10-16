@@ -16,7 +16,7 @@ Vite meneruskan `/api` ke `http://127.0.0.1:8000`. Backend harus dijalankan dari
 - Cek Laci di IndexedDB melalui Zustand; kategori bisa dikoreksi dan barang dihapus. Rapor menghitung seluruh kelompok, termasuk belum dikenali, dan diekspor PNG via html-to-image.
 - Foto dan sesi Cek Laci tidak ditanam dalam cache service worker. Cache shell/font/katalog tersedia setelah kunjungan berhasil; analisis tetap membutuhkan jaringan. Katalog offline baru bekerja setelah diakses online dalam build PWA, bukan server dev.
 - PWA memiliki manifest, ikon, dan service worker. Instalasi PWA/kamera memerlukan secure context (localhost atau HTTPS).
-- Foto dataset dan titik setor tidak direkayasa; tampil state belum tersedia saat data belum ada. Harga tetap kosong sampai sumber diverifikasi.
+- Foto dataset yang belum tersedia ditandai. Panel tempat setor menampilkan peta ilustrasi area UNDIP dengan titik contoh; petunjuk arah belum aktif. Harga tetap kosong sampai sumber diverifikasi.
 
 ## Cek build
 
@@ -28,4 +28,6 @@ npm run preview
 
 ## Frontend di Vercel
 
-Set root directory `fe`, build command `npm run build`, output `dist`. Atur `VITE_API_BASE_URL=https://backend-mu` sebelum build. Jangan memasukkan `HF_TOKEN` ke variabel `VITE_`. Isi token hanya di server backend. `vercel.json` menyediakan fallback route SPA. Konfigurasi PWA mengikuti [Vite PWA](https://vite-pwa-org.netlify.app/guide/).
+Frontend aktif: `https://kenal-e.vercel.app`. Backend Render: `https://still-e-okay.onrender.com`. Di Render, isi `CORS_ORIGINS=https://kenal-e.vercel.app,http://localhost:5173,http://127.0.0.1:5173` agar domain production dan development lokal diizinkan.
+
+Set root directory `fe`, build command `npm run build`, output `dist`. Build production otomatis memakai `https://still-e-okay.onrender.com`. Jika `VITE_API_BASE_URL` sudah diatur di Vercel, samakan nilainya dengan URL tersebut atau hapus override lama, lalu redeploy. Saat development, nilai kosong tetap memakai proxy backend lokal. Jangan memasukkan `HF_TOKEN` ke variabel `VITE_`. Isi token hanya di server backend. `vercel.json` menyediakan fallback route SPA. Konfigurasi PWA mengikuti [Vite PWA](https://vite-pwa-org.netlify.app/guide/).

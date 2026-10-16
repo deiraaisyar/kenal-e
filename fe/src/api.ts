@@ -1,5 +1,6 @@
 import type {Analysis,Category,DropPoint} from './types'
-const base = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/,'')
+// Local development uses the Vite proxy; production connects to Render by default.
+const base = (import.meta.env.VITE_API_BASE_URL || (import.meta.env.PROD ? 'https://still-e-okay.onrender.com' : '')).replace(/\/$/,'')
 export class ApiError extends Error {constructor(message:string, public code:string){super(message)}}
 export const assetUrl = (url:string) => url.startsWith('/api/') ? base+url : url
 async function request<T>(path:string, options:RequestInit = {}):Promise<T> {

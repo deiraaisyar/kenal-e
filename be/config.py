@@ -13,4 +13,4 @@ if not ARTIFACTS.is_absolute():
 SPACE = os.getenv('HF_SPACE_ID', 'ayaayaa/still-e-okay-ai')
 TOKEN = os.getenv('HF_TOKEN') or None
 TIMEOUT = int(os.getenv('AI_TIMEOUT_SECONDS', '180'))
-ORIGINS = [x.strip() for x in os.getenv('CORS_ORIGINS', 'http://localhost:5173,http://127.0.0.1:5173').split(',') if x.strip()]
+ORIGINS = [x.strip() for x in os.getenv('CORS_ORIGINS', 'https://kenal-e.vercel.app,http://localhost:5173,http://127.0.0.1:5173').split(',') if x.strip()]
