@@ -74,7 +74,7 @@ export default function App(){
     {toast&&<div role="status" className="toast"><Check size={18}/>{toast}</div>}
     <SheetModal sheet={sheet} close={()=>setSheet(null)}>
       {sheet?.kind==='about'&&<About/>}
-      {sheet?.kind==='upload'&&<div className="upload-sheet"><span className="section-kicker">SATU FOTO, SATU BARANG</span><h2>Mulai dari mana?</h2><p>Letakkan satu barang di tempat terang. Pastikan seluruh barang terlihat di foto.</p><div className="upload-art"><DeviceArt device="phone"/><div className="focus-corners"/></div><button className="button primary" onClick={()=>cameraInput.current?.click()}><Camera size={20}/>Ambil foto</button><button className="button secondary" onClick={()=>fileInput.current?.click()}><ImageIcon size={20}/>Pilih dari galeri</button><button className="text-button centered" onClick={demo}>Coba contoh terlebih dahulu <ArrowRight size={16}/></button><p className="fine-print">JPG, PNG, atau WEBP. Foto diperkecil sebelum dikirim ke layanan AI.</p></div>}
+      {sheet?.kind==='upload'&&<div className="upload-sheet"><span className="section-kicker">SATU FOTO, SATU BARANG</span><h2>Mulai dari mana?</h2><p>Letakkan satu barang di tempat terang. Pastikan seluruh barang terlihat di foto.</p><div className="upload-art"><img src="/illustrations/ponsel-retak.svg" alt="Ilustrasi ponsel retak" width="832" height="480"/></div><button className="button primary" onClick={()=>cameraInput.current?.click()}><Camera size={20}/>Ambil foto</button><button className="button secondary" onClick={()=>fileInput.current?.click()}><ImageIcon size={20}/>Pilih dari galeri</button><button className="text-button centered" onClick={demo}>Coba contoh terlebih dahulu <ArrowRight size={16}/></button><p className="fine-print">JPG, PNG, atau WEBP. Foto diperkecil sebelum dikirim ke layanan AI.</p></div>}
       {sheet?.kind==='category'&&<CategoryDetail id={sheet.id} onPhoto={()=>{setSheet(null);upload()}}/>}
       {sheet?.kind==='report'&&<Report catalog={catalog.data||[]} notify={notify}/>}
       {sheet?.kind==='edit'&&<EditItem id={sheet.id} catalog={catalog.data||[]} close={()=>setSheet(null)} notify={notify}/>}
@@ -130,18 +130,18 @@ function Catalog({query,onAbout,onCategory}:{query:ReturnType<typeof useQuery<Ca
 function SheetModal({sheet,close,children}:{sheet:Sheet;close:()=>void;children:ReactNode}) {
   const dialog=useRef<HTMLDialogElement>(null),previousFocus=useRef<HTMLElement|null>(null)
   useEffect(()=>{const d=dialog.current;if(!d)return;if(sheet){previousFocus.current=document.activeElement as HTMLElement;d.showModal()}else if(d.open)d.close();return()=>{if(d.open)d.close()}},[!!sheet])
-  const isMap=sheet?.kind==='drops'
+  const isMap=sheet?.kind==='drops',isFramed=isMap||sheet?.kind==='upload'
   useLayoutEffect(()=>{
-    if(!isMap)return
+    if(!isFramed)return
     const frame=document.querySelector<HTMLElement>('.phone-app'),d=dialog.current
     if(!frame||!d)return
     const position=()=>{
       const bounds=frame.getBoundingClientRect()
       const top=Math.max(0,bounds.top+frame.clientTop),bottom=Math.min(window.innerHeight,bounds.bottom-frame.clientTop)
-      d.style.setProperty('--map-left',`${bounds.left+frame.clientLeft}px`)
-      d.style.setProperty('--map-top',`${top}px`)
-      d.style.setProperty('--map-width',`${bounds.width-2*frame.clientLeft}px`)
-      d.style.setProperty('--map-height',`${Math.max(0,bottom-top)}px`)
+      d.style.setProperty('--frame-left',`${bounds.left+frame.clientLeft}px`)
+      d.style.setProperty('--frame-top',`${top}px`)
+      d.style.setProperty('--frame-width',`${bounds.width-2*frame.clientLeft}px`)
+      d.style.setProperty('--frame-height',`${Math.max(0,bottom-top)}px`)
     }
     window.scrollTo(0,0)
     position()
@@ -152,8 +152,8 @@ function SheetModal({sheet,close,children}:{sheet:Sheet;close:()=>void;children:
     const previousOverflow=document.body.style.overflow
     document.body.style.overflow='hidden'
     return()=>{observer.disconnect();window.removeEventListener('resize',position);window.removeEventListener('scroll',position,true);document.body.style.overflow=previousOverflow}
-  },[isMap])
-  return <dialog className={'sheet-modal'+(sheet?.kind==='drops'?' map-modal':'')} ref={dialog} aria-label={sheet?.kind==='report'?'Rapor Cek Laci':sheet?.kind==='edit'?'Atur barang':sheet?.kind==='drops'?'Cari tempat setor':sheet?.kind==='category'?'Detail kategori':sheet?.kind==='about'?'Tentang Kenal-E':'Pilih foto'} onCancel={e=>{e.preventDefault();close()}} onClose={()=>{previousFocus.current?.focus();close()}} onClick={e=>{if(e.target===e.currentTarget)close()}}><div className="sheet-inner"><div className="sheet-handle"/><button className="icon-button sheet-close" aria-label="Tutup panel" onClick={close}><X size={21}/></button>{children}</div></dialog>
+  },[isFramed])
+  return <dialog className={'sheet-modal'+(isFramed?' frame-modal':'')+(isMap?' map-modal':'')} ref={dialog} aria-label={sheet?.kind==='report'?'Rapor Cek Laci':sheet?.kind==='edit'?'Atur barang':sheet?.kind==='drops'?'Cari tempat setor':sheet?.kind==='category'?'Detail kategori':sheet?.kind==='about'?'Tentang Kenal-E':'Pilih foto'} onCancel={e=>{e.preventDefault();close()}} onClose={()=>{previousFocus.current?.focus();close()}} onClick={e=>{if(e.target===e.currentTarget)close()}}><div className="sheet-inner"><div className="sheet-handle"/><button className="icon-button sheet-close" aria-label="Tutup panel" onClick={close}><X size={21}/></button>{children}</div></dialog>
 }
 
 function CategoryDetail({id,onPhoto}:{id:number;onPhoto:()=>void}) {

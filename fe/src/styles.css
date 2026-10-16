@@ -58,11 +58,15 @@
 .map-user-dot{position:absolute;width:17px;height:17px;border:4px solid #fff;border-radius:50%;background:#4e7951;box-shadow:0 0 0 5px #ffffff66;transform:translate(-50%,-50%)}
 .map-user-label{position:absolute;top:19px;left:0;transform:translateX(-50%);border-radius:20px;padding:7px 14px;background:#fffefa;font-size:10px;font-weight:600;line-height:1.4;white-space:nowrap;color:#536c4c}
 
-/* Keep the collection screen inside the PWA frame on desktop and mobile. */
-.sheet-modal.map-modal{inset:auto;margin:0;left:var(--map-left);top:var(--map-top);width:var(--map-width);height:var(--map-height);max-height:none;max-width:none;border-radius:33px;overflow-y:auto;box-shadow:none}
-.sheet-modal.map-modal::backdrop{background:transparent;backdrop-filter:none}
+/* Keep map and photo panels inside the PWA frame on desktop and mobile. */
+.sheet-modal.frame-modal{inset:auto;margin:0;left:var(--frame-left);top:var(--frame-top);width:var(--frame-width);height:var(--frame-height);max-height:none;max-width:none;border-radius:33px;overflow-y:auto;box-shadow:none}
+.sheet-modal.frame-modal::backdrop{background:transparent;backdrop-filter:none}
 .map-modal .sheet-inner{height:100%;padding:0}
 .drops-map-sheet{display:flex;flex-direction:column;height:100%;min-height:510px}
 .map-modal .drop-map-canvas{height:auto;min-height:290px;flex:1}
 .drop-map-panel{flex-shrink:0}
-@media(max-width:900px){.sheet-modal.map-modal{border-radius:0}}
+@media(max-width:900px){.sheet-modal.frame-modal{border-radius:0}}
+
+.upload-art>img{position:absolute;inset:0;display:block;margin:auto;width:100%;height:100%;object-fit:contain}
+
+@media(min-width:901px){html,body,#root,.app-stage{background:#edf2e9}.phone-app{box-shadow:none}}
