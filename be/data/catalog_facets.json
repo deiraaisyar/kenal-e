@@ -1,0 +1,213 @@
+{
+  "source": "Paper semifinal BDC 2026, Tabel 3 dan 4. ID 26 adalah noise dan tidak ditampilkan di katalog. Risiko mengikuti metadata penanganan.",
+  "categories": {
+    "0": {
+      "groups": [
+        "household"
+      ],
+      "sizes": [
+        "large"
+      ]
+    },
+    "1": {
+      "groups": [
+        "household"
+      ],
+      "sizes": [
+        "large"
+      ]
+    },
+    "2": {
+      "groups": [
+        "office"
+      ],
+      "sizes": [
+        "medium"
+      ]
+    },
+    "3": {
+      "groups": [
+        "energy"
+      ],
+      "sizes": [
+        "small"
+      ]
+    },
+    "4": {
+      "groups": [
+        "energy"
+      ],
+      "sizes": [
+        "small"
+      ]
+    },
+    "5": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "small"
+      ]
+    },
+    "6": {
+      "groups": [
+        "energy"
+      ],
+      "sizes": [
+        "medium"
+      ]
+    },
+    "7": {
+      "groups": [
+        "energy"
+      ],
+      "sizes": [
+        "small"
+      ]
+    },
+    "8": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "medium"
+      ]
+    },
+    "9": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "small"
+      ]
+    },
+    "10": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "medium"
+      ]
+    },
+    "11": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "medium"
+      ]
+    },
+    "12": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "medium"
+      ]
+    },
+    "13": {
+      "groups": [
+        "internal"
+      ],
+      "sizes": [
+        "small"
+      ]
+    },
+    "14": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "large"
+      ]
+    },
+    "15": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "large"
+      ]
+    },
+    "16": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "large"
+      ]
+    },
+    "17": {
+      "groups": [
+        "mixed"
+      ],
+      "sizes": [
+        "unidentified"
+      ]
+    },
+    "18": {
+      "groups": [
+        "mixed"
+      ],
+      "sizes": [
+        "unidentified"
+      ]
+    },
+    "19": {
+      "groups": [
+        "office"
+      ],
+      "sizes": [
+        "medium"
+      ]
+    },
+    "20": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "small"
+      ]
+    },
+    "21": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "small"
+      ]
+    },
+    "22": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "medium"
+      ]
+    },
+    "23": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "medium"
+      ]
+    },
+    "24": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "medium"
+      ]
+    },
+    "25": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "large"
+      ]
+    }
+  }
+}

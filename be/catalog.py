@@ -11,6 +11,7 @@ def load_catalog():
     names = json.loads((ARTIFACTS / 'meta.json').read_text())
     manifest = json.loads((ARTIFACTS / 'manifest.json').read_text())
     overrides = json.loads((DATA / 'meta.json').read_text()) if (DATA / 'meta.json').exists() else {}
+    facets = json.loads((DATA / 'catalog_facets.json').read_text())['categories']
     entries = {}
     for mid in range(26):
         risk = RISK[mid]
@@ -26,6 +27,9 @@ def load_catalog():
         if mid in (10,23): entry['info']['hazard_note'] += ' Klasifikasi risiko perangkat berbaterai perlu ditinjau kembali.'
         override = overrides.get(str(mid), {})
         entry['info'].update(override.get('info', {}))
+        entry['risk_level'] = entry['info']['risk_level']
+        entry['bag'] = entry['info']['bag']
+        entry['facets'] = {**facets[str(mid)], 'risks':[entry['risk_level']], **override.get('facets', {})}
         entry['price'] = valid_price(override.get('price', {}), entry['info'])
         entries[mid] = entry
     return entries

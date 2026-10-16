@@ -52,3 +52,27 @@ Rujukan implementasi: [FastAPI uploads](https://fastapi.tiangolo.com/tutorial/re
 Konfigurasi `render.yaml` tersedia di root. Ikuti [DEPLOY_RENDER.md](DEPLOY_RENDER.md) untuk pengaturan, file NPZ/JSON wajib, dan secret. Backend tetap memakai satu worker dan satu thread NumPy agar sesuai anggaran RAM 512 MB. Health check `/api/ready` tidak memanggil Space. Uji memory lokal tersedia lewat `python -m be.scripts.profile_memory`.
 
 URL deployment yang diberikan pengguna: `https://still-e-okay.onrender.com`. Frontend production otomatis memakai URL ini, dengan opsi override `VITE_API_BASE_URL`; tambahkan origin frontend yang aktif ke `CORS_ORIGINS` di Render.
+
+### Label dan filter katalog
+
+`data/catalog_facets.json` memetakan ID klaster ke `groups` (jenis barang) dan
+`sizes` (ukuran visual), berdasarkan Tabel 3–4 paper semifinal BDC 2026. ID noise
+26 tetap dikecualikan dari katalog. Risiko awal mengikuti metadata penanganan
+(Tabel 5); ID tanpa klasifikasi risiko tetap `unknown`. Ukuran ini adalah label
+kelompok referensi, bukan pengukuran dimensi foto baru.
+
+Endpoint daftar dan detail `/api/taxonomy` menyertakan `facets`, dengan tiga array:
+`groups`, `sizes`, dan `risks`. Satu barang dapat memiliki beberapa label.
+Tambahan label bisa diatur per ID di `data/meta.json`, misalnya struktur:
+
+```json
+{"13":{"facets":{"groups":["internal"],"sizes":["small"],"risks":["valuable"]}}}
+```
+
+Gunakan ID jenis `office`, `household`, `computing`, `media`, `energy`, `internal`,
+`mixed`; ukuran `small`, `medium`, `large`, `unidentified`; risiko `high`, `medium`,
+`valuable`, `low`, `unknown`. Tambahkan label hanya bila ada dasar datanya.
+`risk_level` pada panduan penanganan tetap menjadi risiko utama, terpisah dari
+label penyaringan. Frontend menerapkan OR antar pilihan dalam satu dimensi dan
+AND antar dimensi; pilihan “Semua” menghapus pembatas di dimensi itu.
+Deploy backend sebelum frontend agar label baru langsung tersedia.
