@@ -28,7 +28,9 @@ Dokumentasi API: http://127.0.0.1:8000/docs.
 
 ## Foto referensi
 
-Default tidak mengemas foto dataset karena izin distribusinya belum dipastikan. UI menggunakan ilustrasi SVG kategori dan menjelaskan saat foto pembanding belum tersedia. Jika foto sudah boleh digunakan, taruh thumbnail JPEG maksimal 256 px di `data/thumbnails`, lalu isi `data/thumbnail_manifest.json` dengan mapping `filename` dari CSV ke nama file thumbnail. Server hanya menyajikan file pada direktori itu. Nama thumbnail harus nama file biasa, tanpa path.
+Foto referensi berasal dari dataset public `ayaayaa/kenal-e-thumbnails`, direktori `images`, pada commit `9800cac5b0554d5acfeb92d730e9791aee485a17`. Seluruh 3.961 nama file telah dicocokkan dengan `data/gallery_meta.json`, tanpa nama hilang atau ganda. Backend membuat URL dari nama file yang sesuai vektor, termasuk encoding spasi dan karakter khusus. Browser mengambil gambar langsung dari HF; backend tidak mengunduh seluruh dataset.
+
+`REFERENCE_IMAGE_BASE_URL` dapat mengganti lokasi/revisi gambar; nilai kosong menonaktifkan fallback gambar remote. Gambar saat ini masih beresolusi asli. Frontend memuat gambar referensi secara lazy. Jika nanti membuat thumbnail kecil, taruh di `data/thumbnails` dan isi `data/thumbnail_manifest.json` dengan mapping nama referensi ke nama thumbnail. Thumbnail lokal yang tersedia diprioritaskan; nama file thumbnail harus tanpa path. Alternatifnya, upload thumbnail ke HF lalu ubah base URL dengan tetap menjaga nama file.
 
 ## Unggahan dan privasi
 

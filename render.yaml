@@ -16,6 +16,8 @@ services:
         sync: false
       - key: CORS_ORIGINS
         value: https://kenal-e.vercel.app,http://localhost:5173,http://127.0.0.1:5173
+      - key: REFERENCE_IMAGE_BASE_URL
+        value: https://huggingface.co/datasets/ayaayaa/kenal-e-thumbnails/resolve/9800cac5b0554d5acfeb92d730e9791aee485a17/images
       - key: AI_TIMEOUT_SECONDS
         value: "180"
       - key: OPENBLAS_NUM_THREADS

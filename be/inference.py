@@ -1,7 +1,8 @@
 import json
 from pathlib import Path
+from urllib.parse import quote
 import numpy as np
-from .config import ARTIFACTS, DATA
+from .config import ARTIFACTS, DATA, REFERENCE_IMAGE_BASE_URL
 from .catalog import load_catalog
 
 def normalized(values):
@@ -41,7 +42,7 @@ class Gallery:
                 subsets.append({'id':int(sid),'size':int(mask.sum()),'rep_urls':[]})
             entry['subs'] = subsets
             entry['n_sub'] = len(subsets)
-        # Optional, rights-cleared thumbnails prepared by the project owner.
+        # Local thumbnails can override the public HF reference-image URLs.
         self.thumbs = json.loads((DATA/'thumbnail_manifest.json').read_text()) if (DATA/'thumbnail_manifest.json').exists() else {}
         for mid, entry in self.catalog.items():
             idx = np.flatnonzero(self.macro == mid)
@@ -53,7 +54,9 @@ class Gallery:
     def thumbnail(self, index):
         name = self.thumbs.get(self.filenames[index])
         if name and Path(name).name == name and (DATA/'thumbnails'/name).is_file():
-            return '/api/thumbnails/' + name
+            return '/api/thumbnails/' + quote(name, safe='')
+        if REFERENCE_IMAGE_BASE_URL:
+            return REFERENCE_IMAGE_BASE_URL + '/' + quote(self.filenames[index], safe='')
         return None
 
     def analyze(self, vit, dino):

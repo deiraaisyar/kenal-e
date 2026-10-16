@@ -14,3 +14,6 @@ SPACE = os.getenv('HF_SPACE_ID', 'ayaayaa/still-e-okay-ai').strip().removeprefix
 TOKEN = (os.getenv('HF_TOKEN') or '').strip() or None
 TIMEOUT = int(os.getenv('AI_TIMEOUT_SECONDS', '180'))
 ORIGINS = [x.strip() for x in os.getenv('CORS_ORIGINS', 'https://kenal-e.vercel.app,http://localhost:5173,http://127.0.0.1:5173').split(',') if x.strip()]
+
+# Image URLs use the verified dataset revision; image bytes stay on HF.
+REFERENCE_IMAGE_BASE_URL = os.getenv('REFERENCE_IMAGE_BASE_URL', 'https://huggingface.co/datasets/ayaayaa/kenal-e-thumbnails/resolve/9800cac5b0554d5acfeb92d730e9791aee485a17/images').strip().rstrip('/')

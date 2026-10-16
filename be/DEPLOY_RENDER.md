@@ -80,3 +80,13 @@ Rujukan: [FastAPI di Render](https://render.com/docs/deploy-fastapi), [Free inst
 - `stage` `RUNNING` dan `space` `running`: Space dapat diakses. Kegagalan inferensi selanjutnya dicatat dengan tipe exception di log Render tanpa isi token.
 
 Perubahan environment membutuhkan restart/redeploy. Nama secret harus `HF_TOKEN`, nilainya hanya token, bukan `HF_TOKEN=...`, bukan awalan `Bearer`, dan tanpa tanda kutip. `HF_SPACE_ID` adalah `ayaayaa/still-e-okay-ai`; URL HF penuh juga dinormalisasi oleh backend.
+
+## Gambar referensi dari HF Dataset
+
+Dataset public `ayaayaa/kenal-e-thumbnails` sudah dihubungkan ke 3.961 nama file referensi. Default `REFERENCE_IMAGE_BASE_URL`:
+
+```text
+https://huggingface.co/datasets/ayaayaa/kenal-e-thumbnails/resolve/9800cac5b0554d5acfeb92d730e9791aee485a17/images
+```
+
+Deploy ulang backend untuk mengaktifkan URL gambar pada katalog, detail kelompok, dan lima referensi terdekat. Tidak perlu upload NPZ baru atau memasukkan token ke frontend untuk gambar public. Kode frontend memakai lazy loading untuk gambar referensi. Gambar yang diupload saat ini adalah gambar asli, sehingga versi thumbnail tetap dapat dibuat kemudian.
