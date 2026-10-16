@@ -5,7 +5,11 @@ from dotenv import load_dotenv
 ROOT = Path(__file__).resolve().parents[1]
 load_dotenv(ROOT / '.env', override=False)
 DATA = Path(__file__).resolve().parent / 'data'
-ARTIFACTS = Path(os.getenv('AI_ARTIFACTS_DIR', str(ROOT / 'ai/artifacts')))
+BUNDLED_ARTIFACTS = DATA / 'artifacts'
+default_artifacts = BUNDLED_ARTIFACTS if (BUNDLED_ARTIFACTS / 'reference.npz').is_file() else ROOT / 'ai/artifacts'
+ARTIFACTS = Path(os.getenv('AI_ARTIFACTS_DIR', str(default_artifacts)))
+if not ARTIFACTS.is_absolute():
+    ARTIFACTS = ROOT / ARTIFACTS
 SPACE = os.getenv('HF_SPACE_ID', 'ayaayaa/still-e-okay-ai')
 TOKEN = os.getenv('HF_TOKEN') or None
 TIMEOUT = int(os.getenv('AI_TIMEOUT_SECONDS', '180'))

@@ -24,6 +24,8 @@ Isi `HF_TOKEN` pada `.env` di root. Contoh pengaturan tersedia di `.env.example`
 
 Dokumentasi rinci: [frontend](fe/README.md), [backend](be/README.md), [AI Space](ai/README.md).
 
+Deployment backend Render Free: [panduan](be/DEPLOY_RENDER.md), dengan Blueprint `render.yaml` di root. NPZ dan metadata untuk deployment berada di `be/data/artifacts`; frontend tetap di Vercel.
+
 ## Status demo
 
 Empat halaman dan panel detail sudah terimplementasi. Kandidat hasil diberi status perlu diperiksa karena threshold belum dikalibrasi di foto baru. Metadata risiko masih draf. Harga, titik setor terverifikasi, foto referensi berizin, dan peta perhatian belum tersedia; UI menyediakan state yang sesuai. Data di Cek Laci disimpan di perangkat pengguna. Tidak ada akun atau backend database.

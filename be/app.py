@@ -67,27 +67,32 @@ def sanitized_photo(content):
     try:
         with warnings.catch_warnings():
             warnings.simplefilter('error',Image.DecompressionBombWarning)
-            with Image.open(BytesIO(content)) as image:
-                if image.format not in ('JPEG','PNG','WEBP'): raise ValueError()
-                image.load()
-                image = ImageOps.exif_transpose(image).convert('RGB')
-                image.thumbnail((1024,1024))
-                out = BytesIO()
-                image.save(out,'JPEG',quality=85)
-                return out.getvalue()
+            with Image.open(BytesIO(content)) as source:
+                if source.format not in ('JPEG','PNG','WEBP'): raise ValueError()
+                # JPEG can decode at a reduced resolution. Other formats still
+                # shrink before EXIF copies and RGB conversion allocate buffers.
+                source.draft('RGB',(1024,1024))
+                source.thumbnail((1024,1024),Image.Resampling.LANCZOS,reducing_gap=3.0)
+                with ImageOps.exif_transpose(source) as oriented:
+                    with oriented.convert('RGB') as image:
+                        out = BytesIO()
+                        image.save(out,'JPEG',quality=85)
+                        return out.getvalue()
     except (UnidentifiedImageError,OSError,ValueError,Image.DecompressionBombError,Image.DecompressionBombWarning):
         raise ValueError('Gunakan foto JPG, PNG, atau WEBP yang dapat dibuka.') from None
 
 @app.post('/api/analyze')
 async def analyze(image: UploadFile = File(...)):
-    try: content = await image.read(MAX_FILE+1)
-    finally: await image.close()
-    if len(content) > MAX_FILE: return error('too_large','Foto maksimal 5 MB.',413)
-    try: photo = await run_in_threadpool(sanitized_photo,content)
-    except ValueError as exc: return error('invalid_image',str(exc))
     if app.state.inference_lock.locked():
+        await image.close()
         return error('busy','Ada foto lain yang sedang diproses. Coba lagi sebentar.',429,{'Retry-After':'10'})
     async with app.state.inference_lock:
+        try: content = await image.read(MAX_FILE+1)
+        finally: await image.close()
+        if len(content) > MAX_FILE: return error('too_large','Foto maksimal 5 MB.',413)
+        try: photo = await run_in_threadpool(sanitized_photo,content)
+        except ValueError as exc: return error('invalid_image',str(exc))
+        del content
         try:
             vit,dino = await run_in_threadpool(space.embeddings,photo)
             return await run_in_threadpool(gallery().analyze,vit,dino)
@@ -115,8 +120,12 @@ def drop_points(city:str=''):
 async def health():
     return {'backend':'ok','space':await run_in_threadpool(space.health),'recognition_validated':False,'feature_explain':False}
 
+@app.get('/api/ready')
+def ready():
+    # Render health probes must not wait for or repeatedly call Hugging Face.
+    return {'backend':'ok','reference_ready':True}
+
 @app.post('/api/explain')
 def explain(): return error('explain_unavailable','Peta perhatian belum tersedia.',501)
 
-(DATA/'thumbnails').mkdir(exist_ok=True)
-app.mount('/api/thumbnails',StaticFiles(directory=DATA/'thumbnails'),name='thumbnails')
+app.mount('/api/thumbnails',StaticFiles(directory=DATA/'thumbnails',check_dir=False),name='thumbnails')

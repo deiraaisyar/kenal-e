@@ -1,0 +1,16 @@
+{
+  "target": "Render Free 512 MB",
+  "backend_tests_passed": 12,
+  "reference_check": "passed; 3598 unique images; 26 categories",
+  "standalone_bundle_check": "passed without ai directory, with read-only application data",
+  "blueprint_yaml_check": "passed; free plan, one worker, secrets supplied externally",
+  "memory_measurement": {
+    "environment": "local Linux; not measured on Render",
+    "startup_rss_mib": 101.0,
+    "after_four_requests_rss_mib": 109.5,
+    "peak_rss_mib": 314.2,
+    "inputs": "three 25 MP JPEG requests and one 25 MP RGBA PNG request",
+    "encoder": "mocked with existing reference vectors; HF network not called"
+  },
+  "deployment_status": "configuration prepared locally; not deployed to Render"
+}

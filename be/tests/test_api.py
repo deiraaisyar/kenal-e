@@ -80,3 +80,34 @@ def test_unverified_or_unsourced_prices_are_never_shown():
 def test_demo_is_explicitly_labeled(client):
     body=client.get('/api/demo').json()
     assert body['demo'] is True and body['macro']['id']==13
+
+def test_render_health_probe_never_calls_huggingface(client,monkeypatch):
+    def fail(): pytest.fail('readiness probe must not call an external service')
+    monkeypatch.setattr(space,'health',fail)
+    assert client.get('/api/ready').json()=={'backend':'ok','reference_ready':True}
+
+def test_busy_upload_is_rejected_before_image_decode(client,monkeypatch):
+    import importlib
+    module=importlib.import_module('be.app')
+    def fail(*args): pytest.fail('a busy backend must not decode another image')
+    monkeypatch.setattr(module,'sanitized_photo',fail)
+    class BusyLock:
+        def locked(self): return True
+    original=app.state.inference_lock
+    app.state.inference_lock=BusyLock()
+    try:
+        r=client.post('/api/analyze',files={'image':('x.jpg',photo(),'image/jpeg')})
+        assert r.status_code==429 and r.json()['error']['code']=='busy'
+    finally: app.state.inference_lock=original
+
+def test_photo_resize_preserves_orientation_and_removes_exif():
+    from be.app import sanitized_photo
+    source=BytesIO()
+    image=Image.new('RGB',(2000,1000),'red')
+    exif=Image.Exif();exif[274]=6;exif[305]='private-metadata'
+    image.save(source,'JPEG',exif=exif);image.close()
+    result=sanitized_photo(source.getvalue())
+    with Image.open(BytesIO(result)) as photo:
+        assert photo.size==(512,1024)
+        assert photo.mode=='RGB'
+        assert not photo.getexif()

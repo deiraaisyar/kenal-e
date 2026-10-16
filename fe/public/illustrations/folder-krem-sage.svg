@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 512 512" fill="none">
+  <title>Folder 3D krem dan hijau sage</title>
+  <desc>Folder terbuka dengan permukaan krem champagne, bagian dalam hijau sage, pencahayaan lembut, dan latar transparan. Seluruh elemen berupa vektor.</desc>
+  <defs>
+    <linearGradient id="base" x1="146" y1="342" x2="369" y2="433" gradientUnits="userSpaceOnUse"><stop stop-color="#e9f0df"/><stop offset=".55" stop-color="#dae6ce"/><stop offset="1" stop-color="#eaf1e2"/></linearGradient>
+    <radialGradient id="shadow"><stop stop-color="#354331" stop-opacity=".34"/><stop offset=".5" stop-color="#526349" stop-opacity=".16"/><stop offset="1" stop-color="#526349" stop-opacity="0"/></radialGradient>
+    <linearGradient id="backEdge" x1="110" y1="238" x2="348" y2="238" gradientUnits="userSpaceOnUse"><stop stop-color="#b5a58e"/><stop offset=".16" stop-color="#dfcfb8"/><stop offset=".7" stop-color="#e8dcc9"/><stop offset="1" stop-color="#a89b83"/></linearGradient>
+    <linearGradient id="back" x1="179" y1="141" x2="276" y2="354" gradientUnits="userSpaceOnUse"><stop stop-color="#f4ebdb"/><stop offset=".5" stop-color="#e4d7c1"/><stop offset="1" stop-color="#c1b499"/></linearGradient>
+    <linearGradient id="inside" x1="209" y1="167" x2="258" y2="342" gradientUnits="userSpaceOnUse"><stop stop-color="#b0c3a1"/><stop offset=".5" stop-color="#92a784"/><stop offset="1" stop-color="#6c8161"/></linearGradient>
+    <linearGradient id="insideShade" x1="249" y1="183" x2="258" y2="285" gradientUnits="userSpaceOnUse"><stop stop-color="#4e6044" stop-opacity="0"/><stop offset="1" stop-color="#4e6044" stop-opacity=".45"/></linearGradient>
+    <linearGradient id="side" x1="113" y1="246" x2="172" y2="295" gradientUnits="userSpaceOnUse"><stop stop-color="#d9ccb6"/><stop offset=".45" stop-color="#b4a88e"/><stop offset="1" stop-color="#9b9e80"/></linearGradient>
+    <linearGradient id="frontEdge" x1="143" y1="264" x2="381" y2="315" gradientUnits="userSpaceOnUse"><stop stop-color="#d9c9ad"/><stop offset=".55" stop-color="#bead91"/><stop offset="1" stop-color="#a89d80"/></linearGradient>
+    <linearGradient id="front" x1="233" y1="204" x2="301" y2="357" gradientUnits="userSpaceOnUse"><stop stop-color="#f8efdf"/><stop offset=".35" stop-color="#ecdfc9"/><stop offset=".8" stop-color="#decdb1"/><stop offset="1" stop-color="#cfbd9d"/></linearGradient>
+    <linearGradient id="lip" x1="176" y1="219" x2="396" y2="175" gradientUnits="userSpaceOnUse"><stop stop-color="#99ae8b"/><stop offset=".5" stop-color="#bfd0af"/><stop offset="1" stop-color="#8da37c"/></linearGradient>
+    <linearGradient id="shine" x1="172" y1="222" x2="211" y2="365" gradientUnits="userSpaceOnUse"><stop stop-color="#fff9ed" stop-opacity=".95"/><stop offset="1" stop-color="#fff9ed" stop-opacity=".18"/></linearGradient>
+  </defs>
+  <!-- Grounding ellipse is part of the illustration; the canvas has no background. -->
+  <ellipse cx="258" cy="377" rx="183" ry="63" fill="url(#base)"/>
+  <ellipse cx="257" cy="362" rx="153" ry="43" fill="url(#shadow)" transform="rotate(-12 257 362)"/>
+  <!-- Rounded, raised tab and rear shell. -->
+  <path d="M113 346V153Q113 139 127 136L173 126Q183 123 190 131L205 148L329 120Q345 116 348 133V307Q348 322 332 326L140 370Q124 374 118 362Q113 356 113 346Z" fill="url(#backEdge)"/>
+  <path d="M121 348V154Q121 144 131 142L174 132Q181 130 186 136L201 153Q204 157 210 155L329 128Q339 126 340 137V304Q340 314 330 317L139 361Q121 365 121 348Z" fill="url(#back)"/>
+  <path d="M125 155Q125 147 133 145L173 136Q179 134 184 140L199 157Q204 162 211 160L328 134Q335 132 336 139" stroke="#fffaed" stroke-width="2" stroke-linecap="round" opacity=".75"/>
+  <!-- Sage inner lining, shaded toward the base of the open folder. -->
+  <path d="M134 185Q134 177 142 175L323 135Q332 133 332 143V302Q332 309 324 311L145 352Q134 354 134 343Z" fill="url(#inside)"/>
+  <path d="M134 185Q134 177 142 175L323 135Q332 133 332 143V302Q332 309 324 311L145 352Q134 354 134 343Z" fill="url(#insideShade)"/>
+  <path d="M140 185Q140 181 146 180L321 141" stroke="#dce5cf" stroke-width="1.5" stroke-linecap="round" opacity=".65"/>
+  <!-- Left gusset provides the depth between the rear and open front. -->
+  <path d="M122 240 165 231 147 364 137 369Q124 368 122 351Z" fill="url(#side)"/>
+  <path d="m126 250 15 103 17-106" stroke="#968d73" stroke-opacity=".35" stroke-width="1.2" stroke-linejoin="round"/>
+  <!-- Front panel, its lower thickness, and a fine sage lining at the lip. -->
+  <path d="M137 357 165 232Q168 219 181 216L387 170Q405 166 406 181L377 313Q374 330 359 334L155 380Q137 384 134 370Q133 365 137 357Z" fill="url(#frontEdge)"/>
+  <path d="M138 357 166 232Q169 221 182 218L388 172Q402 169 400 180L371 309Q368 322 355 325L153 371Q135 375 138 357Z" fill="url(#front)"/>
+  <path d="M169 232Q172 224 183 222L387 176Q395 174 397 178" stroke="url(#lip)" stroke-width="5.5" stroke-linecap="round"/>
+  <path d="M140 357 168 234Q171 224 183 222L387 176Q397 173 399 179" stroke="url(#shine)" stroke-width="2.1" stroke-linecap="round"/>
+  <path d="m151 365 203-46Q365 316 367 306L393 190" stroke="#fff5df" stroke-opacity=".24" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M140 370Q145 376 156 373L357 328Q372 325 375 311" stroke="#a7977b" stroke-opacity=".38" stroke-width="1.2" stroke-linecap="round"/>
+</svg>

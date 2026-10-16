@@ -16,7 +16,7 @@ Dokumentasi API: http://127.0.0.1:8000/docs.
 
 ## Data dan keputusan
 
-- Memuat `ai/artifacts/reference.npz`, `facets_level2.csv`, `manifest.json`, dan nama kategori di `meta.json`.
+- Memuat `reference.npz`, `manifest.json`, dan nama kategori dari `meta.json`. Default memakai salinan deployment di `be/data/artifacts`; jika belum ada, memakai `ai/artifacts`. CSV hanya dibutuhkan saat menyiapkan metadata, bukan pada runtime deployment.
 - Satu wakil per `dup_group` menghasilkan 3.598 gambar independen. Label dari CSV run 88 subklaster; folder arsip gambar lama tidak dipakai sebagai label.
 - kNN ViT, k=10, cosine voting; centroid makro sebagai diagnostik; centroid DINOv3 terdekat dalam makro untuk subklaster. Kategori LEAF kecil tidak mendapat label kondisi.
 - Noise dan kandidat di bawah batas neighbor awal dihentikan. Batas itu hanya heuristik referensi, belum kalibrasi foto baru.
@@ -45,6 +45,8 @@ Pengujian API mengganti encoder dengan vektor referensi untuk menguji aturan kep
 
 Rujukan implementasi: [FastAPI uploads](https://fastapi.tiangolo.com/tutorial/request-files/), [Gradio client](https://www.gradio.app/docs/python-client/client).
 
-## Deploy nanti
+## Deploy ke Render Free
 
-Pakai proses ASGI yang hidup cukup lama untuk antrean Space (timeout default 180 detik). Vercel frontend bisa memakai `VITE_API_BASE_URL` ke backend HTTPS terpisah; tambahkan origin frontend ke `CORS_ORIGINS`. Artefak `ai/artifacts` harus ikut tersedia atau arahkan `AI_ARTIFACTS_DIR`. Frontend dan backend belum dipublikasikan oleh implementasi ini.
+Konfigurasi `render.yaml` tersedia di root. Ikuti [DEPLOY_RENDER.md](DEPLOY_RENDER.md) untuk pengaturan, file NPZ/JSON wajib, dan secret. Backend tetap memakai satu worker dan satu thread NumPy agar sesuai anggaran RAM 512 MB. Health check `/api/ready` tidak memanggil Space. Uji memory lokal tersedia lewat `python -m be.scripts.profile_memory`.
+
+Frontend Vercel memakai `VITE_API_BASE_URL` ke URL HTTPS backend; tambahkan origin frontend ke `CORS_ORIGINS`. Konfigurasi ini disiapkan lokal, belum mengonfirmasi deployment Render.

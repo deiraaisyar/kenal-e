@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "rows": 3961,
+  "dimensions": 768,
+  "macro_count_including_noise": 27,
+  "subcluster_count": 88,
+  "noise_id": 26,
+  "label_source": "Kaggle script version 352645046 / level2_hierarchy/facets_level2.csv",
+  "labels_sha256": "7773b9b8e301dd3d157e582b16b8361a46e524a38530ea653002276f6f8984d4",
+  "reference_thresholds": {
+    "0": 0.452816379070282,
+    "1": 0.46608787029981613,
+    "2": 0.4889696896076202,
+    "3": 0.31514640897512436,
+    "4": 0.3717085272073746,
+    "5": 0.3158887177705765,
+    "6": 0.5874704420566559,
+    "7": 0.5059288144111633,
+    "8": 0.4403725862503052,
+    "9": 0.46727563440799713,
+    "10": 0.5029318511486054,
+    "11": 0.3699273020029068,
+    "12": 0.34525898694992063,
+    "13": 0.4559396579861641,
+    "14": 0.44860859513282775,
+    "15": 0.653078830242157,
+    "16": 0.5004039630293846,
+    "17": 0.5165408998727798,
+    "18": 0.3783308923244476,
+    "19": 0.5197230607271195,
+    "20": 0.41304927617311477,
+    "21": 0.3649676948785782,
+    "22": 0.4572716116905212,
+    "23": 0.46766026169061664,
+    "24": 0.4603367745876312,
+    "25": 0.3464724361896515,
+    "26": 0.3047407388687134
+  },
+  "validation": "Reference-only heuristic; no out-of-domain or new-photo validation. Never a probability.",
+  "processor_parity": "Pending comparison with Kaggle runtime; original library versions/revisions unavailable.",
+  "reference_report": {
+    "0": {
+      "rows": 246,
+      "independent_groups": 239,
+      "within_cluster_neighbor_p05": 0.452816379070282
+    },
+    "1": {
+      "rows": 308,
+      "independent_groups": 306,
+      "within_cluster_neighbor_p05": 0.46608787029981613
+    },
+    "2": {
+      "rows": 22,
+      "independent_groups": 22,
+      "within_cluster_neighbor_p05": 0.4889696896076202
+    },
+    "3": {
+      "rows": 28,
+      "independent_groups": 28,
+      "within_cluster_neighbor_p05": 0.31514640897512436
+    },
+    "4": {
+      "rows": 46,
+      "independent_groups": 46,
+      "within_cluster_neighbor_p05": 0.3717085272073746
+    },
+    "5": {
+      "rows": 51,
+      "independent_groups": 46,
+      "within_cluster_neighbor_p05": 0.3158887177705765
+    },
+    "6": {
+      "rows": 40,
+      "independent_groups": 40,
+      "within_cluster_neighbor_p05": 0.5874704420566559
+    },
+    "7": {
+      "rows": 56,
+      "independent_groups": 56,
+      "within_cluster_neighbor_p05": 0.5059288144111633
+    },
+    "8": {
+      "rows": 101,
+      "independent_groups": 89,
+      "within_cluster_neighbor_p05": 0.4403725862503052
+    },
+    "9": {
+      "rows": 298,
+      "independent_groups": 266,
+      "within_cluster_neighbor_p05": 0.46727563440799713
+    },
+    "10": {
+      "rows": 29,
+      "independent_groups": 29,
+      "within_cluster_neighbor_p05": 0.5029318511486054
+    },
+    "11": {
+      "rows": 28,
+      "independent_groups": 26,
+      "within_cluster_neighbor_p05": 0.3699273020029068
+    },
+    "12": {
+      "rows": 59,
+      "independent_groups": 57,
+      "within_cluster_neighbor_p05": 0.34525898694992063
+    },
+    "13": {
+      "rows": 374,
+      "independent_groups": 356,
+      "within_cluster_neighbor_p05": 0.4559396579861641
+    },
+    "14": {
+      "rows": 163,
+      "independent_groups": 159,
+      "within_cluster_neighbor_p05": 0.44860859513282775
+    },
+    "15": {
+      "rows": 104,
+      "independent_groups": 93,
+      "within_cluster_neighbor_p05": 0.653078830242157
+    },
+    "16": {
+      "rows": 73,
+      "independent_groups": 46,
+      "within_cluster_neighbor_p05": 0.5004039630293846
+    },
+    "17": {
+      "rows": 126,
+      "independent_groups": 116,
+      "within_cluster_neighbor_p05": 0.5165408998727798
+    },
+    "18": {
+      "rows": 143,
+      "independent_groups": 135,
+      "within_cluster_neighbor_p05": 0.3783308923244476
+    },
+    "19": {
+      "rows": 249,
+      "independent_groups": 244,
+      "within_cluster_neighbor_p05": 0.5197230607271195
+    },
+    "20": {
+      "rows": 341,
+      "independent_groups": 284,
+      "within_cluster_neighbor_p05": 0.41304927617311477
+    },
+    "21": {
+      "rows": 521,
+      "independent_groups": 378,
+      "within_cluster_neighbor_p05": 0.3649676948785782
+    },
+    "22": {
+      "rows": 64,
+      "independent_groups": 63,
+      "within_cluster_neighbor_p05": 0.4572716116905212
+    },
+    "23": {
+      "rows": 179,
+      "independent_groups": 170,
+      "within_cluster_neighbor_p05": 0.46766026169061664
+    },
+    "24": {
+      "rows": 83,
+      "independent_groups": 79,
+      "within_cluster_neighbor_p05": 0.4603367745876312
+    },
+    "25": {
+      "rows": 32,
+      "independent_groups": 32,
+      "within_cluster_neighbor_p05": 0.3464724361896515
+    },
+    "26": {
+      "rows": 197,
+      "independent_groups": 193,
+      "within_cluster_neighbor_p05": 0.3047407388687134
+    }
+  }
+}
