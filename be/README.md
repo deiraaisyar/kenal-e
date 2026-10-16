@@ -1,0 +1,50 @@
+# Kenal-E backend
+
+FastAPI untuk validasi foto, jembatan ke Space `ayaayaa/still-e-okay-ai`, keputusan kategori, dan katalog. Tidak memasang PyTorch atau menjalankan model di laptop.
+
+Jalankan dari root repositori:
+
+```bash
+python3 -m venv be/.venv
+be/.venv/bin/pip install -r be/requirements-dev.txt
+be/.venv/bin/python -m uvicorn be.app:app --host 127.0.0.1 --port 8000 --reload
+```
+
+Isi `HF_TOKEN` pada `.env` di root. File ini dibaca otomatis. Variabel opsional ada di `.env.example`. Token tidak dimasukkan ke respons atau frontend.
+
+Dokumentasi API: http://127.0.0.1:8000/docs.
+
+## Data dan keputusan
+
+- Memuat `ai/artifacts/reference.npz`, `facets_level2.csv`, `manifest.json`, dan nama kategori di `meta.json`.
+- Satu wakil per `dup_group` menghasilkan 3.598 gambar independen. Label dari CSV run 88 subklaster; folder arsip gambar lama tidak dipakai sebagai label.
+- kNN ViT, k=10, cosine voting; centroid makro sebagai diagnostik; centroid DINOv3 terdekat dalam makro untuk subklaster. Kategori LEAF kecil tidak mendapat label kondisi.
+- Noise dan kandidat di bawah batas neighbor awal dihentikan. Batas itu hanya heuristik referensi, belum kalibrasi foto baru.
+- `data/thresholds.json` memiliki `calibrated=false`. Semua kandidat yang lolos tetap `borderline`; jangan mengubahnya menjadi `true` tanpa evaluasi independen. Tidak ada angka confidence di UI.
+- Metadata risiko awal mengikuti tabel spesifikasi pengguna. Semua penanganan berlabel draf. Risiko laptop tertutup/laptop perlu ditinjau terhadap baterai yang masih terpasang.
+- `data/meta.json` adalah override lokal per ID. Contoh struktur: `{"13":{"info":{"verified":false},"price":{"mode":"none"}}}`. Harga hanya tampil dengan `verified=true`, `show=true`, rentang valid, sumber, dan tanggal. Tidak ada angka harga bawaan.
+- `data/drop_points.json` masih kosong. Hanya entri bersumber dengan tanggal verifikasi yang disajikan.
+- `/api/explain` mengembalikan `explain_unavailable`; tombol disembunyikan sampai metode makalah dan endpoint tersedia.
+
+## Foto referensi
+
+Default tidak mengemas foto dataset karena izin distribusinya belum dipastikan. UI menggunakan ilustrasi SVG kategori dan menjelaskan saat foto pembanding belum tersedia. Jika foto sudah boleh digunakan, taruh thumbnail JPEG maksimal 256 px di `data/thumbnails`, lalu isi `data/thumbnail_manifest.json` dengan mapping `filename` dari CSV ke nama file thumbnail. Server hanya menyajikan file pada direktori itu. Nama thumbnail harus nama file biasa, tanpa path.
+
+## Unggahan dan privasi
+
+JPG/PNG/WEBP maksimal 5 MB; body multipart dibatasi; format diperiksa lewat Pillow. Gambar dikecilkan maksimal 1024 px, dikonversi JPEG dan metadata dibuang sebelum diteruskan. File sementara backend dihapus dalam `finally`. Space Gradio yang ada memakai pembersihan cache unggahan berkala, bukan jaminan tanpa penyimpanan server. Sesi Cek Laci hanya disimpan frontend di perangkat.
+
+## Uji
+
+```bash
+be/.venv/bin/python -m pytest be/tests -q
+be/.venv/bin/python -m be.scripts.check_space
+```
+
+Pengujian API mengganti encoder dengan vektor referensi untuk menguji aturan keputusan, validasi, error, dan penahanan harga. `check_space` memeriksa kontrak `/embed(photo, selected)` serta `/health` Space aktual. Kontrak aktual mengembalikan `embeddings.vit` dan `embeddings.dinov3`.
+
+Rujukan implementasi: [FastAPI uploads](https://fastapi.tiangolo.com/tutorial/request-files/), [Gradio client](https://www.gradio.app/docs/python-client/client).
+
+## Deploy nanti
+
+Pakai proses ASGI yang hidup cukup lama untuk antrean Space (timeout default 180 detik). Vercel frontend bisa memakai `VITE_API_BASE_URL` ke backend HTTPS terpisah; tambahkan origin frontend ke `CORS_ORIGINS`. Artefak `ai/artifacts` harus ikut tersedia atau arahkan `AI_ARTIFACTS_DIR`. Frontend dan backend belum dipublikasikan oleh implementasi ini.

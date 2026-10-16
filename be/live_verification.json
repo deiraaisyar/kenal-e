@@ -1,0 +1,69 @@
+{
+  "http_status": 200,
+  "taxonomy_version": "progress-21",
+  "disclaimer": "Hasil berdasarkan kemiripan visual, bukan diagnosis.",
+  "thresholds_calibrated": false,
+  "status": "borderline",
+  "macro": {
+    "id": 13,
+    "name": "Papan sirkuit (PCB)",
+    "vote_share": 1.0,
+    "centroid_sim": 0.3684301972389221
+  },
+  "sub": {
+    "id": 1,
+    "label": "Kelompok kondisi 1",
+    "name": null,
+    "sim": 0.8383798003196716
+  },
+  "info": {
+    "weee": "Perangkat elektronik dan komponennya",
+    "risk_level": "valuable",
+    "bag": "green",
+    "hazard_note": "Logam berat dan logam berharga",
+    "do": [
+      "Simpan terpisah dari sampah rumah tangga.",
+      "Tanyakan penerimaan barang kepada pengelola sebelum menyetor."
+    ],
+    "dont": [
+      "Jangan bakar atau bongkar sendiri."
+    ],
+    "assessable": true,
+    "verified": false
+  },
+  "price": {
+    "mode": "none"
+  },
+  "similar": [
+    {
+      "url": null,
+      "macro": 13,
+      "sub": 1,
+      "sim": 0.9993559718132019
+    },
+    {
+      "url": null,
+      "macro": 13,
+      "sub": 1,
+      "sim": 0.8362689018249512
+    },
+    {
+      "url": null,
+      "macro": 13,
+      "sub": 1,
+      "sim": 0.770768404006958
+    },
+    {
+      "url": null,
+      "macro": 13,
+      "sub": 1,
+      "sim": 0.6222131252288818
+    },
+    {
+      "url": null,
+      "macro": 13,
+      "sub": 0,
+      "sim": 0.5580677390098572
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1664" height="960" viewBox="0 0 832 480" fill="none">
+  <title>Ponsel dengan layar retak dan bingkai pemindai</title>
+  <desc>Ilustrasi vektor dengan latar transparan, bodi ponsel warna champagne, layar gelap, dan aksen hijau sage.</desc>
+  <defs>
+    <linearGradient id="ground" x1="260" y1="325" x2="550" y2="445" gradientUnits="userSpaceOnUse"><stop stop-color="#e4edd9"/><stop offset=".55" stop-color="#d4e2c9"/><stop offset="1" stop-color="#edf3e4"/></linearGradient>
+    <radialGradient id="shadow"><stop stop-color="#34412c" stop-opacity=".5"/><stop offset="1" stop-color="#34412c" stop-opacity="0"/></radialGradient>
+    <linearGradient id="metal" x1="326" y1="230" x2="500" y2="210" gradientUnits="userSpaceOnUse"><stop stop-color="#b9ab98"/><stop offset=".15" stop-color="#dfcfb9"/><stop offset=".3" stop-color="#f3e5d3"/><stop offset=".75" stop-color="#e6d6c0"/><stop offset="1" stop-color="#b4a18a"/></linearGradient>
+    <linearGradient id="top" x1="370" y1="52" x2="410" y2="114" gradientUnits="userSpaceOnUse"><stop stop-color="#f6eddf"/><stop offset=".55" stop-color="#ebddca"/><stop offset="1" stop-color="#b7a58e"/></linearGradient>
+    <linearGradient id="rim" x1="357" y1="230" x2="504" y2="236" gradientUnits="userSpaceOnUse"><stop stop-color="#fff3df"/><stop offset=".3" stop-color="#c7b49a"/><stop offset=".65" stop-color="#f8ead6"/><stop offset="1" stop-color="#d8c3a8"/></linearGradient>
+    <linearGradient id="glass" x1="369" y1="111" x2="495" y2="394" gradientUnits="userSpaceOnUse"><stop stop-color="#292c2c"/><stop offset=".45" stop-color="#181b1d"/><stop offset="1" stop-color="#2d3030"/></linearGradient>
+    <linearGradient id="display" x1="370" y1="150" x2="492" y2="343" gradientUnits="userSpaceOnUse"><stop stop-color="#35383a"/><stop offset=".5" stop-color="#292c2e"/><stop offset="1" stop-color="#414547"/></linearGradient>
+    <linearGradient id="scan" x1="0" y1="136" x2="0" y2="408" gradientUnits="userSpaceOnUse"><stop stop-color="#a8c7a3"/><stop offset=".45" stop-color="#88b189"/><stop offset="1" stop-color="#8eb48d"/></linearGradient>
+    <linearGradient id="button"><stop stop-color="#e6dac8"/><stop offset=".5" stop-color="#c8b9a5"/><stop offset="1" stop-color="#f0e4d3"/></linearGradient>
+    <clipPath id="screen"><path d="M370 156 488 102Q491 100 491 104V315Q491 318 488 320L370 372Q368 373 368 370V161Q368 158 370 156Z"/></clipPath>
+  </defs>
+  <ellipse cx="409" cy="378" rx="173" ry="81" fill="url(#ground)"/>
+  <ellipse cx="410" cy="399" rx="107" ry="35" fill="url(#shadow)" transform="rotate(-13 410 399)"/>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M251 143H231Q200 143 200 175V199M580 143H604Q633 143 633 174V199M200 343V373Q200 401 231 401H250M581 401H604Q634 401 634 373V343" stroke="#759a76" stroke-width="16"/>
+    <path d="M251 142H231Q200 142 200 174V198M580 142H604Q633 142 633 173V198M200 342V372Q200 400 231 400H250M581 400H604Q634 400 634 372V342" stroke="url(#scan)" stroke-width="13"/>
+    <path d="M250 137H230Q196 137 195 174M580 137H604Q637 137 638 174M195 344V373Q195 405 230 405M582 396H604Q629 396 629 372V344" stroke="#d2e3c9" stroke-opacity=".4" stroke-width="1.5"/>
+  </g>
+  <path d="M356 87 445 47Q454 43 461 47L488 60Q501 66 501 84L499 342Q499 361 483 370L375 414Q366 420 355 415L342 408Q333 403 333 387L330 137Q329 108 356 87Z" fill="url(#metal)"/>
+  <path d="M356 87 445 47Q454 43 461 47L488 60 383 104Q361 112 356 138L331 128Q334 102 356 87Z" fill="url(#top)"/>
+  <path d="M385 103 477 64Q499 55 501 81V341Q501 361 485 370L375 415Q357 423 356 401V143Q356 116 385 103Z" fill="url(#rim)"/>
+  <path d="M387 106 477 68Q496 60 497 83V339Q497 358 482 366L376 410Q361 417 360 399V143Q360 118 387 106Z" fill="url(#glass)" stroke="#101415" stroke-width="2"/>
+  <path d="M387 109 478 71Q492 64 494 83" stroke="#555854" stroke-opacity=".5" stroke-width="1"/>
+  <path d="M370 156 488 102Q491 100 491 104V315Q491 318 488 320L370 372Q368 373 368 370V161Q368 158 370 156Z" fill="url(#display)"/>
+  <g clip-path="url(#screen)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M430 201 419 207 413 215 409 228 408 244 415 254 429 261 442 254 451 243 452 225 448 211Z" fill="#292d2f" stroke="#181c1d" stroke-width="2"/>
+    <g stroke="#111618" stroke-width="2.1" opacity=".8">
+      <path d="M430 201 431 180 430 154 431 128M418 211 397 187 369 154M409 230 386 226 369 222M409 246 383 259 368 268M415 253 395 291 380 317 365 338M430 261 431 301 431 337 428 348M450 242 465 254 491 266M448 211 456 196 471 166 491 124M431 181 447 190 456 196 468 193 491 185M465 254 467 271 479 299 491 317M397 253 387 271 368 292"/>
+    </g>
+    <g stroke="#b9beba" stroke-width=".85" opacity=".7">
+      <path d="M430 201 431 180 430 154 431 128M418 211 397 187 369 154M409 230 386 226 369 222M409 246 383 259 368 268M415 253 395 291 380 317 365 338M430 261 431 301 431 337 428 348M450 242 465 254 491 266M448 211 456 196 471 166 491 124M431 181 447 190 456 196 468 193 491 185M465 254 467 271 479 299 491 317M397 253 387 271 368 292"/>
+      <path d="M430 202 420 207 413 215 409 228M409 245 415 254 429 261M441 255 451 243 452 226 448 211 439 205" stroke-width=".55" opacity=".6"/>
+    </g>
+    <path d="m416 209 2 3m-10 17 1 3m1 14 2 4m37-8 3 2m-5-33 2-1m-19-31 1 5m24 12 3-2" stroke="#e7eae3" stroke-width="1.3" opacity=".75"/>
+  </g>
+  <path d="M418 110 443 99Q447 97 447 100Q447 103 444 104L419 115Q415 116 415 113Q415 111 418 110Z" fill="#080c0d"/>
+  <path d="m418 116 26-12" stroke="#72736b" stroke-opacity=".5" stroke-width="1.3"/>
+  <ellipse cx="407" cy="118" rx="3.2" ry="4.6" transform="rotate(21 407 118)" fill="#0b151a" stroke="#393f3c"/>
+  <ellipse cx="406.5" cy="117" rx="1.3" ry="2" fill="#345362" opacity=".7"/>
+  <ellipse cx="430" cy="370" rx="12.9" ry="18.8" transform="rotate(28 430 370)" fill="#101414" stroke="#62635a" stroke-width=".8"/>
+  <ellipse cx="431" cy="369" rx="11.8" ry="17.4" transform="rotate(28 431 369)" fill="#373936"/>
+  <path d="m404 77 15-6q5-2 7 0 3 2-2 4l-16 7q-6 3-8 0-1-3 4-5Z" fill="#424542" stroke="#fcf3e5" stroke-width="1.2"/>
+  <path d="M338 160Q338 152 342 154Q347 156 347 163V174Q347 181 342 178Q338 176 338 170Z" fill="#756c5e" stroke="#f3e6d2" stroke-width="1"/>
+  <path d="M340 160Q340 155 342 157Q345 158 345 163V172Q345 177 342 175Q340 174 340 170Z" fill="url(#button)"/>
+  <path d="M339 194Q339 186 343 188Q348 190 348 197V228Q348 237 343 234Q339 232 339 225Z" fill="#756c5e" stroke="#f3e6d2" stroke-width="1"/>
+  <path d="M341 194Q341 189 343 191Q346 192 346 198V226Q346 232 343 230Q341 229 341 224Z" fill="url(#button)"/>
+  <path d="M334 269V311" stroke="#a19381" stroke-width=".8" opacity=".5"/>
+</svg>

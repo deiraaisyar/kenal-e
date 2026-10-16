@@ -1,0 +1,27 @@
+{
+  "backend_tests": 9,
+  "frontend_domain_tests": 2,
+  "production_build": "passed",
+  "browser_checks": [
+    "mobile layout 390x844; no horizontal overflow",
+    "Plus Jakarta Sans loaded locally",
+    "reference demo clearly labeled",
+    "add item and persist across reload",
+    "manual category correction updates risk",
+    "catalog search and category details",
+    "report PNG downloaded and visually checked",
+    "upload from gallery reaches HF; blank test image rejected without category, risk or price"
+  ],
+  "live_reference_photo": {
+    "http_status": 200,
+    "category_id": 13,
+    "status": "borderline"
+  },
+  "remaining_data": [
+    "rights-cleared reference photos",
+    "verified price sources",
+    "verified collection points",
+    "paper-matched attention implementation",
+    "independent recognition threshold calibration"
+  ]
+}

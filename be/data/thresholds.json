@@ -1,0 +1,6 @@
+{
+  "calibrated": false,
+  "in_reference_vote_share": 0.8,
+  "in_reference_centroid_sim": 0.75,
+  "note": "Placeholder; candidates remain borderline until evaluated on independent new photos and out-of-domain images. Existing reference neighbor thresholds are used only as an initial rejection heuristic."
+}
