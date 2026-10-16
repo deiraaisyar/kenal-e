@@ -2,7 +2,7 @@ import {useEffect,useLayoutEffect,useRef,useState} from 'react'
 import type {ReactNode} from 'react'
 import {NavLink,Route,Routes,useLocation,useNavigate} from 'react-router-dom'
 import {useQuery} from '@tanstack/react-query'
-import {ArrowDownToLine,ArrowLeft,ArrowRight,Camera,Check,ChevronDown,ChevronRight,CircleAlert,ClipboardList,CloudOff,FolderOpen,Grid2X2,House,Image as ImageIcon,Info,LoaderCircle,MapPin,MoreHorizontal,Plus,Search,Shield,SlidersHorizontal,Tag,Trash2,WifiOff,X} from 'lucide-react'
+import {ArrowDownToLine,ArrowLeft,ArrowRight,Camera,Check,ChevronDown,ChevronRight,CircleAlert,ClipboardList,CloudOff,FolderOpen,Grid2X2,House,Image as ImageIcon,Info,LoaderCircle,MapPin,Maximize2,MoreHorizontal,Plus,Search,Shield,SlidersHorizontal,Tag,Trash2,WifiOff,X} from 'lucide-react'
 import {toBlob} from 'html-to-image'
 import {api,ApiError,assetUrl,compressPhoto} from './api'
 import {DeviceArt} from './Artwork'
@@ -11,7 +11,7 @@ import {itemRisk,riskDescriptions,riskLabels,riskOrder,rupiah,summarize} from '.
 import {useDrawer} from './store'
 import type {Analysis,Category,Info as InfoData,Price,Risk,SavedItem} from './types'
 
-type Sheet = {kind:'about'|'upload'|'report'|'drops'} | {kind:'category';id:number} | {kind:'edit';id:string} | null
+type Sheet = {kind:'about'|'upload'|'report'|'drops'} | {kind:'category';id:number} | {kind:'edit';id:string} | {kind:'photo';src:string;categoryId?:number} | null
 type Current = {result:Analysis;photo:string|null;id:string}
 
 function Brand({white=false}:{white?:boolean}) {return <span className={'brand '+(white?'white':'')}><img src={white?'/logo-white.svg':'/logo.svg'} alt=""/><span>Kenal-E<span className="brand-dot">.</span></span></span>}
@@ -54,6 +54,7 @@ export default function App(){
     add({...current,createdAt:new Date().toISOString()});notify('Barang ditambahkan ke Cek Laci');navigate('/laci')
   }
   const upload=()=>setSheet({kind:'upload'})
+  const closeSheet=()=>setSheet(active=>active?.kind==='photo'&&active.categoryId!==undefined?{kind:'category',id:active.categoryId}:null)
   const categoryFor=(result:Analysis)=>catalog.data?.find(c=>c.id===result.macro?.id)
   return <div className="app-stage">
     <aside className="desktop-intro"><Brand/><span className="eyebrow"><span/> KENALI. PILAH. SETOR.</span><h1>Yang lama,<br/>punya langkah<br/><em>baru.</em></h1><p>Mulai dari barang yang tersimpan di rumah. Satu foto, satu langkah untuk memilah.</p><div className="intro-stamp"><Shield size={19}/><span>Panduan awal untuk elektronik lama</span></div><span className="intro-footer">Dibuat untuk langkah kecil yang berarti.</span></aside>
@@ -62,7 +63,7 @@ export default function App(){
       {storageError&&<div className="offline-banner" role="alert"><CircleAlert size={16}/> Penyimpanan perangkat gagal. Simpan rapor sebelum menutup aplikasi.</div>}
       <main id="main-content"><Routes>
         <Route path="/" element={<Home onAbout={()=>setSheet({kind:'about'})} onPhoto={upload} onCamera={()=>cameraInput.current?.click()} onGallery={()=>fileInput.current?.click()} onDemo={demo}/>}/>
-        <Route path="/hasil" element={<Result current={current} busy={busy} elapsed={elapsed} waking={health.data?.space==='waking'} error={error} category={current?categoryFor(current.result):undefined} onPhoto={upload} onDemo={demo} onRetry={()=>retryFile.current?analyzeFile(retryFile.current):demo()} onAdd={addCurrent} added={!!current&&items.some(i=>i.id===current.id)} onDrops={()=>setSheet({kind:'drops'})}/>}/>
+        <Route path="/hasil" element={<Result current={current} busy={busy} elapsed={elapsed} waking={health.data?.space==='waking'} error={error} category={current?categoryFor(current.result):undefined} onPhoto={upload} onDemo={demo} onRetry={()=>retryFile.current?analyzeFile(retryFile.current):demo()} onAdd={addCurrent} added={!!current&&items.some(i=>i.id===current.id)} onDrops={()=>setSheet({kind:'drops'})} onPreview={src=>setSheet({kind:'photo',src})}/>}/>
         <Route path="/laci" element={<Drawer catalog={catalog.data||[]} onAbout={()=>setSheet({kind:'about'})} onPhoto={upload} onDemo={demo} onReport={()=>setSheet({kind:'report'})} onEdit={id=>setSheet({kind:'edit',id})}/>}/>
         <Route path="/katalog" element={<Catalog query={catalog} onAbout={()=>setSheet({kind:'about'})} onCategory={id=>setSheet({kind:'category',id})}/>}/>
         <Route path="*" element={<Empty title="Halaman tidak ditemukan"><p>Kembali ke beranda untuk mulai.</p><NavLink className="button primary" to="/">Ke beranda</NavLink></Empty>}/>
@@ -72,13 +73,14 @@ export default function App(){
     <input hidden ref={fileInput} type="file" accept="image/jpeg,image/png,image/webp" onChange={e=>{const f=e.target.files?.[0];e.target.value='';if(f)void analyzeFile(f)}}/>
     <input hidden ref={cameraInput} type="file" accept="image/*" capture="environment" onChange={e=>{const f=e.target.files?.[0];e.target.value='';if(f)void analyzeFile(f)}}/>
     {toast&&<div role="status" className="toast"><Check size={18}/>{toast}</div>}
-    <SheetModal sheet={sheet} close={()=>setSheet(null)}>
+    <SheetModal sheet={sheet} close={closeSheet}>
       {sheet?.kind==='about'&&<About/>}
       {sheet?.kind==='upload'&&<div className="upload-sheet"><span className="section-kicker">SATU FOTO, SATU BARANG</span><h2>Mulai dari mana?</h2><p>Letakkan satu barang di tempat terang. Pastikan seluruh barang terlihat di foto.</p><div className="upload-art"><img src="/illustrations/ponsel-retak.svg" alt="Ilustrasi ponsel retak" width="832" height="480"/></div><button className="button primary" onClick={()=>cameraInput.current?.click()}><Camera size={20}/>Ambil foto</button><button className="button secondary" onClick={()=>fileInput.current?.click()}><ImageIcon size={20}/>Pilih dari galeri</button><button className="text-button centered" onClick={demo}>Coba contoh terlebih dahulu <ArrowRight size={16}/></button><p className="fine-print">JPG, PNG, atau WEBP. Foto diperkecil sebelum dikirim ke layanan AI.</p></div>}
-      {sheet?.kind==='category'&&<CategoryDetail id={sheet.id} onPhoto={()=>{setSheet(null);upload()}}/>}
+      {sheet?.kind==='category'&&<CategoryDetail id={sheet.id} onPhoto={()=>{setSheet(null);upload()}} onPreview={src=>setSheet({kind:'photo',src,categoryId:sheet.id})}/>}
       {sheet?.kind==='report'&&<Report catalog={catalog.data||[]} notify={notify}/>}
       {sheet?.kind==='edit'&&<EditItem id={sheet.id} catalog={catalog.data||[]} close={()=>setSheet(null)} notify={notify}/>}
       {sheet?.kind==='drops'&&<DropPoints/>}
+      {sheet?.kind==='photo'&&<div className="photo-preview-sheet"><h2>{sheet.categoryId!==undefined?'Foto referensi':'Foto barang'}</h2><div className="photo-preview-image"><img src={sheet.src} alt={sheet.categoryId!==undefined?'Foto referensi secara utuh':'Foto barang secara utuh'}/></div></div>}
     </SheetModal>
   </div>
 }
@@ -87,19 +89,23 @@ function Home({onAbout,onPhoto,onCamera,onGallery,onDemo}:{onAbout:()=>void;onPh
   return <div className="home-page"><div className="home-header"><PageHeader onAbout={onAbout}/><span className="home-kicker">LANGKAH KECIL DARI RUMAH</span><h1>Elektronik lama?<br/>Mulai dari satu foto.</h1><span className="header-ring"/></div><div className="home-body"><div className="hero-visual"><img className="hero-illustration" src="/illustrations/ponsel-retak.svg" alt="Ilustrasi ponsel retak dalam bingkai pemindai" width="832" height="480" fetchPriority="high"/></div><div className="home-copy"><h2>Kenali barangmu</h2><p>Foto satu barang untuk mulai memilah.</p></div><div className="home-actions"><button className="button primary" onClick={onCamera}><Camera size={21}/>Ambil foto</button><button className="text-button centered gallery-action" onClick={onGallery}><ImageIcon size={20}/>Pilih dari galeri</button></div><NavLink to="/laci" className="drawer-banner"><span className="banner-icon"><FolderOpen size={27}/></span><span><strong>Cek Laci</strong><small>Pilah barang yang menumpuk.</small></span><ChevronRight size={19}/></NavLink><button className="text-button centered demo-link" onClick={onDemo}>Mau lihat dulu? Coba contoh <ArrowRight size={15}/></button><button className="sr-only" onClick={onPhoto}>Pilih cara unggah foto</button></div></div>
 }
 
-function Result({current,busy,elapsed,waking,error,category,onPhoto,onDemo,onRetry,onAdd,added,onDrops}:{current:Current|null;busy:boolean;elapsed:number;waking:boolean;error:ApiError|null;category?:Category;onPhoto:()=>void;onDemo:()=>void;onRetry:()=>void;onAdd:()=>void;added:boolean;onDrops:()=>void}) {
+function Result({current,busy,elapsed,waking,error,category,onPhoto,onDemo,onRetry,onAdd,added,onDrops,onPreview}:{current:Current|null;busy:boolean;elapsed:number;waking:boolean;error:ApiError|null;category?:Category;onPhoto:()=>void;onDemo:()=>void;onRetry:()=>void;onAdd:()=>void;added:boolean;onDrops:()=>void;onPreview:(src:string)=>void}) {
   const navigate=useNavigate(),r=current?.result
   return <div className="result-page"><header className="result-header"><button className="icon-button outlined" aria-label="Kembali ke beranda" onClick={()=>navigate('/')}><ArrowLeft size={20}/></button><span>Hasil identifikasi</span><button className="icon-button" onClick={onPhoto} aria-label="Foto barang lain"><Camera size={20}/></button></header>
     {busy?<div className="loading-state" role="status" aria-live="polite"><div className="scan-art"><DeviceArt device="phone"/><div className="scan-line"/></div><span className="loading-dot"><LoaderCircle className="spin" size={22}/></span><h2>{waking?'Layanan AI sedang bangun':'Sedang melihat barangmu'}</h2><p>{elapsed<15?'Mencari kemiripan dengan data referensi.':'Proses pertama bisa lebih lama. Tetap di halaman ini, ya.'}</p><span className="loading-steps">Mengenali bentuk <span/> Membandingkan detail</span></div>
     :error?<div className="result-empty"><Empty icon={<CloudOff/>} title="Foto belum bisa diproses"><p>{error.message}</p><button className="button primary" onClick={onRetry}>Coba lagi <ArrowRight size={18}/></button><button className="text-button centered" onClick={onPhoto}>Pilih foto lain</button><button className="text-button centered" onClick={onDemo}>Coba contoh</button></Empty></div>
     :!r?<Empty title="Belum ada foto"><p>Ambil atau unggah satu foto elektronik untuk melihat hasilnya.</p><button className="button primary" onClick={onPhoto}><Camera size={19}/>Pilih foto</button></Empty>
-    :r.status==='out_of_reference'?<><div className="result-photo unknown-photo">{current?.photo?<img src={current.photo} alt="Foto barang yang belum dikenali"/>:<Search size={64}/>}</div><div className="unknown-copy"><span className="neutral-chip"><Search size={14}/>Belum dikenali</span><h1>Barang ini belum ada<br/>di data kami.</h1><p>Coba latar yang lebih sederhana dan pastikan hanya satu barang terlihat.</p><button className="button primary" onClick={onPhoto}><Camera size={19}/>Coba foto lain</button><button className="text-button centered" onClick={onAdd}>{added?'Buka Cek Laci':'Simpan untuk ditanyakan ke pengelola'}<ArrowRight size={16}/></button></div></>
-    :<>{r.demo&&<div className="example-banner"><Info size={15}/>Contoh dari referensi, bukan analisis foto baru.</div>}<div className="result-photo">{current?.photo?<img src={current.photo} alt="Foto barang yang dianalisis"/>:<DeviceArt device={category?.device||'pcb'} label="Ilustrasi papan sirkuit"/>}<span className={'status-chip '+r.status}>{r.status==='in_reference'?<Check size={14}/>:<CircleAlert size={14}/>} {r.status==='in_reference'?'Dalam referensi':'Perlu diperiksa'}</span></div><div className="result-title"><h1>{r.macro?.name}</h1><div><p>{r.sub?`Mirip kelompok kondisi ${r.sub.id}`:'Kelompok kondisi belum tersedia'}</p>{r.info&&<RiskBadge risk={r.info.risk_level}/>}</div></div>
-      {r.status==='borderline'&&<div className="uncertainty"><CircleAlert size={17}/><span>Hasil kurang pasti, periksa gambar mirip.</span></div>}
+    :r.status==='out_of_reference'?<><ResultPhoto photo={current?.photo||null} alt="Foto barang yang belum dikenali" className="unknown-photo" onPreview={onPreview}><Search size={64}/></ResultPhoto><div className="unknown-copy"><span className="neutral-chip"><Search size={14}/>Belum dikenali</span><h1>Barang ini belum ada<br/>di data kami.</h1><p>Coba latar yang lebih sederhana dan pastikan hanya satu barang terlihat.</p><button className="button primary" onClick={onPhoto}><Camera size={19}/>Coba foto lain</button><button className="text-button centered" onClick={onAdd}>{added?'Buka Cek Laci':'Simpan untuk ditanyakan ke pengelola'}<ArrowRight size={16}/></button></div></>
+    :<>{r.demo&&<div className="example-banner"><Info size={15}/>Contoh dari referensi, bukan analisis foto baru.</div>}<ResultPhoto photo={current?.photo||null} alt="Foto barang yang dianalisis" onPreview={onPreview}><DeviceArt device={category?.device||'pcb'} label="Ilustrasi papan sirkuit"/></ResultPhoto><div className="result-title"><h1>{r.macro?.name}</h1><div><p>{r.sub?`Mirip kelompok kondisi ${r.sub.id}`:'Kelompok kondisi belum tersedia'}</p>{r.info&&<RiskBadge risk={r.info.risk_level}/>}</div></div>
       {!r.info?.assessable&&<p className="info-note">Campuran, perlu dipilah. Foto ulang setiap barang secara terpisah.</p>}
       <div className="result-details"><details><summary><Shield size={20}/>Cara menangani<ChevronDown size={18}/></summary>{r.info&&<Handling info={r.info}/>}</details><details><summary><ImageIcon size={20}/>Lihat 5 gambar mirip<ChevronDown size={18}/></summary><div className="similar-content">{r.similar.some(s=>s.url)?<div className="similar-grid">{r.similar.filter(s=>s.url).map((s,i)=><img key={i} loading="lazy" decoding="async" src={assetUrl(s.url!)} alt={'Referensi serupa '+(i+1)}/>)}</div>:<p>Gambar referensi belum tersedia untuk ditampilkan. Hasil ini masih perlu diperiksa.</p>}</div></details></div>
-      <PriceView price={r.price} info={r.info}/><button className="button primary" onClick={onAdd}>{added?<Check size={20}/>:<Plus size={20}/>} {added?'Buka Cek Laci':'Tambah ke Cek Laci'}</button><button className="text-button centered drop-action" onClick={onDrops}><MapPin size={18}/>Cari tempat setor</button><p className="fine-print result-disclaimer">Kemiripan visual, bukan diagnosis.</p></>}
+      <PriceView price={r.price} info={r.info}/><button className="button primary" onClick={onAdd}>{added?<Check size={20}/>:<Plus size={20}/>} {added?'Buka Cek Laci':'Tambah ke Cek Laci'}</button><button className="text-button centered drop-action" onClick={onDrops}><MapPin size={18}/>Cari tempat setor</button></>}
   </div>
+}
+
+
+function ResultPhoto({photo,alt,className='',onPreview,children}:{photo:string|null;alt:string;className?:string;onPreview:(src:string)=>void;children:ReactNode}) {
+  return <div className={'result-photo '+className}>{photo?<><img src={photo} alt={alt}/><button className="photo-expand-button" aria-label="Lihat foto penuh" aria-haspopup="dialog" title="Lihat foto penuh" onClick={()=>onPreview(photo)}><Maximize2 size={18}/></button></>:children}</div>
 }
 
 function Handling({info}:{info:InfoData}) {return <div className="handling">{!info.verified&&<span className="draft-label">Draf, belum diverifikasi</span>}{info.hazard_note&&<p>{info.hazard_note}</p>}{info.assessable&&info.risk_level!=='unknown'?<>{info.do.length>0&&<div><h4>Lakukan</h4>{info.do.map(t=><p className="handling-row" key={t}><Check size={15}/>{t}</p>)}</div>}{info.dont.length>0&&<div><h4>Hindari</h4>{info.dont.map(t=><p className="handling-row" key={t}><X size={15}/>{t}</p>)}</div>}</>:<p>{info.assessable?'Klasifikasi risiko belum tersedia. Tanyakan kepada pengelola.':'Campuran, perlu dipilah. Panduan khusus belum tersedia.'}</p>}</div>}
@@ -130,7 +136,8 @@ function Catalog({query,onAbout,onCategory}:{query:ReturnType<typeof useQuery<Ca
 function SheetModal({sheet,close,children}:{sheet:Sheet;close:()=>void;children:ReactNode}) {
   const dialog=useRef<HTMLDialogElement>(null),previousFocus=useRef<HTMLElement|null>(null)
   useEffect(()=>{const d=dialog.current;if(!d)return;if(sheet){previousFocus.current=document.activeElement as HTMLElement;d.showModal()}else if(d.open)d.close();return()=>{if(d.open)d.close()}},[!!sheet])
-  const isMap=sheet?.kind==='drops',isFramed=isMap||sheet?.kind==='upload'
+  useLayoutEffect(()=>{if(sheet){dialog.current?.scrollTo(0,0);if(sheet.kind==='photo')dialog.current?.querySelector<HTMLButtonElement>('.sheet-close')?.focus({preventScroll:true})}},[sheet?.kind])
+  const isMap=sheet?.kind==='drops',isPhoto=sheet?.kind==='photo',isFramed=isMap||isPhoto||sheet?.kind==='upload'||sheet?.kind==='category'
   useLayoutEffect(()=>{
     if(!isFramed)return
     const frame=document.querySelector<HTMLElement>('.phone-app'),d=dialog.current
@@ -153,15 +160,15 @@ function SheetModal({sheet,close,children}:{sheet:Sheet;close:()=>void;children:
     document.body.style.overflow='hidden'
     return()=>{observer.disconnect();window.removeEventListener('resize',position);window.removeEventListener('scroll',position,true);document.body.style.overflow=previousOverflow}
   },[isFramed])
-  return <dialog className={'sheet-modal'+(isFramed?' frame-modal':'')+(isMap?' map-modal':'')} ref={dialog} aria-label={sheet?.kind==='report'?'Rapor Cek Laci':sheet?.kind==='edit'?'Atur barang':sheet?.kind==='drops'?'Cari tempat setor':sheet?.kind==='category'?'Detail kategori':sheet?.kind==='about'?'Tentang Kenal-E':'Pilih foto'} onCancel={e=>{e.preventDefault();close()}} onClose={()=>{previousFocus.current?.focus();close()}} onClick={e=>{if(e.target===e.currentTarget)close()}}><div className="sheet-inner"><div className="sheet-handle"/><button className="icon-button sheet-close" aria-label="Tutup panel" onClick={close}><X size={21}/></button>{children}</div></dialog>
+  return <dialog className={'sheet-modal'+(isFramed?' frame-modal':'')+(isMap?' map-modal':'')+(isPhoto?' photo-modal':'')} ref={dialog} aria-label={isPhoto?'Foto lengkap':sheet?.kind==='report'?'Rapor Cek Laci':sheet?.kind==='edit'?'Atur barang':sheet?.kind==='drops'?'Cari tempat setor':sheet?.kind==='category'?'Detail kategori':sheet?.kind==='about'?'Tentang Kenal-E':'Pilih foto'} onCancel={e=>{e.preventDefault();close()}} onClose={()=>{previousFocus.current?.focus();close()}} onClick={e=>{if(e.target===e.currentTarget)close()}}><div className="sheet-inner"><div className="sheet-handle"/><button className="icon-button sheet-close" aria-label="Tutup panel" onClick={close}><X size={21}/></button>{children}</div></dialog>
 }
 
-function CategoryDetail({id,onPhoto}:{id:number;onPhoto:()=>void}) {
+function CategoryDetail({id,onPhoto,onPreview}:{id:number;onPhoto:()=>void;onPreview:(src:string)=>void}) {
   const query=useQuery({queryKey:['category',id],queryFn:()=>api.category(id)})
   const c=query.data
   if(query.isPending)return <div className="loading-inline"><LoaderCircle className="spin"/>Memuat kategori…</div>
   if(!c)return <ErrorPanel message="Detail belum bisa dimuat." onRetry={()=>void query.refetch()}/>
-  return <div className="category-detail"><div className="detail-art">{c.thumb_url?<img loading="lazy" decoding="async" src={assetUrl(c.thumb_url)} alt={c.name}/>:<DeviceArt device={c.device} label={'Ilustrasi '+c.name}/>}</div><span className="section-kicker">KATALOG KENAL-E</span><h2>{c.name}</h2><RiskBadge risk={c.risk_level}/><p className="category-count">{c.size} citra referensi · {c.n_sub} kelompok kondisi</p>{!c.thumb_url&&<p className="fine-print">Ilustrasi kategori. Foto dataset belum tersedia untuk ditampilkan.</p>}<h3>Penanganan awal</h3>{c.info&&<Handling info={c.info}/>}<PriceView price={c.price||null} info={c.info||null}/>{c.subs&&c.subs.length>0&&<details className="sub-details"><summary>Kelompok kondisi <ChevronDown size={16}/></summary>{c.subs.map(s=><div key={s.id}>Kelompok {s.id}<small>{s.size} citra</small>{s.rep_urls.map(url=><img key={url} loading="lazy" decoding="async" src={assetUrl(url)} alt={'Referensi kelompok '+s.id}/>)}</div>)}</details>}<button className="button primary" onClick={onPhoto}><Camera size={19}/>Foto barang seperti ini</button></div>
+  return <div className="category-detail"><ResultPhoto photo={c.thumb_url?assetUrl(c.thumb_url):null} alt={c.name} className="detail-art" onPreview={onPreview}><DeviceArt device={c.device} label={'Ilustrasi '+c.name}/></ResultPhoto><span className="section-kicker">KATALOG KENAL-E</span><h2>{c.name}</h2><RiskBadge risk={c.risk_level}/><p className="category-count">{c.size} citra referensi · {c.n_sub} kelompok kondisi</p>{!c.thumb_url&&<p className="fine-print">Ilustrasi kategori. Foto dataset belum tersedia untuk ditampilkan.</p>}<h3>Penanganan awal</h3>{c.info&&<Handling info={c.info}/>}<PriceView price={c.price||null} info={c.info||null}/>{c.subs&&c.subs.length>0&&<details className="sub-details"><summary>Kelompok kondisi <ChevronDown size={16}/></summary>{c.subs.map(s=><div key={s.id}>Kelompok {s.id}<small>{s.size} citra</small>{s.rep_urls.map(url=><img key={url} loading="lazy" decoding="async" src={assetUrl(url)} alt={'Referensi kelompok '+s.id}/>)}</div>)}</details>}<button className="button primary" onClick={onPhoto}><Camera size={19}/>Foto barang seperti ini</button></div>
 }
 
 function EditItem({id,catalog,close,notify}:{id:string;catalog:Category[];close:()=>void;notify:(text:string)=>void}) {
