@@ -1,0 +1,4182 @@
+{
+  "seed": 20261018,
+  "method": "For each micro: group by dup_group, uniformly sample up to 5 groups without replacement, then choose one member uniformly per group. If fewer than 5 distinct groups exist, fill remaining slots with random unselected files up to min(5,total rows). Independent seeded RNG per micro.",
+  "samples": {
+    "0_0": {
+      "macro_id": 0,
+      "sub_id": 0,
+      "total_rows": 246,
+      "unique_groups": 239,
+      "files": [
+        {
+          "index": 2694,
+          "filename": "Printer_259.jpg",
+          "macro": 0,
+          "sub": 0,
+          "dup_group": 2694,
+          "sha256": "99747964184c9c87f3dafbb1081e65e6e2982d73949306450c2377bd7c4e28a8"
+        },
+        {
+          "index": 1589,
+          "filename": "Microwave_210.jpg",
+          "macro": 0,
+          "sub": 0,
+          "dup_group": 1589,
+          "sha256": "9d306a7d21f417e33a8e7399d376fcc5304414c4045e2863d8b02bfa8b905b13"
+        },
+        {
+          "index": 1700,
+          "filename": "Microwave_79.jpg",
+          "macro": 0,
+          "sub": 0,
+          "dup_group": 1700,
+          "sha256": "26aa77f0cdaf96bf95cfd3c111c0553c8c38208f41ff1574bc2120798867114a"
+        },
+        {
+          "index": 1702,
+          "filename": "Microwave_80.jpg",
+          "macro": 0,
+          "sub": 0,
+          "dup_group": 1702,
+          "sha256": "8a5e4af3b71f19f79bbcb1fbf176e33bf067b9847fee66c6cc60c68d00b9a4e1"
+        },
+        {
+          "index": 1648,
+          "filename": "Microwave_31.jpg",
+          "macro": 0,
+          "sub": 0,
+          "dup_group": 1648,
+          "sha256": "5a64dd806178636f7dce024b556776f0ac27377537388f219352f239a35996ce"
+        }
+      ],
+      "contact_sheet": "contact-00.jpg"
+    },
+    "1_0": {
+      "macro_id": 1,
+      "sub_id": 0,
+      "total_rows": 209,
+      "unique_groups": 207,
+      "files": [
+        {
+          "index": 3386,
+          "filename": "Washing_Machine_70.jpg",
+          "macro": 1,
+          "sub": 0,
+          "dup_group": 3386,
+          "sha256": "8ed58922603fedbe1effa78ce0294a40d2f48f1c63c741b3cf4d8c7f9bb4cda6"
+        },
+        {
+          "index": 3243,
+          "filename": "Washing_Machine_210.jpg",
+          "macro": 1,
+          "sub": 0,
+          "dup_group": 3243,
+          "sha256": "882b19e1d5f7398ed84f8789bc25b25befaf11341cc2ca4b2aa56253eb3b4872"
+        },
+        {
+          "index": 3285,
+          "filename": "Washing_Machine_249.jpg",
+          "macro": 1,
+          "sub": 0,
+          "dup_group": 3285,
+          "sha256": "55aacf3367d6f90e09c344f355f72ab5e21401e7e05b22baa6f893634a60e894"
+        },
+        {
+          "index": 3289,
+          "filename": "Washing_Machine_252.jpg",
+          "macro": 1,
+          "sub": 0,
+          "dup_group": 3289,
+          "sha256": "d7da7c0ff0b3a75130768d2f3a4e372bf75388df4f573b8ae97789fdbb296eca"
+        },
+        {
+          "index": 3201,
+          "filename": "Washing_Machine_173.jpg",
+          "macro": 1,
+          "sub": 0,
+          "dup_group": 3201,
+          "sha256": "ca9ebbb13e895ca7e29f7014581047f20e3c7f08b42d2f1382b6d2007984949e"
+        }
+      ],
+      "contact_sheet": "contact-00.jpg"
+    },
+    "1_1": {
+      "macro_id": 1,
+      "sub_id": 1,
+      "total_rows": 22,
+      "unique_groups": 22,
+      "files": [
+        {
+          "index": 3296,
+          "filename": "Washing_Machine_259.jpg",
+          "macro": 1,
+          "sub": 1,
+          "dup_group": 3296,
+          "sha256": "45411bb4fdffd7c60e581deebf3718605be39d53a1c1cf418541dc6e2a5ea608"
+        },
+        {
+          "index": 3258,
+          "filename": "Washing_Machine_224.jpg",
+          "macro": 1,
+          "sub": 1,
+          "dup_group": 3258,
+          "sha256": "79fb3676d465ca73e9ec5ee927602d54d718b85d292bf5cddd80547c15c3a136"
+        },
+        {
+          "index": 3256,
+          "filename": "Washing_Machine_222.jpg",
+          "macro": 1,
+          "sub": 1,
+          "dup_group": 3256,
+          "sha256": "9dbb41da33aa53ba51fbd8be96e8c8dae41378e19226af58a0740fafba0b3ed8"
+        },
+        {
+          "index": 3230,
+          "filename": "Washing_Machine_2.jpg",
+          "macro": 1,
+          "sub": 1,
+          "dup_group": 3230,
+          "sha256": "90a0841608e60dd633e1210cacc3f45ddec1391f857fe6c86f364e7e922d3527"
+        },
+        {
+          "index": 3388,
+          "filename": "Washing_Machine_72.jpg",
+          "macro": 1,
+          "sub": 1,
+          "dup_group": 3388,
+          "sha256": "7d2aa98c9f20f58c7980c697e0df25b497f1048b4d38848300b127e67b464f39"
+        }
+      ],
+      "contact_sheet": "contact-00.jpg"
+    },
+    "1_2": {
+      "macro_id": 1,
+      "sub_id": 2,
+      "total_rows": 77,
+      "unique_groups": 77,
+      "files": [
+        {
+          "index": 3363,
+          "filename": "Washing_Machine_5.jpg",
+          "macro": 1,
+          "sub": 2,
+          "dup_group": 3363,
+          "sha256": "325df0c0eacb21d9d1017596dd1ea4d59a0b7d48c56b4930dc95c1c6a6fac022"
+        },
+        {
+          "index": 3366,
+          "filename": "Washing_Machine_52.jpg",
+          "macro": 1,
+          "sub": 2,
+          "dup_group": 3366,
+          "sha256": "d39ac69f8c85c3a6ff36c3f9f07a01cfc1e63fba6b84cd58908ce6499fc89f6e"
+        },
+        {
+          "index": 3147,
+          "filename": "Washing_Machine_124.jpg",
+          "macro": 1,
+          "sub": 2,
+          "dup_group": 3147,
+          "sha256": "d39c68978334fbd90b11170bca3229f13cdbd42296555ce0895749f6a788e76a"
+        },
+        {
+          "index": 3417,
+          "filename": "Washing_Machine_99.jpg",
+          "macro": 1,
+          "sub": 2,
+          "dup_group": 3417,
+          "sha256": "9797474b953854cc2b8aa65d422534c6c5049ba28d16834eae7889756ac9aaac"
+        },
+        {
+          "index": 3134,
+          "filename": "Washing_Machine_112.jpg",
+          "macro": 1,
+          "sub": 2,
+          "dup_group": 3134,
+          "sha256": "f0c53c2ece3ff62b610126a9bd1150bc556f9d267fd061a87e35cdba99541a18"
+        }
+      ],
+      "contact_sheet": "contact-00.jpg"
+    },
+    "2_0": {
+      "macro_id": 2,
+      "sub_id": 0,
+      "total_rows": 22,
+      "unique_groups": 22,
+      "files": [
+        {
+          "index": 2759,
+          "filename": "Printer_48.jpg",
+          "macro": 2,
+          "sub": 0,
+          "dup_group": 2759,
+          "sha256": "b680be2b40ba7462ca7f5eb0c20238f5d8832e9dd538c3a813f3c5621fe7d9e5"
+        },
+        {
+          "index": 2612,
+          "filename": "Printer_185.jpg",
+          "macro": 2,
+          "sub": 0,
+          "dup_group": 2612,
+          "sha256": "f25d1df931dc2ee75873266e0da5c085a2a51ee3c3606b1df0792d5d89c4c65a"
+        },
+        {
+          "index": 2601,
+          "filename": "Printer_175.jpg",
+          "macro": 2,
+          "sub": 0,
+          "dup_group": 2601,
+          "sha256": "47636dc11f3b4c41897f4ba1532629fa011d930c3d99fa770d59a4ccae8d2e95"
+        },
+        {
+          "index": 2696,
+          "filename": "Printer_260.jpg",
+          "macro": 2,
+          "sub": 0,
+          "dup_group": 2696,
+          "sha256": "163d10407e4a3f706bef132fc776abb4331b8291698fcaca506803f513d877b5"
+        },
+        {
+          "index": 2557,
+          "filename": "Printer_116.jpg",
+          "macro": 2,
+          "sub": 0,
+          "dup_group": 2557,
+          "sha256": "0fec769771edf1903b36618f6d730529af3ecdf0225aa2a21262222510462c66"
+        }
+      ],
+      "contact_sheet": "contact-01.jpg"
+    },
+    "3_0": {
+      "macro_id": 3,
+      "sub_id": 0,
+      "total_rows": 28,
+      "unique_groups": 28,
+      "files": [
+        {
+          "index": 3421,
+          "filename": "WhatsApp Image 2020-11-01 at 1.20.37 PM.jpeg",
+          "macro": 3,
+          "sub": 0,
+          "dup_group": 3421,
+          "sha256": "7a08939ed9a71c2e2835eeaa0c96df863777a26fe129ae0ce56a6d9df58e23cc"
+        },
+        {
+          "index": 3436,
+          "filename": "WhatsApp Image 2020-11-01 at 1.25.56 PM.jpeg",
+          "macro": 3,
+          "sub": 0,
+          "dup_group": 3436,
+          "sha256": "a4c010c6c2576060e81e0081d30410155a76fce543e4210700dad0f7060efa87"
+        },
+        {
+          "index": 3428,
+          "filename": "WhatsApp Image 2020-11-01 at 1.22.54 PM.jpeg",
+          "macro": 3,
+          "sub": 0,
+          "dup_group": 3428,
+          "sha256": "08b9404a6201ef072ff123122582692bfa0a3f0ba0831e68b6f12159c541a60c"
+        },
+        {
+          "index": 3439,
+          "filename": "WhatsApp Image 2020-11-01 at 1.27.06 PM.jpeg",
+          "macro": 3,
+          "sub": 0,
+          "dup_group": 3439,
+          "sha256": "412324c2739dfc66d52ca19a7ef5163ecb5a91bbb4f2a019366f3e78757c81ef"
+        },
+        {
+          "index": 1193,
+          "filename": "IMG_20201101_130429.jpg",
+          "macro": 3,
+          "sub": 0,
+          "dup_group": 1193,
+          "sha256": "83d9dd7ce6a4b44948398dc5137a20151e3b629474edc7cf036a69f39e168b3e"
+        }
+      ],
+      "contact_sheet": "contact-01.jpg"
+    },
+    "4_0": {
+      "macro_id": 4,
+      "sub_id": 0,
+      "total_rows": 41,
+      "unique_groups": 41,
+      "files": [
+        {
+          "index": 3535,
+          "filename": "battery_209.jpg",
+          "macro": 4,
+          "sub": 0,
+          "dup_group": 3535,
+          "sha256": "ca0eece9e9841c33f3997c07d8a539fe99e3eb12bee11c7c66050133d5619db9"
+        },
+        {
+          "index": 3615,
+          "filename": "battery_50.jpg",
+          "macro": 4,
+          "sub": 0,
+          "dup_group": 3615,
+          "sha256": "b47f6e24a93dd1d89ed82e82cb41b05e0c76fe3a1da08886d86be781f39f8db3"
+        },
+        {
+          "index": 3513,
+          "filename": "battery_19.jpg",
+          "macro": 4,
+          "sub": 0,
+          "dup_group": 3513,
+          "sha256": "1712eecac45a083c8ac62a03bfd378772033074737dcdbc267897026b35f5241"
+        },
+        {
+          "index": 3555,
+          "filename": "battery_266.jpg",
+          "macro": 4,
+          "sub": 0,
+          "dup_group": 3555,
+          "sha256": "31542b332278906d40f4c47a13c6556613b37299d73a68aaaba0aa9257a62b6a"
+        },
+        {
+          "index": 3622,
+          "filename": "battery_57.jpg",
+          "macro": 4,
+          "sub": 0,
+          "dup_group": 3622,
+          "sha256": "0ab9e1e152cd4f461e7336091cca9390e5d9dbadfcb1682381900de90b6addf3"
+        }
+      ],
+      "contact_sheet": "contact-01.jpg"
+    },
+    "4_1": {
+      "macro_id": 4,
+      "sub_id": 1,
+      "total_rows": 5,
+      "unique_groups": 5,
+      "files": [
+        {
+          "index": 3664,
+          "filename": "battery_95.jpg",
+          "macro": 4,
+          "sub": 1,
+          "dup_group": 3664,
+          "sha256": "8c036983a60af90cbb4b59eade7dc8a1095d21ceb40f322ffb5ce3018ed13ea2"
+        },
+        {
+          "index": 3627,
+          "filename": "battery_61.jpg",
+          "macro": 4,
+          "sub": 1,
+          "dup_group": 3627,
+          "sha256": "29f2d33eef9b38381cf190ab2ec7e9a847b5712fd50c2a78518ce80d502fe3b0"
+        },
+        {
+          "index": 3539,
+          "filename": "battery_24.jpg",
+          "macro": 4,
+          "sub": 1,
+          "dup_group": 3539,
+          "sha256": "a8d2910e540adfdd50b17ecf4c8cf29e5b8e7508e0ab5faa2851cb188532e1dc"
+        },
+        {
+          "index": 3474,
+          "filename": "battery_12.jpg",
+          "macro": 4,
+          "sub": 1,
+          "dup_group": 3474,
+          "sha256": "17b7793c6e6ff2b465376dcdf083453fa8dbd99aa6171ec7500d161d78cefef2"
+        },
+        {
+          "index": 3584,
+          "filename": "battery_292.jpg",
+          "macro": 4,
+          "sub": 1,
+          "dup_group": 3584,
+          "sha256": "c63dc9d4620dcfdef7a09cae0f027099088580511274db1309016e95f509893c"
+        }
+      ],
+      "contact_sheet": "contact-01.jpg"
+    },
+    "5_0": {
+      "macro_id": 5,
+      "sub_id": 0,
+      "total_rows": 46,
+      "unique_groups": 42,
+      "files": [
+        {
+          "index": 1150,
+          "filename": "IMG_20200329_142615.jpg",
+          "macro": 5,
+          "sub": 0,
+          "dup_group": 1150,
+          "sha256": "c5f668f89a86cbf0ab1f51c693bfffd1d0bf19a61360e8d3731cfd0a028bace6"
+        },
+        {
+          "index": 1789,
+          "filename": "Mobile_158.jpg",
+          "macro": 5,
+          "sub": 0,
+          "dup_group": 1789,
+          "sha256": "ed4e00ee60cdd483b85b395880f20d27f8fa1157accc667a1eaa1c501a9be390"
+        },
+        {
+          "index": 1142,
+          "filename": "IMG_20200328_131600.jpg",
+          "macro": 5,
+          "sub": 0,
+          "dup_group": 1142,
+          "sha256": "639c972e1906e98ebee4d99df108d4b2764b8041d37fce51f9a1db9f98453061"
+        },
+        {
+          "index": 1169,
+          "filename": "IMG_20200329_152858.jpg",
+          "macro": 5,
+          "sub": 0,
+          "dup_group": 1168,
+          "sha256": "97cc2a52becaa10f176fb598d38f532aa5c5c75cfe1e6c91526031396900248e"
+        },
+        {
+          "index": 1915,
+          "filename": "Mobile_271.jpg",
+          "macro": 5,
+          "sub": 0,
+          "dup_group": 1915,
+          "sha256": "b9eabd072fde01b13347be96a512c38957d84d5b7272af57319f30a3fbabee94"
+        }
+      ],
+      "contact_sheet": "contact-02.jpg"
+    },
+    "5_1": {
+      "macro_id": 5,
+      "sub_id": 1,
+      "total_rows": 5,
+      "unique_groups": 4,
+      "files": [
+        {
+          "index": 3776,
+          "filename": "pcb_171.jpg",
+          "macro": 5,
+          "sub": 1,
+          "dup_group": 3776,
+          "sha256": "b39f8c54f58dc4c06fff8d45f94f0b6da46bd4ab743c84bd4ee76eb3f3368415"
+        },
+        {
+          "index": 3880,
+          "filename": "pcb_32.jpg",
+          "macro": 5,
+          "sub": 1,
+          "dup_group": 3749,
+          "sha256": "62b6dd313549cebf96dcc0dba2fb9834e12a2ed01518057c4ba542876de23a60"
+        },
+        {
+          "index": 1257,
+          "filename": "Keyboard_144.jpg",
+          "macro": 5,
+          "sub": 1,
+          "dup_group": 1257,
+          "sha256": "fd3204be16ebf3549740423c159043ef9b44fadc7d24078f6ffcea0c73db67c6"
+        },
+        {
+          "index": 3791,
+          "filename": "pcb_186.jpg",
+          "macro": 5,
+          "sub": 1,
+          "dup_group": 3791,
+          "sha256": "1ab22c2b43449409daa953e78b8d2d42a850654136ee29d66dcae0cac32fde2c"
+        },
+        {
+          "index": 3749,
+          "filename": "pcb_144.jpg",
+          "macro": 5,
+          "sub": 1,
+          "dup_group": 3749,
+          "sha256": "9442ad9e6f1c52fc51ed13471efbf4fb0892cfd4b8d05358899dd4e24ecd8426"
+        }
+      ],
+      "contact_sheet": "contact-02.jpg"
+    },
+    "6_0": {
+      "macro_id": 6,
+      "sub_id": 0,
+      "total_rows": 2,
+      "unique_groups": 2,
+      "files": [
+        {
+          "index": 3461,
+          "filename": "battery_108.jpg",
+          "macro": 6,
+          "sub": 0,
+          "dup_group": 3461,
+          "sha256": "ca12be81182bb0d0a3a9d9b6f80aa138a84b23b7df9be78763d8c36d1316411f"
+        },
+        {
+          "index": 3608,
+          "filename": "battery_44.jpg",
+          "macro": 6,
+          "sub": 0,
+          "dup_group": 3608,
+          "sha256": "c03d3ace8ff507887ff1432d9eab70790d9e4e82b132ca4ebf0ef4e7724e31f1"
+        }
+      ],
+      "contact_sheet": "contact-02.jpg"
+    },
+    "6_1": {
+      "macro_id": 6,
+      "sub_id": 1,
+      "total_rows": 3,
+      "unique_groups": 3,
+      "files": [
+        {
+          "index": 2816,
+          "filename": "Signs-Your-Car-Battery-Is-Dying.jpg",
+          "macro": 6,
+          "sub": 1,
+          "dup_group": 2816,
+          "sha256": "ab480ae4d33132729575d8d9398e8026465f10a758d53c3e3a9a412430b9132f"
+        },
+        {
+          "index": 3460,
+          "filename": "battery_107.jpg",
+          "macro": 6,
+          "sub": 1,
+          "dup_group": 3460,
+          "sha256": "a258bef2688e9113d2829b553c8130c419e4ee7babcc630e9937e08516cf1ecb"
+        },
+        {
+          "index": 3958,
+          "filename": "yj6-1354367.jpg",
+          "macro": 6,
+          "sub": 1,
+          "dup_group": 3958,
+          "sha256": "97bbfcf3d21a041de9aa328196bc1b90e711b6c6ff0920fe6f042dd0dab27d6b"
+        }
+      ],
+      "contact_sheet": "contact-02.jpg"
+    },
+    "6_2": {
+      "macro_id": 6,
+      "sub_id": 2,
+      "total_rows": 2,
+      "unique_groups": 2,
+      "files": [
+        {
+          "index": 3611,
+          "filename": "battery_47.jpg",
+          "macro": 6,
+          "sub": 2,
+          "dup_group": 3611,
+          "sha256": "285fa2cf57288f6659e931bc0835519ac70d6c1dbe505b070d8627d386797395"
+        },
+        {
+          "index": 3562,
+          "filename": "battery_272.jpg",
+          "macro": 6,
+          "sub": 2,
+          "dup_group": 3562,
+          "sha256": "d19b287ed19be8690a95e87abd0f8173f523452d5ef3627c7a763b7e644139ce"
+        }
+      ],
+      "contact_sheet": "contact-03.jpg"
+    },
+    "6_3": {
+      "macro_id": 6,
+      "sub_id": 3,
+      "total_rows": 7,
+      "unique_groups": 7,
+      "files": [
+        {
+          "index": 3494,
+          "filename": "battery_138.jpg",
+          "macro": 6,
+          "sub": 3,
+          "dup_group": 3494,
+          "sha256": "7e0d801a2e852e357de3134b4670e4f3db4e554aedba3cbd83c9ca827b7930d3"
+        },
+        {
+          "index": 3491,
+          "filename": "battery_135.jpg",
+          "macro": 6,
+          "sub": 3,
+          "dup_group": 3491,
+          "sha256": "38483b1d39eed6be00e7079279598aadc8dcb36c3fe848bf8f0747861ceff5d9"
+        },
+        {
+          "index": 3587,
+          "filename": "battery_295.jpg",
+          "macro": 6,
+          "sub": 3,
+          "dup_group": 3587,
+          "sha256": "95f6314c94e532578dea86b744437aa41093c512d512aab86a1eedeff9669f9f"
+        },
+        {
+          "index": 3554,
+          "filename": "battery_265.jpg",
+          "macro": 6,
+          "sub": 3,
+          "dup_group": 3554,
+          "sha256": "c958f547cc68025fe5a43518154db5990c3e6968d00d635adc9978cfab61b1da"
+        },
+        {
+          "index": 3561,
+          "filename": "battery_271.jpg",
+          "macro": 6,
+          "sub": 3,
+          "dup_group": 3561,
+          "sha256": "5a628c4156e0e3f9675b14a3b116e69939ad623437657ff0d8418ff8c416ff55"
+        }
+      ],
+      "contact_sheet": "contact-03.jpg"
+    },
+    "6_4": {
+      "macro_id": 6,
+      "sub_id": 4,
+      "total_rows": 5,
+      "unique_groups": 5,
+      "files": [
+        {
+          "index": 3575,
+          "filename": "battery_284.jpg",
+          "macro": 6,
+          "sub": 4,
+          "dup_group": 3575,
+          "sha256": "18ae9b6a8bf8ebfc778c219804e6b12a9280f91dd0291079de54857d47efa6f9"
+        },
+        {
+          "index": 3617,
+          "filename": "battery_52.jpg",
+          "macro": 6,
+          "sub": 4,
+          "dup_group": 3617,
+          "sha256": "4130eb668644ef68a765a4d6243aeadeacfb7f7ce387156d50177afc14631b24"
+        },
+        {
+          "index": 3467,
+          "filename": "battery_113.jpg",
+          "macro": 6,
+          "sub": 4,
+          "dup_group": 3467,
+          "sha256": "2ec75f7c9ea3667dff4d94b3c75fb152cace696c60ca85afff263c9c581a01a2"
+        },
+        {
+          "index": 3574,
+          "filename": "battery_283.jpg",
+          "macro": 6,
+          "sub": 4,
+          "dup_group": 3574,
+          "sha256": "0bb856562961b04b284ed51773039b85ade24e0b54ce252c626762dbbed761f2"
+        },
+        {
+          "index": 3653,
+          "filename": "battery_85.jpg",
+          "macro": 6,
+          "sub": 4,
+          "dup_group": 3653,
+          "sha256": "d767bbbf48119cfb7110dbb42717adb3c49c22673005dd62caabf14b61713667"
+        }
+      ],
+      "contact_sheet": "contact-03.jpg"
+    },
+    "6_5": {
+      "macro_id": 6,
+      "sub_id": 5,
+      "total_rows": 6,
+      "unique_groups": 6,
+      "files": [
+        {
+          "index": 3649,
+          "filename": "battery_81.jpg",
+          "macro": 6,
+          "sub": 5,
+          "dup_group": 3649,
+          "sha256": "20e6bd716856c5a636eb6b5d7c6e6759ceb25a824cff7563bdb426e2b7e0d33a"
+        },
+        {
+          "index": 3639,
+          "filename": "battery_72.jpg",
+          "macro": 6,
+          "sub": 5,
+          "dup_group": 3639,
+          "sha256": "34ea8a3d873e1d13be9ad26bd846fa90fa4097d22327ef351b28101556d79dad"
+        },
+        {
+          "index": 3229,
+          "filename": "Washing_Machine_199.jpg",
+          "macro": 6,
+          "sub": 5,
+          "dup_group": 3229,
+          "sha256": "23e46074e78fb9bbe73b766374b44220acadd1bba338620e15bf146e12a5f202"
+        },
+        {
+          "index": 3489,
+          "filename": "battery_133.jpg",
+          "macro": 6,
+          "sub": 5,
+          "dup_group": 3489,
+          "sha256": "cb8cb4f920f12f9c172e6c4a8c826bb0fba3856c8d186c46e8f0e9de1abe7a8d"
+        },
+        {
+          "index": 3459,
+          "filename": "battery_106.jpg",
+          "macro": 6,
+          "sub": 5,
+          "dup_group": 3459,
+          "sha256": "17fe1c42047aa88fbcb4decb5f84dbca48dea7f59b9ca929f763ef97ebde01cc"
+        }
+      ],
+      "contact_sheet": "contact-03.jpg"
+    },
+    "6_6": {
+      "macro_id": 6,
+      "sub_id": 6,
+      "total_rows": 1,
+      "unique_groups": 1,
+      "files": [
+        {
+          "index": 3529,
+          "filename": "battery_203.jpg",
+          "macro": 6,
+          "sub": 6,
+          "dup_group": 3529,
+          "sha256": "cee3bea2c3cef6457b6dd091e216714b289c635708322350dd16a4243137f0a1"
+        }
+      ],
+      "contact_sheet": "contact-04.jpg"
+    },
+    "6_7": {
+      "macro_id": 6,
+      "sub_id": 7,
+      "total_rows": 3,
+      "unique_groups": 3,
+      "files": [
+        {
+          "index": 3581,
+          "filename": "battery_29.jpg",
+          "macro": 6,
+          "sub": 7,
+          "dup_group": 3581,
+          "sha256": "57a9df510e29274595534bb94984019f0ac1788a9bffe35ae01f8ab8ca8cde2d"
+        },
+        {
+          "index": 3579,
+          "filename": "battery_288.jpg",
+          "macro": 6,
+          "sub": 7,
+          "dup_group": 3579,
+          "sha256": "67ef4fed1ba9ac66be06586e1604ac364264a629bd5a1132ff519f4b9eed5d2b"
+        },
+        {
+          "index": 3628,
+          "filename": "battery_62.jpg",
+          "macro": 6,
+          "sub": 7,
+          "dup_group": 3628,
+          "sha256": "abab9174b6f6305dfcecf5cc60b2f0e386c74416ff9f440ce8b22f8eb9fdd65f"
+        }
+      ],
+      "contact_sheet": "contact-04.jpg"
+    },
+    "6_8": {
+      "macro_id": 6,
+      "sub_id": 8,
+      "total_rows": 9,
+      "unique_groups": 9,
+      "files": [
+        {
+          "index": 3533,
+          "filename": "battery_207.jpg",
+          "macro": 6,
+          "sub": 8,
+          "dup_group": 3533,
+          "sha256": "6cc16ef4f666d58eb28ffdb40c15e8eddce198aea58c356779c5718d064684b0"
+        },
+        {
+          "index": 3520,
+          "filename": "battery_196.jpg",
+          "macro": 6,
+          "sub": 8,
+          "dup_group": 3520,
+          "sha256": "9fb883d0d222ad4164ac1ce293f23da8717a20ae121bc2148429923eeb3b1209"
+        },
+        {
+          "index": 3515,
+          "filename": "battery_191.jpg",
+          "macro": 6,
+          "sub": 8,
+          "dup_group": 3515,
+          "sha256": "38dba86feca3765e30d1d2a1a37600ab7811ebdf62c7697f2f81f01d1e8c55c2"
+        },
+        {
+          "index": 3496,
+          "filename": "battery_14.jpg",
+          "macro": 6,
+          "sub": 8,
+          "dup_group": 3496,
+          "sha256": "993ce30477a9a75a10ec1f5829cfef8d625d20f0cf405f689e00c9a4ef65b85d"
+        },
+        {
+          "index": 3609,
+          "filename": "battery_45.jpg",
+          "macro": 6,
+          "sub": 8,
+          "dup_group": 3609,
+          "sha256": "9733075e1278508d8fbdb610aa627d504b5a4c4c766485dd016191303378a878"
+        }
+      ],
+      "contact_sheet": "contact-04.jpg"
+    },
+    "6_9": {
+      "macro_id": 6,
+      "sub_id": 9,
+      "total_rows": 2,
+      "unique_groups": 2,
+      "files": [
+        {
+          "index": 3573,
+          "filename": "battery_282.jpg",
+          "macro": 6,
+          "sub": 9,
+          "dup_group": 3573,
+          "sha256": "62244fc43d33d13486389dd790af818fd35effa7475fbd3000bf5f8c5c1e7db2"
+        },
+        {
+          "index": 3523,
+          "filename": "battery_199.jpg",
+          "macro": 6,
+          "sub": 9,
+          "dup_group": 3523,
+          "sha256": "189f2750c5ee499c9cc40292cef6dc89ab115571922b4a48fd21d47828d64247"
+        }
+      ],
+      "contact_sheet": "contact-04.jpg"
+    },
+    "7_0": {
+      "macro_id": 7,
+      "sub_id": 0,
+      "total_rows": 32,
+      "unique_groups": 32,
+      "files": [
+        {
+          "index": 3625,
+          "filename": "battery_6.jpg",
+          "macro": 7,
+          "sub": 0,
+          "dup_group": 3625,
+          "sha256": "121caed912417d0872848f66c9ca61581d2df28c85a03f4c13b93941645fe87a"
+        },
+        {
+          "index": 3635,
+          "filename": "battery_69.jpg",
+          "macro": 7,
+          "sub": 0,
+          "dup_group": 3635,
+          "sha256": "69540e8d27a80b6635b48d35357bc0abe75f6fd57ebb3ce3b10e88344771bca5"
+        },
+        {
+          "index": 3502,
+          "filename": "battery_145.jpg",
+          "macro": 7,
+          "sub": 0,
+          "dup_group": 3502,
+          "sha256": "1d260ae5bcccddfe8518f8a1097f1af8ba30d0c79cc587be1fb9a3f190e6f90e"
+        },
+        {
+          "index": 3624,
+          "filename": "battery_59.jpg",
+          "macro": 7,
+          "sub": 0,
+          "dup_group": 3624,
+          "sha256": "930e9a78fd97a0c67bc6de9603d4beaae045d8b6afee143ece7b5b91b135bb26"
+        },
+        {
+          "index": 3476,
+          "filename": "battery_121.jpg",
+          "macro": 7,
+          "sub": 0,
+          "dup_group": 3476,
+          "sha256": "0318def5d30615b74c07ec1150801093336e65878be908891149b29fb4c2f285"
+        }
+      ],
+      "contact_sheet": "contact-05.jpg"
+    },
+    "7_1": {
+      "macro_id": 7,
+      "sub_id": 1,
+      "total_rows": 24,
+      "unique_groups": 24,
+      "files": [
+        {
+          "index": 3458,
+          "filename": "battery_105.jpg",
+          "macro": 7,
+          "sub": 1,
+          "dup_group": 3458,
+          "sha256": "3bb4661ccd5aa48797a33fcc1bc935767a5fee3899d89535912545f2cc87800b"
+        },
+        {
+          "index": 3501,
+          "filename": "battery_144.jpg",
+          "macro": 7,
+          "sub": 1,
+          "dup_group": 3501,
+          "sha256": "15d96f57bc87788204e1b4ddb2cf4b3d86517306e36630450a2b9d06dc88bd08"
+        },
+        {
+          "index": 3618,
+          "filename": "battery_53.jpg",
+          "macro": 7,
+          "sub": 1,
+          "dup_group": 3618,
+          "sha256": "f5d4d5324ed363ac49ca736bee945356b758cba8c072349ffc47995d3ead82a8"
+        },
+        {
+          "index": 3588,
+          "filename": "battery_296.jpg",
+          "macro": 7,
+          "sub": 1,
+          "dup_group": 3588,
+          "sha256": "1aaae134c610da0a9219c94405c292cc074eecd9378ed35b6384fb9943d2537b"
+        },
+        {
+          "index": 3668,
+          "filename": "battery_99.jpg",
+          "macro": 7,
+          "sub": 1,
+          "dup_group": 3668,
+          "sha256": "960b23fcdd68e341a836b194d62826a59969c375e18804da46bad5632d207040"
+        }
+      ],
+      "contact_sheet": "contact-05.jpg"
+    },
+    "8_0": {
+      "macro_id": 8,
+      "sub_id": 0,
+      "total_rows": 32,
+      "unique_groups": 29,
+      "files": [
+        {
+          "index": 2403,
+          "filename": "Player_212.jpg",
+          "macro": 8,
+          "sub": 0,
+          "dup_group": 2403,
+          "sha256": "27b56a7939a41fd879314c1c4ae819100c5109c9f499163b5ae92ff23aab7ecb"
+        },
+        {
+          "index": 2356,
+          "filename": "Player_170.jpg",
+          "macro": 8,
+          "sub": 0,
+          "dup_group": 2356,
+          "sha256": "9c1cfcde46bd70cb4ea68f48cab0efa5188fb18bbbb8f65a8b0308fa3af51c1b"
+        },
+        {
+          "index": 2390,
+          "filename": "Player_200.jpg",
+          "macro": 8,
+          "sub": 0,
+          "dup_group": 2390,
+          "sha256": "f4f90cfe31155085e33f0bc7cca2879f010eb88575ff9ba89372aeae1f260567"
+        },
+        {
+          "index": 2391,
+          "filename": "Player_201.jpg",
+          "macro": 8,
+          "sub": 0,
+          "dup_group": 2391,
+          "sha256": "eb2750b885fe082f2d3bd5dbd940a43fe54963772487336d0b08aca7a7f79f17"
+        },
+        {
+          "index": 2344,
+          "filename": "Player_159.jpg",
+          "macro": 8,
+          "sub": 0,
+          "dup_group": 2344,
+          "sha256": "785f1aebcd7181eef297e346b74af5536181368cc71b7936e2d83b618eebdaa5"
+        }
+      ],
+      "contact_sheet": "contact-05.jpg"
+    },
+    "8_1": {
+      "macro_id": 8,
+      "sub_id": 1,
+      "total_rows": 11,
+      "unique_groups": 8,
+      "files": [
+        {
+          "index": 2393,
+          "filename": "Player_203.jpg",
+          "macro": 8,
+          "sub": 1,
+          "dup_group": 2348,
+          "sha256": "8f29106867a5ad2d148c7e8e1a2d503c9cac7f4fdee51c7a61356b7edb0e9cdc"
+        },
+        {
+          "index": 2290,
+          "filename": "Player_108.jpg",
+          "macro": 8,
+          "sub": 1,
+          "dup_group": 2290,
+          "sha256": "26a1b24fd44c7c215b2fcb023b77507f5d2f53390ec6653ed8482c34c36171e5"
+        },
+        {
+          "index": 2284,
+          "filename": "Player_102.jpg",
+          "macro": 8,
+          "sub": 1,
+          "dup_group": 2284,
+          "sha256": "0c2b74157aaa43a4c9095a85ee59b08f98f051d2415aef68436fa8f9b4ae9027"
+        },
+        {
+          "index": 2485,
+          "filename": "Player_287.jpg",
+          "macro": 8,
+          "sub": 1,
+          "dup_group": 2485,
+          "sha256": "5419183ec2d6a4239c005a41155fe58182bd8df4f3b8d09778821eac0139968b"
+        },
+        {
+          "index": 2459,
+          "filename": "Player_263.jpg",
+          "macro": 8,
+          "sub": 1,
+          "dup_group": 2459,
+          "sha256": "bd86396c13e0038b100ae1536c3fbdf59c988742b54d0cf020666f8d8377b737"
+        }
+      ],
+      "contact_sheet": "contact-05.jpg"
+    },
+    "8_2": {
+      "macro_id": 8,
+      "sub_id": 2,
+      "total_rows": 25,
+      "unique_groups": 21,
+      "files": [
+        {
+          "index": 2495,
+          "filename": "Player_296.jpg",
+          "macro": 8,
+          "sub": 2,
+          "dup_group": 2495,
+          "sha256": "b97fd2e6d5a4d71c1c0802006f21941d8f5775d255185871a73edc84ae7e52d3"
+        },
+        {
+          "index": 2497,
+          "filename": "Player_298.jpg",
+          "macro": 8,
+          "sub": 2,
+          "dup_group": 2497,
+          "sha256": "6070fd06c37e22db674f3afe8791cbdba9f0991015b48e217cedc5630c4ec0b0"
+        },
+        {
+          "index": 2494,
+          "filename": "Player_295.jpg",
+          "macro": 8,
+          "sub": 2,
+          "dup_group": 2494,
+          "sha256": "86ad2f9b11597eadb112d70643c801681401573ef68b277ad2434e00285abcba"
+        },
+        {
+          "index": 2527,
+          "filename": "Player_90.jpg",
+          "macro": 8,
+          "sub": 2,
+          "dup_group": 2527,
+          "sha256": "ae3899d20d3442eb4c1646d0a2ca3e6fcb5fa8db424f91dbdbff522349067d75"
+        },
+        {
+          "index": 2310,
+          "filename": "Player_128.jpg",
+          "macro": 8,
+          "sub": 2,
+          "dup_group": 2310,
+          "sha256": "5f968d8daac75a1d12a1d6f91cd2d18730b11b7ebda4bf6bebc59bf8d4488992"
+        }
+      ],
+      "contact_sheet": "contact-06.jpg"
+    },
+    "8_3": {
+      "macro_id": 8,
+      "sub_id": 3,
+      "total_rows": 33,
+      "unique_groups": 31,
+      "files": [
+        {
+          "index": 2387,
+          "filename": "Player_199.jpg",
+          "macro": 8,
+          "sub": 3,
+          "dup_group": 2342,
+          "sha256": "f1fd9949d38c2a0a42e70e5b53cf477fb18826509ab89c245d78c5a289dca46d"
+        },
+        {
+          "index": 2373,
+          "filename": "Player_186.jpg",
+          "macro": 8,
+          "sub": 3,
+          "dup_group": 2373,
+          "sha256": "61f95593b2869024535befddd16bbbf654ec4acf1956e1fb1e50f5485bf5a0e7"
+        },
+        {
+          "index": 2352,
+          "filename": "Player_167.jpg",
+          "macro": 8,
+          "sub": 3,
+          "dup_group": 2352,
+          "sha256": "87f5bca09e2de8b39ad77d82ce7e25668cd30596d92ec505b886016d487dfe6e"
+        },
+        {
+          "index": 2317,
+          "filename": "Player_134.jpg",
+          "macro": 8,
+          "sub": 3,
+          "dup_group": 2317,
+          "sha256": "282aa93d5f49f1c49f0867c3bb676687c4e517c22bb250fd68377667c488508e"
+        },
+        {
+          "index": 2399,
+          "filename": "Player_209.jpg",
+          "macro": 8,
+          "sub": 3,
+          "dup_group": 2399,
+          "sha256": "bda8b83d2cff3ba07207f3ee38e4349728e65f3d18858073e489d0d2fb05f7d4"
+        }
+      ],
+      "contact_sheet": "contact-06.jpg"
+    },
+    "9_0": {
+      "macro_id": 9,
+      "sub_id": 0,
+      "total_rows": 131,
+      "unique_groups": 105,
+      "files": [
+        {
+          "index": 1296,
+          "filename": "Keyboard_18.jpg",
+          "macro": 9,
+          "sub": 0,
+          "dup_group": 1296,
+          "sha256": "2933ad90702da316200d56cbb8a4a2850996059c8a7b9822234b9487da3b20eb"
+        },
+        {
+          "index": 1287,
+          "filename": "Keyboard_171.jpg",
+          "macro": 9,
+          "sub": 0,
+          "dup_group": 1287,
+          "sha256": "0fcf00995fd938a06568d919b719b51b4aa9806a7c90901c1e8ec0589b4939b9"
+        },
+        {
+          "index": 399,
+          "filename": "3.jpeg",
+          "macro": 9,
+          "sub": 0,
+          "dup_group": 399,
+          "sha256": "bb65ea31e17ff8a87288e49cd92f59d2e7eb8bfd0d980c45a5ea330410672bde"
+        },
+        {
+          "index": 1316,
+          "filename": "Keyboard_198.jpg",
+          "macro": 9,
+          "sub": 0,
+          "dup_group": 1316,
+          "sha256": "471aed38c12d2f90f7a8043d99669d2104632d6c97b61fb67d25030c1d97ae26"
+        },
+        {
+          "index": 1404,
+          "filename": "Keyboard_45.jpg",
+          "macro": 9,
+          "sub": 0,
+          "dup_group": 363,
+          "sha256": "7c7a2757c8f898cf61f72e415b0d367d52209cee8ea968fa5239654734902d1b"
+        }
+      ],
+      "contact_sheet": "contact-06.jpg"
+    },
+    "9_1": {
+      "macro_id": 9,
+      "sub_id": 1,
+      "total_rows": 11,
+      "unique_groups": 11,
+      "files": [
+        {
+          "index": 1134,
+          "filename": "IMG_20200328_131236.jpg",
+          "macro": 9,
+          "sub": 1,
+          "dup_group": 1134,
+          "sha256": "2c15d096981c7295e3b0eadafcac2518d2da7e959e13c59400406ac120a64217"
+        },
+        {
+          "index": 164,
+          "filename": "168.jpeg",
+          "macro": 9,
+          "sub": 1,
+          "dup_group": 164,
+          "sha256": "f157889583502c8ebde16e5f412ae4fc0d303f8967ec418bc1d2de47ce5c0830"
+        },
+        {
+          "index": 1138,
+          "filename": "IMG_20200328_131329.jpg",
+          "macro": 9,
+          "sub": 1,
+          "dup_group": 1138,
+          "sha256": "9f4efa4506ab1a7402eecc2a6da0daf2521fa31c8a7096fb310e20c32bab6a91"
+        },
+        {
+          "index": 530,
+          "filename": "48.broken.jpg",
+          "macro": 9,
+          "sub": 1,
+          "dup_group": 530,
+          "sha256": "7721ef2862015dac597afa29cadfa38ed92c63e4b60ab9247e2159b45a5ef21d"
+        },
+        {
+          "index": 1132,
+          "filename": "IMG_20200328_131159.jpg",
+          "macro": 9,
+          "sub": 1,
+          "dup_group": 1132,
+          "sha256": "b1674a5dc44a5f25a441cf18de7b6eb61dec149b1cb04771d867cdca4ce46fca"
+        }
+      ],
+      "contact_sheet": "contact-06.jpg"
+    },
+    "9_2": {
+      "macro_id": 9,
+      "sub_id": 2,
+      "total_rows": 35,
+      "unique_groups": 30,
+      "files": [
+        {
+          "index": 1223,
+          "filename": "Keyboard_113.jpg",
+          "macro": 9,
+          "sub": 2,
+          "dup_group": 1223,
+          "sha256": "86a56770ffd33b39d87e06a356fbadd8ac70325d6ecb0ba4872812728bae6e6d"
+        },
+        {
+          "index": 1416,
+          "filename": "Keyboard_56.jpg",
+          "macro": 9,
+          "sub": 2,
+          "dup_group": 1416,
+          "sha256": "b4c280d10c596a0050e9f54b305461bc0f4e5fb4b6715e90e7e35d6d11b3f3be"
+        },
+        {
+          "index": 1343,
+          "filename": "Keyboard_240.jpg",
+          "macro": 9,
+          "sub": 2,
+          "dup_group": 1343,
+          "sha256": "e3d1b2839f315a348f487090637cda68480133a1b3988a27c4b1a01c50da4954"
+        },
+        {
+          "index": 1436,
+          "filename": "Keyboard_74.jpg",
+          "macro": 9,
+          "sub": 2,
+          "dup_group": 481,
+          "sha256": "6e7ef764a4d7ccffcccfcbe231bec3d028596ac2cb421ff78add9786bfb66196"
+        },
+        {
+          "index": 1457,
+          "filename": "Keyboard_93.jpg",
+          "macro": 9,
+          "sub": 2,
+          "dup_group": 1457,
+          "sha256": "ac7e573d45b6c17456de2dc7ca08c606e68c8e550a65cac7b6b4f83e18b86c1b"
+        }
+      ],
+      "contact_sheet": "contact-07.jpg"
+    },
+    "9_3": {
+      "macro_id": 9,
+      "sub_id": 3,
+      "total_rows": 86,
+      "unique_groups": 85,
+      "files": [
+        {
+          "index": 1414,
+          "filename": "Keyboard_54.jpg",
+          "macro": 9,
+          "sub": 3,
+          "dup_group": 1414,
+          "sha256": "56f61037e1bf46c99e71a51fad2c42747020072b5d754e004d2ff9ce1aae9c9b"
+        },
+        {
+          "index": 1439,
+          "filename": "Keyboard_77.jpg",
+          "macro": 9,
+          "sub": 3,
+          "dup_group": 1439,
+          "sha256": "28aec7fa68b1bee3bfe8e562546d9fd410ec6e8a94feb45ae99316191c736df0"
+        },
+        {
+          "index": 1289,
+          "filename": "Keyboard_173.jpg",
+          "macro": 9,
+          "sub": 3,
+          "dup_group": 1289,
+          "sha256": "d5e6d49653218e9e1f99d03d24a83535f070ebba01732ba310aa214d63024218"
+        },
+        {
+          "index": 1318,
+          "filename": "Keyboard_2.jpg",
+          "macro": 9,
+          "sub": 3,
+          "dup_group": 1318,
+          "sha256": "4ae101d07dfbc104741e25a7fb589f996287764f1a546af90a73a81093ac442b"
+        },
+        {
+          "index": 1297,
+          "filename": "Keyboard_180.jpg",
+          "macro": 9,
+          "sub": 3,
+          "dup_group": 1297,
+          "sha256": "bb9e21b97f4a81da6a3d1db23b23d4c973e9dde69539b5b8225b22545363b64a"
+        }
+      ],
+      "contact_sheet": "contact-07.jpg"
+    },
+    "9_4": {
+      "macro_id": 9,
+      "sub_id": 4,
+      "total_rows": 35,
+      "unique_groups": 35,
+      "files": [
+        {
+          "index": 1434,
+          "filename": "Keyboard_72.jpg",
+          "macro": 9,
+          "sub": 4,
+          "dup_group": 1434,
+          "sha256": "f03635fbf93e78a655c870c5967d2a47961eea9427fe238641e57e275860313d"
+        },
+        {
+          "index": 1338,
+          "filename": "Keyboard_236.jpg",
+          "macro": 9,
+          "sub": 4,
+          "dup_group": 1338,
+          "sha256": "8455f3aa815a9c477d25fc51396a9184c60769e07402a1f5e8feba2f1d83c043"
+        },
+        {
+          "index": 1458,
+          "filename": "Keyboard_94.jpg",
+          "macro": 9,
+          "sub": 4,
+          "dup_group": 1458,
+          "sha256": "4b59904b4b06d15bb4a67af8c326108d1c47ea2a12a44ca0825b37a035519e2e"
+        },
+        {
+          "index": 1453,
+          "filename": "Keyboard_9.jpg",
+          "macro": 9,
+          "sub": 4,
+          "dup_group": 1453,
+          "sha256": "9b3d1dfe4b74ff59f7b0d5bf322c33453a98f2bd6bb22009fe37e983975f74ac"
+        },
+        {
+          "index": 1415,
+          "filename": "Keyboard_55.jpg",
+          "macro": 9,
+          "sub": 4,
+          "dup_group": 1415,
+          "sha256": "45dd75efd9807160f10db5250cd99f4826abfdc6bf0b584d5af0f86253ef6476"
+        }
+      ],
+      "contact_sheet": "contact-07.jpg"
+    },
+    "10_0": {
+      "macro_id": 10,
+      "sub_id": 0,
+      "total_rows": 29,
+      "unique_groups": 29,
+      "files": [
+        {
+          "index": 349,
+          "filename": "242.jpeg",
+          "macro": 10,
+          "sub": 0,
+          "dup_group": 349,
+          "sha256": "c02bcaac3930edebcb735634b197d51c2863ea5a6f764b582c48fe7f042db870"
+        },
+        {
+          "index": 158,
+          "filename": "162.jpg",
+          "macro": 10,
+          "sub": 0,
+          "dup_group": 158,
+          "sha256": "89034d9c008643364843f13104b424e51ad6cabbe22f9b5aafd00a25ebcbd641"
+        },
+        {
+          "index": 159,
+          "filename": "163.jpg",
+          "macro": 10,
+          "sub": 0,
+          "dup_group": 159,
+          "sha256": "4696f2e8788cdde60c9d082832df3e26495b4c2d3d5c02fdbe66735b4dd4b88a"
+        },
+        {
+          "index": 124,
+          "filename": "151.jpeg",
+          "macro": 10,
+          "sub": 0,
+          "dup_group": 124,
+          "sha256": "e574fd74ca53efc89803b51d0d9d332a9ceb6957d90dbb61cbc4ef4a56f7d271"
+        },
+        {
+          "index": 298,
+          "filename": "208.jpeg",
+          "macro": 10,
+          "sub": 0,
+          "dup_group": 298,
+          "sha256": "deb9bf2491b6a783c96e7f4da4c42efecd029cc5da37b1e7c145ddf908f5fdf1"
+        }
+      ],
+      "contact_sheet": "contact-07.jpg"
+    },
+    "11_0": {
+      "macro_id": 11,
+      "sub_id": 0,
+      "total_rows": 28,
+      "unique_groups": 26,
+      "files": [
+        {
+          "index": 2479,
+          "filename": "Player_281.jpg",
+          "macro": 11,
+          "sub": 0,
+          "dup_group": 2479,
+          "sha256": "05876519784092ebc78eab85ed764f6a7e2c6e329c61c696adf228ff40a782f0"
+        },
+        {
+          "index": 2414,
+          "filename": "Player_222.jpg",
+          "macro": 11,
+          "sub": 0,
+          "dup_group": 2414,
+          "sha256": "1a2b32bc8c071a4b71b1abf295830038c27f8183d09d8c05847fbf6eb9ac92bd"
+        },
+        {
+          "index": 2468,
+          "filename": "Player_271.jpg",
+          "macro": 11,
+          "sub": 0,
+          "dup_group": 2468,
+          "sha256": "065de9f2602f37ea44e698bb0bef408b05ab044ebcf0f96aab01db9478544ebb"
+        },
+        {
+          "index": 2418,
+          "filename": "Player_226.jpg",
+          "macro": 11,
+          "sub": 0,
+          "dup_group": 2418,
+          "sha256": "63120b147a82438392870b03c13545d3fb9ef3f46bb68c4b0c44ad1eac470256"
+        },
+        {
+          "index": 2397,
+          "filename": "Player_207.jpg",
+          "macro": 11,
+          "sub": 0,
+          "dup_group": 2397,
+          "sha256": "3e78a732a2387fd057f918a71630c1f999a63f2da2e28819b9a282e9f2a2c4bc"
+        }
+      ],
+      "contact_sheet": "contact-08.jpg"
+    },
+    "12_0": {
+      "macro_id": 12,
+      "sub_id": 0,
+      "total_rows": 20,
+      "unique_groups": 19,
+      "files": [
+        {
+          "index": 2200,
+          "filename": "Mouse_279.jpg",
+          "macro": 12,
+          "sub": 0,
+          "dup_group": 914,
+          "sha256": "ac057c44c41283602167754d0caf27d4153a19e746d17a219d6c92a716387dc0"
+        },
+        {
+          "index": 1347,
+          "filename": "Keyboard_244.jpg",
+          "macro": 12,
+          "sub": 0,
+          "dup_group": 1347,
+          "sha256": "4eada08931a2973e830aefadfa12fad1731e76b0de131777864c37b5f525e4c3"
+        },
+        {
+          "index": 1449,
+          "filename": "Keyboard_86.jpg",
+          "macro": 12,
+          "sub": 0,
+          "dup_group": 1449,
+          "sha256": "2d2116d6ca2d7326fccbf09f11ce9db8dc984ceaeaf392d64fff00e81e21908c"
+        },
+        {
+          "index": 3216,
+          "filename": "Washing_Machine_187.jpg",
+          "macro": 12,
+          "sub": 0,
+          "dup_group": 3216,
+          "sha256": "0042354ca8d0ad6858b21f452bb6aad64718aefa1440c437f9a63b6981a53e13"
+        },
+        {
+          "index": 3498,
+          "filename": "battery_141.jpg",
+          "macro": 12,
+          "sub": 0,
+          "dup_group": 3498,
+          "sha256": "5bcd40f3d966110f22c50d77a8041d187313fbf21e921cc40ebb9cb2ba72bb22"
+        }
+      ],
+      "contact_sheet": "contact-08.jpg"
+    },
+    "12_1": {
+      "macro_id": 12,
+      "sub_id": 1,
+      "total_rows": 29,
+      "unique_groups": 28,
+      "files": [
+        {
+          "index": 2422,
+          "filename": "Player_23.jpg",
+          "macro": 12,
+          "sub": 1,
+          "dup_group": 2422,
+          "sha256": "823d72081c0c843b38c796f62915c6f6d4326873bfab602d80eaef0ee2ae03b2"
+        },
+        {
+          "index": 2349,
+          "filename": "Player_163.jpg",
+          "macro": 12,
+          "sub": 1,
+          "dup_group": 2349,
+          "sha256": "310d20bb6154fdb58e2400db65ec8e582c59243adf02051388fd08d7cef14d98"
+        },
+        {
+          "index": 2463,
+          "filename": "Player_267.jpg",
+          "macro": 12,
+          "sub": 1,
+          "dup_group": 2463,
+          "sha256": "f08a40a7b5fc042b5cbb8e8dc803df5c1a9918e2913cc55f370b6ccd3f0e040f"
+        },
+        {
+          "index": 2526,
+          "filename": "Player_9.jpg",
+          "macro": 12,
+          "sub": 1,
+          "dup_group": 2526,
+          "sha256": "cbc2d69eff97e9bcb29941297252db45942abd1b1c3a1ac75389b6d7668069e3"
+        },
+        {
+          "index": 2443,
+          "filename": "Player_249.jpg",
+          "macro": 12,
+          "sub": 1,
+          "dup_group": 2443,
+          "sha256": "6c1001f3a133c2e7c06bfb0ab145c433317200a636f7251781cb05eb7bd8fcce"
+        }
+      ],
+      "contact_sheet": "contact-08.jpg"
+    },
+    "12_2": {
+      "macro_id": 12,
+      "sub_id": 2,
+      "total_rows": 10,
+      "unique_groups": 10,
+      "files": [
+        {
+          "index": 1590,
+          "filename": "Microwave_211.jpg",
+          "macro": 12,
+          "sub": 2,
+          "dup_group": 1590,
+          "sha256": "e2a41171b29f47f6c42fc053170be107fdbd0a162221dd32c4f7e7b6f41400b7"
+        },
+        {
+          "index": 2457,
+          "filename": "Player_261.jpg",
+          "macro": 12,
+          "sub": 2,
+          "dup_group": 2457,
+          "sha256": "e4e3303475ce2254232855acf54634270debffeb75a9f37c0159342f6778d1df"
+        },
+        {
+          "index": 2456,
+          "filename": "Player_260.jpg",
+          "macro": 12,
+          "sub": 2,
+          "dup_group": 2456,
+          "sha256": "88241d18ed30838013ca446ab1e9fc66dc5352b26d5c1cb76ebb492e89a63ce8"
+        },
+        {
+          "index": 1390,
+          "filename": "Keyboard_32.jpg",
+          "macro": 12,
+          "sub": 2,
+          "dup_group": 1390,
+          "sha256": "e238db2c32cfbfbe1dba8acb9f51c0686c548365c249b6b041f27ae4d07de91c"
+        },
+        {
+          "index": 1268,
+          "filename": "Keyboard_154.jpg",
+          "macro": 12,
+          "sub": 2,
+          "dup_group": 1268,
+          "sha256": "a2475090b498ef60a3a6fb66d6abbfffb07b50336e49a2d5604ffa59b748f0d5"
+        }
+      ],
+      "contact_sheet": "contact-08.jpg"
+    },
+    "13_0": {
+      "macro_id": 13,
+      "sub_id": 0,
+      "total_rows": 353,
+      "unique_groups": 337,
+      "files": [
+        {
+          "index": 3909,
+          "filename": "pcb_61.jpg",
+          "macro": 13,
+          "sub": 0,
+          "dup_group": 3909,
+          "sha256": "b6d4b6855bd04cb6c29c1fc662481de1d2a93dd7568b289b53e1445bd8d0dccd"
+        },
+        {
+          "index": 3680,
+          "filename": "ded708777c311eecc141cc1809ad9be7.jpg",
+          "macro": 13,
+          "sub": 0,
+          "dup_group": 239,
+          "sha256": "b26881bdf0e108d9f54d728bc790cd66d41c79702d518f9c005b41f6d758c511"
+        },
+        {
+          "index": 3736,
+          "filename": "pcb_131.jpg",
+          "macro": 13,
+          "sub": 0,
+          "dup_group": 3736,
+          "sha256": "94ee7b04cfd38d9a88375db16efcb5b99cff9d7c809fb42e5f9b0637af5d3a08"
+        },
+        {
+          "index": 3804,
+          "filename": "pcb_199.jpg",
+          "macro": 13,
+          "sub": 0,
+          "dup_group": 3804,
+          "sha256": "62213e3a208c4a04a775070085171f94987e494aa0a768699d6e01bfac77d278"
+        },
+        {
+          "index": 3905,
+          "filename": "pcb_57.jpg",
+          "macro": 13,
+          "sub": 0,
+          "dup_group": 3905,
+          "sha256": "3e1a1755c2ca928014063ea355b961ebaba985b8a7f655829e56e1ed8ffafad6"
+        }
+      ],
+      "contact_sheet": "contact-09.jpg"
+    },
+    "13_1": {
+      "macro_id": 13,
+      "sub_id": 1,
+      "total_rows": 7,
+      "unique_groups": 7,
+      "files": [
+        {
+          "index": 186,
+          "filename": "17.recyclable-computer-processor-scrap-100-kg-2222426523-gfzyi5j5.jpg",
+          "macro": 13,
+          "sub": 1,
+          "dup_group": 186,
+          "sha256": "10d5dc1cde89e6892cfeed082545f1295a610f95488e25dca202556ece40020c"
+        },
+        {
+          "index": 699,
+          "filename": "60.Sef7b95a8ce9548fd86860b0cb05d5952t.jpeg",
+          "macro": 13,
+          "sub": 1,
+          "dup_group": 699,
+          "sha256": "15d9ad706c2efccfddcc6e1c6f7db67ee2872d5848db708222ffacc678b4f6c2"
+        },
+        {
+          "index": 113,
+          "filename": "15.ceramic-cpu-processor-scrap-1742900108-7954153.jpg",
+          "macro": 13,
+          "sub": 1,
+          "dup_group": 113,
+          "sha256": "4371ba0e2fe5f44c44ac1d1b8ed8b2be4602fd091141aa3f63f550d930ffbd7e"
+        },
+        {
+          "index": 3660,
+          "filename": "battery_91.jpg",
+          "macro": 13,
+          "sub": 1,
+          "dup_group": 3660,
+          "sha256": "ec80589f6884661d8307ea65d10f4cf7ef3201646bc9604bb366935805701b2f"
+        },
+        {
+          "index": 303,
+          "filename": "21.mtc3mdazmzg2mw-1770033863-vxv5d8la.jpg",
+          "macro": 13,
+          "sub": 1,
+          "dup_group": 303,
+          "sha256": "29b07938dc89fc5b5567e72622be698405e12536d64db2d521f43156a29546d8"
+        }
+      ],
+      "contact_sheet": "contact-09.jpg"
+    },
+    "13_2": {
+      "macro_id": 13,
+      "sub_id": 2,
+      "total_rows": 14,
+      "unique_groups": 12,
+      "files": [
+        {
+          "index": 806,
+          "filename": "67.pngtree-pile-of-discarded-electronic-deices-and-tangled-wires-forming-a-heap-png-image_15437632.png",
+          "macro": 13,
+          "sub": 2,
+          "dup_group": 806,
+          "sha256": "933f3510b768c02354b7e38988ce6c05a65b23a27d70236c4aa3782a3462eda8"
+        },
+        {
+          "index": 56,
+          "filename": "12.large-pile-assorted-electronic-waste-including-components-devices-isolated-white-backg-1200x675.jpg",
+          "macro": 13,
+          "sub": 2,
+          "dup_group": 56,
+          "sha256": "cc3b88f6508d343283ed6604293b2884d398a346dffa1e0c09b21b4192634eff"
+        },
+        {
+          "index": 1192,
+          "filename": "IMG_20201101_130424.jpg",
+          "macro": 13,
+          "sub": 2,
+          "dup_group": 1192,
+          "sha256": "1bbbc86c9611a36427b9a3839efd98bb81ff87db12633ae347242daa0708c6a9"
+        },
+        {
+          "index": 149,
+          "filename": "16.large-pile-of-e-waste-sadoff-e-recycling.jpeg",
+          "macro": 13,
+          "sub": 2,
+          "dup_group": 149,
+          "sha256": "f636d5e4ca353425233d9208147882e38537d787b352ad59ef484919266c9e75"
+        },
+        {
+          "index": 939,
+          "filename": "77.recycle-electronics-drop-off-points-min.jpg",
+          "macro": 13,
+          "sub": 2,
+          "dup_group": 939,
+          "sha256": "2483053210521ba0759647db89791282ee66c5de77011b6ee982101d227c269e"
+        }
+      ],
+      "contact_sheet": "contact-09.jpg"
+    },
+    "14_0": {
+      "macro_id": 14,
+      "sub_id": 0,
+      "total_rows": 29,
+      "unique_groups": 29,
+      "files": [
+        {
+          "index": 994,
+          "filename": "8.l-intro-1750323719.jpg",
+          "macro": 14,
+          "sub": 0,
+          "dup_group": 994,
+          "sha256": "099d013b41f428642bc96afe5a9805ea1e87972d87bb4e710cef7db419ec9f6b"
+        },
+        {
+          "index": 333,
+          "filename": "24.abandoned-broken-1970s-television-in-junkyard-in-arizona-junkyard-2GG2N9T.jpg",
+          "macro": 14,
+          "sub": 0,
+          "dup_group": 333,
+          "sha256": "4401c576b2b67570ac99fac2deda2ee72f0174d56ee522fbbb559d523f27b60c"
+        },
+        {
+          "index": 3014,
+          "filename": "Television_275.jpg",
+          "macro": 14,
+          "sub": 0,
+          "dup_group": 3014,
+          "sha256": "2b8ad5c221d58e896f55831ce7aa7c64ba895bebcc5a9e27a1894f6e03b01cad"
+        },
+        {
+          "index": 778,
+          "filename": "65.man-destroys-old-tv-using-footage-120465282_iconl.jpeg",
+          "macro": 14,
+          "sub": 0,
+          "dup_group": 778,
+          "sha256": "7ad6e73742d958f960a3c8bddfe6c7bed7dbe781b88f66171ab477978248c2c9"
+        },
+        {
+          "index": 938,
+          "filename": "77.an-old-tv-shattered-by-a-bullet-hole-in-a-garbage-pile-behind-a-wrecked-abandoned-house-wonder-valley-california-usa-high-desert-mojave-MN9P1X.jpg",
+          "macro": 14,
+          "sub": 0,
+          "dup_group": 938,
+          "sha256": "f2c2192b8850438fb160a0265a0a8e28f5077593c3fa9318632036928ebef7c4"
+        }
+      ],
+      "contact_sheet": "contact-09.jpg"
+    },
+    "14_1": {
+      "macro_id": 14,
+      "sub_id": 1,
+      "total_rows": 12,
+      "unique_groups": 12,
+      "files": [
+        {
+          "index": 3045,
+          "filename": "Television_33.jpg",
+          "macro": 14,
+          "sub": 1,
+          "dup_group": 3045,
+          "sha256": "ff5c0d1ed266fa99ad0f4b6ecb81fc5694bfcd75d1c73d9a2f100d7055aa792c"
+        },
+        {
+          "index": 3051,
+          "filename": "Television_39.jpg",
+          "macro": 14,
+          "sub": 1,
+          "dup_group": 3051,
+          "sha256": "ca9e551c29ea3e5d64867dde08388c83a69d1139a54853b3ac32450de997dfaa"
+        },
+        {
+          "index": 3071,
+          "filename": "Television_57.jpg",
+          "macro": 14,
+          "sub": 1,
+          "dup_group": 3071,
+          "sha256": "3309cc683febdf2bac189b67f42d745251ebaa8edf81d1504013cda02b1d8abf"
+        },
+        {
+          "index": 2905,
+          "filename": "Television_177.jpg",
+          "macro": 14,
+          "sub": 1,
+          "dup_group": 2905,
+          "sha256": "37b4fbd5cf40a716c039ee06a1ee57fa9f9f98c83ab6ea10426c571c2c5fd106"
+        },
+        {
+          "index": 3103,
+          "filename": "Television_86.jpg",
+          "macro": 14,
+          "sub": 1,
+          "dup_group": 3103,
+          "sha256": "d53576684afee880bbb54b0a8243d46d056fc4a7d22c9933d519d2270bf4606f"
+        }
+      ],
+      "contact_sheet": "contact-10.jpg"
+    },
+    "14_2": {
+      "macro_id": 14,
+      "sub_id": 2,
+      "total_rows": 51,
+      "unique_groups": 51,
+      "files": [
+        {
+          "index": 3060,
+          "filename": "Television_47.jpg",
+          "macro": 14,
+          "sub": 2,
+          "dup_group": 3060,
+          "sha256": "ded743f8a473ee9f8156bc1c6bc65a6f8388af7805823d06b152050e6819e8a9"
+        },
+        {
+          "index": 2819,
+          "filename": "Television_1.jpg",
+          "macro": 14,
+          "sub": 2,
+          "dup_group": 2819,
+          "sha256": "4540881d9dcc0004f3c24e6968dd699f0a10758eb2e3184fed435920dd0579d1"
+        },
+        {
+          "index": 3030,
+          "filename": "Television_29.jpg",
+          "macro": 14,
+          "sub": 2,
+          "dup_group": 3030,
+          "sha256": "65b7a932c9019b9de627480971d52d2be051f9c6a93e1c0586a426bf0d0fff2c"
+        },
+        {
+          "index": 3043,
+          "filename": "Television_31.jpg",
+          "macro": 14,
+          "sub": 2,
+          "dup_group": 3043,
+          "sha256": "8639b7948e1aba6b5e570cea3c872efe105fed219cb0522856e0cb2a3690ce69"
+        },
+        {
+          "index": 464,
+          "filename": "36.old-tv-illegally-dumped-waste-bins.jpg",
+          "macro": 14,
+          "sub": 2,
+          "dup_group": 464,
+          "sha256": "580f66c85960a819f9ab5b1203bca4748e2770a7233072e96e9bc2c2025c042b"
+        }
+      ],
+      "contact_sheet": "contact-10.jpg"
+    },
+    "14_3": {
+      "macro_id": 14,
+      "sub_id": 3,
+      "total_rows": 25,
+      "unique_groups": 25,
+      "files": [
+        {
+          "index": 2882,
+          "filename": "Television_156.jpg",
+          "macro": 14,
+          "sub": 3,
+          "dup_group": 2882,
+          "sha256": "8fc9446ea1df9ee2c60da6843ea6e909f30e2160d76026ab09016613e57b11aa"
+        },
+        {
+          "index": 843,
+          "filename": "7.depositphotos_67763385-stock-photo-pile-of-old-televisions.jpg",
+          "macro": 14,
+          "sub": 3,
+          "dup_group": 843,
+          "sha256": "069304aa60a3062d542c079f5e5c4a0fc009768fbbe6bd1c5aeded936831171d"
+        },
+        {
+          "index": 2953,
+          "filename": "Television_22.jpg",
+          "macro": 14,
+          "sub": 3,
+          "dup_group": 2953,
+          "sha256": "4caafa80299d7786b6187a1adc1d158138bad1ad74274a7c5521e31bb72c6342"
+        },
+        {
+          "index": 3069,
+          "filename": "Television_55.jpg",
+          "macro": 14,
+          "sub": 3,
+          "dup_group": 3069,
+          "sha256": "4f4f96da457c05ecb34a93ecc92ce51391212e391ad7ba192ff5d5baca1d4190"
+        },
+        {
+          "index": 3089,
+          "filename": "Television_73.jpg",
+          "macro": 14,
+          "sub": 3,
+          "dup_group": 3089,
+          "sha256": "dd5fc254adead54a8bc02f65b2c404821d4a7fc254a9e1092a59c302a7db04d2"
+        }
+      ],
+      "contact_sheet": "contact-10.jpg"
+    },
+    "14_4": {
+      "macro_id": 14,
+      "sub_id": 4,
+      "total_rows": 46,
+      "unique_groups": 42,
+      "files": [
+        {
+          "index": 2877,
+          "filename": "Television_151.jpg",
+          "macro": 14,
+          "sub": 4,
+          "dup_group": 2877,
+          "sha256": "e82cb7f215b71c52936a6786fa1e24619ec013d1cd17473b62fc457c099fcf6c"
+        },
+        {
+          "index": 2947,
+          "filename": "Television_214.jpg",
+          "macro": 14,
+          "sub": 4,
+          "dup_group": 2947,
+          "sha256": "33199479529e9756ee06b935025a086204bfb2b77ba30dd00045768be9985fe5"
+        },
+        {
+          "index": 3034,
+          "filename": "Television_293.jpg",
+          "macro": 14,
+          "sub": 4,
+          "dup_group": 3034,
+          "sha256": "1e8d802b394e637c1ed2465db6765a55425737e55521fcbb739f9528b849ebcd"
+        },
+        {
+          "index": 3055,
+          "filename": "Television_42.jpg",
+          "macro": 14,
+          "sub": 4,
+          "dup_group": 2988,
+          "sha256": "9d6fc5b0affda79b2abce9ab1c16adabb85f6264f44eacf8e8348839670ab9bb"
+        },
+        {
+          "index": 3015,
+          "filename": "Television_276.jpg",
+          "macro": 14,
+          "sub": 4,
+          "dup_group": 3007,
+          "sha256": "df719625cf538e0295e2a3cde7c1e36bf21a044a3aca10f3f0e1f1eb58e9b6bf"
+        }
+      ],
+      "contact_sheet": "contact-10.jpg"
+    },
+    "15_0": {
+      "macro_id": 15,
+      "sub_id": 0,
+      "total_rows": 104,
+      "unique_groups": 93,
+      "files": [
+        {
+          "index": 2967,
+          "filename": "Television_232.jpg",
+          "macro": 15,
+          "sub": 0,
+          "dup_group": 2967,
+          "sha256": "42a107194036bedf08aad20428cdf1d2618bd407836e504bfebe339179006bea"
+        },
+        {
+          "index": 2898,
+          "filename": "Television_170.jpg",
+          "macro": 15,
+          "sub": 0,
+          "dup_group": 2898,
+          "sha256": "f227319e5488313ff2682e06d4b39b2036c486166264c8070eef979b2bf32437"
+        },
+        {
+          "index": 3020,
+          "filename": "Television_280.jpg",
+          "macro": 15,
+          "sub": 0,
+          "dup_group": 3020,
+          "sha256": "3fb855d5760cadd02e054cef82bdd907cd69f279b03f6520bb93bd49d0a65c89"
+        },
+        {
+          "index": 3050,
+          "filename": "Television_38.jpg",
+          "macro": 15,
+          "sub": 0,
+          "dup_group": 3050,
+          "sha256": "d706e878b0b0a58de736bd114676f32783609534fa309e707db8eb57d966d53b"
+        },
+        {
+          "index": 2999,
+          "filename": "Television_261.jpg",
+          "macro": 15,
+          "sub": 0,
+          "dup_group": 2999,
+          "sha256": "0dda923a0a00fb34250b035e2fd10f5b6d99245cf59ead7ba75ec13cec930e77"
+        }
+      ],
+      "contact_sheet": "contact-11.jpg"
+    },
+    "16_0": {
+      "macro_id": 16,
+      "sub_id": 0,
+      "total_rows": 73,
+      "unique_groups": 46,
+      "files": [
+        {
+          "index": 1083,
+          "filename": "Copy of IMG_20200328_221706.jpg",
+          "macro": 16,
+          "sub": 0,
+          "dup_group": 1083,
+          "sha256": "2246f300b91a488da9655c029b06a8ea1e3c88531aa10e37a88183c473a8ae20"
+        },
+        {
+          "index": 708,
+          "filename": "604.jpeg",
+          "macro": 16,
+          "sub": 0,
+          "dup_group": 708,
+          "sha256": "eb88d083b2104c5e710cb8a0e557e149ebd924873d94f2cb1fe3a7d656d5b0b9"
+        },
+        {
+          "index": 1039,
+          "filename": "903.jpeg",
+          "macro": 16,
+          "sub": 0,
+          "dup_group": 1039,
+          "sha256": "dad520c40512ec0318de69ad35137554837c36f23d73ce2d1a66581eded1e251"
+        },
+        {
+          "index": 739,
+          "filename": "627.jpeg",
+          "macro": 16,
+          "sub": 0,
+          "dup_group": 738,
+          "sha256": "750c490b631a39d2ffc10821ac389111c1c480d49cd77c8d7c11e618a57c7ed7"
+        },
+        {
+          "index": 429,
+          "filename": "322.jpeg",
+          "macro": 16,
+          "sub": 0,
+          "dup_group": 429,
+          "sha256": "b9bc4ae79e2db4058c53772b6995a7df0063df330dfff21de00d0074561a9875"
+        }
+      ],
+      "contact_sheet": "contact-11.jpg"
+    },
+    "17_0": {
+      "macro_id": 17,
+      "sub_id": 0,
+      "total_rows": 77,
+      "unique_groups": 75,
+      "files": [
+        {
+          "index": 892,
+          "filename": "73.image.png",
+          "macro": 17,
+          "sub": 0,
+          "dup_group": 892,
+          "sha256": "003427e00a755e3f021b314029ab42c6328e85b0eb10b3d730777ed52fc3af5f"
+        },
+        {
+          "index": 902,
+          "filename": "75.Electronics-recycling-malaysia-1024x576.jpeg",
+          "macro": 17,
+          "sub": 0,
+          "dup_group": 902,
+          "sha256": "95590dcb3197c2a8990f5439eb0d5fd90946978c5d97208352b2437170e4c9e1"
+        },
+        {
+          "index": 826,
+          "filename": "69.2020-11-13_15h48_00-1.png",
+          "macro": 17,
+          "sub": 0,
+          "dup_group": 826,
+          "sha256": "05d2825bcf497577bc1e577930033674b58a0a21581bd5c097fa7c13bf681d72"
+        },
+        {
+          "index": 343,
+          "filename": "24.old-defective-computer-cpu-scrap-2219458585-n38mn4u2.jpg",
+          "macro": 17,
+          "sub": 0,
+          "dup_group": 343,
+          "sha256": "969846c2c1228daee28d4a9dc64d72e3023b0aa62020c2924dc053813279e235"
+        },
+        {
+          "index": 378,
+          "filename": "26.berbagai-macam-objek-kotor-yang-dibuang_23-2148996977.jpg",
+          "macro": 17,
+          "sub": 0,
+          "dup_group": 378,
+          "sha256": "9d40b4882fc81c6e11b0105a8486fdfa352c6aca04e21f2e2facf07d2b951c7f"
+        }
+      ],
+      "contact_sheet": "contact-11.jpg"
+    },
+    "17_1": {
+      "macro_id": 17,
+      "sub_id": 1,
+      "total_rows": 49,
+      "unique_groups": 41,
+      "files": [
+        {
+          "index": 454,
+          "filename": "344.jpeg",
+          "macro": 17,
+          "sub": 1,
+          "dup_group": 454,
+          "sha256": "42b5a2882afe3d676d940ca5dbfac2c5b049f7ada189915e2862b1a4241e3974"
+        },
+        {
+          "index": 422,
+          "filename": "316.jpeg",
+          "macro": 17,
+          "sub": 1,
+          "dup_group": 422,
+          "sha256": "5c8d624ac429f7784062edea6ebb74c48150c47f02ce5634b711a6b4fda5dc47"
+        },
+        {
+          "index": 1209,
+          "filename": "Keyboard_100.jpg",
+          "macro": 17,
+          "sub": 1,
+          "dup_group": 1209,
+          "sha256": "c6532cc8156f2e1f8d9962423a1a48c0b625ec5d313f67e477d66208b947b8af"
+        },
+        {
+          "index": 2841,
+          "filename": "Television_119.jpg",
+          "macro": 17,
+          "sub": 1,
+          "dup_group": 2841,
+          "sha256": "92461d8f6c199f35c3c41ad1e960efcff18d6f39173cf4a538051a56a3169e6f"
+        },
+        {
+          "index": 440,
+          "filename": "332.jpeg",
+          "macro": 17,
+          "sub": 1,
+          "dup_group": 440,
+          "sha256": "84706f095b8dc9f4a6a1a89c5f9a62ce647773d5aba94a8b4312d3162b61f3f6"
+        }
+      ],
+      "contact_sheet": "contact-11.jpg"
+    },
+    "18_0": {
+      "macro_id": 18,
+      "sub_id": 0,
+      "total_rows": 49,
+      "unique_groups": 45,
+      "files": [
+        {
+          "index": 203,
+          "filename": "18.415762_620.jpg",
+          "macro": 18,
+          "sub": 0,
+          "dup_group": 203,
+          "sha256": "58c6eded9f9268effb0c3135aae95b311f6028e70e17d1e0a18cb1579e74ce2a"
+        },
+        {
+          "index": 987,
+          "filename": "8.Lapak-lapak-sekitar-3117968952.jpg",
+          "macro": 18,
+          "sub": 0,
+          "dup_group": 987,
+          "sha256": "2f2f6a265e6fd4c5b0fc95cc79d0011c99a751af9c16e742ce650f0a2db6b1b0"
+        },
+        {
+          "index": 108,
+          "filename": "15.Aksi-Kelola-Sampah-Elektronik2.jpg",
+          "macro": 18,
+          "sub": 0,
+          "dup_group": 108,
+          "sha256": "ff55d52094d24f0641db3cbdb7add54a4a443019f37001e4288b0803cb42ebc4"
+        },
+        {
+          "index": 784,
+          "filename": "66.E-Waste-An-Issue-of-Serious-Concern-@aura-emagazine.jpg",
+          "macro": 18,
+          "sub": 0,
+          "dup_group": 784,
+          "sha256": "8270c5d02f635bb83d6e600240af91264030f9812b4feaec159f0c90c4ae0aa0"
+        },
+        {
+          "index": 563,
+          "filename": "5.huge-pile-electronic-waste-showing-discarded-smartphone-tablet-circuit-board-environmental-pollution-sustainable-403725896.jpg",
+          "macro": 18,
+          "sub": 0,
+          "dup_group": 563,
+          "sha256": "758b1c29ee65b2199c4614218185f8866e38d0ee1ded4d94b5ab158c67f0be4e"
+        }
+      ],
+      "contact_sheet": "contact-12.jpg"
+    },
+    "18_1": {
+      "macro_id": 18,
+      "sub_id": 1,
+      "total_rows": 33,
+      "unique_groups": 32,
+      "files": [
+        {
+          "index": 266,
+          "filename": "2.P_SR10-0419-June-Blog-Header_Why-Do-I-Pay.jpg",
+          "macro": 18,
+          "sub": 1,
+          "dup_group": 266,
+          "sha256": "775a5e44706e3b35df58e555af61f2a5410e8b7ca1758a6296b7eed8d4852443"
+        },
+        {
+          "index": 137,
+          "filename": "16.Sampah-Elektronik-Ancaman-Baru-yang-Memerlukan-Perhatian-Serius.jpg",
+          "macro": 18,
+          "sub": 1,
+          "dup_group": 137,
+          "sha256": "2004b10e6ec3def3c97631e687a7fb5481cde7c6c6955c96233e2b29a76329b5"
+        },
+        {
+          "index": 168,
+          "filename": "17.Fines-Zorba-product-after-STEINERT-EddyC.jpg",
+          "macro": 18,
+          "sub": 1,
+          "dup_group": 168,
+          "sha256": "bda622676b25629de07c3434e68544d5115c70683f8180106903314252564604"
+        },
+        {
+          "index": 770,
+          "filename": "64.hq720.jpg",
+          "macro": 18,
+          "sub": 1,
+          "dup_group": 770,
+          "sha256": "06a74a975fc35106d0e474b1f4979875b1376b6a10c10880c48b2d813fea31c1"
+        },
+        {
+          "index": 155,
+          "filename": "16.stock-photo-electronic-waste-and-garbage-for-recycling-1675112317.jpg",
+          "macro": 18,
+          "sub": 1,
+          "dup_group": 155,
+          "sha256": "3461b9c7c69ed3cc28d0e5a7d5e80cc3063164f4fe8b19b834a05cb89b793656"
+        }
+      ],
+      "contact_sheet": "contact-12.jpg"
+    },
+    "18_2": {
+      "macro_id": 18,
+      "sub_id": 2,
+      "total_rows": 61,
+      "unique_groups": 58,
+      "files": [
+        {
+          "index": 73,
+          "filename": "13.Electronic-Recycling.jpg",
+          "macro": 18,
+          "sub": 2,
+          "dup_group": 73,
+          "sha256": "7ba4f61ce2758533edc75847920ce9390f3c78f0605079d9a1dbb05cea76cdd8"
+        },
+        {
+          "index": 187,
+          "filename": "17.sampah-elektronik-menghasilkan-uang-lho.jpg",
+          "macro": 18,
+          "sub": 2,
+          "dup_group": 187,
+          "sha256": "c076808cf2dbdba04dd9ce65e92f89296515c19df92c86498a03d1b25f9f6492"
+        },
+        {
+          "index": 717,
+          "filename": "61.pile-discarded-computer-monitors-electronics-landfill-environmental-pollution-pile-discarded-computer-monitors-437381574.jpg",
+          "macro": 18,
+          "sub": 2,
+          "dup_group": 717,
+          "sha256": "8dbc965121dc87db816f0eca3999b83f678e1a96d3665ab1591c33cb748b3ac2"
+        },
+        {
+          "index": 47,
+          "filename": "12.IMG_20210524_112912.jpg",
+          "macro": 18,
+          "sub": 2,
+          "dup_group": 47,
+          "sha256": "85c9107d1b6720b3a217dc1a5784a3d5c52cf6f407a1e0049cd54f7c270ddb93"
+        },
+        {
+          "index": 319,
+          "filename": "23.image-24.png",
+          "macro": 18,
+          "sub": 2,
+          "dup_group": 319,
+          "sha256": "5e3409f7823bdeb7ec033ee05dc506e67c3b7d09fa0ba46236346fe4eb551020"
+        }
+      ],
+      "contact_sheet": "contact-12.jpg"
+    },
+    "19_0": {
+      "macro_id": 19,
+      "sub_id": 0,
+      "total_rows": 249,
+      "unique_groups": 244,
+      "files": [
+        {
+          "index": 2781,
+          "filename": "Printer_68.jpg",
+          "macro": 19,
+          "sub": 0,
+          "dup_group": 2781,
+          "sha256": "f1d0dd578a571649f4dfd82e344375e55225f7f07f8a328c41ef8cc85c2e0574"
+        },
+        {
+          "index": 2577,
+          "filename": "Printer_134.jpg",
+          "macro": 19,
+          "sub": 0,
+          "dup_group": 2577,
+          "sha256": "92e83edfb9ef9b3f4126922d849354bd41afa68adc0934684f66cc2d73d32d26"
+        },
+        {
+          "index": 2745,
+          "filename": "Printer_35.jpg",
+          "macro": 19,
+          "sub": 0,
+          "dup_group": 2745,
+          "sha256": "191f3ad896fdaf28e893b059088bee78a6e41177b59ab728c9ddf333b0781ffb"
+        },
+        {
+          "index": 2637,
+          "filename": "Printer_207.jpg",
+          "macro": 19,
+          "sub": 0,
+          "dup_group": 2637,
+          "sha256": "a718263070c970e1697ee87b755894555da3bb8a031cfbe50829050a9de85cb8"
+        },
+        {
+          "index": 2596,
+          "filename": "Printer_170.jpg",
+          "macro": 19,
+          "sub": 0,
+          "dup_group": 2596,
+          "sha256": "d0f60ca272674523443f1ca70561b82cfed1ee7f59b510d0b03bd16adcd1cdee"
+        }
+      ],
+      "contact_sheet": "contact-12.jpg"
+    },
+    "20_0": {
+      "macro_id": 20,
+      "sub_id": 0,
+      "total_rows": 320,
+      "unique_groups": 268,
+      "files": [
+        {
+          "index": 2030,
+          "filename": "Mouse_125.jpg",
+          "macro": 20,
+          "sub": 0,
+          "dup_group": 2030,
+          "sha256": "e297fd4ec7eaf1ee3da5576b6fc38842322c3c97dc1d4705c0fa98bffe2176fd"
+        },
+        {
+          "index": 2151,
+          "filename": "Mouse_234.jpg",
+          "macro": 20,
+          "sub": 0,
+          "dup_group": 2151,
+          "sha256": "f143750d702baca3d5de9d9ffb9f3d9acd3c3c56f5b8c6765814bad5344c419a"
+        },
+        {
+          "index": 2065,
+          "filename": "Mouse_157.jpg",
+          "macro": 20,
+          "sub": 0,
+          "dup_group": 2065,
+          "sha256": "412c5d3026c625727f0b225580cf89258e1941c21f53d3c73e3f26bffe0f00d9"
+        },
+        {
+          "index": 2163,
+          "filename": "Mouse_245.jpg",
+          "macro": 20,
+          "sub": 0,
+          "dup_group": 2163,
+          "sha256": "e717e3ed4c8f33e0e2e7cc2ffd68ca78de1e03b34d34f37431343416dd5b26f1"
+        },
+        {
+          "index": 2084,
+          "filename": "Mouse_174.jpg",
+          "macro": 20,
+          "sub": 0,
+          "dup_group": 2084,
+          "sha256": "3130795ee18772148451f27891bdbec258653e13467e90ff647d9c5e34b9b731"
+        }
+      ],
+      "contact_sheet": "contact-13.jpg"
+    },
+    "20_1": {
+      "macro_id": 20,
+      "sub_id": 1,
+      "total_rows": 21,
+      "unique_groups": 16,
+      "files": [
+        {
+          "index": 3849,
+          "filename": "pcb_273.jpg",
+          "macro": 20,
+          "sub": 1,
+          "dup_group": 3849,
+          "sha256": "3a5169b9520906a68905b9b4965145a73245d85743c052e0f88451a9516bd6b3"
+        },
+        {
+          "index": 2086,
+          "filename": "Mouse_176.jpg",
+          "macro": 20,
+          "sub": 1,
+          "dup_group": 2086,
+          "sha256": "1207f24767fec1269d13426b884981fd7d9bc426bfbbc8f4702209a8a625e182"
+        },
+        {
+          "index": 2088,
+          "filename": "Mouse_178.jpg",
+          "macro": 20,
+          "sub": 1,
+          "dup_group": 2088,
+          "sha256": "a1fcf3d50705126313ee557b307af64dabbe82f4d003e832ed1375d5d484ff65"
+        },
+        {
+          "index": 790,
+          "filename": "66.images28329.jpeg",
+          "macro": 20,
+          "sub": 1,
+          "dup_group": 790,
+          "sha256": "435025b4f53b4576eadf70926fbcb99bc40cc36dbcdfb7845ba38afe4bdf1d9c"
+        },
+        {
+          "index": 2078,
+          "filename": "Mouse_169.jpg",
+          "macro": 20,
+          "sub": 1,
+          "dup_group": 2078,
+          "sha256": "b5638b9602af236ba59ac37690211437a105d2e77d212b3ec205d71415548451"
+        }
+      ],
+      "contact_sheet": "contact-13.jpg"
+    },
+    "21_0": {
+      "macro_id": 21,
+      "sub_id": 0,
+      "total_rows": 74,
+      "unique_groups": 43,
+      "files": [
+        {
+          "index": 1989,
+          "filename": "Mobile_77.jpg",
+          "macro": 21,
+          "sub": 0,
+          "dup_group": 601,
+          "sha256": "70686b24f5060524429c9e258328da4af80deb4b21a69a5c646d824b12b88cc5"
+        },
+        {
+          "index": 1791,
+          "filename": "Mobile_16.jpg",
+          "macro": 21,
+          "sub": 0,
+          "dup_group": 516,
+          "sha256": "7fb7196d2d547483167db6dcff02d366ca1fe77e695c2da0f8ea496431ed0c61"
+        },
+        {
+          "index": 1758,
+          "filename": "Mobile_13.jpg",
+          "macro": 21,
+          "sub": 0,
+          "dup_group": 513,
+          "sha256": "ea8a677ba884a305095b6c38c20fa742efe22649c5827c42e2d0759881cf82ca"
+        },
+        {
+          "index": 651,
+          "filename": "578.jpeg",
+          "macro": 21,
+          "sub": 0,
+          "dup_group": 651,
+          "sha256": "b8c9c4b522d6e68d3590b1930403bec4aa2ab482a1f5cf1cdb6a9d320d232d24"
+        },
+        {
+          "index": 1060,
+          "filename": "Copy of IMG_20200328_135224.jpg",
+          "macro": 21,
+          "sub": 0,
+          "dup_group": 1060,
+          "sha256": "27f802ec0036e1de1934ffccbe8b08809d4b4c27466c55aa85ce6e05a0aa17d4"
+        }
+      ],
+      "contact_sheet": "contact-13.jpg"
+    },
+    "21_1": {
+      "macro_id": 21,
+      "sub_id": 1,
+      "total_rows": 13,
+      "unique_groups": 13,
+      "files": [
+        {
+          "index": 3629,
+          "filename": "battery_63.jpg",
+          "macro": 21,
+          "sub": 1,
+          "dup_group": 3629,
+          "sha256": "17f1605d4aaf7bb8f0934915ab3d6bed12eabffab20cc769b458071f4ce67160"
+        },
+        {
+          "index": 3542,
+          "filename": "battery_254.jpg",
+          "macro": 21,
+          "sub": 1,
+          "dup_group": 3542,
+          "sha256": "6a095281a0b1a8fab0f8dd6d33088d2d686e2bba595a80986975301648fd9f3b"
+        },
+        {
+          "index": 1435,
+          "filename": "Keyboard_73.jpg",
+          "macro": 21,
+          "sub": 1,
+          "dup_group": 1435,
+          "sha256": "98d26d78a3c0c87e926b9e20a73a95e540bb64d04b34684cc547da1c5b1bdd0d"
+        },
+        {
+          "index": 2471,
+          "filename": "Player_274.jpg",
+          "macro": 21,
+          "sub": 1,
+          "dup_group": 2471,
+          "sha256": "a28f9e57eb5b6bdfb5ed8b4d87f2b58a36ab14597d8f60a219d222558d92aed1"
+        },
+        {
+          "index": 1391,
+          "filename": "Keyboard_33.jpg",
+          "macro": 21,
+          "sub": 1,
+          "dup_group": 1391,
+          "sha256": "7112aee36f77417510e2baadaeded54f19908f64aa8b2ca3b6f68ecc0ff084a2"
+        }
+      ],
+      "contact_sheet": "contact-13.jpg"
+    },
+    "21_2": {
+      "macro_id": 21,
+      "sub_id": 2,
+      "total_rows": 18,
+      "unique_groups": 16,
+      "files": [
+        {
+          "index": 1019,
+          "filename": "83.hq720.jpg",
+          "macro": 21,
+          "sub": 2,
+          "dup_group": 1019,
+          "sha256": "e3221eaa7d63d59606f4c29db2abd1facf48acca08699a49660d0eb6d467de74"
+        },
+        {
+          "index": 1057,
+          "filename": "Copy of IMG_20200328_134903.jpg",
+          "macro": 21,
+          "sub": 2,
+          "dup_group": 1057,
+          "sha256": "c9ad61d484ab731a3a8550260e70cd0cc6724d561f6bc719ae77d23c0cff4b6b"
+        },
+        {
+          "index": 1990,
+          "filename": "Mobile_78.jpg",
+          "macro": 21,
+          "sub": 2,
+          "dup_group": 1990,
+          "sha256": "d924278d202b69e31a5cb4f5f4cf363075e197d7aeb2c96b41db876259cefe52"
+        },
+        {
+          "index": 1058,
+          "filename": "Copy of IMG_20200328_134906.jpg",
+          "macro": 21,
+          "sub": 2,
+          "dup_group": 1058,
+          "sha256": "0a4114836718ad9ab32da0277ad7587f6dc4f71cf8a0ec167fc58ccda8f1e5ff"
+        },
+        {
+          "index": 1972,
+          "filename": "Mobile_61.jpg",
+          "macro": 21,
+          "sub": 2,
+          "dup_group": 584,
+          "sha256": "e1af2a93fe36e6bca89d6eb19c32e7c03cb2f98ade570307b420dde2c56ebf6a"
+        }
+      ],
+      "contact_sheet": "contact-14.jpg"
+    },
+    "21_3": {
+      "macro_id": 21,
+      "sub_id": 3,
+      "total_rows": 14,
+      "unique_groups": 12,
+      "files": [
+        {
+          "index": 1846,
+          "filename": "Mobile_209.jpg",
+          "macro": 21,
+          "sub": 3,
+          "dup_group": 1846,
+          "sha256": "09f9e5508909428fdbf5eea9c0a6773037795f7347027fe50f8be20136c05dd1"
+        },
+        {
+          "index": 1934,
+          "filename": "Mobile_289.jpg",
+          "macro": 21,
+          "sub": 3,
+          "dup_group": 1934,
+          "sha256": "e821fa917f6745436bdc856699b9f360ce6b47d8ec3d972d0f5214685cdac7dd"
+        },
+        {
+          "index": 1869,
+          "filename": "Mobile_23.jpg",
+          "macro": 21,
+          "sub": 3,
+          "dup_group": 524,
+          "sha256": "8b3d7625f3076b4ad2ebcf2e8f9db4f2c75d1781f6cdd0c938d91df848d593cb"
+        },
+        {
+          "index": 3347,
+          "filename": "Washing_Machine_35.jpg",
+          "macro": 21,
+          "sub": 3,
+          "dup_group": 3347,
+          "sha256": "c61314e1a87bcd6b63eb10542be17db6dfa52b2a1028111951aa18ba1273aceb"
+        },
+        {
+          "index": 1801,
+          "filename": "Mobile_169.jpg",
+          "macro": 21,
+          "sub": 3,
+          "dup_group": 1801,
+          "sha256": "4e8d5525255fc07ce0e44a14af7628ded927b70afe2b670fe0a22c094f7841a0"
+        }
+      ],
+      "contact_sheet": "contact-14.jpg"
+    },
+    "21_4": {
+      "macro_id": 21,
+      "sub_id": 4,
+      "total_rows": 49,
+      "unique_groups": 32,
+      "files": [
+        {
+          "index": 3482,
+          "filename": "battery_127.jpg",
+          "macro": 21,
+          "sub": 4,
+          "dup_group": 3482,
+          "sha256": "ae1eda43986056b42dbbc70331178e5a19f5d5289712b17f0edf9a4266daf89a"
+        },
+        {
+          "index": 1987,
+          "filename": "Mobile_75.jpg",
+          "macro": 21,
+          "sub": 4,
+          "dup_group": 599,
+          "sha256": "c387dad1a400368bd5ec626b6363aaedbdd845d4351b36b025628e612cbae451"
+        },
+        {
+          "index": 1994,
+          "filename": "Mobile_81.jpg",
+          "macro": 21,
+          "sub": 4,
+          "dup_group": 604,
+          "sha256": "6c0d7eaf82f2362fe008b655334340e084c05b0af5cd61e5a7095873f72dde51"
+        },
+        {
+          "index": 3516,
+          "filename": "battery_192.jpg",
+          "macro": 21,
+          "sub": 4,
+          "dup_group": 3516,
+          "sha256": "0401557e54342f163e237cbaf8ed45de6ddf2a5ebca278b17db6602b656853b8"
+        },
+        {
+          "index": 692,
+          "filename": "6.free-photo-of-alat-aspal-rusak-pandangan-atas.jpeg",
+          "macro": 21,
+          "sub": 4,
+          "dup_group": 692,
+          "sha256": "0e1c494157aa9882b557028b417d24f86e0b9ae3f255875d01107d5f3b72c529"
+        }
+      ],
+      "contact_sheet": "contact-14.jpg"
+    },
+    "21_5": {
+      "macro_id": 21,
+      "sub_id": 5,
+      "total_rows": 20,
+      "unique_groups": 20,
+      "files": [
+        {
+          "index": 2550,
+          "filename": "Printer_11.jpg",
+          "macro": 21,
+          "sub": 5,
+          "dup_group": 2550,
+          "sha256": "96506197d34de4295a596b886bd6b1985cf778b92a67fcab706efabc6f9ecace"
+        },
+        {
+          "index": 1851,
+          "filename": "Mobile_213.jpg",
+          "macro": 21,
+          "sub": 5,
+          "dup_group": 1851,
+          "sha256": "32cc818edbb3e049da3255b1ec417538f0441e0f644f09ae7f78c1207c157b57"
+        },
+        {
+          "index": 1852,
+          "filename": "Mobile_214.jpg",
+          "macro": 21,
+          "sub": 5,
+          "dup_group": 1852,
+          "sha256": "26e93d4f7a37afb1cb12d45fce0b4aa7e15124edf27371027fe4a4aa9006f9f9"
+        },
+        {
+          "index": 1840,
+          "filename": "Mobile_203.jpg",
+          "macro": 21,
+          "sub": 5,
+          "dup_group": 1840,
+          "sha256": "abaed6653c7224b84f4310b72a3e0af0f441d1b6e2425f23226164a6bd6531f0"
+        },
+        {
+          "index": 1244,
+          "filename": "Keyboard_132.jpg",
+          "macro": 21,
+          "sub": 5,
+          "dup_group": 1244,
+          "sha256": "ee52a6bee3fa2315725153665c2a3bcbcb75a7235dfb3fb65a7df4ed511244f2"
+        }
+      ],
+      "contact_sheet": "contact-14.jpg"
+    },
+    "21_6": {
+      "macro_id": 21,
+      "sub_id": 6,
+      "total_rows": 11,
+      "unique_groups": 8,
+      "files": [
+        {
+          "index": 514,
+          "filename": "465.jpeg",
+          "macro": 21,
+          "sub": 6,
+          "dup_group": 514,
+          "sha256": "9d4189779e7210b0effa880c39e920a8e47136ee641486fdb76427b5985e9d84"
+        },
+        {
+          "index": 1074,
+          "filename": "Copy of IMG_20200328_140124.jpg",
+          "macro": 21,
+          "sub": 6,
+          "dup_group": 1074,
+          "sha256": "e69eb5f08125ce92a38402fd87944c4ef5b818b5160558116421656cbc9d8239"
+        },
+        {
+          "index": 1073,
+          "filename": "Copy of IMG_20200328_140117.jpg",
+          "macro": 21,
+          "sub": 6,
+          "dup_group": 1073,
+          "sha256": "e1d9b8c82623b77fbd7d93510e440fc1531b102ef2945de9202c2f533198284d"
+        },
+        {
+          "index": 1055,
+          "filename": "Copy of IMG_20200328_134847.jpg",
+          "macro": 21,
+          "sub": 6,
+          "dup_group": 1055,
+          "sha256": "e13e6fb850f5ada344134dce18d92dab0b1d3346f4b5320462454f1f5a4e4297"
+        },
+        {
+          "index": 650,
+          "filename": "577.jpeg",
+          "macro": 21,
+          "sub": 6,
+          "dup_group": 650,
+          "sha256": "8a08871a09eecd3415b4d9b2ec7d18728f6c98dbe53a82ff6847f141b9aaabce"
+        }
+      ],
+      "contact_sheet": "contact-15.jpg"
+    },
+    "21_7": {
+      "macro_id": 21,
+      "sub_id": 7,
+      "total_rows": 10,
+      "unique_groups": 10,
+      "files": [
+        {
+          "index": 943,
+          "filename": "7705e7b0-f207-11ea-b59f-5e175dc57928.jpg",
+          "macro": 21,
+          "sub": 7,
+          "dup_group": 943,
+          "sha256": "a6b1f21e6a29c4ca5ee2709d5721f83d77f84a4c8e69afe8933c08a3b004c792"
+        },
+        {
+          "index": 3678,
+          "filename": "brokenp.jpg",
+          "macro": 21,
+          "sub": 7,
+          "dup_group": 3678,
+          "sha256": "e50dda3536e5fb2bfe788e4a9909defbadaf80042e30755c89a83f1cf665a1bf"
+        },
+        {
+          "index": 1845,
+          "filename": "Mobile_208.jpg",
+          "macro": 21,
+          "sub": 7,
+          "dup_group": 1845,
+          "sha256": "6fcdbaaebd65cffdd58bde54c5822a31201506cb182290c21fa58199c8035f02"
+        },
+        {
+          "index": 78,
+          "filename": "13.destruction-smartphones-ilustrated_23-2151500024.jpg",
+          "macro": 21,
+          "sub": 7,
+          "dup_group": 78,
+          "sha256": "f1cc40404f4533811b60d68c002d356c7c71e69daa3c2fc97923d6e01dfd43b5"
+        },
+        {
+          "index": 468,
+          "filename": "38.1612517774.jpg",
+          "macro": 21,
+          "sub": 7,
+          "dup_group": 468,
+          "sha256": "82428ac76c641176fbc84ea5794df57f82a033124b5dd6adab706cb4dd90c145"
+        }
+      ],
+      "contact_sheet": "contact-15.jpg"
+    },
+    "21_8": {
+      "macro_id": 21,
+      "sub_id": 8,
+      "total_rows": 59,
+      "unique_groups": 36,
+      "files": [
+        {
+          "index": 1115,
+          "filename": "IMG-20200328-WA0046.jpg",
+          "macro": 21,
+          "sub": 8,
+          "dup_group": 1115,
+          "sha256": "2cf5de250b939c3c9a9861c60071f991e2722ecdcb375ba141cb3722b8e8ec25"
+        },
+        {
+          "index": 1171,
+          "filename": "IMG_20200329_201011.jpg",
+          "macro": 21,
+          "sub": 8,
+          "dup_group": 1171,
+          "sha256": "e4efc23bf134d1aeb5c65fb6db8a0821b64283b8e36536fe7639ead0cde043e0"
+        },
+        {
+          "index": 661,
+          "filename": "587.jpeg",
+          "macro": 21,
+          "sub": 8,
+          "dup_group": 661,
+          "sha256": "45fda2e30bc332f5fa3e585d68e915b80abdb7bd607463a0bc841b05defa7f49"
+        },
+        {
+          "index": 640,
+          "filename": "568.jpg",
+          "macro": 21,
+          "sub": 8,
+          "dup_group": 640,
+          "sha256": "7b574fd9b1b631d07812e0db0482fb17398773cc0d602b79b73b53b6ca020027"
+        },
+        {
+          "index": 1140,
+          "filename": "IMG_20200328_131510.jpg",
+          "macro": 21,
+          "sub": 8,
+          "dup_group": 1140,
+          "sha256": "1422c05b08e7014fe7fda37b03bb2c09b8b8834d508a04dc748c78763a32a390"
+        }
+      ],
+      "contact_sheet": "contact-15.jpg"
+    },
+    "21_9": {
+      "macro_id": 21,
+      "sub_id": 9,
+      "total_rows": 12,
+      "unique_groups": 12,
+      "files": [
+        {
+          "index": 1817,
+          "filename": "Mobile_183.jpg",
+          "macro": 21,
+          "sub": 9,
+          "dup_group": 1817,
+          "sha256": "55f93fc282d48b6596116c2e2c82de120a8a85f250018f41b6ac6ebaf39616ed"
+        },
+        {
+          "index": 1068,
+          "filename": "Copy of IMG_20200328_135507.jpg",
+          "macro": 21,
+          "sub": 9,
+          "dup_group": 1068,
+          "sha256": "04c6c3e4d42bf1af113117e3c93ae12a432999f083d3f4ab54528128a548ede4"
+        },
+        {
+          "index": 1882,
+          "filename": "Mobile_241.jpg",
+          "macro": 21,
+          "sub": 9,
+          "dup_group": 1882,
+          "sha256": "72338e35a9b59074ddee57af0f262c41a3ec44afa517ba08ffa62a292127df8f"
+        },
+        {
+          "index": 1815,
+          "filename": "Mobile_181.jpg",
+          "macro": 21,
+          "sub": 9,
+          "dup_group": 1815,
+          "sha256": "4346b7bfa1532dc2f2a64dc53876de97712007ae3c8a870c40248c4aad314c94"
+        },
+        {
+          "index": 1818,
+          "filename": "Mobile_184.jpg",
+          "macro": 21,
+          "sub": 9,
+          "dup_group": 1818,
+          "sha256": "af59c9e330723efdac01c33747804cb28cad680c71212a679d59532dc9b3fcfb"
+        }
+      ],
+      "contact_sheet": "contact-15.jpg"
+    },
+    "21_10": {
+      "macro_id": 21,
+      "sub_id": 10,
+      "total_rows": 36,
+      "unique_groups": 27,
+      "files": [
+        {
+          "index": 1907,
+          "filename": "Mobile_264.jpg",
+          "macro": 21,
+          "sub": 10,
+          "dup_group": 1907,
+          "sha256": "7047a53e3d8d532972dfb295347f0e0bf88560e4e972eb7734d65faf034f71f8"
+        },
+        {
+          "index": 1087,
+          "filename": "Copy of IMG_20200328_222058.jpg",
+          "macro": 21,
+          "sub": 10,
+          "dup_group": 1087,
+          "sha256": "4b8a3e7ecf43d6f7fc49935f603164cdbae23092fe47e3e55be97105074e9990"
+        },
+        {
+          "index": 2007,
+          "filename": "Mobile_93.jpg",
+          "macro": 21,
+          "sub": 10,
+          "dup_group": 616,
+          "sha256": "4502b7e21bca4ee19120c9d3d658e3604ec85c23d3252d69e21ca680a8801840"
+        },
+        {
+          "index": 609,
+          "filename": "537.jpeg",
+          "macro": 21,
+          "sub": 10,
+          "dup_group": 609,
+          "sha256": "de939f7c02b593ecac772c8465c72ef9638d476dca5dc1048a009618e06be14f"
+        },
+        {
+          "index": 1927,
+          "filename": "Mobile_282.jpg",
+          "macro": 21,
+          "sub": 10,
+          "dup_group": 1927,
+          "sha256": "a55d5ced7a2bb4907d5b2b0868ca841ba78396583fa2941e042d0ba922fc76d5"
+        }
+      ],
+      "contact_sheet": "contact-16.jpg"
+    },
+    "21_11": {
+      "macro_id": 21,
+      "sub_id": 11,
+      "total_rows": 27,
+      "unique_groups": 19,
+      "files": [
+        {
+          "index": 1780,
+          "filename": "Mobile_15.jpg",
+          "macro": 21,
+          "sub": 11,
+          "dup_group": 1780,
+          "sha256": "9e34ba9f68696a17365d2f9ec4725cd7f0c2bc03900dabdcd232112f2641280b"
+        },
+        {
+          "index": 533,
+          "filename": "482.jpg",
+          "macro": 21,
+          "sub": 11,
+          "dup_group": 533,
+          "sha256": "b94c6311f0338a9c0557b99b148fd222217cf9889da2220a6aa64146271f06c3"
+        },
+        {
+          "index": 1898,
+          "filename": "Mobile_256.jpg",
+          "macro": 21,
+          "sub": 11,
+          "dup_group": 1898,
+          "sha256": "73df72e3fa68febf28706671942d6143a69ec81e3496c55ad9ef371a4a3d8c75"
+        },
+        {
+          "index": 637,
+          "filename": "565.jpg",
+          "macro": 21,
+          "sub": 11,
+          "dup_group": 637,
+          "sha256": "365523df6a6979d91155df19e8a4b58b95867ba434801b7a239309f924ea47c2"
+        },
+        {
+          "index": 1949,
+          "filename": "Mobile_40.jpg",
+          "macro": 21,
+          "sub": 11,
+          "dup_group": 542,
+          "sha256": "249f1bc8f2d8a34b57c3c44afa8e4119284f16125a297c9a65e1f8d76a1fa190"
+        }
+      ],
+      "contact_sheet": "contact-16.jpg"
+    },
+    "21_12": {
+      "macro_id": 21,
+      "sub_id": 12,
+      "total_rows": 71,
+      "unique_groups": 63,
+      "files": [
+        {
+          "index": 899,
+          "filename": "74.recycleIT-blog-post-safe-disposal2.jpg",
+          "macro": 21,
+          "sub": 12,
+          "dup_group": 899,
+          "sha256": "72e85199dcab3f732e908a3e552fc2fe4e77d5c6988bd2bf83a40c7b3ab47ab5"
+        },
+        {
+          "index": 1809,
+          "filename": "Mobile_176.jpg",
+          "macro": 21,
+          "sub": 12,
+          "dup_group": 1809,
+          "sha256": "7a72afd376d89f1f663a9d29182a0d5e8c517019656e809197a5b0bba825b732"
+        },
+        {
+          "index": 1827,
+          "filename": "Mobile_192.jpg",
+          "macro": 21,
+          "sub": 12,
+          "dup_group": 1827,
+          "sha256": "8e1e8b1f13dee071ddf0705614c097e408604a664cb7243f1f073b9a53673378"
+        },
+        {
+          "index": 1920,
+          "filename": "Mobile_276.jpg",
+          "macro": 21,
+          "sub": 12,
+          "dup_group": 1920,
+          "sha256": "e852dceb05fa497093fef2d106df45351db94337daf3e083ad6c3a8a3e205197"
+        },
+        {
+          "index": 1856,
+          "filename": "Mobile_218.jpg",
+          "macro": 21,
+          "sub": 12,
+          "dup_group": 1856,
+          "sha256": "9eb5e68d5b1d189bc0549abf6b25c3cf834b0ec4f888ae523fb7566fe0e429c3"
+        }
+      ],
+      "contact_sheet": "contact-16.jpg"
+    },
+    "21_13": {
+      "macro_id": 21,
+      "sub_id": 13,
+      "total_rows": 17,
+      "unique_groups": 9,
+      "files": [
+        {
+          "index": 1764,
+          "filename": "Mobile_135.jpg",
+          "macro": 21,
+          "sub": 13,
+          "dup_group": 660,
+          "sha256": "055887740ba50973a7ddda6f1d331196a02e838d05cd3d84db006f1aed2a2aba"
+        },
+        {
+          "index": 1961,
+          "filename": "Mobile_51.jpg",
+          "macro": 21,
+          "sub": 13,
+          "dup_group": 574,
+          "sha256": "1834aa698796499b95df35adc695ef1636ba4edef4bc47a0e5cb4007c2843879"
+        },
+        {
+          "index": 614,
+          "filename": "542.jpeg",
+          "macro": 21,
+          "sub": 13,
+          "dup_group": 614,
+          "sha256": "29981687d6fe7063ed5be05b75726e663dbd783c2dcc5553a93c0bc71a6987a8"
+        },
+        {
+          "index": 543,
+          "filename": "492.jpeg",
+          "macro": 21,
+          "sub": 13,
+          "dup_group": 543,
+          "sha256": "4f8839aeb68b51d6d09d02cc350d773105c720096fd40d5e4180d53a0bbb1939"
+        },
+        {
+          "index": 547,
+          "filename": "496.jpeg",
+          "macro": 21,
+          "sub": 13,
+          "dup_group": 547,
+          "sha256": "669d13ef5cdb1932631232ffb2e17014c8f9be78e91465b1dc2f6c80d253008e"
+        }
+      ],
+      "contact_sheet": "contact-16.jpg"
+    },
+    "21_14": {
+      "macro_id": 21,
+      "sub_id": 14,
+      "total_rows": 41,
+      "unique_groups": 29,
+      "files": [
+        {
+          "index": 600,
+          "filename": "527.jpeg",
+          "macro": 21,
+          "sub": 14,
+          "dup_group": 600,
+          "sha256": "665de0f00fef8122ff45d06ccafbd16838b982240813cd6399b9ca1ffb649503"
+        },
+        {
+          "index": 577,
+          "filename": "505.jpeg",
+          "macro": 21,
+          "sub": 14,
+          "dup_group": 577,
+          "sha256": "f00268929d5ba7b498220c71a81ea26a672f35a4fdd59bfc4958393700aa66d4"
+        },
+        {
+          "index": 1838,
+          "filename": "Mobile_201.jpg",
+          "macro": 21,
+          "sub": 14,
+          "dup_group": 1838,
+          "sha256": "96941d63b5438ee7759baa90d73c8224ce469b3e47805b4ebaab4cf297bdc603"
+        },
+        {
+          "index": 1993,
+          "filename": "Mobile_80.jpg",
+          "macro": 21,
+          "sub": 14,
+          "dup_group": 603,
+          "sha256": "b6f802f17613bba621a9ec05afe0499991a762f5a50ae7b06df8cdd64215d1bd"
+        },
+        {
+          "index": 1798,
+          "filename": "Mobile_166.jpg",
+          "macro": 21,
+          "sub": 14,
+          "dup_group": 1798,
+          "sha256": "23380853ef098c22c02878be7d87826b8634dac0198fdd8afdef70f85d91dfd0"
+        }
+      ],
+      "contact_sheet": "contact-17.jpg"
+    },
+    "21_15": {
+      "macro_id": 21,
+      "sub_id": 15,
+      "total_rows": 17,
+      "unique_groups": 11,
+      "files": [
+        {
+          "index": 511,
+          "filename": "462.jpeg",
+          "macro": 21,
+          "sub": 15,
+          "dup_group": 511,
+          "sha256": "dfd1ffeb0751b5db9e5cde7a7e9a1a4f318aad3c6177cb10ee03205109f94c2e"
+        },
+        {
+          "index": 608,
+          "filename": "536.jpeg",
+          "macro": 21,
+          "sub": 15,
+          "dup_group": 608,
+          "sha256": "4b3c731e1c14f53d8381183a379080f46ce3029c2533c81281e5f4c59b33c83c"
+        },
+        {
+          "index": 1997,
+          "filename": "Mobile_84.jpg",
+          "macro": 21,
+          "sub": 15,
+          "dup_group": 607,
+          "sha256": "c94516c74b2715eef7a98cc10f4346d0df939796064c1c8841f0b6e753752398"
+        },
+        {
+          "index": 605,
+          "filename": "533.jpeg",
+          "macro": 21,
+          "sub": 15,
+          "dup_group": 605,
+          "sha256": "54e42fd8e973261ebf4d4f771bfcc0a00e6b12cf3b1175d35e11472d782899d4"
+        },
+        {
+          "index": 537,
+          "filename": "486.jpg",
+          "macro": 21,
+          "sub": 15,
+          "dup_group": 537,
+          "sha256": "593ae906cba265c10a0fe61ff61d3c7396f17fee272008da232f15ad28e1e4ff"
+        }
+      ],
+      "contact_sheet": "contact-17.jpg"
+    },
+    "21_16": {
+      "macro_id": 21,
+      "sub_id": 16,
+      "total_rows": 32,
+      "unique_groups": 18,
+      "files": [
+        {
+          "index": 1749,
+          "filename": "Mobile_121.jpg",
+          "macro": 21,
+          "sub": 16,
+          "dup_group": 644,
+          "sha256": "a7d2610a709649d56b8c2482d59f71e36da6368fdb297ea6a521ece7294f3377"
+        },
+        {
+          "index": 582,
+          "filename": "510.jpeg",
+          "macro": 21,
+          "sub": 16,
+          "dup_group": 582,
+          "sha256": "9f16820ce996d534674b14132f7972fa4485578b923839263bccd21a98073809"
+        },
+        {
+          "index": 655,
+          "filename": "581.jpeg",
+          "macro": 21,
+          "sub": 16,
+          "dup_group": 655,
+          "sha256": "6a9904f843eaf8a7e1526d1e8151b34dfe456cdb2c73b8a8fe694cab905b9025"
+        },
+        {
+          "index": 1902,
+          "filename": "Mobile_26.jpg",
+          "macro": 21,
+          "sub": 16,
+          "dup_group": 527,
+          "sha256": "65cb0a81a8eb499637c1abba7e6ba10efd543c7a8a3c7bf59194265c8a9ecf6f"
+        },
+        {
+          "index": 1924,
+          "filename": "Mobile_28.jpg",
+          "macro": 21,
+          "sub": 16,
+          "dup_group": 529,
+          "sha256": "712929a934738365181c2b90258e60a1e520da7a9ae2f96d0ed005b408060518"
+        }
+      ],
+      "contact_sheet": "contact-17.jpg"
+    },
+    "22_0": {
+      "macro_id": 22,
+      "sub_id": 0,
+      "total_rows": 28,
+      "unique_groups": 27,
+      "files": [
+        {
+          "index": 3506,
+          "filename": "battery_149.jpg",
+          "macro": 22,
+          "sub": 0,
+          "dup_group": 3506,
+          "sha256": "6f50acd4dd1900d37905de0af2bd53277ff5c6e67beb0586a349e87d0f65b1e9"
+        },
+        {
+          "index": 3655,
+          "filename": "battery_87.jpg",
+          "macro": 22,
+          "sub": 0,
+          "dup_group": 3655,
+          "sha256": "ec76e1d2fbe1dc327fa5c1fa8e30417c678b9e90950c432fe666eab29234f91c"
+        },
+        {
+          "index": 3636,
+          "filename": "battery_7.jpg",
+          "macro": 22,
+          "sub": 0,
+          "dup_group": 3636,
+          "sha256": "a6f814248bdc81047d88a79c53496cb97b88adac8721343d0412676a3b6b9f9b"
+        },
+        {
+          "index": 3585,
+          "filename": "battery_293.jpg",
+          "macro": 22,
+          "sub": 0,
+          "dup_group": 3585,
+          "sha256": "46694ae6d1320c8045f1550ecd53d5129cace04c8e3bbab4dfe60c78735a070e"
+        },
+        {
+          "index": 3644,
+          "filename": "battery_77.jpg",
+          "macro": 22,
+          "sub": 0,
+          "dup_group": 3644,
+          "sha256": "037d7ac52c7b90bcafd33d09686f8ead320b4f29e4e85e851b70e692632a8ba2"
+        }
+      ],
+      "contact_sheet": "contact-17.jpg"
+    },
+    "22_1": {
+      "macro_id": 22,
+      "sub_id": 1,
+      "total_rows": 19,
+      "unique_groups": 19,
+      "files": [
+        {
+          "index": 3650,
+          "filename": "battery_82.jpg",
+          "macro": 22,
+          "sub": 1,
+          "dup_group": 3650,
+          "sha256": "0461e7864fd908a0b282851c23b1722427fe1f27b5eaf96a120db475dfd25f3d"
+        },
+        {
+          "index": 3602,
+          "filename": "battery_39.jpg",
+          "macro": 22,
+          "sub": 1,
+          "dup_group": 3602,
+          "sha256": "c72617384bea2c82a3711844507390c39432a4be540e5e8dd171778ad642e4a1"
+        },
+        {
+          "index": 3495,
+          "filename": "battery_139.jpg",
+          "macro": 22,
+          "sub": 1,
+          "dup_group": 3495,
+          "sha256": "dc55b8345fb4769bcce5f9de3c25a24bc8eddaaed19ce57990933e43980c5181"
+        },
+        {
+          "index": 3642,
+          "filename": "battery_75.jpg",
+          "macro": 22,
+          "sub": 1,
+          "dup_group": 3642,
+          "sha256": "bcab99ad558f327552d86cd6db2aa5718af5e7c693b6f7586289a8ed1a213467"
+        },
+        {
+          "index": 3469,
+          "filename": "battery_115.jpg",
+          "macro": 22,
+          "sub": 1,
+          "dup_group": 3469,
+          "sha256": "56dda2e3241f41dc961c1b63429ddfdce737b51662bf1b6601978d39facfadaf"
+        }
+      ],
+      "contact_sheet": "contact-18.jpg"
+    },
+    "22_2": {
+      "macro_id": 22,
+      "sub_id": 2,
+      "total_rows": 17,
+      "unique_groups": 17,
+      "files": [
+        {
+          "index": 3540,
+          "filename": "battery_25.jpg",
+          "macro": 22,
+          "sub": 2,
+          "dup_group": 3540,
+          "sha256": "829312feb05dc8f51d73db7232a293b797b072abf53591776e2524f79fb2477c"
+        },
+        {
+          "index": 3613,
+          "filename": "battery_49.jpg",
+          "macro": 22,
+          "sub": 2,
+          "dup_group": 3613,
+          "sha256": "0951f0501478d0c5aaf0d8be7a3513ce100af8f3a1a491cded58defa3a8402e5"
+        },
+        {
+          "index": 3593,
+          "filename": "battery_30.jpg",
+          "macro": 22,
+          "sub": 2,
+          "dup_group": 3593,
+          "sha256": "05c6226e481160fe77a3a46ca4dd01b723ad902449b75348f61011c59fda3a37"
+        },
+        {
+          "index": 3610,
+          "filename": "battery_46.jpg",
+          "macro": 22,
+          "sub": 2,
+          "dup_group": 3610,
+          "sha256": "84d14e71d59a397b613eeec75b9efed39091c357712fc3ae251f7b9106e20fb1"
+        },
+        {
+          "index": 3454,
+          "filename": "battery_101.jpg",
+          "macro": 22,
+          "sub": 2,
+          "dup_group": 3454,
+          "sha256": "776be483ae8b32ebe8fd3faf3cff3fa8c245855200be8eaebe36b37e6aa36780"
+        }
+      ],
+      "contact_sheet": "contact-18.jpg"
+    },
+    "23_0": {
+      "macro_id": 23,
+      "sub_id": 0,
+      "total_rows": 41,
+      "unique_groups": 40,
+      "files": [
+        {
+          "index": 127,
+          "filename": "154.jpg",
+          "macro": 23,
+          "sub": 0,
+          "dup_group": 127,
+          "sha256": "bd0617bd330cd87be91187f18b323e969033a4b0e7212ddcb194f9c966d10167"
+        },
+        {
+          "index": 390,
+          "filename": "269.jpeg",
+          "macro": 23,
+          "sub": 0,
+          "dup_group": 390,
+          "sha256": "ab68c7fdc464b62ceb3e9373ad767351a1e778802af5adf8768e33a60f250b59"
+        },
+        {
+          "index": 103,
+          "filename": "14.old-dusty-vintage-computer-laptop-notebook-in-isolated-white-2A6X2JP.jpg",
+          "macro": 23,
+          "sub": 0,
+          "dup_group": 103,
+          "sha256": "0493875e9fb3145171e4f771e11a399719e83c4a0946a8e058832f539e6b0b64"
+        },
+        {
+          "index": 128,
+          "filename": "155.jpg",
+          "macro": 23,
+          "sub": 0,
+          "dup_group": 128,
+          "sha256": "94104931fb26f0573c4f1fc6b9e491af0a889decd63d7c2bb1ca26970b8c7f0d"
+        },
+        {
+          "index": 131,
+          "filename": "158.jpg",
+          "macro": 23,
+          "sub": 0,
+          "dup_group": 131,
+          "sha256": "5f23ec9b099f6da7d21f9849ad441881c61543709cfe39944f730e1a6671da72"
+        }
+      ],
+      "contact_sheet": "contact-18.jpg"
+    },
+    "23_1": {
+      "macro_id": 23,
+      "sub_id": 1,
+      "total_rows": 7,
+      "unique_groups": 6,
+      "files": [
+        {
+          "index": 255,
+          "filename": "197.jpeg",
+          "macro": 23,
+          "sub": 1,
+          "dup_group": 255,
+          "sha256": "3530527c2ba81fcfa142ab813c72461d5c9d8179cff51be0fd5ea70f75b22cf9"
+        },
+        {
+          "index": 1096,
+          "filename": "IMG-20200328-WA0025.jpg",
+          "macro": 23,
+          "sub": 1,
+          "dup_group": 1096,
+          "sha256": "bc39ce66019b22ba12588fbc0327c2c74795b50943550569369b4d1cce0f8511"
+        },
+        {
+          "index": 409,
+          "filename": "303.jpeg",
+          "macro": 23,
+          "sub": 1,
+          "dup_group": 409,
+          "sha256": "7c5b8200bd113127cfca98403df6a3103ba4a8775ff34eea790644411e4646f6"
+        },
+        {
+          "index": 256,
+          "filename": "198.jpeg",
+          "macro": 23,
+          "sub": 1,
+          "dup_group": 256,
+          "sha256": "93c6d638fce2923b2c9c865222e49f16e752b010583bd999441537de08e09b8b"
+        },
+        {
+          "index": 1095,
+          "filename": "IMG-20200328-WA0024.jpg",
+          "macro": 23,
+          "sub": 1,
+          "dup_group": 1095,
+          "sha256": "e74eff0cde2190dbfc1943ad5ecf1521e1c68bfd6279aa7aa1b6172db20d6e3c"
+        }
+      ],
+      "contact_sheet": "contact-18.jpg"
+    },
+    "23_2": {
+      "macro_id": 23,
+      "sub_id": 2,
+      "total_rows": 24,
+      "unique_groups": 19,
+      "files": [
+        {
+          "index": 292,
+          "filename": "202.jpeg",
+          "macro": 23,
+          "sub": 2,
+          "dup_group": 292,
+          "sha256": "e37ad3e631326add82053107771a2c47262318dbd4c514f7e168e75b8467cbaa"
+        },
+        {
+          "index": 232,
+          "filename": "186.jpeg",
+          "macro": 23,
+          "sub": 2,
+          "dup_group": 232,
+          "sha256": "c105fbf5c212abf39fb8e9f6dd40e2260f701f5599296dafdb33bc5621936c15"
+        },
+        {
+          "index": 385,
+          "filename": "264.jpeg",
+          "macro": 23,
+          "sub": 2,
+          "dup_group": 385,
+          "sha256": "3729fb72f30b7f84416f62c6eccba130e4d9afdaa41852c42624edde9753ad24"
+        },
+        {
+          "index": 308,
+          "filename": "213.jpeg",
+          "macro": 23,
+          "sub": 2,
+          "dup_group": 308,
+          "sha256": "ad1842d557a3164ee19077618e90295ddaf586834398450a9ccea2aa6e6d33d5"
+        },
+        {
+          "index": 3449,
+          "filename": "azxcvbnm.jpg",
+          "macro": 23,
+          "sub": 2,
+          "dup_group": 3449,
+          "sha256": "41c6fc891b000e7afb986cb1927fb63d2b335e947f26ed7c2f5ffaefc8926e50"
+        }
+      ],
+      "contact_sheet": "contact-19.jpg"
+    },
+    "23_3": {
+      "macro_id": 23,
+      "sub_id": 3,
+      "total_rows": 88,
+      "unique_groups": 86,
+      "files": [
+        {
+          "index": 342,
+          "filename": "24.laptop_repair_6.jpg",
+          "macro": 23,
+          "sub": 3,
+          "dup_group": 342,
+          "sha256": "878e5bf39e977325308f09d3dbe2f2fd025cc27938a04a8300b56f56b4493571"
+        },
+        {
+          "index": 1100,
+          "filename": "IMG-20200328-WA0029.jpg",
+          "macro": 23,
+          "sub": 3,
+          "dup_group": 1100,
+          "sha256": "d106c2b985582e849fa56f8d9dcc575e24bbda8ed638ee6402e5809763156926"
+        },
+        {
+          "index": 227,
+          "filename": "181.jpeg",
+          "macro": 23,
+          "sub": 3,
+          "dup_group": 227,
+          "sha256": "01edfa20becbc307bbb31c2e6988a8bf2f30712b3f324fadd03d76a5b2ea2664"
+        },
+        {
+          "index": 649,
+          "filename": "57638075-direct-view-of-old-broken-laptop-isolated-on-white-background.jpg",
+          "macro": 23,
+          "sub": 3,
+          "dup_group": 649,
+          "sha256": "9edb7602a65dd624e0b23bc918331e56b44ee49b602aca35427a8e9a498f284a"
+        },
+        {
+          "index": 387,
+          "filename": "266.jpeg",
+          "macro": 23,
+          "sub": 3,
+          "dup_group": 387,
+          "sha256": "e031b3d0c0d4e7d8df870dd81429921fbb257b7932fab5e7d456d8fde2187fcf"
+        }
+      ],
+      "contact_sheet": "contact-19.jpg"
+    },
+    "23_4": {
+      "macro_id": 23,
+      "sub_id": 4,
+      "total_rows": 19,
+      "unique_groups": 19,
+      "files": [
+        {
+          "index": 372,
+          "filename": "256.jpeg",
+          "macro": 23,
+          "sub": 4,
+          "dup_group": 372,
+          "sha256": "591132ac70772951b1f02cfabd6eeb3feae370f73ef759bb723d916e92048e38"
+        },
+        {
+          "index": 328,
+          "filename": "236.jpeg",
+          "macro": 23,
+          "sub": 4,
+          "dup_group": 328,
+          "sha256": "48d5a9e67ba0c10e69643272972ec6f33dba6d6b0b9ffcd2cf156f887f341291"
+        },
+        {
+          "index": 258,
+          "filename": "1D2299CA-9F72-4A79-AE74-5228671D53E8.jpg",
+          "macro": 23,
+          "sub": 4,
+          "dup_group": 258,
+          "sha256": "6ce17337c18ad54549ec090b0862ada4dafbe4dbf57c16b06ba0d659d4c08255"
+        },
+        {
+          "index": 371,
+          "filename": "255.jpeg",
+          "macro": 23,
+          "sub": 4,
+          "dup_group": 371,
+          "sha256": "1a0aa73d36acae9dcc3ba38513c31cca8f094d498b9eafeeb6301d74640c4ac1"
+        },
+        {
+          "index": 887,
+          "filename": "73.1675927917-359-msi-taetlum1.jpg",
+          "macro": 23,
+          "sub": 4,
+          "dup_group": 887,
+          "sha256": "301875effd12d073e6cca9aef5d51096e54932cba06eb787cce5442645a35e17"
+        }
+      ],
+      "contact_sheet": "contact-19.jpg"
+    },
+    "24_0": {
+      "macro_id": 24,
+      "sub_id": 0,
+      "total_rows": 70,
+      "unique_groups": 66,
+      "files": [
+        {
+          "index": 2283,
+          "filename": "Player_101.jpg",
+          "macro": 24,
+          "sub": 0,
+          "dup_group": 2283,
+          "sha256": "303f7208f956971af3302bfed944c1048006d0f25ef967148e4930e773219a93"
+        },
+        {
+          "index": 2511,
+          "filename": "Player_40.jpg",
+          "macro": 24,
+          "sub": 0,
+          "dup_group": 2511,
+          "sha256": "35d2a1270268b89d2a58a8f730b27e09fb9f1803375fa534eaa12d2953042613"
+        },
+        {
+          "index": 2413,
+          "filename": "Player_221.jpg",
+          "macro": 24,
+          "sub": 0,
+          "dup_group": 2413,
+          "sha256": "8db5c9ddc4b0afb53764801a8ddccc2e0b60c60e4aabcdfc46802f54d05983fa"
+        },
+        {
+          "index": 2279,
+          "filename": "Player_0.jpg",
+          "macro": 24,
+          "sub": 0,
+          "dup_group": 2279,
+          "sha256": "ae953f21b4edb131b3ae70b4a29971789678465765564c75b7aaeb256cf48bac"
+        },
+        {
+          "index": 2408,
+          "filename": "Player_217.jpg",
+          "macro": 24,
+          "sub": 0,
+          "dup_group": 2408,
+          "sha256": "b2df541e7eac105a9cdcc9a8111398a44137ed55d9c4cdf9205eb88784e507e7"
+        }
+      ],
+      "contact_sheet": "contact-19.jpg"
+    },
+    "24_1": {
+      "macro_id": 24,
+      "sub_id": 1,
+      "total_rows": 5,
+      "unique_groups": 5,
+      "files": [
+        {
+          "index": 3483,
+          "filename": "battery_128.jpg",
+          "macro": 24,
+          "sub": 1,
+          "dup_group": 3483,
+          "sha256": "d33557b98c144dfc505a78cabceb5dd060d685ae12edc3376f3257910489f5f6"
+        },
+        {
+          "index": 2301,
+          "filename": "Player_118.jpg",
+          "macro": 24,
+          "sub": 1,
+          "dup_group": 2301,
+          "sha256": "da087439b5cc5ce539e0c434d00f13ed5040fdcd73a7899eb19bd1ee897cbcf0"
+        },
+        {
+          "index": 1506,
+          "filename": "Microwave_136.jpg",
+          "macro": 24,
+          "sub": 1,
+          "dup_group": 1506,
+          "sha256": "ec7d0fd30890db0eb0ffc381f3b03b6e85209fe3965aea215572f699f41f3112"
+        },
+        {
+          "index": 1692,
+          "filename": "Microwave_71.jpg",
+          "macro": 24,
+          "sub": 1,
+          "dup_group": 1692,
+          "sha256": "4daa1c6fceca8802c970750e5599ce75f414b471f5cce7387c21ff4fa9194384"
+        },
+        {
+          "index": 1346,
+          "filename": "Keyboard_243.jpg",
+          "macro": 24,
+          "sub": 1,
+          "dup_group": 1346,
+          "sha256": "3710ba709d449ecad97e0491c99a5ecd4fd792c3a5b224cea6d050f8ee08b191"
+        }
+      ],
+      "contact_sheet": "contact-20.jpg"
+    },
+    "24_2": {
+      "macro_id": 24,
+      "sub_id": 2,
+      "total_rows": 8,
+      "unique_groups": 8,
+      "files": [
+        {
+          "index": 851,
+          "filename": "7.stock-photo-pile-of-electronic-waste-rusty-old-computer-cases-and-obsolete-computer-hardware-such-as-1918603046.jpg",
+          "macro": 24,
+          "sub": 2,
+          "dup_group": 851,
+          "sha256": "594d5fd3e429813293138bfe9dbb6ab3c24a84a9adf6d9a7658eb963e7a22462"
+        },
+        {
+          "index": 2355,
+          "filename": "Player_17.jpg",
+          "macro": 24,
+          "sub": 2,
+          "dup_group": 2355,
+          "sha256": "665a565f001c42cdc723eeff9a9a3870ee02d456304801dee15638d5336729a9"
+        },
+        {
+          "index": 2369,
+          "filename": "Player_182.jpg",
+          "macro": 24,
+          "sub": 2,
+          "dup_group": 2369,
+          "sha256": "c0271a343fe8d340a1c16fd63e812a30e6a1e62ef678d9dcfa4889870a71e740"
+        },
+        {
+          "index": 2524,
+          "filename": "Player_7.jpg",
+          "macro": 24,
+          "sub": 2,
+          "dup_group": 2524,
+          "sha256": "e7fa02a4d2b568c658848fed1b33b017f230775058a45a7dd2ba6f63ad75fb2c"
+        },
+        {
+          "index": 2490,
+          "filename": "Player_291.jpg",
+          "macro": 24,
+          "sub": 2,
+          "dup_group": 2490,
+          "sha256": "d2a437fcdbc1769c50a0ec161de9ea301ea895476f95fa499566b709532768aa"
+        }
+      ],
+      "contact_sheet": "contact-20.jpg"
+    },
+    "25_0": {
+      "macro_id": 25,
+      "sub_id": 0,
+      "total_rows": 21,
+      "unique_groups": 21,
+      "files": [
+        {
+          "index": 2948,
+          "filename": "Television_215.jpg",
+          "macro": 25,
+          "sub": 0,
+          "dup_group": 2948,
+          "sha256": "b3707677ceefe9273cd813114c176f9489017ca617d23dae71cfcb64e5e6b89d"
+        },
+        {
+          "index": 571,
+          "filename": "5.terima_jual_beli_tv_rusak_di_j_1675120594_db93bf4a_progressive.jpg",
+          "macro": 25,
+          "sub": 0,
+          "dup_group": 571,
+          "sha256": "f95cc17ad8778b521afdbe4d2802effca50030838b91b8263faf24874a9a3ee8"
+        },
+        {
+          "index": 1834,
+          "filename": "Mobile_199.jpg",
+          "macro": 25,
+          "sub": 0,
+          "dup_group": 1834,
+          "sha256": "4485bd090030008f0a0929bb5d8d2c8134e85c286c2d278ad4fede1a0be48003"
+        },
+        {
+          "index": 2873,
+          "filename": "Television_148.jpg",
+          "macro": 25,
+          "sub": 0,
+          "dup_group": 2873,
+          "sha256": "3695c406d8afe1a849a406b1feacff3df6d119eb398ef891bc8f366ec4622f9e"
+        },
+        {
+          "index": 868,
+          "filename": "71.SONY-BRAVIA-32-INCH-ANDRIOD-SMART-TV-VB201705171774173-ak_LWBP143044850-1780035209.png",
+          "macro": 25,
+          "sub": 0,
+          "dup_group": 868,
+          "sha256": "6c2009c62c9ceba3869ec358e632d6bb5aabe24548ba5b0deb925a9350c3571e"
+        }
+      ],
+      "contact_sheet": "contact-20.jpg"
+    },
+    "25_1": {
+      "macro_id": 25,
+      "sub_id": 1,
+      "total_rows": 11,
+      "unique_groups": 11,
+      "files": [
+        {
+          "index": 1659,
+          "filename": "Microwave_41.jpg",
+          "macro": 25,
+          "sub": 1,
+          "dup_group": 1659,
+          "sha256": "76dbfa557fd17ff9609b02a170c59cbf8ceb5ac0a5e9c0d8d7c9cb65d3475276"
+        },
+        {
+          "index": 3036,
+          "filename": "Television_295.jpg",
+          "macro": 25,
+          "sub": 1,
+          "dup_group": 3036,
+          "sha256": "da1be95122c9804c924461146be6fc5e39981d79bbf6546639f4802d3f354a16"
+        },
+        {
+          "index": 3054,
+          "filename": "Television_41.jpg",
+          "macro": 25,
+          "sub": 1,
+          "dup_group": 3054,
+          "sha256": "d286a20dd753be024602829b413dc4df1629d4e0b9e9b2700f5adb63c842716e"
+        },
+        {
+          "index": 2960,
+          "filename": "Television_226.jpg",
+          "macro": 25,
+          "sub": 1,
+          "dup_group": 2960,
+          "sha256": "5889249beaffe09f8290cdcdef2db79cccf8de9d91ea34f5b5424f88ff8a7a04"
+        },
+        {
+          "index": 3056,
+          "filename": "Television_43.jpg",
+          "macro": 25,
+          "sub": 1,
+          "dup_group": 3056,
+          "sha256": "041467a2fc593ef482f2f2f7220a6abb3f7e55118a28ac767875034de886dd8e"
+        }
+      ],
+      "contact_sheet": "contact-20.jpg"
+    },
+    "26_0": {
+      "macro_id": 26,
+      "sub_id": 0,
+      "total_rows": 117,
+      "unique_groups": 115,
+      "files": [
+        {
+          "index": 3944,
+          "filename": "rtyrtyrtyrtyrty.jpg",
+          "macro": 26,
+          "sub": 0,
+          "dup_group": 3944,
+          "sha256": "8828f560e674957b8e395bc02f7799a1a544dc18855a38d91187552718bfd336"
+        },
+        {
+          "index": 145,
+          "filename": "16.e-waste-pile-discarded-electronics-environmental-concerns-close-up-shot-showcasing-pile-discarded-electronic-devices-406665791.jpg",
+          "macro": 26,
+          "sub": 0,
+          "dup_group": 145,
+          "sha256": "74135e01db3ad2513c87d29d2b1ba1cc93326d51b436e38159511c13b4e1693e"
+        },
+        {
+          "index": 815,
+          "filename": "68.Untitled-design-2024-07-11T112427.392.png",
+          "macro": 26,
+          "sub": 0,
+          "dup_group": 815,
+          "sha256": "45f26e6cbdd89f3e218b14d7281b8bd72fd243d38a493b31c5fb6263bac20e8f"
+        },
+        {
+          "index": 237,
+          "filename": "19.What_20is_20e-waste_20recycling.jpg",
+          "macro": 26,
+          "sub": 0,
+          "dup_group": 237,
+          "sha256": "6a19f1e0839fc4cd3344f94cbeba4437e0ead806451475d88cde7fa2a6a18741"
+        },
+        {
+          "index": 1562,
+          "filename": "Microwave_187.jpg",
+          "macro": 26,
+          "sub": 0,
+          "dup_group": 1562,
+          "sha256": "1ab09b9b2e08599d84a0db2e30b754176cc9d3bd100b596d80e2f629baae3507"
+        }
+      ],
+      "contact_sheet": "contact-21.jpg"
+    },
+    "26_1": {
+      "macro_id": 26,
+      "sub_id": 1,
+      "total_rows": 12,
+      "unique_groups": 12,
+      "files": [
+        {
+          "index": 1187,
+          "filename": "IMG_20201101_130106.jpg",
+          "macro": 26,
+          "sub": 1,
+          "dup_group": 1187,
+          "sha256": "358d66f7f39b1fc03c186820f2f3212de36cf248418eab8f2916a734cdea22ee"
+        },
+        {
+          "index": 1094,
+          "filename": "Harga Kamera Canon 550D Terbaru.jpg",
+          "macro": 26,
+          "sub": 1,
+          "dup_group": 1094,
+          "sha256": "1f15e66db828cb76fabc131d55a69b17227b4397441ca458f0fc1913f8da48a8"
+        },
+        {
+          "index": 3946,
+          "filename": "s-l640.jpg",
+          "macro": 26,
+          "sub": 1,
+          "dup_group": 3946,
+          "sha256": "8df40afaed6ef9b30d428116954b7ab069a5bbe2c8959c1afbaffbf120c21d83"
+        },
+        {
+          "index": 3706,
+          "filename": "istockphoto-174876806-612x612.jpg",
+          "macro": 26,
+          "sub": 1,
+          "dup_group": 3706,
+          "sha256": "1a6c83504f07b2185ee9d2680b10b6b1c811916b2f0aaf35b309951c7d509aa1"
+        },
+        {
+          "index": 990,
+          "filename": "8.globalewaste.jpg",
+          "macro": 26,
+          "sub": 1,
+          "dup_group": 990,
+          "sha256": "270dad4ee401e1b352643c79b6fe93e9908de7a9ff6373ac99348568fc249025"
+        }
+      ],
+      "contact_sheet": "contact-21.jpg"
+    },
+    "26_2": {
+      "macro_id": 26,
+      "sub_id": 2,
+      "total_rows": 53,
+      "unique_groups": 51,
+      "files": [
+        {
+          "index": 1122,
+          "filename": "IMG-20200329-WA0069.jpg",
+          "macro": 26,
+          "sub": 2,
+          "dup_group": 1122,
+          "sha256": "a17294aa60528e61049cae0ef1109f038ceaa54b4ac3206aa0b6a2ef73b3b8b6"
+        },
+        {
+          "index": 1124,
+          "filename": "IMG-20200329-WA0071.jpg",
+          "macro": 26,
+          "sub": 2,
+          "dup_group": 1124,
+          "sha256": "30f648cc3ccc595922ec3cf687d56b28b5aa1c50895712c25bbdb060bb32d619"
+        },
+        {
+          "index": 745,
+          "filename": "63.FA02LXHI697S5OH.png",
+          "macro": 26,
+          "sub": 2,
+          "dup_group": 745,
+          "sha256": "1c5a8ab088db8246b2e175d95174ec38df7e2d653cbfc00a55dff4cf4aa72ce9"
+        },
+        {
+          "index": 2818,
+          "filename": "Television_0.jpg",
+          "macro": 26,
+          "sub": 2,
+          "dup_group": 2818,
+          "sha256": "0fa9bd9374981947a5404b6e326590b41d5ccc24cef6247b38003eabc7e96177"
+        },
+        {
+          "index": 1121,
+          "filename": "IMG-20200329-WA0068.jpg",
+          "macro": 26,
+          "sub": 2,
+          "dup_group": 1121,
+          "sha256": "7f97702a594c8c989f3e667af04a54729b511b2f7007763b285af1f650f7a260"
+        }
+      ],
+      "contact_sheet": "contact-21.jpg"
+    },
+    "26_3": {
+      "macro_id": 26,
+      "sub_id": 3,
+      "total_rows": 15,
+      "unique_groups": 15,
+      "files": [
+        {
+          "index": 2449,
+          "filename": "Player_254.jpg",
+          "macro": 26,
+          "sub": 3,
+          "dup_group": 2449,
+          "sha256": "b90a020de1eaf33b718e4089835577c8ec0143b24572ad1ae50e630d5e596f35"
+        },
+        {
+          "index": 683,
+          "filename": "6.20170119155741-intip-pusat-pemusnahan-limbah-elektronik-di-jepang-001-dru.jpg",
+          "macro": 26,
+          "sub": 3,
+          "dup_group": 683,
+          "sha256": "e91db101a1f1b9c07145b06923a4980da9e6b807f63f08f4f61ce0c4d3ed9cc5"
+        },
+        {
+          "index": 2496,
+          "filename": "Player_297.jpg",
+          "macro": 26,
+          "sub": 3,
+          "dup_group": 2496,
+          "sha256": "98acfdaf0ce645ab975d2961ef5bb7b84b278265b2c82b1050702e5955867d32"
+        },
+        {
+          "index": 3669,
+          "filename": "battery_exploded.jpg",
+          "macro": 26,
+          "sub": 3,
+          "dup_group": 3669,
+          "sha256": "5cb0be6972506387f9db223a7a0b095fc40d942dbcc5ccfce956449bf6548a6c"
+        },
+        {
+          "index": 1185,
+          "filename": "IMG_20201101_130043.jpg",
+          "macro": 26,
+          "sub": 3,
+          "dup_group": 1185,
+          "sha256": "8ec1671a2325e063dfc55062cf3760c37eaf50878a1c3bc684cf892400ab3dc0"
+        }
+      ],
+      "contact_sheet": "contact-21.jpg"
+    }
+  }
+}

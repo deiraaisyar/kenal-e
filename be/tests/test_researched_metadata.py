@@ -41,6 +41,7 @@ def test_source_links_and_macro_facets_are_traceable():
         for sub in entry['subs'].values():
             assert sub['name'] and sub['description'] and sub['facets']
             assert set(sub['source_ids'])<=set(sources)
+            assert set(sub['info']['source_ids'])<=set(sources)
 
 
 def test_published_fixed_prices_are_not_expanded_into_made_up_ranges():
@@ -68,23 +69,27 @@ def test_research_quotes_fail_closed(mutation):
 def test_unknown_mixed_and_ambiguous_micro_do_not_get_parent_prices():
     entries=load_catalog()
     assert 26 not in entries
-    assert entries[18]['price']=={'mode':'none'}
-    for macro,sub in [(5,1),(21,1),(21,2),(23,2)]:
+    assert entries[18]['price']['mode']=='none'
+    for macro,sub in [(5,0),(5,1),(9,4),(12,0),(12,2),(13,1),(13,2),(20,1),(21,1),(21,4),(24,1)]:
         info,price=resolve_metadata(entries[macro],sub)
-        assert info['risk_level']=='unknown'
         assert info['assessable'] is False
-        assert price=={'mode':'none'}
-    assert resolve_metadata(entries[13],1)[1]=={'mode':'none'}
-    assert resolve_metadata(entries[13],2)[1]=={'mode':'none'}
+        assert info['do'] and info['dont']
+        assert price['mode']=='none'
+        assert price['unavailable_reason']
 
 
 def test_micro_quote_does_not_mutate_parent_or_neighbor():
     entries=load_catalog()
-    assert entries[5]['price']=={'mode':'none'}
-    assert resolve_metadata(entries[5],0)[1]['scrap']['min']==4000
-    assert resolve_metadata(entries[5],1)[1]=={'mode':'none'}
-    assert entries[5]['info']['risk_level']=='high'
-    assert entries[5]['price']=={'mode':'none'}
+    original=deepcopy(entries[9])
+    info,price=resolve_metadata(entries[9],1)
+    assert price['scrap']['min']==15000  # Laptop micro must not get keyboard500/kg.
+    assert 'data pribadi' in ' '.join(info['do'])
+    assert resolve_metadata(entries[9],0)[1]['scrap']['min']==500
+    assert resolve_metadata(entries[9],4)[1]['mode']=='none'
+    price['scrap']['min']=0
+    info['do'].clear()
+    assert entries[9]==original
+    assert resolve_metadata(entries[23],2)[1]['scrap']['min']==15000
 
 
 def test_two_price_channels_keep_different_units_and_dont_invent_condition():
@@ -92,4 +97,4 @@ def test_two_price_channels_keep_different_units_and_dont_invent_condition():
     assert entry['price']['whole']['unit']=='item'
     assert entry['price']['scrap']['unit']=='kg'
     assert entry['price']['condition_factors'] is None
-    assert valid_price(metadata()['9']['price'],{'assessable':False},registry())=={'mode':'none'}
+    assert valid_price(metadata()['9']['price'],{'assessable':False},registry())['mode']=='none'

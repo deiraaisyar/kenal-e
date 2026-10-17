@@ -1,0 +1,3235 @@
+{
+  "schema_version": "1.0",
+  "reviewed_on": "2026-10-18",
+  "seed": 20261018,
+  "sample_count": 423,
+  "micro_count": 88,
+  "macro_count": 27,
+  "method": "For each micro: group by dup_group, uniformly sample up to 5 groups without replacement, then choose one member uniformly per group. If fewer than 5 distinct groups exist, fill remaining slots with random unselected files up to min(5,total rows). Independent seeded RNG per micro.",
+  "mapping_check": "All3961 filename macro/sub assignments match facets_level2.csv and runtime gallery order; IDs/vectors unchanged.",
+  "proposal_check": {
+    "source_id": "proposal",
+    "physical_pages": [
+      13,
+      14
+    ],
+    "note": "proposal_facets remain original Tables3–5. Observed micro exceptions have explicit facets and handling overrides. Tabel2 mentions23 as Keyboard but current sampled files for23 are laptops; filenames/IDs take precedence for visual labelling, functional category remains computing."
+  },
+  "micros": {
+    "0_0": {
+      "old_label": "Microwave",
+      "label": "Microwave dan perangkat kotak serupa",
+      "description": "Tiga sampel jelas microwave; satu oven tanam dan satu perangkat mirip printer menunjukkan pencampuran. Kenali pintu dan panel microwave sebelum menerapkan harga.",
+      "sample_observations": [
+        {
+          "filename": "Printer_259.jpg",
+          "index": 2694,
+          "observation": "Perangkat kotak berslot, mirip printer"
+        },
+        {
+          "filename": "Microwave_210.jpg",
+          "index": 1589,
+          "observation": "Oven tanam berpintu tarik"
+        },
+        {
+          "filename": "Microwave_79.jpg",
+          "index": 1700,
+          "observation": "Microwave sedang digunakan"
+        },
+        {
+          "filename": "Microwave_80.jpg",
+          "index": 1702,
+          "observation": "Microwave dengan panel kanan"
+        },
+        {
+          "filename": "Microwave_31.jpg",
+          "index": 1648,
+          "observation": "Microwave berpintu bundar"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "1_0": {
+      "old_label": "Mesin cuci bukaan depan",
+      "label": "Mesin cuci, dominan bukaan depan",
+      "description": "Empat sampel bukaan depan dan satu bukaan atas. Pintu depan merupakan ciri dominan, bukan ciri semua anggota.",
+      "sample_observations": [
+        {
+          "filename": "Washing_Machine_70.jpg",
+          "index": 3386,
+          "observation": "Mesin cuci bukaan depan"
+        },
+        {
+          "filename": "Washing_Machine_210.jpg",
+          "index": 3243,
+          "observation": "Mesin cuci bukaan depan hitam"
+        },
+        {
+          "filename": "Washing_Machine_249.jpg",
+          "index": 3285,
+          "observation": "Mesin cuci bukaan depan buram"
+        },
+        {
+          "filename": "Washing_Machine_252.jpg",
+          "index": 3289,
+          "observation": "Mesin cuci bukaan atas"
+        },
+        {
+          "filename": "Washing_Machine_173.jpg",
+          "index": 3201,
+          "observation": "Mesin cuci bukaan depan putih"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "1_1": {
+      "old_label": "Mesin cuci mini/portabel dan dua tabung",
+      "label": "Mesin cuci mini dan dua tabung",
+      "description": "Sampel mencakup mesin cuci mini satu tabung dan model dua tabung. Kapasitas dan jenis tidak seragam.",
+      "sample_observations": [
+        {
+          "filename": "Washing_Machine_259.jpg",
+          "index": 3296,
+          "observation": "Tabung mini biru"
+        },
+        {
+          "filename": "Washing_Machine_224.jpg",
+          "index": 3258,
+          "observation": "Tabung mini merah"
+        },
+        {
+          "filename": "Washing_Machine_222.jpg",
+          "index": 3256,
+          "observation": "Mesin cuci kecil bertutup atas"
+        },
+        {
+          "filename": "Washing_Machine_2.jpg",
+          "index": 3230,
+          "observation": "Mesin cuci dua tabung"
+        },
+        {
+          "filename": "Washing_Machine_72.jpg",
+          "index": 3388,
+          "observation": "Mesin cuci mini biru-putih"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "1_2": {
+      "old_label": "Mesin cuci bukaan atas",
+      "label": "Mesin cuci, dominan bukaan atas",
+      "description": "Empat sampel bertutup atas; satu tampak memiliki pintu depan. Jangan menyimpulkan kapasitas dari klaster.",
+      "sample_observations": [
+        {
+          "filename": "Washing_Machine_5.jpg",
+          "index": 3363,
+          "observation": "Mesin cuci bukaan atas gelap"
+        },
+        {
+          "filename": "Washing_Machine_52.jpg",
+          "index": 3366,
+          "observation": "Mesin cuci tampak berpintu depan"
+        },
+        {
+          "filename": "Washing_Machine_124.jpg",
+          "index": 3147,
+          "observation": "Mesin cuci bukaan atas putih"
+        },
+        {
+          "filename": "Washing_Machine_99.jpg",
+          "index": 3417,
+          "observation": "Mesin cuci bukaan atas ramping"
+        },
+        {
+          "filename": "Washing_Machine_112.jpg",
+          "index": 3134,
+          "observation": "Mesin cuci bukaan atas putih"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "2_0": {
+      "old_label": "Printer struk dan label",
+      "label": "Printer struk, label dan cetak khusus",
+      "description": "Ada printer label gulungan serta printer lama dengan jalur kertas lebar. Tidak semuanya dapat disebut thermal hanya dari foto.",
+      "sample_observations": [
+        {
+          "filename": "Printer_48.jpg",
+          "index": 2759,
+          "observation": "Printer label"
+        },
+        {
+          "filename": "Printer_185.jpg",
+          "index": 2612,
+          "observation": "Printer label industri"
+        },
+        {
+          "filename": "Printer_175.jpg",
+          "index": 2601,
+          "observation": "Printer label kotak"
+        },
+        {
+          "filename": "Printer_260.jpg",
+          "index": 2696,
+          "observation": "Printer lama dengan mekanisme terbuka"
+        },
+        {
+          "filename": "Printer_116.jpg",
+          "index": 2557,
+          "observation": "Printer lama bercelah kertas lebar"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "3_0": {
+      "old_label": "Saklar, stopkontak dan terminal listrik",
+      "label": "Saklar dan stopkontak dinding",
+      "description": "Sampel memperlihatkan saklar, soket dengan steker, serta panel terbuka dengan kabel. Pemasangan listrik perlu ditangani teknisi.",
+      "sample_observations": [
+        {
+          "filename": "WhatsApp Image 2020-11-01 at 1.20.37 PM.jpeg",
+          "index": 3421,
+          "observation": "Saklar tunggal"
+        },
+        {
+          "filename": "WhatsApp Image 2020-11-01 at 1.25.56 PM.jpeg",
+          "index": 3436,
+          "observation": "Dua stopkontak terpasang steker"
+        },
+        {
+          "filename": "WhatsApp Image 2020-11-01 at 1.22.54 PM.jpeg",
+          "index": 3428,
+          "observation": "Panel saklar"
+        },
+        {
+          "filename": "WhatsApp Image 2020-11-01 at 1.27.06 PM.jpeg",
+          "index": 3439,
+          "observation": "Stopkontak dan saklar"
+        },
+        {
+          "filename": "IMG_20201101_130429.jpg",
+          "index": 1193,
+          "observation": "Panel terbuka dengan kabel dan komponen"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "4_0": {
+      "old_label": "Sel silinder dan paket baterai kecil",
+      "label": "Baterai kecil: sel silinder, kotak dan paket",
+      "description": "Sampel mencakup sel silinder, susunan sel dan baterai kotak 9V. Kimia harus dibaca dari label; tidak semuanya litium.",
+      "sample_observations": [
+        {
+          "filename": "battery_209.jpg",
+          "index": 3535,
+          "observation": "Susunan sel silinder"
+        },
+        {
+          "filename": "battery_50.jpg",
+          "index": 3615,
+          "observation": "Baterai kotak 9V"
+        },
+        {
+          "filename": "battery_19.jpg",
+          "index": 3513,
+          "observation": "Kumpulan sel silinder"
+        },
+        {
+          "filename": "battery_266.jpg",
+          "index": 3555,
+          "observation": "Sel silinder tunggal"
+        },
+        {
+          "filename": "battery_57.jpg",
+          "index": 3622,
+          "observation": "Sel silinder hijau"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "4_1": {
+      "old_label": "Baterai silinder lepas",
+      "label": "Baterai silinder lepas",
+      "description": "Lima sampel menunjukkan sel silinder berbagai ukuran, termasuk permukaan berkarat. Foto tidak menetapkan kimia atau sisa daya.",
+      "sample_observations": [
+        {
+          "filename": "battery_95.jpg",
+          "index": 3664,
+          "observation": "Sel besar berkarat"
+        },
+        {
+          "filename": "battery_61.jpg",
+          "index": 3627,
+          "observation": "Deretan sel silinder"
+        },
+        {
+          "filename": "battery_24.jpg",
+          "index": 3539,
+          "observation": "Sel besar silinder"
+        },
+        {
+          "filename": "battery_12.jpg",
+          "index": 3474,
+          "observation": "Sel beragam ukuran, buram"
+        },
+        {
+          "filename": "battery_292.jpg",
+          "index": 3584,
+          "observation": "Sel besar berwarna logam"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "5_0": {
+      "old_label": "Ponsel layar sentuh",
+      "label": "Ponsel dan laptop campuran",
+      "description": "Sampel berisi ponsel, tumpukan laptop, dan beberapa perangkat dalam satu foto. Harga ponsel tidak boleh diwariskan ke seluruh mikro ini.",
+      "sample_observations": [
+        {
+          "filename": "IMG_20200329_142615.jpg",
+          "index": 1150,
+          "observation": "Tumpukan laptop tertutup"
+        },
+        {
+          "filename": "Mobile_158.jpg",
+          "index": 1789,
+          "observation": "Ponsel dengan layar tampak retak"
+        },
+        {
+          "filename": "IMG_20200328_131600.jpg",
+          "index": 1142,
+          "observation": "Ponsel layar sentuh"
+        },
+        {
+          "filename": "IMG_20200329_152858.jpg",
+          "index": 1169,
+          "observation": "Beberapa laptop dan ponsel"
+        },
+        {
+          "filename": "Mobile_271.jpg",
+          "index": 1915,
+          "observation": "Ponsel di kain bermotif"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "5_1": {
+      "old_label": "Komponen mirip kipas/pendingin komputer",
+      "label": "Papan dan komponen komputer campuran",
+      "description": "Sampel menunjukkan papan sirkuit, tumpukan komponen dengan kipas, dan perangkat berpola tombol yang buram. Label khusus kipas terlalu sempit.",
+      "sample_observations": [
+        {
+          "filename": "pcb_171.jpg",
+          "index": 3776,
+          "observation": "Papan komponen buram"
+        },
+        {
+          "filename": "pcb_32.jpg",
+          "index": 3880,
+          "observation": "Tumpukan papan dan komponen dengan kipas"
+        },
+        {
+          "filename": "Keyboard_144.jpg",
+          "index": 1257,
+          "observation": "Perangkat berpola tombol, buram"
+        },
+        {
+          "filename": "pcb_186.jpg",
+          "index": 3791,
+          "observation": "Papan komponen buram"
+        },
+        {
+          "filename": "pcb_144.jpg",
+          "index": 3749,
+          "observation": "Tumpukan papan dan komponen dengan kipas"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "6_0": {
+      "old_label": "Aki dan baterai kotak",
+      "label": "Baterai kotak dengan kimia berbeda",
+      "description": "Dua sampel: satu label Pb dan satu label Lithium-ion terlihat. Keduanya tidak boleh disamakan sebagai aki timbal-asam.",
+      "sample_observations": [
+        {
+          "filename": "battery_108.jpg",
+          "index": 3461,
+          "observation": "Baterai kotak kuning dengan tanda Pb"
+        },
+        {
+          "filename": "battery_44.jpg",
+          "index": 3608,
+          "observation": "Baterai kotak PATONA berlabel Lithium-ion"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "6_1": {
+      "old_label": "Aki dan baterai kotak",
+      "label": "Aki kendaraan bekas",
+      "description": "Tiga sampel aki kendaraan, termasuk yang terpasang dan yang diletakkan di luar. Kondisi elektrolit tidak dapat dinilai dari foto.",
+      "sample_observations": [
+        {
+          "filename": "Signs-Your-Car-Battery-Is-Dying.jpg",
+          "index": 2816,
+          "observation": "Aki terpasang dengan terminal"
+        },
+        {
+          "filename": "battery_107.jpg",
+          "index": 3460,
+          "observation": "Aki kendaraan Rocket"
+        },
+        {
+          "filename": "yj6-1354367.jpg",
+          "index": 3958,
+          "observation": "Aki bekas di luar ruangan"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "6_2": {
+      "old_label": "Aki dan baterai kotak",
+      "label": "Baterai kotak kecil berterminal atas",
+      "description": "Dua sampel baterai kotak kecil; satu memiliki label dan satu kurang jelas. Kimia kedua barang tetap perlu dikonfirmasi.",
+      "sample_observations": [
+        {
+          "filename": "battery_47.jpg",
+          "index": 3611,
+          "observation": "Baterai kotak berlabel"
+        },
+        {
+          "filename": "battery_272.jpg",
+          "index": 3562,
+          "observation": "Baterai kotak gelap dengan terminal atas"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "6_3": {
+      "old_label": "Aki dan baterai kotak",
+      "label": "Aki kendaraan berbagai ukuran",
+      "description": "Lima sampel berupa aki kendaraan dengan terminal atas, ukuran dan konstruksi berbeda. Tidak menetapkan tipe basah/kering dari warna.",
+      "sample_observations": [
+        {
+          "filename": "battery_138.jpg",
+          "index": 3494,
+          "observation": "Aki Exide"
+        },
+        {
+          "filename": "battery_135.jpg",
+          "index": 3491,
+          "observation": "Aki Duracell"
+        },
+        {
+          "filename": "battery_295.jpg",
+          "index": 3587,
+          "observation": "Aki Tata"
+        },
+        {
+          "filename": "battery_265.jpg",
+          "index": 3554,
+          "observation": "Aki dengan deret tutup atas"
+        },
+        {
+          "filename": "battery_271.jpg",
+          "index": 3561,
+          "observation": "Aki berterminal atas"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "6_4": {
+      "old_label": "Aki dan baterai kotak",
+      "label": "Aki dan baterai kendaraan, termasuk litium",
+      "description": "Sampel mencakup label AGM serta Lithium Power. Harga dan penanganan khusus aki timbal-asam tidak berlaku otomatis untuk semua anggota.",
+      "sample_observations": [
+        {
+          "filename": "battery_284.jpg",
+          "index": 3575,
+          "observation": "Baterai kotak berlabel AGM"
+        },
+        {
+          "filename": "battery_52.jpg",
+          "index": 3617,
+          "observation": "Aki Varta"
+        },
+        {
+          "filename": "battery_113.jpg",
+          "index": 3467,
+          "observation": "Baterai kendaraan biru"
+        },
+        {
+          "filename": "battery_283.jpg",
+          "index": 3574,
+          "observation": "Aki Varta"
+        },
+        {
+          "filename": "battery_85.jpg",
+          "index": 3653,
+          "observation": "Baterai berlabel Lithium Power"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "6_5": {
+      "old_label": "Aki dan baterai kotak",
+      "label": "Aki kotak dengan variasi casing",
+      "description": "Sampel mencakup casing transparan dan tertutup serta terminal atas. Isi/kimia dan kondisi perlu diperiksa dari label oleh pengelola.",
+      "sample_observations": [
+        {
+          "filename": "battery_81.jpg",
+          "index": 3649,
+          "observation": "Aki FAW"
+        },
+        {
+          "filename": "battery_72.jpg",
+          "index": 3639,
+          "observation": "Aki casing sebagian transparan"
+        },
+        {
+          "filename": "Washing_Machine_199.jpg",
+          "index": 3229,
+          "observation": "Aki putih bertutup merah"
+        },
+        {
+          "filename": "battery_133.jpg",
+          "index": 3489,
+          "observation": "Aki kotak hitam"
+        },
+        {
+          "filename": "battery_106.jpg",
+          "index": 3459,
+          "observation": "Aki hijau dengan pegangan"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "6_6": {
+      "old_label": "Aki dan baterai kotak",
+      "label": "Aki dengan deret tutup sel",
+      "description": "Mikro hanya memiliki satu gambar aki dengan enam tutup dan terminal atas. Tidak cukup untuk menilai kebocoran atau fungsi.",
+      "sample_observations": [
+        {
+          "filename": "battery_203.jpg",
+          "index": 3529,
+          "observation": "Aki Autolite dengan deret tutup sel"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "6_7": {
+      "old_label": "Aki dan baterai kotak",
+      "label": "Aki kendaraan dengan terminal atas",
+      "description": "Tiga sampel aki, termasuk dua unit dalam satu foto. Status muatan dan kebocoran tidak terlihat pasti.",
+      "sample_observations": [
+        {
+          "filename": "battery_29.jpg",
+          "index": 3581,
+          "observation": "Aki Amaron"
+        },
+        {
+          "filename": "battery_288.jpg",
+          "index": 3579,
+          "observation": "Dua aki dengan kabel"
+        },
+        {
+          "filename": "battery_62.jpg",
+          "index": 3628,
+          "observation": "Aki Panasonic"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "6_8": {
+      "old_label": "Aki dan baterai kotak",
+      "label": "Aki kendaraan berbagai kondisi visual",
+      "description": "Sampel memperlihatkan aki berlabel AGM, unit kusam dan unit lain. Tampilan bersih atau kusam tidak menetapkan kesehatan aki.",
+      "sample_observations": [
+        {
+          "filename": "battery_207.jpg",
+          "index": 3533,
+          "observation": "Aki berlabel AGM"
+        },
+        {
+          "filename": "battery_196.jpg",
+          "index": 3520,
+          "observation": "Aki kusam"
+        },
+        {
+          "filename": "battery_191.jpg",
+          "index": 3515,
+          "observation": "Aki dengan deret tutup"
+        },
+        {
+          "filename": "battery_14.jpg",
+          "index": 3496,
+          "observation": "Aki hitam"
+        },
+        {
+          "filename": "battery_45.jpg",
+          "index": 3609,
+          "observation": "Aki buram"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "6_9": {
+      "old_label": "Aki dan baterai kotak",
+      "label": "Baterai kotak berkapasitas/aplikasi belum pasti",
+      "description": "Dua sampel baterai kotak memanjang dengan terminal; satu bertanda 3.7V. Jangan menyamakan semua sebagai aki kendaraan timbal-asam.",
+      "sample_observations": [
+        {
+          "filename": "battery_282.jpg",
+          "index": 3573,
+          "observation": "Baterai kotak bertanda 3.7V"
+        },
+        {
+          "filename": "battery_199.jpg",
+          "index": 3523,
+          "observation": "Baterai kotak berterminal atas"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "7_0": {
+      "old_label": "Baterai ponsel lepas",
+      "label": "Baterai ponsel: kemasan keras dan pouch",
+      "description": "Sampel mencakup baterai kontak logam dan kemasan lunak berkabel fleksibel. Harga berdasarkan grade harus dikonfirmasi.",
+      "sample_observations": [
+        {
+          "filename": "battery_6.jpg",
+          "index": 3625,
+          "observation": "Baterai ponsel kontak logam"
+        },
+        {
+          "filename": "battery_69.jpg",
+          "index": 3635,
+          "observation": "Baterai pouch ZTE"
+        },
+        {
+          "filename": "battery_145.jpg",
+          "index": 3502,
+          "observation": "Baterai ponsel kemasan keras"
+        },
+        {
+          "filename": "battery_59.jpg",
+          "index": 3624,
+          "observation": "Baterai kontak logam berlabel"
+        },
+        {
+          "filename": "battery_121.jpg",
+          "index": 3476,
+          "observation": "Baterai pouch berkabel fleksibel"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "7_1": {
+      "old_label": "Baterai ponsel lepas",
+      "label": "Baterai ponsel kemasan keras",
+      "description": "Lima sampel baterai pipih lepas dengan kontak, label dan ukuran berbeda. Kimia dan kondisi tetap dibaca dari label.",
+      "sample_observations": [
+        {
+          "filename": "battery_105.jpg",
+          "index": 3458,
+          "observation": "Baterai HTC"
+        },
+        {
+          "filename": "battery_144.jpg",
+          "index": 3501,
+          "observation": "Baterai Samsung"
+        },
+        {
+          "filename": "battery_53.jpg",
+          "index": 3618,
+          "observation": "Baterai pipih buram"
+        },
+        {
+          "filename": "battery_296.jpg",
+          "index": 3588,
+          "observation": "Baterai putih berkontak"
+        },
+        {
+          "filename": "battery_99.jpg",
+          "index": 3668,
+          "observation": "Dua baterai ponsel"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "8_0": {
+      "old_label": "Pemutar piringan hitam dengan penutup",
+      "label": "Pemutar piringan hitam",
+      "description": "Lima sampel menunjukkan platter dan lengan jarum; sebagian memiliki penutup. Tidak semuanya berpenutup atau bermekanisme sama.",
+      "sample_observations": [
+        {
+          "filename": "Player_212.jpg",
+          "index": 2403,
+          "observation": "Turntable hitam tanpa penutup terlihat"
+        },
+        {
+          "filename": "Player_170.jpg",
+          "index": 2356,
+          "observation": "Turntable alas kayu"
+        },
+        {
+          "filename": "Player_200.jpg",
+          "index": 2390,
+          "observation": "Turntable berpenutup bening"
+        },
+        {
+          "filename": "Player_201.jpg",
+          "index": 2391,
+          "observation": "Turntable tampak dekat"
+        },
+        {
+          "filename": "Player_159.jpg",
+          "index": 2344,
+          "observation": "Turntable putih"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "8_1": {
+      "old_label": "Gramofon bercorong",
+      "label": "Gramofon bercorong",
+      "description": "Sampel dominan gramofon/rekreasi gramofon bercorong. Mekanisme akustik atau elektronik tidak dapat dipastikan untuk seluruh kelompok.",
+      "sample_observations": [
+        {
+          "filename": "Player_203.jpg",
+          "index": 2393,
+          "observation": "Gramofon bercorong"
+        },
+        {
+          "filename": "Player_108.jpg",
+          "index": 2290,
+          "observation": "Gramofon buram"
+        },
+        {
+          "filename": "Player_102.jpg",
+          "index": 2284,
+          "observation": "Gramofon bercorong besar"
+        },
+        {
+          "filename": "Player_287.jpg",
+          "index": 2485,
+          "observation": "Gramofon bercorong gelap"
+        },
+        {
+          "filename": "Player_263.jpg",
+          "index": 2459,
+          "observation": "Kabinet audio dengan corong"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "8_2": {
+      "old_label": "Pemutar piringan hitam model kabinet kayu",
+      "label": "Pemutar piringan dan radio model kabinet",
+      "description": "Sampel mencampur pemutar piringan hitam dan kabinet radio/audio tanpa platter terlihat. Label khusus turntable terlalu sempit.",
+      "sample_observations": [
+        {
+          "filename": "Player_296.jpg",
+          "index": 2495,
+          "observation": "Unit audio dalam kabinet"
+        },
+        {
+          "filename": "Player_298.jpg",
+          "index": 2497,
+          "observation": "Pemutar piringan kabinet"
+        },
+        {
+          "filename": "Player_295.jpg",
+          "index": 2494,
+          "observation": "Radio kabinet"
+        },
+        {
+          "filename": "Player_90.jpg",
+          "index": 2527,
+          "observation": "Kabinet audio dengan piringan dan CD"
+        },
+        {
+          "filename": "Player_128.jpg",
+          "index": 2310,
+          "observation": "Pemutar piringan kabinet merah"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "8_3": {
+      "old_label": "Pemutar piringan hitam model koper/portabel",
+      "label": "Pemutar piringan model koper/portabel",
+      "description": "Sampel menunjukkan pemutar piringan dalam casing berkoper; satu foto mencakup model berspeaker terpisah. Fungsi belum diuji.",
+      "sample_observations": [
+        {
+          "filename": "Player_199.jpg",
+          "index": 2387,
+          "observation": "Pemutar piringan koper"
+        },
+        {
+          "filename": "Player_186.jpg",
+          "index": 2373,
+          "observation": "Pemutar piringan koper hitam"
+        },
+        {
+          "filename": "Player_167.jpg",
+          "index": 2352,
+          "observation": "Dua model pemutar portabel"
+        },
+        {
+          "filename": "Player_134.jpg",
+          "index": 2317,
+          "observation": "Pemutar piringan kabinet portabel"
+        },
+        {
+          "filename": "Player_209.jpg",
+          "index": 2399,
+          "observation": "Pemutar piringan koper krem"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "9_0": {
+      "old_label": "Keyboard komputer",
+      "label": "Keyboard komputer eksternal",
+      "description": "Lima sampel berupa keyboard eksternal; ada numpad, trackpad terintegrasi dan bentuk ringkas. Tidak menyimpulkan jenis switch.",
+      "sample_observations": [
+        {
+          "filename": "Keyboard_18.jpg",
+          "index": 1296,
+          "observation": "Keyboard panjang buram"
+        },
+        {
+          "filename": "Keyboard_171.jpg",
+          "index": 1287,
+          "observation": "Keyboard hitam"
+        },
+        {
+          "filename": "3.jpeg",
+          "index": 399,
+          "observation": "Keyboard dengan trackpad"
+        },
+        {
+          "filename": "Keyboard_198.jpg",
+          "index": 1316,
+          "observation": "Keyboard ringkas warna-warni"
+        },
+        {
+          "filename": "Keyboard_45.jpg",
+          "index": 1404,
+          "observation": "Keyboard hitam dengan numpad"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "9_1": {
+      "old_label": "Keyboard komputer",
+      "label": "Laptop dan bagian keyboard laptop",
+      "description": "Seluruh sampel adalah laptop terbuka atau bagian bodi/keyboard laptop, bukan keyboard eksternal. Satu tampak terbongkar.",
+      "sample_observations": [
+        {
+          "filename": "IMG_20200328_131236.jpg",
+          "index": 1134,
+          "observation": "Laptop terbuka"
+        },
+        {
+          "filename": "168.jpeg",
+          "index": 164,
+          "observation": "Laptop Dell terbuka"
+        },
+        {
+          "filename": "IMG_20200328_131329.jpg",
+          "index": 1138,
+          "observation": "Laptop terbuka"
+        },
+        {
+          "filename": "48.broken.jpg",
+          "index": 530,
+          "observation": "Bagian laptop terbongkar"
+        },
+        {
+          "filename": "IMG_20200328_131159.jpg",
+          "index": 1132,
+          "observation": "Dua laptop bertumpuk"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "9_2": {
+      "old_label": "Keyboard komputer",
+      "label": "Keyboard komputer eksternal",
+      "description": "Lima sampel keyboard; satu foto juga memuat mouse. Harga keyboard tidak mencakup aksesori lain.",
+      "sample_observations": [
+        {
+          "filename": "Keyboard_113.jpg",
+          "index": 1223,
+          "observation": "Keyboard buram"
+        },
+        {
+          "filename": "Keyboard_56.jpg",
+          "index": 1416,
+          "observation": "Keyboard hitam"
+        },
+        {
+          "filename": "Keyboard_240.jpg",
+          "index": 1343,
+          "observation": "Keyboard berkabel"
+        },
+        {
+          "filename": "Keyboard_74.jpg",
+          "index": 1436,
+          "observation": "Keyboard dengan tombol warna"
+        },
+        {
+          "filename": "Keyboard_93.jpg",
+          "index": 1457,
+          "observation": "Keyboard dan mouse"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "9_3": {
+      "old_label": "Keyboard komputer",
+      "label": "Keyboard eksternal berbagai desain",
+      "description": "Sampel berupa keyboard ringkas, berlampu dan set dengan mouse. Lampu/desain tidak cukup untuk menentukan switch atau fungsi.",
+      "sample_observations": [
+        {
+          "filename": "Keyboard_54.jpg",
+          "index": 1414,
+          "observation": "Keyboard ringkas putih"
+        },
+        {
+          "filename": "Keyboard_77.jpg",
+          "index": 1439,
+          "observation": "Keyboard warna-warni"
+        },
+        {
+          "filename": "Keyboard_173.jpg",
+          "index": 1289,
+          "observation": "Keyboard dan mouse"
+        },
+        {
+          "filename": "Keyboard_2.jpg",
+          "index": 1318,
+          "observation": "Keyboard berlampu"
+        },
+        {
+          "filename": "Keyboard_180.jpg",
+          "index": 1297,
+          "observation": "Set keyboard dan mouse"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "9_4": {
+      "old_label": "Keyboard komputer",
+      "label": "Keyboard, detail laptop dan mesin ketik",
+      "description": "Sampel mencampur keyboard eksternal, detail keyboard laptop dan mesin ketik. Harga keyboard tunggal tidak sesuai untuk seluruh mikro.",
+      "sample_observations": [
+        {
+          "filename": "Keyboard_72.jpg",
+          "index": 1434,
+          "observation": "Mesin ketik manual"
+        },
+        {
+          "filename": "Keyboard_236.jpg",
+          "index": 1338,
+          "observation": "Detail keyboard laptop"
+        },
+        {
+          "filename": "Keyboard_94.jpg",
+          "index": 1458,
+          "observation": "Keyboard putih"
+        },
+        {
+          "filename": "Keyboard_9.jpg",
+          "index": 1453,
+          "observation": "Keyboard tampak depan dan belakang"
+        },
+        {
+          "filename": "Keyboard_55.jpg",
+          "index": 1415,
+          "observation": "Detail keyboard laptop buram"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "10_0": {
+      "old_label": "Laptop dalam posisi tertutup",
+      "label": "Laptop tertutup dan tampak bawah",
+      "description": "Sampel berupa laptop tertutup, sisi bawah casing, serta laptop setengah terbuka. Kondisi fungsi tidak terukur.",
+      "sample_observations": [
+        {
+          "filename": "242.jpeg",
+          "index": 349,
+          "observation": "Laptop Dell tertutup"
+        },
+        {
+          "filename": "162.jpg",
+          "index": 158,
+          "observation": "Sisi bawah laptop"
+        },
+        {
+          "filename": "163.jpg",
+          "index": 159,
+          "observation": "Sisi bawah laptop"
+        },
+        {
+          "filename": "151.jpeg",
+          "index": 124,
+          "observation": "Tutup laptop HP"
+        },
+        {
+          "filename": "208.jpeg",
+          "index": 298,
+          "observation": "Laptop Dell setengah terbuka"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "11_0": {
+      "old_label": "Pemutar CD portabel",
+      "label": "Pemutar CD portabel",
+      "description": "Lima sampel pemutar CD genggam dengan penutup cakram dan tombol; beberapa menyertakan earphone.",
+      "sample_observations": [
+        {
+          "filename": "Player_281.jpg",
+          "index": 2479,
+          "observation": "Pemutar CD hitam"
+        },
+        {
+          "filename": "Player_222.jpg",
+          "index": 2414,
+          "observation": "Pemutar CD putih dengan earphone"
+        },
+        {
+          "filename": "Player_271.jpg",
+          "index": 2468,
+          "observation": "Pemutar CD putih"
+        },
+        {
+          "filename": "Player_226.jpg",
+          "index": 2418,
+          "observation": "Pemutar CD lonjong dengan earphone"
+        },
+        {
+          "filename": "Player_207.jpg",
+          "index": 2397,
+          "observation": "Pemutar CD lonjong"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "12_0": {
+      "old_label": "Unit audio/video berbentuk rak",
+      "label": "Perangkat kecil gelap/campuran yang sulit dikenali",
+      "description": "Sampel mencakup mouse, bentuk mirip keyboard, perangkat kotak dan peralatan rumah tangga. Kontras tinggi/buram menghalangi identitas pasti; bukan kelompok audio rak yang homogen.",
+      "sample_observations": [
+        {
+          "filename": "Mouse_279.jpg",
+          "index": 2200,
+          "observation": "Mouse hitam"
+        },
+        {
+          "filename": "Keyboard_244.jpg",
+          "index": 1347,
+          "observation": "Perangkat panjang gelap, mirip keyboard"
+        },
+        {
+          "filename": "Keyboard_86.jpg",
+          "index": 1449,
+          "observation": "Perangkat berpola tombol/bagian keyboard"
+        },
+        {
+          "filename": "Washing_Machine_187.jpg",
+          "index": 3216,
+          "observation": "Peralatan rumah tangga bertutup, kontras tinggi"
+        },
+        {
+          "filename": "battery_141.jpg",
+          "index": 3498,
+          "observation": "Benda panjang gelap, identitas tidak jelas"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "12_1": {
+      "old_label": "Unit audio/video berbentuk rak",
+      "label": "Pemutar CD/DVD dan unit audio/video",
+      "description": "Sampel menunjukkan pemutar cakram meja, unit audio mobil, dan pemutar portabel. Tidak semuanya perangkat rak.",
+      "sample_observations": [
+        {
+          "filename": "Player_23.jpg",
+          "index": 2422,
+          "observation": "Pemutar cakram meja"
+        },
+        {
+          "filename": "Player_163.jpg",
+          "index": 2349,
+          "observation": "Unit audio kotak dengan layar"
+        },
+        {
+          "filename": "Player_267.jpg",
+          "index": 2463,
+          "observation": "Head unit audio mobil"
+        },
+        {
+          "filename": "Player_9.jpg",
+          "index": 2526,
+          "observation": "Pemutar CD portabel"
+        },
+        {
+          "filename": "Player_249.jpg",
+          "index": 2443,
+          "observation": "Pemutar cakram tipis"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "12_2": {
+      "old_label": "Unit audio/video berbentuk rak",
+      "label": "Perangkat kotak dan komponen elektronik campuran",
+      "description": "Sampel mencakup menara komputer, unit audio, perangkat mirip printer serta keyboard. Tidak ada satu jenis dominan yang cukup untuk harga bersama.",
+      "sample_observations": [
+        {
+          "filename": "Microwave_211.jpg",
+          "index": 1590,
+          "observation": "Casing komputer menara"
+        },
+        {
+          "filename": "Player_261.jpg",
+          "index": 2457,
+          "observation": "Unit audio dengan panel layar"
+        },
+        {
+          "filename": "Player_260.jpg",
+          "index": 2456,
+          "observation": "Perangkat mirip printer/slot lebar"
+        },
+        {
+          "filename": "Keyboard_32.jpg",
+          "index": 1390,
+          "observation": "Perangkat kotak gelap"
+        },
+        {
+          "filename": "Keyboard_154.jpg",
+          "index": 1268,
+          "observation": "Keyboard buram"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "13_0": {
+      "old_label": "Papan sirkuit dengan komponen terpasang",
+      "label": "Papan sirkuit dan rakitan komponen",
+      "description": "Sampel dominan PCB berkomponen, dengan satu susunan komponen komputer. Grade material tidak dapat ditentukan dari warna atau klaster.",
+      "sample_observations": [
+        {
+          "filename": "pcb_61.jpg",
+          "index": 3909,
+          "observation": "PCB berkomponen"
+        },
+        {
+          "filename": "ded708777c311eecc141cc1809ad9be7.jpg",
+          "index": 3680,
+          "observation": "Susunan papan, hard disk dan keyboard"
+        },
+        {
+          "filename": "pcb_131.jpg",
+          "index": 3736,
+          "observation": "PCB padat komponen"
+        },
+        {
+          "filename": "pcb_199.jpg",
+          "index": 3804,
+          "observation": "PCB sedang dikerjakan alat"
+        },
+        {
+          "filename": "pcb_57.jpg",
+          "index": 3905,
+          "observation": "PCB dengan relay/konektor"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "13_1": {
+      "old_label": "Chip/IC dan komponen lepas",
+      "label": "Chip/prosesor lepas dan komponen campuran",
+      "description": "Empat sampel berupa kumpulan chip/prosesor; satu komponen pipih berterminal menyimpang. Kandungan logam dan grade perlu identifikasi komponen.",
+      "sample_observations": [
+        {
+          "filename": "17.recyclable-computer-processor-scrap-100-kg-2222426523-gfzyi5j5.jpg",
+          "index": 186,
+          "observation": "Tumpukan chip/prosesor"
+        },
+        {
+          "filename": "60.Sef7b95a8ce9548fd86860b0cb05d5952t.jpeg",
+          "index": 699,
+          "observation": "Kumpulan chip/prosesor"
+        },
+        {
+          "filename": "15.ceramic-cpu-processor-scrap-1742900108-7954153.jpg",
+          "index": 113,
+          "observation": "Kumpulan chip/prosesor"
+        },
+        {
+          "filename": "battery_91.jpg",
+          "index": 3660,
+          "observation": "Komponen pipih berterminal, identitas tidak pasti"
+        },
+        {
+          "filename": "21.mtc3mdazmzg2mw-1770033863-vxv5d8la.jpg",
+          "index": 303,
+          "observation": "Timbunan chip/prosesor"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "13_2": {
+      "old_label": "Timbunan papan sirkuit dan komponen",
+      "label": "Timbunan elektronik dan komponen campuran",
+      "description": "Sampel berupa timbunan perangkat dan komponen, tetapi ada satu kipas utuh. Tidak tepat memberi semua anggota harga PCB.",
+      "sample_observations": [
+        {
+          "filename": "67.pngtree-pile-of-discarded-electronic-deices-and-tangled-wires-forming-a-heap-png-image_15437632.png",
+          "index": 806,
+          "observation": "Timbunan elektronik berbentuk bola"
+        },
+        {
+          "filename": "12.large-pile-assorted-electronic-waste-including-components-devices-isolated-white-backg-1200x675.jpg",
+          "index": 56,
+          "observation": "Timbunan perangkat dan PCB"
+        },
+        {
+          "filename": "IMG_20201101_130424.jpg",
+          "index": 1192,
+          "observation": "Kipas meja"
+        },
+        {
+          "filename": "16.large-pile-of-e-waste-sadoff-e-recycling.jpeg",
+          "index": 149,
+          "observation": "Timbunan papan dan perangkat"
+        },
+        {
+          "filename": "77.recycle-electronics-drop-off-points-min.jpg",
+          "index": 939,
+          "observation": "Tumpukan drive/komponen komputer"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "14_0": {
+      "old_label": "TV tabung CRT",
+      "label": "TV tabung CRT, termasuk casing rusak",
+      "description": "Sampel dominan TV tabung, sebagian tampak terbuka/rusak. Harga unit utuh membutuhkan konfirmasi kelengkapan.",
+      "sample_observations": [
+        {
+          "filename": "8.l-intro-1750323719.jpg",
+          "index": 994,
+          "observation": "TV tabung"
+        },
+        {
+          "filename": "24.abandoned-broken-1970s-television-in-junkyard-in-arizona-junkyard-2GG2N9T.jpg",
+          "index": 333,
+          "observation": "TV tabung dengan bagian kaca rusak"
+        },
+        {
+          "filename": "Television_275.jpg",
+          "index": 3014,
+          "observation": "TV tabung dengan gambar menyala"
+        },
+        {
+          "filename": "65.man-destroys-old-tv-using-footage-120465282_iconl.jpeg",
+          "index": 778,
+          "observation": "TV tabung bekas"
+        },
+        {
+          "filename": "77.an-old-tv-shattered-by-a-bullet-hole-in-a-garbage-pile-behind-a-wrecked-abandoned-house-wonder-valley-california-usa-high-desert-mojave-MN9P1X.jpg",
+          "index": 938,
+          "observation": "TV tabung dengan kerusakan depan"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "14_1": {
+      "old_label": "TV tabung CRT",
+      "label": "TV berbagai bentuk di ruangan",
+      "description": "Sebagian sampel jelas CRT, satu layar lebar tidak menunjukkan bentuk tabung. Jangan menganggap semua anggota CRT.",
+      "sample_observations": [
+        {
+          "filename": "Television_33.jpg",
+          "index": 3045,
+          "observation": "TV lebar di rak, teknologi tidak pasti"
+        },
+        {
+          "filename": "Television_39.jpg",
+          "index": 3051,
+          "observation": "TV/cabinet di ruangan"
+        },
+        {
+          "filename": "Television_57.jpg",
+          "index": 3071,
+          "observation": "TV tabung"
+        },
+        {
+          "filename": "Television_177.jpg",
+          "index": 2905,
+          "observation": "TV dalam kabinet"
+        },
+        {
+          "filename": "Television_86.jpg",
+          "index": 3103,
+          "observation": "TV tabung"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "14_2": {
+      "old_label": "TV tabung CRT",
+      "label": "TV tabung CRT",
+      "description": "Lima sampel TV dengan kedalaman bodi dan bentuk layar CRT; status menyala tidak membuktikan semua fungsi.",
+      "sample_observations": [
+        {
+          "filename": "Television_47.jpg",
+          "index": 3060,
+          "observation": "TV tabung dengan pemutar di bawah"
+        },
+        {
+          "filename": "Television_1.jpg",
+          "index": 2819,
+          "observation": "TV tabung dengan antena"
+        },
+        {
+          "filename": "Television_29.jpg",
+          "index": 3030,
+          "observation": "TV tabung"
+        },
+        {
+          "filename": "Television_31.jpg",
+          "index": 3043,
+          "observation": "TV tabung"
+        },
+        {
+          "filename": "36.old-tv-illegally-dumped-waste-bins.jpg",
+          "index": 464,
+          "observation": "TV tabung di luar ruangan"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "14_3": {
+      "old_label": "TV tabung CRT",
+      "label": "TV tabung model lama",
+      "description": "Sampel dominan TV dengan layar cembung dan kabinet lama; satu foto berisi banyak unit.",
+      "sample_observations": [
+        {
+          "filename": "Television_156.jpg",
+          "index": 2882,
+          "observation": "TV tabung kecil"
+        },
+        {
+          "filename": "7.depositphotos_67763385-stock-photo-pile-of-old-televisions.jpg",
+          "index": 843,
+          "observation": "Tumpukan TV tabung"
+        },
+        {
+          "filename": "Television_22.jpg",
+          "index": 2953,
+          "observation": "TV tabung kabinet kayu"
+        },
+        {
+          "filename": "Television_55.jpg",
+          "index": 3069,
+          "observation": "TV tabung kabinet"
+        },
+        {
+          "filename": "Television_73.jpg",
+          "index": 3089,
+          "observation": "TV tabung dengan antena"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "14_4": {
+      "old_label": "TV tabung CRT",
+      "label": "TV tabung kabinet klasik",
+      "description": "Lima sampel berupa TV tabung berkabinet klasik dan kontrol di samping. Nilai koleksi tidak dapat disimpulkan.",
+      "sample_observations": [
+        {
+          "filename": "Television_151.jpg",
+          "index": 2877,
+          "observation": "TV tabung oranye"
+        },
+        {
+          "filename": "Television_214.jpg",
+          "index": 2947,
+          "observation": "TV kabinet berkaki"
+        },
+        {
+          "filename": "Television_293.jpg",
+          "index": 3034,
+          "observation": "TV tabung buram"
+        },
+        {
+          "filename": "Television_42.jpg",
+          "index": 3055,
+          "observation": "TV tabung kabinet kayu"
+        },
+        {
+          "filename": "Television_276.jpg",
+          "index": 3015,
+          "observation": "TV tabung dengan antena"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "15_0": {
+      "old_label": "TV dan monitor layar datar",
+      "label": "TV dan monitor layar datar",
+      "description": "Sampel didominasi layar datar, termasuk TV. Tidak ada dasar untuk memberikan harga monitor komputer kepada semua anggota.",
+      "sample_observations": [
+        {
+          "filename": "Television_232.jpg",
+          "index": 2967,
+          "observation": "Layar datar LG"
+        },
+        {
+          "filename": "Television_170.jpg",
+          "index": 2898,
+          "observation": "Layar datar buram"
+        },
+        {
+          "filename": "Television_280.jpg",
+          "index": 3020,
+          "observation": "TV layar datar Philips"
+        },
+        {
+          "filename": "Television_38.jpg",
+          "index": 3050,
+          "observation": "TV layar datar berkaki"
+        },
+        {
+          "filename": "Television_261.jpg",
+          "index": 2999,
+          "observation": "Layar datar tampak samping, gelap"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "16_0": {
+      "old_label": "Monitor dan layar datar campuran",
+      "label": "Monitor layar datar",
+      "description": "Sampel didominasi monitor layar datar di lingkungan penggunaan; satu foto close-up Dell tidak memperlihatkan bodi penuh. Layar gelap tidak membuktikan barang mati.",
+      "sample_observations": [
+        {
+          "filename": "Copy of IMG_20200328_221706.jpg",
+          "index": 1083,
+          "observation": "Monitor BenQ"
+        },
+        {
+          "filename": "604.jpeg",
+          "index": 708,
+          "observation": "Monitor di meja"
+        },
+        {
+          "filename": "903.jpeg",
+          "index": 1039,
+          "observation": "Monitor Dell"
+        },
+        {
+          "filename": "627.jpeg",
+          "index": 739,
+          "observation": "Monitor di meja berantakan"
+        },
+        {
+          "filename": "322.jpeg",
+          "index": 429,
+          "observation": "Monitor hitam dengan mouse"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "17_0": {
+      "old_label": "Timbunan komputer dan monitor",
+      "label": "Tumpukan komputer dan monitor",
+      "description": "Sampel berisi tower komputer, layar datar, CRT dan campuran beberapa unit. Perlu dipilah sebelum penilaian per barang.",
+      "sample_observations": [
+        {
+          "filename": "73.image.png",
+          "index": 892,
+          "observation": "Deret tower komputer"
+        },
+        {
+          "filename": "75.Electronics-recycling-malaysia-1024x576.jpeg",
+          "index": 902,
+          "observation": "Deret monitor"
+        },
+        {
+          "filename": "69.2020-11-13_15h48_00-1.png",
+          "index": 826,
+          "observation": "Tumpukan CRT dan printer"
+        },
+        {
+          "filename": "24.old-defective-computer-cpu-scrap-2219458585-n38mn4u2.jpg",
+          "index": 343,
+          "observation": "Tumpukan monitor dan komputer"
+        },
+        {
+          "filename": "26.berbagai-macam-objek-kotor-yang-dibuang_23-2148996977.jpg",
+          "index": 378,
+          "observation": "Monitor CRT di timbunan"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "17_1": {
+      "old_label": "Set komputer di meja",
+      "label": "Monitor, keyboard dan susunan komputer meja",
+      "description": "Sampel mencakup monitor dan keyboard bersama serta aksesori/monitor sendiri. Foto tidak menjamin satu set komputer lengkap.",
+      "sample_observations": [
+        {
+          "filename": "344.jpeg",
+          "index": 454,
+          "observation": "Monitor dan keyboard"
+        },
+        {
+          "filename": "316.jpeg",
+          "index": 422,
+          "observation": "Monitor, keyboard dan mouse"
+        },
+        {
+          "filename": "Keyboard_100.jpg",
+          "index": 1209,
+          "observation": "Keyboard dan sebagian monitor"
+        },
+        {
+          "filename": "Television_119.jpg",
+          "index": 2841,
+          "observation": "Monitor tunggal"
+        },
+        {
+          "filename": "332.jpeg",
+          "index": 440,
+          "observation": "Keyboard dan sebagian monitor"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "18_0": {
+      "old_label": "Timbunan campuran e-waste",
+      "label": "Timbunan elektronik dan komponen",
+      "description": "Sampel menunjukkan banyak perangkat/komponen dalam satu lokasi. Komposisi dan berat tiap jenis tidak diketahui.",
+      "sample_observations": [
+        {
+          "filename": "18.415762_620.jpg",
+          "index": 203,
+          "observation": "Timbunan casing/komponen"
+        },
+        {
+          "filename": "8.Lapak-lapak-sekitar-3117968952.jpg",
+          "index": 987,
+          "observation": "Komponen dan perangkat di tanah"
+        },
+        {
+          "filename": "15.Aksi-Kelola-Sampah-Elektronik2.jpg",
+          "index": 108,
+          "observation": "Gunungan elektronik"
+        },
+        {
+          "filename": "66.E-Waste-An-Issue-of-Serious-Concern-@aura-emagazine.jpg",
+          "index": 784,
+          "observation": "Timbunan perangkat hitam-putih"
+        },
+        {
+          "filename": "5.huge-pile-electronic-waste-showing-discarded-smartphone-tablet-circuit-board-environmental-pollution-sustainable-403725896.jpg",
+          "index": 563,
+          "observation": "Timbunan elektronik"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "18_1": {
+      "old_label": "Timbunan campuran e-waste",
+      "label": "Timbunan limbah campuran",
+      "description": "Sampel mencampur elektronik, pecahan dan sampah umum. Tidak semua isi dapat dipastikan sebagai elektronik.",
+      "sample_observations": [
+        {
+          "filename": "2.P_SR10-0419-June-Blog-Header_Why-Do-I-Pay.jpg",
+          "index": 266,
+          "observation": "Timbunan perangkat elektronik"
+        },
+        {
+          "filename": "16.Sampah-Elektronik-Ancaman-Baru-yang-Memerlukan-Perhatian-Serius.jpg",
+          "index": 137,
+          "observation": "Orang di antara tumpukan casing"
+        },
+        {
+          "filename": "17.Fines-Zorba-product-after-STEINERT-EddyC.jpg",
+          "index": 168,
+          "observation": "Timbunan pecahan campuran"
+        },
+        {
+          "filename": "64.hq720.jpg",
+          "index": 770,
+          "observation": "Sampah umum bercampur, elektronik tidak jelas"
+        },
+        {
+          "filename": "16.stock-photo-electronic-waste-and-garbage-for-recycling-1675112317.jpg",
+          "index": 155,
+          "observation": "Gunungan elektronik"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "18_2": {
+      "old_label": "Timbunan campuran e-waste",
+      "label": "Timbunan komputer, layar dan perangkat genggam",
+      "description": "Semua sampel berupa banyak barang; ada tumpukan komputer/layar dan satu keranjang ponsel. Harga tidak bisa disamakan per foto.",
+      "sample_observations": [
+        {
+          "filename": "13.Electronic-Recycling.jpg",
+          "index": 73,
+          "observation": "Timbunan komputer"
+        },
+        {
+          "filename": "17.sampah-elektronik-menghasilkan-uang-lho.jpg",
+          "index": 187,
+          "observation": "Monitor dan TV bertumpuk"
+        },
+        {
+          "filename": "61.pile-discarded-computer-monitors-electronics-landfill-environmental-pollution-pile-discarded-computer-monitors-437381574.jpg",
+          "index": 717,
+          "observation": "Monitor CRT di timbunan"
+        },
+        {
+          "filename": "12.IMG_20210524_112912.jpg",
+          "index": 47,
+          "observation": "Keranjang ponsel"
+        },
+        {
+          "filename": "23.image-24.png",
+          "index": 319,
+          "observation": "Tumpukan monitor dan TV"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "19_0": {
+      "old_label": "Printer dan perangkat cetak multifungsi",
+      "label": "Printer dan perangkat cetak multifungsi",
+      "description": "Sampel mencakup printer foto kecil, printer kantor dan mesin cetak multifungsi. Harga jual utuh bergantung model.",
+      "sample_observations": [
+        {
+          "filename": "Printer_68.jpg",
+          "index": 2781,
+          "observation": "Printer foto kecil"
+        },
+        {
+          "filename": "Printer_134.jpg",
+          "index": 2577,
+          "observation": "Printer kantor besar"
+        },
+        {
+          "filename": "Printer_35.jpg",
+          "index": 2745,
+          "observation": "Printer foto/multifungsi"
+        },
+        {
+          "filename": "Printer_207.jpg",
+          "index": 2637,
+          "observation": "Printer multifungsi"
+        },
+        {
+          "filename": "Printer_170.jpg",
+          "index": 2596,
+          "observation": "Mesin cetak kantor"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "20_0": {
+      "old_label": "Mouse komputer, dominan tampak atas",
+      "label": "Mouse komputer",
+      "description": "Lima sampel mouse, sebagian berkabel dan sebagian beberapa unit dalam satu foto. Sensor/kelayakan fungsi belum diketahui.",
+      "sample_observations": [
+        {
+          "filename": "Mouse_125.jpg",
+          "index": 2030,
+          "observation": "Mouse hitam"
+        },
+        {
+          "filename": "Mouse_234.jpg",
+          "index": 2151,
+          "observation": "Mouse putih"
+        },
+        {
+          "filename": "Mouse_157.jpg",
+          "index": 2065,
+          "observation": "Deretan mouse"
+        },
+        {
+          "filename": "Mouse_245.jpg",
+          "index": 2163,
+          "observation": "Mouse dengan kabel gulung"
+        },
+        {
+          "filename": "Mouse_174.jpg",
+          "index": 2084,
+          "observation": "Mouse Dell berkabel"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "20_1": {
+      "old_label": "Mouse komputer, dominan tampak bawah",
+      "label": "Mouse tampak bawah dan komponen menyimpang",
+      "description": "Tiga sampel sisi bawah mouse bola, satu mekanisme lingkaran dan satu komponen/pengunci. Harga mouse tidak berlaku untuk seluruh kelompok.",
+      "sample_observations": [
+        {
+          "filename": "pcb_273.jpg",
+          "index": 3849,
+          "observation": "Komponen/pengunci logam"
+        },
+        {
+          "filename": "Mouse_176.jpg",
+          "index": 2086,
+          "observation": "Sisi bawah mouse bola"
+        },
+        {
+          "filename": "Mouse_178.jpg",
+          "index": 2088,
+          "observation": "Mouse bola terbuka"
+        },
+        {
+          "filename": "66.images28329.jpeg",
+          "index": 790,
+          "observation": "Mekanisme lingkaran berpelat logam"
+        },
+        {
+          "filename": "Mouse_169.jpg",
+          "index": 2078,
+          "observation": "Sisi bawah mouse bola"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "21_0": {
+      "old_label": "Ponsel/perangkat genggam layar sentuh",
+      "label": "Ponsel dan perangkat genggam layar sentuh",
+      "description": "Empat sampel jelas ponsel; satu benda kecil buram tidak pasti. Harga hanya berlaku bila barang benar ponsel.",
+      "sample_observations": [
+        {
+          "filename": "Mobile_77.jpg",
+          "index": 1989,
+          "observation": "Perangkat kecil kotak buram"
+        },
+        {
+          "filename": "Mobile_16.jpg",
+          "index": 1791,
+          "observation": "Ponsel layar sentuh"
+        },
+        {
+          "filename": "Mobile_13.jpg",
+          "index": 1758,
+          "observation": "Ponsel dengan jam layar"
+        },
+        {
+          "filename": "578.jpeg",
+          "index": 651,
+          "observation": "Ponsel di buku"
+        },
+        {
+          "filename": "Copy of IMG_20200328_135224.jpg",
+          "index": 1060,
+          "observation": "Dua ponsel"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "21_1": {
+      "old_label": "Perangkat elektronik kecil berbentuk kotak",
+      "label": "Baterai, keyboard dan perangkat kotak campuran",
+      "description": "Sampel mencakup baterai/perangkat kotak, keyboard, serta unit audio. Label jenis tunggal tidak didukung.",
+      "sample_observations": [
+        {
+          "filename": "battery_63.jpg",
+          "index": 3629,
+          "observation": "Komponen kotak mirip baterai"
+        },
+        {
+          "filename": "battery_254.jpg",
+          "index": 3542,
+          "observation": "Komponen panjang mirip baterai"
+        },
+        {
+          "filename": "Keyboard_73.jpg",
+          "index": 1435,
+          "observation": "Keyboard ringkas"
+        },
+        {
+          "filename": "Player_274.jpg",
+          "index": 2471,
+          "observation": "Unit audio kotak"
+        },
+        {
+          "filename": "Keyboard_33.jpg",
+          "index": 1391,
+          "observation": "Perangkat panjang gelap mirip keyboard"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "21_2": {
+      "old_label": "Perangkat genggam bertombol dan remote",
+      "label": "Ponsel dan komponen perangkat genggam",
+      "description": "Sampel mencakup ponsel bertombol, ponsel layar sentuh dan rakitan terbuka. Belum cukup untuk label remote yang pasti.",
+      "sample_observations": [
+        {
+          "filename": "83.hq720.jpg",
+          "index": 1019,
+          "observation": "Rakitan/komponen perangkat genggam terbuka"
+        },
+        {
+          "filename": "Copy of IMG_20200328_134903.jpg",
+          "index": 1057,
+          "observation": "Ponsel bertombol"
+        },
+        {
+          "filename": "Mobile_78.jpg",
+          "index": 1990,
+          "observation": "Ponsel dengan casing bergambar"
+        },
+        {
+          "filename": "Copy of IMG_20200328_134906.jpg",
+          "index": 1058,
+          "observation": "Ponsel bertombol"
+        },
+        {
+          "filename": "Mobile_61.jpg",
+          "index": 1972,
+          "observation": "Ponsel bertombol gelap"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "21_3": {
+      "old_label": "Ponsel/perangkat genggam layar sentuh",
+      "label": "Perangkat layar sentuh dan objek kotak campuran",
+      "description": "Sampel memperlihatkan layar sentuh beragam bentuk, beberapa sangat buram, dan satu peralatan kotak yang menyimpang. Identitas spesifik belum cukup.",
+      "sample_observations": [
+        {
+          "filename": "Mobile_209.jpg",
+          "index": 1846,
+          "observation": "Perangkat layar kecil/komponen dengan bingkai"
+        },
+        {
+          "filename": "Mobile_289.jpg",
+          "index": 1934,
+          "observation": "Perangkat layar sentuh buram"
+        },
+        {
+          "filename": "Mobile_23.jpg",
+          "index": 1869,
+          "observation": "Perangkat layar gelap"
+        },
+        {
+          "filename": "Washing_Machine_35.jpg",
+          "index": 3347,
+          "observation": "Peralatan kotak dengan bagian atas terang"
+        },
+        {
+          "filename": "Mobile_169.jpg",
+          "index": 1801,
+          "observation": "Perangkat layar lebar dengan bingkai"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "21_4": {
+      "old_label": "Ponsel/perangkat genggam layar sentuh",
+      "label": "Powerbank, baterai lepas dan ponsel",
+      "description": "Dua sampel jelas powerbank, dua baterai pipih dan satu ponsel. Harga HP mati tidak sesuai untuk seluruh kelompok.",
+      "sample_observations": [
+        {
+          "filename": "battery_127.jpg",
+          "index": 3482,
+          "observation": "Powerbank dengan port USB dan angka daya"
+        },
+        {
+          "filename": "Mobile_75.jpg",
+          "index": 1987,
+          "observation": "Baterai lepas pipih"
+        },
+        {
+          "filename": "Mobile_81.jpg",
+          "index": 1994,
+          "observation": "Baterai Samsung lepas"
+        },
+        {
+          "filename": "battery_192.jpg",
+          "index": 3516,
+          "observation": "Powerbank Anker"
+        },
+        {
+          "filename": "6.free-photo-of-alat-aspal-rusak-pandangan-atas.jpeg",
+          "index": 692,
+          "observation": "Ponsel di aspal"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "21_5": {
+      "old_label": "Ponsel yang dipegang; termasuk contoh layar retak",
+      "label": "Ponsel yang dipegang dan perangkat menyimpang",
+      "description": "Tiga sampel memperlihatkan ponsel di tangan; ada printer dan keyboard sebagai anggota menyimpang. Retak bukan kondisi semua anggota.",
+      "sample_observations": [
+        {
+          "filename": "Printer_11.jpg",
+          "index": 2550,
+          "observation": "Printer putih"
+        },
+        {
+          "filename": "Mobile_213.jpg",
+          "index": 1851,
+          "observation": "Ponsel dipegang"
+        },
+        {
+          "filename": "Mobile_214.jpg",
+          "index": 1852,
+          "observation": "Ponsel dipegang"
+        },
+        {
+          "filename": "Mobile_203.jpg",
+          "index": 1840,
+          "observation": "Ponsel dipegang"
+        },
+        {
+          "filename": "Keyboard_132.jpg",
+          "index": 1244,
+          "observation": "Keyboard putih"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "21_6": {
+      "old_label": "Ponsel/perangkat genggam layar sentuh",
+      "label": "Ponsel bertombol dan layar sentuh",
+      "description": "Lima sampel ponsel; sebagian bertombol fisik, sebagian layar sentuh, termasuk beberapa unit dalam satu gambar.",
+      "sample_observations": [
+        {
+          "filename": "465.jpeg",
+          "index": 514,
+          "observation": "Ponsel layar sentuh dan bertombol"
+        },
+        {
+          "filename": "Copy of IMG_20200328_140124.jpg",
+          "index": 1074,
+          "observation": "Ponsel bertombol putih"
+        },
+        {
+          "filename": "Copy of IMG_20200328_140117.jpg",
+          "index": 1073,
+          "observation": "Dua ponsel bertombol"
+        },
+        {
+          "filename": "Copy of IMG_20200328_134847.jpg",
+          "index": 1055,
+          "observation": "Ponsel bertombol biru"
+        },
+        {
+          "filename": "577.jpeg",
+          "index": 650,
+          "observation": "Ponsel layar sentuh"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "21_7": {
+      "old_label": "Ponsel dengan retakan layar terlihat",
+      "label": "Ponsel dengan kaca layar retak",
+      "description": "Retakan kaca terlihat pada kelima sampel. Kerusakan kaca tidak memastikan kondisi baterai atau nilai komponen.",
+      "sample_observations": [
+        {
+          "filename": "7705e7b0-f207-11ea-b59f-5e175dc57928.jpg",
+          "index": 943,
+          "observation": "Ponsel putih berkaca retak"
+        },
+        {
+          "filename": "brokenp.jpg",
+          "index": 3678,
+          "observation": "Ponsel hitam berkaca retak"
+        },
+        {
+          "filename": "Mobile_208.jpg",
+          "index": 1845,
+          "observation": "Detail kaca retak"
+        },
+        {
+          "filename": "13.destruction-smartphones-ilustrated_23-2151500024.jpg",
+          "index": 78,
+          "observation": "Ponsel putih pecah"
+        },
+        {
+          "filename": "38.1612517774.jpg",
+          "index": 468,
+          "observation": "Ponsel retak di tangan"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "21_8": {
+      "old_label": "Ponsel/perangkat genggam layar sentuh",
+      "label": "Ponsel layar sentuh",
+      "description": "Kelima sampel ponsel dengan bingkai dan sudut pengambilan berbeda. Tidak menetapkan kondisi fungsi dari layar gelap.",
+      "sample_observations": [
+        {
+          "filename": "IMG-20200328-WA0046.jpg",
+          "index": 1115,
+          "observation": "Ponsel putih"
+        },
+        {
+          "filename": "IMG_20200329_201011.jpg",
+          "index": 1171,
+          "observation": "Ponsel hitam mengilap"
+        },
+        {
+          "filename": "587.jpeg",
+          "index": 661,
+          "observation": "Ponsel hitam di tangan"
+        },
+        {
+          "filename": "568.jpg",
+          "index": 640,
+          "observation": "Ponsel putih mendatar"
+        },
+        {
+          "filename": "IMG_20200328_131510.jpg",
+          "index": 1140,
+          "observation": "Ponsel putih di meja"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "21_9": {
+      "old_label": "Ponsel/perangkat genggam layar sentuh",
+      "label": "Ponsel dan perangkat layar sentuh",
+      "description": "Sampel dominan ponsel; sebagian buram dan satu perangkat tampak lebih lebar. Identitas model/ukuran perlu diperiksa.",
+      "sample_observations": [
+        {
+          "filename": "Mobile_183.jpg",
+          "index": 1817,
+          "observation": "Ponsel putih"
+        },
+        {
+          "filename": "Copy of IMG_20200328_135507.jpg",
+          "index": 1068,
+          "observation": "Perangkat layar lebar di meja"
+        },
+        {
+          "filename": "Mobile_241.jpg",
+          "index": 1882,
+          "observation": "Layar sentuh buram"
+        },
+        {
+          "filename": "Mobile_181.jpg",
+          "index": 1815,
+          "observation": "Ponsel hitam dengan retakan"
+        },
+        {
+          "filename": "Mobile_184.jpg",
+          "index": 1818,
+          "observation": "Ponsel hitam"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "21_10": {
+      "old_label": "Ponsel/perangkat genggam layar sentuh",
+      "label": "Ponsel layar sentuh dengan variasi tampilan",
+      "description": "Sampel berupa ponsel, termasuk retakan/goresan dan tampilan gelap. Tidak diberi tingkatan kondisi otomatis.",
+      "sample_observations": [
+        {
+          "filename": "Mobile_264.jpg",
+          "index": 1907,
+          "observation": "Detail layar ponsel retak"
+        },
+        {
+          "filename": "Copy of IMG_20200328_222058.jpg",
+          "index": 1087,
+          "observation": "Ponsel layar sentuh"
+        },
+        {
+          "filename": "Mobile_93.jpg",
+          "index": 2007,
+          "observation": "Ponsel di atas buku"
+        },
+        {
+          "filename": "537.jpeg",
+          "index": 609,
+          "observation": "Ponsel hitam"
+        },
+        {
+          "filename": "Mobile_282.jpg",
+          "index": 1927,
+          "observation": "Detail ponsel hitam"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "21_11": {
+      "old_label": "Ponsel/perangkat genggam layar sentuh",
+      "label": "Ponsel dan perangkat genggam berbentuk layar",
+      "description": "Empat sampel tampak ponsel; satu perangkat kotak gelap sulit dipastikan. Harga hanya untuk ponsel yang teridentifikasi.",
+      "sample_observations": [
+        {
+          "filename": "Mobile_15.jpg",
+          "index": 1780,
+          "observation": "Ponsel putih"
+        },
+        {
+          "filename": "482.jpg",
+          "index": 533,
+          "observation": "Ponsel putih"
+        },
+        {
+          "filename": "Mobile_256.jpg",
+          "index": 1898,
+          "observation": "Perangkat kecil berbingkai putih"
+        },
+        {
+          "filename": "565.jpg",
+          "index": 637,
+          "observation": "Ponsel hitam"
+        },
+        {
+          "filename": "Mobile_40.jpg",
+          "index": 1949,
+          "observation": "Perangkat kotak gelap, identitas tidak pasti"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "21_12": {
+      "old_label": "Ponsel dan tablet",
+      "label": "Ponsel, tablet dan bagian laptop",
+      "description": "Sampel dominan ponsel, termasuk layar pecah; satu gambar bagian laptop menunjukkan campuran. Bukan kelompok tablet murni.",
+      "sample_observations": [
+        {
+          "filename": "74.recycleIT-blog-post-safe-disposal2.jpg",
+          "index": 899,
+          "observation": "Bagian laptop, keyboard dan alat"
+        },
+        {
+          "filename": "Mobile_176.jpg",
+          "index": 1809,
+          "observation": "Ponsel Samsung"
+        },
+        {
+          "filename": "Mobile_192.jpg",
+          "index": 1827,
+          "observation": "Ponsel dengan kaca pecah"
+        },
+        {
+          "filename": "Mobile_276.jpg",
+          "index": 1920,
+          "observation": "Ponsel mendatar"
+        },
+        {
+          "filename": "Mobile_218.jpg",
+          "index": 1856,
+          "observation": "Ponsel putih dipegang"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "21_13": {
+      "old_label": "Ponsel/perangkat genggam layar sentuh",
+      "label": "Ponsel layar sentuh",
+      "description": "Kelima sampel berupa ponsel dengan posisi dan tampilan berbeda; beberapa terhubung kabel. Tidak menyimpulkan sehat hanya karena layar menyala.",
+      "sample_observations": [
+        {
+          "filename": "Mobile_135.jpg",
+          "index": 1764,
+          "observation": "Ponsel mendatar"
+        },
+        {
+          "filename": "Mobile_51.jpg",
+          "index": 1961,
+          "observation": "Ponsel dengan gambar layar"
+        },
+        {
+          "filename": "542.jpeg",
+          "index": 614,
+          "observation": "Ponsel putih"
+        },
+        {
+          "filename": "492.jpeg",
+          "index": 543,
+          "observation": "Ponsel terhubung kabel"
+        },
+        {
+          "filename": "496.jpeg",
+          "index": 547,
+          "observation": "Ponsel hitam"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "21_14": {
+      "old_label": "Ponsel/perangkat genggam layar sentuh",
+      "label": "Ponsel layar sentuh",
+      "description": "Kelima sampel ponsel, sebagian memiliki goresan/retakan. Merek, kapasitas dan fungsi belum dinilai.",
+      "sample_observations": [
+        {
+          "filename": "527.jpeg",
+          "index": 600,
+          "observation": "Ponsel hitam"
+        },
+        {
+          "filename": "505.jpeg",
+          "index": 577,
+          "observation": "Ponsel putih"
+        },
+        {
+          "filename": "Mobile_201.jpg",
+          "index": 1838,
+          "observation": "Ponsel putih dengan retakan"
+        },
+        {
+          "filename": "Mobile_80.jpg",
+          "index": 1993,
+          "observation": "Ponsel hitam di tangan"
+        },
+        {
+          "filename": "Mobile_166.jpg",
+          "index": 1798,
+          "observation": "Ponsel putih dipegang"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "21_15": {
+      "old_label": "Ponsel/perangkat genggam layar sentuh",
+      "label": "Ponsel layar sentuh",
+      "description": "Kelima sampel menunjukkan ponsel di tangan atau permukaan. Layar gelap/buram tidak menentukan tingkat kerusakan.",
+      "sample_observations": [
+        {
+          "filename": "462.jpeg",
+          "index": 511,
+          "observation": "Ponsel di tangan"
+        },
+        {
+          "filename": "536.jpeg",
+          "index": 608,
+          "observation": "Ponsel di buku"
+        },
+        {
+          "filename": "Mobile_84.jpg",
+          "index": 1997,
+          "observation": "Ponsel buram"
+        },
+        {
+          "filename": "533.jpeg",
+          "index": 605,
+          "observation": "Ponsel hitam di tangan"
+        },
+        {
+          "filename": "486.jpg",
+          "index": 537,
+          "observation": "Ponsel hitam mendatar"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "21_16": {
+      "old_label": "Tablet/perangkat layar sentuh lebar",
+      "label": "Ponsel dan tablet dalam posisi mendatar",
+      "description": "Sampel mencampur perangkat panjang seperti ponsel dan perangkat lebih lebar seperti tablet. Ukuran nyata belum terukur.",
+      "sample_observations": [
+        {
+          "filename": "Mobile_121.jpg",
+          "index": 1749,
+          "observation": "Perangkat layar mendatar buram"
+        },
+        {
+          "filename": "510.jpeg",
+          "index": 582,
+          "observation": "Ponsel hitam"
+        },
+        {
+          "filename": "581.jpeg",
+          "index": 655,
+          "observation": "Dua perangkat layar sentuh berbeda ukuran"
+        },
+        {
+          "filename": "Mobile_26.jpg",
+          "index": 1902,
+          "observation": "Ponsel/perangkat genggam"
+        },
+        {
+          "filename": "Mobile_28.jpg",
+          "index": 1924,
+          "observation": "Perangkat layar mendatar"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "22_0": {
+      "old_label": "Baterai laptop lepas",
+      "label": "Paket baterai laptop memanjang",
+      "description": "Lima sampel paket baterai laptop lepas dengan bentuk selubung beragam. Paket tidak boleh dibuka untuk mengidentifikasi selnya.",
+      "sample_observations": [
+        {
+          "filename": "battery_149.jpg",
+          "index": 3506,
+          "observation": "Paket baterai laptop"
+        },
+        {
+          "filename": "battery_87.jpg",
+          "index": 3655,
+          "observation": "Baterai laptop panjang"
+        },
+        {
+          "filename": "battery_7.jpg",
+          "index": 3636,
+          "observation": "Baterai laptop pendek beralur"
+        },
+        {
+          "filename": "battery_293.jpg",
+          "index": 3585,
+          "observation": "Paket baterai laptop"
+        },
+        {
+          "filename": "battery_77.jpg",
+          "index": 3644,
+          "observation": "Baterai laptop memanjang"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "22_1": {
+      "old_label": "Baterai laptop lepas",
+      "label": "Paket baterai laptop beragam bentuk",
+      "description": "Sampel mencakup baterai panjang dan bentuk bertingkat. Bentuk selubung tidak mengukur sisa kapasitas.",
+      "sample_observations": [
+        {
+          "filename": "battery_82.jpg",
+          "index": 3650,
+          "observation": "Baterai laptop di meja"
+        },
+        {
+          "filename": "battery_39.jpg",
+          "index": 3602,
+          "observation": "Paket baterai memanjang"
+        },
+        {
+          "filename": "battery_139.jpg",
+          "index": 3495,
+          "observation": "Paket baterai bertingkat"
+        },
+        {
+          "filename": "battery_75.jpg",
+          "index": 3642,
+          "observation": "Paket baterai panjang"
+        },
+        {
+          "filename": "battery_115.jpg",
+          "index": 3469,
+          "observation": "Paket baterai panjang"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "22_2": {
+      "old_label": "Baterai laptop lepas",
+      "label": "Baterai laptop pipih dan memanjang",
+      "description": "Sampel mencakup bentuk pipih maupun selubung memanjang. Grade baterai pouch/bulat tidak dapat ditetapkan untuk semua anggota.",
+      "sample_observations": [
+        {
+          "filename": "battery_25.jpg",
+          "index": 3540,
+          "observation": "Baterai laptop pipih"
+        },
+        {
+          "filename": "battery_49.jpg",
+          "index": 3613,
+          "observation": "Baterai laptop kotak"
+        },
+        {
+          "filename": "battery_30.jpg",
+          "index": 3593,
+          "observation": "Baterai laptop memanjang"
+        },
+        {
+          "filename": "battery_46.jpg",
+          "index": 3610,
+          "observation": "Baterai laptop berlabel"
+        },
+        {
+          "filename": "battery_101.jpg",
+          "index": 3454,
+          "observation": "Baterai laptop dengan label hijau"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "23_0": {
+      "old_label": "Laptop tertutup atau terbuka sebagian",
+      "label": "Laptop tertutup, setengah terbuka dan terbuka",
+      "description": "Sampel mencakup ketiga posisi laptop. Label hanya tertutup/setengah terbuka tidak mewakili semua anggota.",
+      "sample_observations": [
+        {
+          "filename": "154.jpg",
+          "index": 127,
+          "observation": "Laptop setengah terbuka"
+        },
+        {
+          "filename": "269.jpeg",
+          "index": 390,
+          "observation": "Laptop terbuka"
+        },
+        {
+          "filename": "14.old-dusty-vintage-computer-laptop-notebook-in-isolated-white-2A6X2JP.jpg",
+          "index": 103,
+          "observation": "Laptop terbuka"
+        },
+        {
+          "filename": "155.jpg",
+          "index": 128,
+          "observation": "Laptop setengah terbuka"
+        },
+        {
+          "filename": "158.jpg",
+          "index": 131,
+          "observation": "Laptop tertutup"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "23_1": {
+      "old_label": "Laptop terbuka",
+      "label": "Laptop terbuka",
+      "description": "Lima sampel berupa laptop terbuka, termasuk detail keyboard. Tampilan gambar pada layar tidak menjamin semua fungsi.",
+      "sample_observations": [
+        {
+          "filename": "197.jpeg",
+          "index": 255,
+          "observation": "Laptop terbuka dengan gambar layar"
+        },
+        {
+          "filename": "IMG-20200328-WA0025.jpg",
+          "index": 1096,
+          "observation": "Laptop dengan layar kunci"
+        },
+        {
+          "filename": "303.jpeg",
+          "index": 409,
+          "observation": "Laptop terbuka"
+        },
+        {
+          "filename": "198.jpeg",
+          "index": 256,
+          "observation": "Detail laptop Dell"
+        },
+        {
+          "filename": "IMG-20200328-WA0024.jpg",
+          "index": 1095,
+          "observation": "Laptop dengan layar kunci"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "23_2": {
+      "old_label": "Ponsel layar sentuh",
+      "label": "Laptop terbuka, termasuk layar rusak",
+      "description": "Kelima sampel acak berupa laptop terbuka; satu kaca layar rusak. Label ponsel sebelumnya tidak sesuai dengan sampel dan pemetaan berkas saat ini.",
+      "sample_observations": [
+        {
+          "filename": "202.jpeg",
+          "index": 292,
+          "observation": "Laptop Lenovo"
+        },
+        {
+          "filename": "186.jpeg",
+          "index": 232,
+          "observation": "Laptop HP"
+        },
+        {
+          "filename": "264.jpeg",
+          "index": 385,
+          "observation": "Laptop dengan halaman web"
+        },
+        {
+          "filename": "213.jpeg",
+          "index": 308,
+          "observation": "Laptop di meja"
+        },
+        {
+          "filename": "azxcvbnm.jpg",
+          "index": 3449,
+          "observation": "Laptop berkaca layar pecah"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "23_3": {
+      "old_label": "Detail keyboard dan bodi laptop",
+      "label": "Laptop dan detail keyboard/bodi",
+      "description": "Sampel mencakup detail keyboard terkena cairan dan laptop utuh, sebagian rusak. Tidak semuanya hanya komponen lepas.",
+      "sample_observations": [
+        {
+          "filename": "24.laptop_repair_6.jpg",
+          "index": 342,
+          "observation": "Keyboard laptop terkena cairan"
+        },
+        {
+          "filename": "IMG-20200328-WA0029.jpg",
+          "index": 1100,
+          "observation": "Laptop terbuka"
+        },
+        {
+          "filename": "181.jpeg",
+          "index": 227,
+          "observation": "Laptop dengan casing/keyboard terbuka"
+        },
+        {
+          "filename": "57638075-direct-view-of-old-broken-laptop-isolated-on-white-background.jpg",
+          "index": 649,
+          "observation": "Laptop rusak"
+        },
+        {
+          "filename": "266.jpeg",
+          "index": 387,
+          "observation": "Laptop dengan halaman web"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "23_4": {
+      "old_label": "Laptop dengan gangguan tampilan layar",
+      "label": "Laptop dengan variasi tampilan layar",
+      "description": "Sampel mencakup layar sangat terang, gambar rusak dan tampilan aplikasi normal. Tidak semua anggota menunjukkan gangguan layar.",
+      "sample_observations": [
+        {
+          "filename": "256.jpeg",
+          "index": 372,
+          "observation": "Laptop dengan layar sangat terang"
+        },
+        {
+          "filename": "236.jpeg",
+          "index": 328,
+          "observation": "Laptop dengan layar kunci"
+        },
+        {
+          "filename": "1D2299CA-9F72-4A79-AE74-5228671D53E8.jpg",
+          "index": 258,
+          "observation": "Laptop dengan pola layar rusak"
+        },
+        {
+          "filename": "255.jpeg",
+          "index": 371,
+          "observation": "Laptop dengan editor/kode di layar"
+        },
+        {
+          "filename": "73.1675927917-359-msi-taetlum1.jpg",
+          "index": 887,
+          "observation": "Laptop dengan halaman web"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "24_0": {
+      "old_label": "Radio/boombox portabel",
+      "label": "Radio/pemutar CD portabel dan boombox",
+      "description": "Sampel mencakup radio/CD berpegangan, pemutar CD portabel dan sistem audio kecil. Tidak semuanya boombox yang sama.",
+      "sample_observations": [
+        {
+          "filename": "Player_101.jpg",
+          "index": 2283,
+          "observation": "Radio/CD portabel"
+        },
+        {
+          "filename": "Player_40.jpg",
+          "index": 2511,
+          "observation": "Boombox berpegangan"
+        },
+        {
+          "filename": "Player_221.jpg",
+          "index": 2413,
+          "observation": "Boombox berpegangan"
+        },
+        {
+          "filename": "Player_0.jpg",
+          "index": 2279,
+          "observation": "Pemutar CD portabel"
+        },
+        {
+          "filename": "Player_217.jpg",
+          "index": 2408,
+          "observation": "Sistem audio kecil dengan speaker"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "24_1": {
+      "old_label": "Speaker dan unit audio berbentuk kotak",
+      "label": "Perangkat kotak campuran",
+      "description": "Sampel mencakup unit audio, benda mirip baterai, microwave dan keyboard lipat. Harga speaker yang sebelumnya dipakai tidak mewakili kelompok.",
+      "sample_observations": [
+        {
+          "filename": "battery_128.jpg",
+          "index": 3483,
+          "observation": "Kotak mirip baterai, buram"
+        },
+        {
+          "filename": "Player_118.jpg",
+          "index": 2301,
+          "observation": "Unit audio kotak bertumpuk"
+        },
+        {
+          "filename": "Microwave_136.jpg",
+          "index": 1506,
+          "observation": "Microwave dengan pintu terbuka"
+        },
+        {
+          "filename": "Microwave_71.jpg",
+          "index": 1692,
+          "observation": "Perangkat kotak gelap"
+        },
+        {
+          "filename": "Keyboard_243.jpg",
+          "index": 1346,
+          "observation": "Keyboard lipat/kompak"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "24_2": {
+      "old_label": "Sistem stereo dengan speaker terpisah",
+      "label": "Sistem stereo dan perangkat menyimpang",
+      "description": "Tiga sampel sistem stereo, satu tumpukan unit audio dan satu tumpukan komponen komputer. Harga satu set audio tidak dapat digeneralisasi.",
+      "sample_observations": [
+        {
+          "filename": "7.stock-photo-pile-of-electronic-waste-rusty-old-computer-cases-and-obsolete-computer-hardware-such-as-1918603046.jpg",
+          "index": 851,
+          "observation": "Tumpukan komponen komputer"
+        },
+        {
+          "filename": "Player_17.jpg",
+          "index": 2355,
+          "observation": "Unit audio bertumpuk"
+        },
+        {
+          "filename": "Player_182.jpg",
+          "index": 2369,
+          "observation": "Stereo dengan dua speaker"
+        },
+        {
+          "filename": "Player_7.jpg",
+          "index": 2524,
+          "observation": "Stereo dengan dua speaker"
+        },
+        {
+          "filename": "Player_291.jpg",
+          "index": 2490,
+          "observation": "Stereo dengan dua speaker"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "25_0": {
+      "old_label": "TV dalam konteks ruangan",
+      "label": "TV dalam ruangan, berbagai teknologi",
+      "description": "Sampel mencampur TV layar datar dan TV tebal. Jenis layar perlu dikonfirmasi sebelum harga rongsok dipakai.",
+      "sample_observations": [
+        {
+          "filename": "Television_215.jpg",
+          "index": 2948,
+          "observation": "TV layar datar di dinding"
+        },
+        {
+          "filename": "5.terima_jual_beli_tv_rusak_di_j_1675120594_db93bf4a_progressive.jpg",
+          "index": 571,
+          "observation": "TV di toko"
+        },
+        {
+          "filename": "Mobile_199.jpg",
+          "index": 1834,
+          "observation": "TV di dinding buram"
+        },
+        {
+          "filename": "Television_148.jpg",
+          "index": 2873,
+          "observation": "TV tebal di kabinet"
+        },
+        {
+          "filename": "71.SONY-BRAVIA-32-INCH-ANDRIOD-SMART-TV-VB201705171774173-ak_LWBP143044850-1780035209.png",
+          "index": 868,
+          "observation": "TV layar datar di meja"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "25_1": {
+      "old_label": "TV dalam konteks ruangan",
+      "label": "TV dan layar dalam konteks ruangan",
+      "description": "Ada TV layar datar melengkung, TV tabung dan layar kecil jauh dari kamera. Kelompok berbasis konteks foto, bukan satu teknologi layar.",
+      "sample_observations": [
+        {
+          "filename": "Microwave_41.jpg",
+          "index": 1659,
+          "observation": "Layar kecil di dinding"
+        },
+        {
+          "filename": "Television_295.jpg",
+          "index": 3036,
+          "observation": "TV layar melengkung"
+        },
+        {
+          "filename": "Television_41.jpg",
+          "index": 3054,
+          "observation": "TV tabung"
+        },
+        {
+          "filename": "Television_226.jpg",
+          "index": 2960,
+          "observation": "TV di kabinet"
+        },
+        {
+          "filename": "Television_43.jpg",
+          "index": 3056,
+          "observation": "Layar di dinding ruang keluarga"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "26_0": {
+      "old_label": "Timbunan dan penyimpanan elektronik campuran",
+      "label": "Timbunan perangkat dan objek menyimpang",
+      "description": "Sampel dominan tumpukan komputer/perangkat genggam, dengan satu alat kantor buram. Tetap bagian kelompok yang ditolak untuk pengenalan otomatis.",
+      "sample_observations": [
+        {
+          "filename": "rtyrtyrtyrtyrty.jpg",
+          "index": 3944,
+          "observation": "Tumpukan perangkat terbuka"
+        },
+        {
+          "filename": "16.e-waste-pile-discarded-electronics-environmental-concerns-close-up-shot-showcasing-pile-discarded-electronic-devices-406665791.jpg",
+          "index": 145,
+          "observation": "Timbunan perangkat genggam"
+        },
+        {
+          "filename": "68.Untitled-design-2024-07-11T112427.392.png",
+          "index": 815,
+          "observation": "Tumpukan tablet/perangkat"
+        },
+        {
+          "filename": "19.What_20is_20e-waste_20recycling.jpg",
+          "index": 237,
+          "observation": "Tumpukan komputer"
+        },
+        {
+          "filename": "Microwave_187.jpg",
+          "index": 1562,
+          "observation": "Perangkat kantor buram"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "26_1": {
+      "old_label": "Kamera dan komponen kamera",
+      "label": "Kamera, komponen dan elektronik campuran",
+      "description": "Sampel memuat kamera utuh, kamera dibongkar serta perangkat audio dan kumpulan barang. Tidak tepat disebut kelompok kamera murni.",
+      "sample_observations": [
+        {
+          "filename": "IMG_20201101_130106.jpg",
+          "index": 1187,
+          "observation": "Unit audio/speaker"
+        },
+        {
+          "filename": "Harga Kamera Canon 550D Terbaru.jpg",
+          "index": 1094,
+          "observation": "Kamera DSLR"
+        },
+        {
+          "filename": "s-l640.jpg",
+          "index": 3946,
+          "observation": "Komponen kamera terbongkar"
+        },
+        {
+          "filename": "istockphoto-174876806-612x612.jpg",
+          "index": 3706,
+          "observation": "Kamera tampak belakang"
+        },
+        {
+          "filename": "8.globalewaste.jpg",
+          "index": 990,
+          "observation": "Kumpulan perangkat termasuk kamera"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    },
+    "26_2": {
+      "old_label": "TV/monitor berbagai bentuk",
+      "label": "Monitor dan panel layar datar",
+      "description": "Kelima sampel monitor/panel layar, beberapa dekat-duplikat berbeda grup. Tetap disimpan untuk audit kelompok26, bukan otomatis dimasukkan katalog.",
+      "sample_observations": [
+        {
+          "filename": "IMG-20200329-WA0069.jpg",
+          "index": 1122,
+          "observation": "Monitor layar datar"
+        },
+        {
+          "filename": "IMG-20200329-WA0071.jpg",
+          "index": 1124,
+          "observation": "Monitor layar datar"
+        },
+        {
+          "filename": "63.FA02LXHI697S5OH.png",
+          "index": 745,
+          "observation": "Panel layar tanpa casing depan"
+        },
+        {
+          "filename": "Television_0.jpg",
+          "index": 2818,
+          "observation": "Monitor buram"
+        },
+        {
+          "filename": "IMG-20200329-WA0068.jpg",
+          "index": 1121,
+          "observation": "Monitor layar datar"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": false
+    },
+    "26_3": {
+      "old_label": "Peralatan dan aktivitas pengolahan elektronik",
+      "label": "Objek dan perangkat campuran",
+      "description": "Sampel berisi radio, tumpukan/peralatan industri, unit audio/komponen dan kantong barang. Label khusus aktivitas pengolahan sebelumnya terlalu sempit.",
+      "sample_observations": [
+        {
+          "filename": "Player_254.jpg",
+          "index": 2449,
+          "observation": "Radio kabinet"
+        },
+        {
+          "filename": "6.20170119155741-intip-pusat-pemusnahan-limbah-elektronik-di-jepang-001-dru.jpg",
+          "index": 683,
+          "observation": "Rak/tumpukan peralatan di luar"
+        },
+        {
+          "filename": "Player_297.jpg",
+          "index": 2496,
+          "observation": "Unit audio/komponen dengan lingkaran"
+        },
+        {
+          "filename": "battery_exploded.jpg",
+          "index": 3669,
+          "observation": "Komponen/kerangka mesin"
+        },
+        {
+          "filename": "IMG_20201101_130043.jpg",
+          "index": 1185,
+          "observation": "Kantong berisi benda, identitas tidak jelas"
+        }
+      ],
+      "scope": "Only the sampled files; no population purity or functional condition claim.",
+      "needs_review": true
+    }
+  },
+  "thumbnails": {
+    "0": {
+      "filename": "Microwave_80.jpg",
+      "row_index": 1702,
+      "micro_id": "0_0",
+      "macro_label": "Microwave dan oven",
+      "reviewed_on": "2026-10-18",
+      "observation": "Microwave dengan panel kanan",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "8a5e4af3b71f19f79bbcb1fbf176e33bf067b9847fee66c6cc60c68d00b9a4e1"
+    },
+    "1": {
+      "filename": "Washing_Machine_70.jpg",
+      "row_index": 3386,
+      "micro_id": "1_0",
+      "macro_label": "Mesin cuci",
+      "reviewed_on": "2026-10-18",
+      "observation": "Mesin cuci bukaan depan",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "8ed58922603fedbe1effa78ce0294a40d2f48f1c63c741b3cf4d8c7f9bb4cda6"
+    },
+    "2": {
+      "filename": "Printer_185.jpg",
+      "row_index": 2612,
+      "micro_id": "2_0",
+      "macro_label": "Printer struk, label dan cetak khusus",
+      "reviewed_on": "2026-10-18",
+      "observation": "Printer label industri",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "f25d1df931dc2ee75873266e0da5c085a2a51ee3c3606b1df0792d5d89c4c65a"
+    },
+    "3": {
+      "filename": "WhatsApp Image 2020-11-01 at 1.27.06 PM.jpeg",
+      "row_index": 3439,
+      "micro_id": "3_0",
+      "macro_label": "Saklar, stopkontak dan terminal listrik",
+      "reviewed_on": "2026-10-18",
+      "observation": "Stopkontak dan saklar",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "412324c2739dfc66d52ca19a7ef5163ecb5a91bbb4f2a019366f3e78757c81ef"
+    },
+    "4": {
+      "filename": "battery_19.jpg",
+      "row_index": 3513,
+      "micro_id": "4_0",
+      "macro_label": "Baterai kecil dan paket baterai",
+      "reviewed_on": "2026-10-18",
+      "observation": "Kumpulan sel silinder",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "1712eecac45a083c8ac62a03bfd378772033074737dcdbc267897026b35f5241"
+    },
+    "5": {
+      "filename": "IMG_20200329_152858.jpg",
+      "row_index": 1169,
+      "micro_id": "5_0",
+      "macro_label": "Ponsel, laptop dan komponen campuran",
+      "reviewed_on": "2026-10-18",
+      "observation": "Beberapa laptop dan ponsel",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "97cc2a52becaa10f176fb598d38f532aa5c5c75cfe1e6c91526031396900248e"
+    },
+    "6": {
+      "filename": "battery_135.jpg",
+      "row_index": 3491,
+      "micro_id": "6_3",
+      "macro_label": "Aki dan baterai kotak",
+      "reviewed_on": "2026-10-18",
+      "observation": "Aki Duracell",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "38483b1d39eed6be00e7079279598aadc8dcb36c3fe848bf8f0747861ceff5d9"
+    },
+    "7": {
+      "filename": "battery_105.jpg",
+      "row_index": 3458,
+      "micro_id": "7_1",
+      "macro_label": "Baterai ponsel lepas",
+      "reviewed_on": "2026-10-18",
+      "observation": "Baterai HTC",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "3bb4661ccd5aa48797a33fcc1bc935767a5fee3899d89535912545f2cc87800b"
+    },
+    "8": {
+      "filename": "Player_200.jpg",
+      "row_index": 2390,
+      "micro_id": "8_0",
+      "macro_label": "Pemutar piringan hitam dan gramofon",
+      "reviewed_on": "2026-10-18",
+      "observation": "Turntable berpenutup bening",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "f4f90cfe31155085e33f0bc7cca2879f010eb88575ff9ba89372aeae1f260567"
+    },
+    "9": {
+      "filename": "Keyboard_45.jpg",
+      "row_index": 1404,
+      "micro_id": "9_0",
+      "macro_label": "Keyboard dan perangkat bertombol",
+      "reviewed_on": "2026-10-18",
+      "observation": "Keyboard hitam dengan numpad",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "7c7a2757c8f898cf61f72e415b0d367d52209cee8ea968fa5239654734902d1b"
+    },
+    "10": {
+      "filename": "242.jpeg",
+      "row_index": 349,
+      "micro_id": "10_0",
+      "macro_label": "Laptop tertutup",
+      "reviewed_on": "2026-10-18",
+      "observation": "Laptop Dell tertutup",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "c02bcaac3930edebcb735634b197d51c2863ea5a6f764b582c48fe7f042db870"
+    },
+    "11": {
+      "filename": "Player_281.jpg",
+      "row_index": 2479,
+      "micro_id": "11_0",
+      "macro_label": "Pemutar CD portabel",
+      "reviewed_on": "2026-10-18",
+      "observation": "Pemutar CD hitam",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "05876519784092ebc78eab85ed764f6a7e2c6e329c61c696adf228ff40a782f0"
+    },
+    "12": {
+      "filename": "Player_23.jpg",
+      "row_index": 2422,
+      "micro_id": "12_1",
+      "macro_label": "Audio/video dan perangkat kotak campuran",
+      "reviewed_on": "2026-10-18",
+      "observation": "Pemutar cakram meja",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "823d72081c0c843b38c796f62915c6f6d4326873bfab602d80eaef0ee2ae03b2"
+    },
+    "13": {
+      "filename": "pcb_57.jpg",
+      "row_index": 3905,
+      "micro_id": "13_0",
+      "macro_label": "Papan sirkuit dan komponen elektronik",
+      "reviewed_on": "2026-10-18",
+      "observation": "PCB dengan relay/konektor",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "3e1a1755c2ca928014063ea355b961ebaba985b8a7f655829e56e1ed8ffafad6"
+    },
+    "14": {
+      "filename": "Television_276.jpg",
+      "row_index": 3015,
+      "micro_id": "14_4",
+      "macro_label": "TV tabung CRT",
+      "reviewed_on": "2026-10-18",
+      "observation": "TV tabung dengan antena",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "df719625cf538e0295e2a3cde7c1e36bf21a044a3aca10f3f0e1f1eb58e9b6bf"
+    },
+    "15": {
+      "filename": "Television_280.jpg",
+      "row_index": 3020,
+      "micro_id": "15_0",
+      "macro_label": "TV dan monitor layar datar",
+      "reviewed_on": "2026-10-18",
+      "observation": "TV layar datar Philips",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "3fb855d5760cadd02e054cef82bdd907cd69f279b03f6520bb93bd49d0a65c89"
+    },
+    "16": {
+      "filename": "627.jpeg",
+      "row_index": 739,
+      "micro_id": "16_0",
+      "macro_label": "Monitor layar datar",
+      "reviewed_on": "2026-10-18",
+      "observation": "Monitor di meja berantakan",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "750c490b631a39d2ffc10821ac389111c1c480d49cd77c8d7c11e618a57c7ed7"
+    },
+    "17": {
+      "filename": "69.2020-11-13_15h48_00-1.png",
+      "row_index": 826,
+      "micro_id": "17_0",
+      "macro_label": "Set dan timbunan komputer/monitor",
+      "reviewed_on": "2026-10-18",
+      "observation": "Tumpukan CRT dan printer",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "05d2825bcf497577bc1e577930033674b58a0a21581bd5c097fa7c13bf681d72"
+    },
+    "18": {
+      "filename": "15.Aksi-Kelola-Sampah-Elektronik2.jpg",
+      "row_index": 108,
+      "micro_id": "18_0",
+      "macro_label": "Timbunan campuran e-waste",
+      "reviewed_on": "2026-10-18",
+      "observation": "Gunungan elektronik",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "ff55d52094d24f0641db3cbdb7add54a4a443019f37001e4288b0803cb42ebc4"
+    },
+    "19": {
+      "filename": "Printer_35.jpg",
+      "row_index": 2745,
+      "micro_id": "19_0",
+      "macro_label": "Printer dan perangkat cetak multifungsi",
+      "reviewed_on": "2026-10-18",
+      "observation": "Printer foto/multifungsi",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "191f3ad896fdaf28e893b059088bee78a6e41177b59ab728c9ddf333b0781ffb"
+    },
+    "20": {
+      "filename": "Mouse_125.jpg",
+      "row_index": 2030,
+      "micro_id": "20_0",
+      "macro_label": "Mouse komputer",
+      "reviewed_on": "2026-10-18",
+      "observation": "Mouse hitam",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "e297fd4ec7eaf1ee3da5576b6fc38842322c3c97dc1d4705c0fa98bffe2176fd"
+    },
+    "21": {
+      "filename": "527.jpeg",
+      "row_index": 600,
+      "micro_id": "21_14",
+      "macro_label": "Ponsel dan perangkat kecil campuran",
+      "reviewed_on": "2026-10-18",
+      "observation": "Ponsel hitam",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "665de0f00fef8122ff45d06ccafbd16838b982240813cd6399b9ca1ffb649503"
+    },
+    "22": {
+      "filename": "battery_77.jpg",
+      "row_index": 3644,
+      "micro_id": "22_0",
+      "macro_label": "Baterai laptop lepas",
+      "reviewed_on": "2026-10-18",
+      "observation": "Baterai laptop memanjang",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "037d7ac52c7b90bcafd33d09686f8ead320b4f29e4e85e851b70e692632a8ba2"
+    },
+    "23": {
+      "filename": "303.jpeg",
+      "row_index": 409,
+      "micro_id": "23_1",
+      "macro_label": "Laptop dan bagian laptop",
+      "reviewed_on": "2026-10-18",
+      "observation": "Laptop terbuka",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "7c5b8200bd113127cfca98403df6a3103ba4a8775ff34eea790644411e4646f6"
+    },
+    "24": {
+      "filename": "Player_221.jpg",
+      "row_index": 2413,
+      "micro_id": "24_0",
+      "macro_label": "Radio dan perangkat audio campuran",
+      "reviewed_on": "2026-10-18",
+      "observation": "Boombox berpegangan",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "8db5c9ddc4b0afb53764801a8ddccc2e0b60c60e4aabcdfc46802f54d05983fa"
+    },
+    "25": {
+      "filename": "Television_295.jpg",
+      "row_index": 3036,
+      "micro_id": "25_1",
+      "macro_label": "TV dalam konteks ruangan",
+      "reviewed_on": "2026-10-18",
+      "observation": "TV layar melengkung",
+      "decision": "accepted_representative",
+      "reason": "Objek utama tampak jelas dan sesuai salah satu isi dominan judul makro; bukan anggota menyimpang yang ditandai audit. Satu thumbnail tidak mewakili seluruh variasi mikro.",
+      "sha256": "da1be95122c9804c924461146be6fc5e39981d79bbf6546639f4802d3f354a16"
+    }
+  },
+  "limitations": [
+    "423 sampled files, not all3961 images.",
+    "Classifications describe visual identity, not battery chemistry, working condition, calibrated purity or material grade.",
+    "One representative covers a dominant type, not all members of heterogeneous macro.",
+    "Research prices are public benchmarks, not confirmed Semarang offers."
+  ],
+  "evaluator": {
+    "status": "pass",
+    "report": "cluster_audit_evaluator_2026-10-18.json",
+    "reviewed_on": "2026-10-18",
+    "open_findings": 0,
+    "resolved_minor": "16_0: close-up Dell sample1039 does not establish a standalone monitor; wording and needs_review corrected and independently confirmed."
+  },
+  "validation": {
+    "backend_tests": 44,
+    "frontend_tests": 10,
+    "production_build": "passed",
+    "deployment_artifacts": "3598 vectors, 26 catalog macros, matching ViT/DINOv3 shapes",
+    "deployment_performed": false
+  }
+}

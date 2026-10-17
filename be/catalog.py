@@ -46,20 +46,22 @@ def load_catalog():
             if sub.get('price_policy') == 'override':
                 sub['price'] = valid_price(sub.get('price', {}), {**entry['info'], **sub.get('info', {})}, registry)
             entry['subs'].append(sub)
+        for sub in entry['subs']:
+            sub['info'], sub['price'] = resolve_metadata(entry, sub['id'])
         entries[mid] = entry
     return entries
 
 def valid_price(price, info, registry=None):
     if price.get('mode') == 'ranges':
         if not info.get('assessable'):
-            return {'mode':'none'}
+            return unavailable_price(price.get('unavailable_reason', 'Kelompok campuran; perlu penilaian per barang.'))
         result = {'mode':'ranges', 'whole':None, 'scrap':None,
                   'unavailable_reason':price.get('unavailable_reason', ''),
                   'condition_factors':None, 'estimate_only':True}
         for channel in ('whole', 'scrap'):
             quote = validated_quote(price.get(channel), channel, registry or {})
             result[channel] = quote
-        return result if result['whole'] or result['scrap'] else {'mode':'none'}
+        return result if result['whole'] or result['scrap'] else unavailable_price(price.get('unavailable_reason', ''))
     if not info.get('assessable') or not price.get('verified') or not price.get('show'):
         return {'mode':'none'}
     if price.get('mode') == 'no_value': return {'mode':'no_value','verified':True}
@@ -97,7 +99,12 @@ def validated_quote(quote, channel, registry):
     if any(key not in sources or not sources[key].get('url','').startswith('https://') for key in source_ids):
         return None
     return {**quote,'sources':[{'title':sources[key]['title'],'url':sources[key]['url']} for key in sorted(source_ids)],
-            'currency':'IDR','estimate_only':True,'local_quote_verified':False}
+            'currency':'IDR','estimate_only':True,'local_quote_verified':False,
+            'requires_confirmation':quote.get('requires_confirmation', [])}
+
+
+def unavailable_price(reason=''):
+    return {'mode':'none', **({'unavailable_reason':reason} if reason else {})}
 
 
 def resolve_metadata(entry, sub_id):
@@ -105,12 +112,12 @@ def resolve_metadata(entry, sub_id):
     info, price = deepcopy(entry['info']), deepcopy(entry['price'])
     sub = next((row for row in entry['subs'] if row['id'] == sub_id), None)
     if sub:
-        info.update(sub.get('info', {}))
+        info.update(deepcopy(sub.get('info', {})))
         info['description'] = sub.get('description', entry.get('description',''))
         if sub.get('price_policy') == 'blocked':
-            price = {'mode':'none'}
+            price = unavailable_price(sub.get('price_block_reason', 'Kelompok campuran; perlu penilaian per barang.'))
         elif sub.get('price_policy') == 'override':
             price = deepcopy(sub.get('price', {'mode':'none'}))
     if not info.get('assessable'):
-        price = {'mode':'none'}
+        price = unavailable_price(price.get('unavailable_reason', 'Identitas/kelengkapan campuran; minta penilaian per barang.'))
     return info, price

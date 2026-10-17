@@ -45,19 +45,38 @@ class Gallery:
             entry['n_sub'] = len(subsets)
         # Local thumbnails can override the public HF reference-image URLs.
         self.thumbs = json.loads((DATA/'thumbnail_manifest.json').read_text()) if (DATA/'thumbnail_manifest.json').exists() else {}
+        representative_path = DATA/'catalog_representatives.json'
+        representatives = json.loads(representative_path.read_text()).get('sources', {}) if representative_path.exists() else {}
+        by_filename = {row['filename']:row for row in rows}
+        audit_path = DATA/'cluster_audit_samples_2026-10-18.json'
+        audited = json.loads(audit_path.read_text()).get('samples', {}) if audit_path.exists() else {}
         for mid, entry in self.catalog.items():
             idx = np.flatnonzero(self.macro == mid)
             urls = [self.thumbnail(i) for i in idx if self.thumbnail(i)]
-            entry['thumb_url'] = urls[0] if urls else None
+            chosen = representatives.get(str(mid))
+            if chosen and (chosen not in by_filename or by_filename[chosen]['macro'] != mid):
+                raise ValueError('Thumbnail terpilih tidak sesuai makroklaster.')
+            entry['thumb_url'] = self.thumbnail_for_filename(chosen) if chosen else (urls[0] if urls else None)
             for sub in entry['subs']:
-                sub['rep_urls'] = [self.thumbnail(i) for i in idx if self.sub[i] == sub['id'] and self.thumbnail(i)][:3]
+                sampled = audited.get(f"{mid}_{sub['id']}", {}).get('files', [])
+                if sampled:
+                    for sample in sampled:
+                        row = by_filename.get(sample['filename'])
+                        if not row or (row['macro'], row['sub']) != (mid, sub['id']):
+                            raise ValueError('Sampel audit tidak sesuai mikroklaster.')
+                    sub['rep_urls'] = [url for sample in sampled if (url := self.thumbnail_for_filename(sample['filename']))]
+                else:
+                    sub['rep_urls'] = [self.thumbnail(i) for i in idx if self.sub[i] == sub['id'] and self.thumbnail(i)][:3]
 
     def thumbnail(self, index):
-        name = self.thumbs.get(self.filenames[index])
+        return self.thumbnail_for_filename(self.filenames[index])
+
+    def thumbnail_for_filename(self, filename):
+        name = self.thumbs.get(filename)
         if name and Path(name).name == name and (DATA/'thumbnails'/name).is_file():
             return '/api/thumbnails/' + quote(name, safe='')
         if REFERENCE_IMAGE_BASE_URL:
-            return REFERENCE_IMAGE_BASE_URL + '/' + quote(self.filenames[index], safe='')
+            return REFERENCE_IMAGE_BASE_URL + '/' + quote(filename, safe='')
         return None
 
     def analyze(self, vit, dino):
@@ -89,7 +108,7 @@ class Gallery:
         if sid is not None:
             detail = next(row for row in entry['subs'] if row['id'] == sid)
             label = detail.get('name', f'Kelompok visual {sid}')
-            sub = {'id':sid,'label':label,'name':label,'description':detail.get('description',''),'sim':sim,'condition_tier':None}
+            sub = {'id':sid,'label':label,'name':label,'description':detail.get('description',''),'sim':sim,'condition_tier':None,'facets':detail.get('facets'),'proposal_facets':detail.get('proposal_facets')}
         info, price = resolve_metadata(entry, sid)
         indices = np.flatnonzero(self.macro == mid)
         sims = self.dino[indices] @ d

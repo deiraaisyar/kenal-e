@@ -78,7 +78,7 @@ AND antar dimensi; pilihan “Semua” menghapus pembatas di dimensi itu.
 Deploy backend sebelum frontend agar label baru langsung tersedia.
 
 
-### Metadata riset makro, mikro, dan harga (17 Oktober 2026)
+### Metadata riset makro, mikro, dan harga (audit 18 Oktober 2026)
 
 `data/meta.json` kini memuat 27 makro dan 88 mikro dari CSV asli, termasuk makro
 26 yang disimpan untuk audit tetapi tetap ditolak sebelum panduan/harga.
@@ -90,9 +90,10 @@ jumlah referensi setelah deduplikasi.
 Setiap makro memuat `name`, `description`, `proposal_facets`, `facets`, `info`,
 `price`, dan `subs` (objek dengan kunci ID mikro lokal). Kategori fungsi/ukuran/
 risiko makro mengikuti Tabel 3–5 proposal semifinal. ID yang tidak tercantum
-risikonya tetap `unknown`. Mikro memiliki nama dan deskripsi draf berdasarkan
-galeri perwakilan, `needs_review`, serta kategori asal proposal. Pengecualian
-visual pada 5_1, 21_1, 21_2, dan 23_2 tidak otomatis menerima panduan/harga induk.
+risikonya tetap `unknown`. Mikro memiliki nama dan deskripsi berdasarkan audit sampel, `needs_review`,
+serta kategori asal proposal. Panduan setiap mikro diisi lengkap. Pengecualian
+visual memakai kategori dan kebijakan harga tersendiri: misalnya 9_1 dan 23_2
+adalah laptop, sementara 21_4 dan 24_1 campuran sehingga harga induk diblokir.
 Nama atau deskripsi ini belum merupakan anotasi terverifikasi seluruh anggota.
 
 `subs.<id>.price_policy` menentukan penerapan harga: `inherit` mengikuti induk,
@@ -104,13 +105,13 @@ ARI level 2 pada proposal adalah 0,4142; belum ada kalibrasi faktor kondisi.
 Harga memakai `mode: "ranges"` dengan `whole` (jual utuh) dan `scrap` (rongsok).
 Masing-masing dapat null. Angka memiliki `unit` (`item` atau `kg`), `min`, `max`,
 `basis`, `source_ids`, `observation_ids`, `accessed_on`, `requires_confirmation`,
-dan `note`. Acuan harga utuh bersyarat pada fungsi dan model yang sebanding;
+`scope`, dan `note`. Cakupan grade ditampilkan langsung dekat harga. Acuan harga utuh bersyarat pada fungsi dan model yang sebanding;
 foto tidak membuktikan fungsi. Acuan grade PCB bukan hasil deteksi grade.
 Rentang minimum–maksimum berasal dari sampel terpilih, bukan interval statistik,
 rata-rata pasar, ataupun harga transaksi. Harga tunggal tetap min=max.
 
 `data/research_sources.json` menyimpan sumber, tanggal akses/publikasi bila
-tersedia, cakupan wilayah, metode, dan 53 observasi angka harga. Tiga daftar
+tersedia, cakupan wilayah, metode, dan 57 observasi angka harga. Tiga daftar
 pengepul berangka adalah Kepul, Rongsok Bandung, dan ALDI SCRAP; Prabu Recycle
 hanya menjadi rujukan satuan/metode karena tidak memasang angka. Iklan pembelian,
 produk baru, barang paket tidak sebanding, dan biaya jasa pengelolaan tidak
@@ -129,3 +130,31 @@ didukung. Frontend membaca nama/deskripsi mikro, memakai istilah kelompok visual
 dan menampilkan dua kanal harga beserta sumber, tanggal akses, dan dasar estimasi.
 Deploy backend dan frontend bersama; tidak perlu melatih ulang encoder atau
 membuat ulang reference.npz.
+
+### Jejak audit visual dan evaluator
+
+`data/cluster_audit_samples_2026-10-18.json` menyimpan 423 file dari 88 mikro
+dalam 27 makro. Tiap mikro diambil min(5, jumlah file), dengan seed 20261018.
+Sampling memprioritaskan kelompok duplikat berbeda, lalu memilih anggota secara
+acak; bila kelompok unik kurang dari lima, slot diisi dari file lain. Ini bukan
+sampel acak sederhana semua file dan bukan audit visual seluruh 3.961 gambar.
+
+`data/cluster_audit_2026-10-18.json` memuat observasi per foto, perubahan label,
+pencocokan proposal, dan alasan pemilihan thumbnail. `proposal_facets` menyimpan
+Tabel 3–5 asli, sedangkan pengecualian mikro mengikuti bukti visual. Perbedaan
+judul makro23 pada Tabel2 dengan file aktual dicatat, bukan mengubah ID.
+`data/cluster_audit_evaluator_2026-10-18.json` adalah laporan evaluator independen
+yang memeriksa 423 sampel, 26 thumbnail, sumber, dan pewarisan harga. Hasil akhir
+pass tanpa temuan terbuka; ini tidak memverifikasi fungsi/kimia barang atau harga
+transaksi. `info.verified` tetap false.
+
+Untuk mereproduksi sampel dan contact sheet dari root repositori:
+
+```bash
+be/.venv/bin/python -m be.scripts.sample_cluster_audit --images-dir /path/to/1_Electronic --output-dir /tmp/kenal-audit --seed 20261018
+```
+
+`data/catalog_representatives.json` menetapkan satu gambar yang diperiksa visual
+untuk tiap makro katalog. Backend memakai gambar penuh itu untuk detail; frontend
+memakai WebP lokal hasil generator. Kelompok visual pada detail menampilkan
+sampel audit beserta panduan/harga efektif masing-masing mikro.

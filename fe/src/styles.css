@@ -132,3 +132,7 @@
 .price-method{margin-top:9px;font-size:10px;color:#7d8c72;line-height:1.8}
 .price-method summary{cursor:pointer;color:#657d58}
 .price-method p{margin-top:6px}
+
+.micro-guidance{margin-top:12px;font-size:11px}
+.micro-guidance>summary{cursor:pointer;color:var(--green);line-height:1.7}
+.micro-guidance .handling{margin-top:12px}

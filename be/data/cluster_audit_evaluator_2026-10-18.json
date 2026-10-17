@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "reviewed_on": "2026-10-18",
+  "reviewer_role": "independent_evaluator_agent",
+  "verdict": "pass",
+  "blocking_findings": [],
+  "scope": {
+    "macro_count": 27,
+    "micro_count": 88,
+    "sample_count": 423,
+    "contact_sheets_visually_viewed": [
+      "contact-00.jpg",
+      "contact-01.jpg",
+      "contact-02.jpg",
+      "contact-03.jpg",
+      "contact-04.jpg",
+      "contact-05.jpg",
+      "contact-06.jpg",
+      "contact-07.jpg",
+      "contact-08.jpg",
+      "contact-09.jpg",
+      "contact-10.jpg",
+      "contact-11.jpg",
+      "contact-12.jpg",
+      "contact-13.jpg",
+      "contact-14.jpg",
+      "contact-15.jpg",
+      "contact-16.jpg",
+      "contact-17.jpg",
+      "contact-18.jpg",
+      "contact-19.jpg",
+      "contact-20.jpg",
+      "contact-21.jpg"
+    ],
+    "thumbnails_reviewed": 26,
+    "updated_thumbnails_individually_viewed": [
+      9,
+      22
+    ],
+    "full_dataset_visual_audit": false,
+    "limitations": "Only sampled images and chosen thumbnail images reviewed. This does not establish full-cluster purity, device function, battery chemistry, or locally confirmed prices."
+  },
+  "checks": {
+    "sample_count_per_micro": "pass: min(5,total_rows), 423 files total",
+    "sample_mapping": "pass: every sampled index filename macro/sub matches gallery_meta.json",
+    "thumbnail_sample_membership": "pass: all26 selected representatives belong to reviewed samples of their macro",
+    "thumbnail_semantic_fit": "pass: all26 depict the named macro subject; 9 and22 sharpened replacements also inspected",
+    "proposal_facets": "pass: original Tables3–5 preserved separately from observed micro exceptions",
+    "handling_source_ids": "pass after correction: all source IDs now resolve",
+    "runtime_micro_overrides": "pass:9_1 and23_2 laptop pricing;21_6 phone pricing;21_4/24_1/5_1 blocked;7_0/22_2 graded battery prices",
+    "guidance_visibility": "code inspected: general guidance no longer hidden solely due to unknown risk/assessable:false",
+    "price_scope_visibility": "code inspected: quote.scope shown next to estimate; no HASIL RISET WEB suffix"
+  },
+  "confirmed_visual_corrections": [
+    "9_1 contains laptops, not standalone keyboards",
+    "23_2 sampled images are laptops, not phones",
+    "24_1 mixes audio, battery-like object, microwave and keyboard",
+    "21_4 mixes powerbanks, loose batteries and phone",
+    "20_1 includes non-mouse mechanisms",
+    "5_0 includes laptops with phones",
+    "12_0 and12_2 are heterogeneous rather than uniform audio units",
+    "26 remains heterogeneous and excluded from automatic advice/price"
+  ],
+  "resolved_findings": [
+    {
+      "id": "R1",
+      "issue": "40 handling references pointed to missing epa_battery_recycling",
+      "resolution": "Replaced with registered epa_liion_management; independently rechecked zero missing IDs."
+    },
+    {
+      "id": "R2",
+      "issue": "Phone/laptop battery hazard text referred to cylindrical and box cells",
+      "resolution": "Macro7/22 note revised to package chemistry/condition wording."
+    },
+    {
+      "id": "R3",
+      "issue": "Original thumbnails9/22 were soft or poorly framed",
+      "resolution": "Reviewed samples1404/3644 selected and new WebPs individually viewed."
+    },
+    {
+      "id": "N1",
+      "target": "meta.json:16.subs.0.description; sample row1039",
+      "issue": "Dell close-up screen did not establish full standalone monitor identity. Original evaluator note incorrectly typed index1029; manifest confirms1039.",
+      "resolution": "Description now states dominant monitors with one Dell close-up lacking complete body; needs_review true and audit description synchronized. Independently rechecked only this correction."
+    }
+  ],
+  "minor_notes": [],
+  "source_checks": {
+    "reopened_primary_price_pages": [
+      "https://kepul.id/catalog/",
+      "https://rongsokbandung.com/",
+      "https://www.aldiscrap.com/"
+    ],
+    "reopened_handling_pages": [
+      "https://www.epa.gov/recycle/used-household-batteries",
+      "https://archive.epa.gov/region9/waste/archive/web/html/faq.html",
+      "https://files.support.epson.com/docid/cpd5/cpd56820/source/cleaning_transportation/tasks/transporting_et2720_l3160.html",
+      "https://www.electricalsafetyfirst.org.uk/safety-advice/home-and-people/diy-ers/"
+    ],
+    "independent_fetch_limitation": "HP toner SDS endpoint timed out in evaluator browser retrieval; parent researcher source evidence should be retained. No claim of independent full SDS verification."
+  },
+  "price_assessment": "Published observations distinguish per-item/per-kg, whole asking prices/collector buy prices, and graded PCB/battery values. Mixed micros block unsuitable inheritance. Unknown prices remain unavailable rather than invented. Price observations do not establish Semarang transactions or permission/acceptance by a merchant.",
+  "final_followup": "Limited verification of N1 correction completed; no repeat full visual audit or independent rerun of parent test suite."
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "researched_on": "2026-10-17",
+  "researched_on": "2026-10-18",
   "sources": {
     "proposal": {
       "title": "Proposal semifinal BDC 2026, Tabel 3–5",
@@ -31,7 +31,7 @@
       "url": "https://kepul.id/catalog/",
       "kind": "collector_catalog",
       "published_on": null,
-      "accessed_on": "2026-10-17",
+      "accessed_on": "2026-10-18",
       "geographic_scope": "Wilayah layanan Kepul; belum divalidasi untuk Semarang",
       "access_note": ""
     },
@@ -40,7 +40,7 @@
       "url": "https://rongsokbandung.com/",
       "kind": "collector_catalog",
       "published_on": null,
-      "accessed_on": "2026-10-17",
+      "accessed_on": "2026-10-18",
       "geographic_scope": "Bandung dan sekitarnya",
       "access_note": "Halaman mencantumkan pembaruan Oktober 2026. Penerimaan barang berbahaya harus dikonfirmasi; bukan lokasi rekomendasi baterai."
     },
@@ -49,7 +49,7 @@
       "url": "https://www.aldiscrap.com/",
       "kind": "collector_grade_catalog",
       "published_on": "2026-07-07",
-      "accessed_on": "2026-10-17",
+      "accessed_on": "2026-10-18",
       "geographic_scope": "Indonesia; bukan penawaran khusus Semarang",
       "access_note": "Grade dagang tidak ditentukan otomatis oleh klaster visual."
     },
@@ -196,6 +196,69 @@
       "accessed_on": "2026-10-17",
       "geographic_scope": "Panduan teknis baterai; bukan penetapan hukum Indonesia",
       "access_note": "Pemisahan, perlindungan terminal, dan pencegahan kerusakan."
+    },
+    "audit_20261018": {
+      "title": "Audit visual acak 423 gambar dari 88 mikroklaster",
+      "url": "local:cluster_audit_2026-10-18.json",
+      "kind": "visual_observation",
+      "published_on": null,
+      "accessed_on": "2026-10-18",
+      "geographic_scope": "Panduan teknis; tidak menetapkan klasifikasi hukum atau lokasi layanan Indonesia.",
+      "access_note": "Seed20261018; 5 file per mikro atau semua jika kurang; prioritas grup duplikat berbeda. Bukan audit seluruh dataset, diagnosis atau estimasi kemurnian."
+    },
+    "epa_household_batteries": {
+      "title": "EPA — Used Household Batteries",
+      "url": "https://www.epa.gov/recycle/used-household-batteries",
+      "kind": "technical_guidance",
+      "published_on": null,
+      "accessed_on": "2026-10-18",
+      "geographic_scope": "Panduan teknis; tidak menetapkan klasifikasi hukum atau lokasi layanan Indonesia.",
+      "access_note": ""
+    },
+    "epa_ecycling": {
+      "title": "EPA arsip — eCycling FAQ",
+      "url": "https://archive.epa.gov/region9/waste/archive/web/html/faq.html",
+      "kind": "technical_guidance",
+      "published_on": null,
+      "accessed_on": "2026-10-18",
+      "geographic_scope": "Panduan teknis; tidak menetapkan klasifikasi hukum atau lokasi layanan Indonesia.",
+      "access_note": "Arsip dipakai hanya untuk fakta teknis kapasitor/penanganan; ketentuan/lokasi layanan lama tidak dipakai."
+    },
+    "epson_transport": {
+      "title": "Epson — persiapan transportasi printer",
+      "url": "https://files.support.epson.com/docid/cpd5/cpd56820/source/cleaning_transportation/tasks/transporting_et2720_l3160.html",
+      "kind": "technical_guidance",
+      "published_on": null,
+      "accessed_on": "2026-10-18",
+      "geographic_scope": "Panduan teknis; tidak menetapkan klasifikasi hukum atau lokasi layanan Indonesia.",
+      "access_note": "Contoh model ET2720/L3160; instruksi cartridge tidak digeneralisasi ke semua printer."
+    },
+    "hp_cartridge": {
+      "title": "HP — daur ulang tinta dan toner",
+      "url": "https://www.hp.com/us-en/hp-information/recycling/ink-toner.html",
+      "kind": "technical_guidance",
+      "published_on": null,
+      "accessed_on": "2026-10-18",
+      "geographic_scope": "Panduan teknis; tidak menetapkan klasifikasi hukum atau lokasi layanan Indonesia.",
+      "access_note": ""
+    },
+    "electrical_safety": {
+      "title": "Electrical Safety First — DIY safety",
+      "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/home-and-people/diy-ers/",
+      "kind": "technical_guidance",
+      "published_on": null,
+      "accessed_on": "2026-10-18",
+      "geographic_scope": "Panduan teknis; tidak menetapkan klasifikasi hukum atau lokasi layanan Indonesia.",
+      "access_note": ""
+    },
+    "hp_sds": {
+      "title": "HP — lembar data keselamatan toner",
+      "url": "https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c07397056",
+      "kind": "technical_guidance",
+      "published_on": null,
+      "accessed_on": "2026-10-18",
+      "geographic_scope": "Panduan teknis; tidak menetapkan klasifikasi hukum atau lokasi layanan Indonesia.",
+      "access_note": "Panduan mencegah pelepasan toner ke saluran air; bukan resep pembersihan."
     }
   },
   "observations": [
@@ -207,7 +270,7 @@
       "unit": "kg",
       "kind": "collector_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -219,7 +282,7 @@
       "unit": "kg",
       "kind": "collector_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -231,7 +294,7 @@
       "unit": "kg",
       "kind": "collector_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -243,7 +306,7 @@
       "unit": "kg",
       "kind": "collector_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -255,7 +318,7 @@
       "unit": "item",
       "kind": "collector_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -267,7 +330,7 @@
       "unit": "item",
       "kind": "collector_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -279,7 +342,7 @@
       "unit": "item",
       "kind": "collector_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -291,7 +354,7 @@
       "unit": "item",
       "kind": "collector_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -303,7 +366,7 @@
       "unit": "item",
       "kind": "collector_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -315,7 +378,7 @@
       "unit": "item",
       "kind": "collector_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -327,7 +390,7 @@
       "unit": "kg",
       "kind": "collector_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -339,7 +402,7 @@
       "unit": "item",
       "kind": "collector_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -351,7 +414,7 @@
       "unit": "kg",
       "kind": "collector_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -363,7 +426,7 @@
       "unit": "item",
       "kind": "collector_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -375,7 +438,7 @@
       "unit": "item",
       "kind": "collector_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -387,7 +450,7 @@
       "unit": "item",
       "kind": "collector_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -399,7 +462,7 @@
       "unit": "kg",
       "kind": "collector_grade_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -411,7 +474,7 @@
       "unit": "kg",
       "kind": "collector_grade_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -423,7 +486,7 @@
       "unit": "kg",
       "kind": "collector_grade_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -435,7 +498,7 @@
       "unit": "kg",
       "kind": "collector_grade_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -447,7 +510,7 @@
       "unit": "kg",
       "kind": "collector_grade_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -459,7 +522,7 @@
       "unit": "kg",
       "kind": "collector_grade_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -471,7 +534,7 @@
       "unit": "kg",
       "kind": "collector_grade_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -483,7 +546,7 @@
       "unit": "kg",
       "kind": "collector_grade_buy",
       "listing_url": null,
-      "observed_on": "2026-10-17",
+      "observed_on": "2026-10-18",
       "function_tested": false,
       "completed_transaction": false
     },
@@ -834,6 +897,54 @@
       "observed_on": "2026-10-17",
       "function_tested": false,
       "completed_transaction": false
+    },
+    {
+      "id": "aldi_battery_phone",
+      "source_id": "aldi",
+      "item": "BATRE HP",
+      "amount_idr": 63000,
+      "unit": "kg",
+      "kind": "collector_grade_buy",
+      "listing_url": null,
+      "observed_on": "2026-10-18",
+      "function_tested": false,
+      "completed_transaction": false
+    },
+    {
+      "id": "aldi_battery_laptop",
+      "source_id": "aldi",
+      "item": "BATRE LAPTOP / PB BULET",
+      "amount_idr": 10000,
+      "unit": "kg",
+      "kind": "collector_grade_buy",
+      "listing_url": null,
+      "observed_on": "2026-10-18",
+      "function_tested": false,
+      "completed_transaction": false
+    },
+    {
+      "id": "aldi_battery_pouch",
+      "source_id": "aldi",
+      "item": "BATRE BANTAL",
+      "amount_idr": 7000,
+      "unit": "kg",
+      "kind": "collector_grade_buy",
+      "listing_url": null,
+      "observed_on": "2026-10-18",
+      "function_tested": false,
+      "completed_transaction": false
+    },
+    {
+      "id": "aldi_battery_reject",
+      "source_id": "aldi",
+      "item": "BATRE AFKIR - RETUR",
+      "amount_idr": 1000,
+      "unit": "kg",
+      "kind": "collector_grade_buy",
+      "listing_url": null,
+      "observed_on": "2026-10-18",
+      "function_tested": false,
+      "completed_transaction": false
     }
   ],
   "methodology": {
@@ -843,5 +954,38 @@
     "fixed_quote": "Satu angka publik disimpan min=max; tidak diberi rentang buatan.",
     "condition": "Nomor mikro dan tampilan layar tidak digunakan untuk menebak fungsi atau faktor harga.",
     "verified_meaning": "Pemeriksaan sumber web saja; tidak ada konfirmasi penjual, transaksi, izin pengelola, atau uji fungsi."
-  }
+  },
+  "audit_exclusions_2026_10_18": [
+    {
+      "observation_ids": [
+        "kepul_aki"
+      ],
+      "reason": "Rp3.000/kg hanya aki kering; makro6 mencakup baterai litium dan jenis lain. Tipe belum pasti dari sampel."
+    },
+    {
+      "observation_ids": [
+        "kepul_computer_set"
+      ],
+      "reason": "Rp35.000/set tidak diterapkan pada17_1: sampel tidak memastikan CPU dan set lengkap."
+    },
+    {
+      "observation_ids": [
+        "kepul_speaker"
+      ],
+      "reason": "Rp200/kg tidak diterapkan pada24_1: sampel microwave, baterai/perangkat kotak dan keyboard."
+    },
+    {
+      "source_ids": [
+        "olx_monitor"
+      ],
+      "reason": "Harga jual monitor tidak diterapkan pada15 yang juga berisi TV."
+    },
+    {
+      "queries": [
+        "pengepul microwave Rp rongsok harga",
+        "harga rongsok DVD pengepul"
+      ],
+      "reason": "Hasil hanya blog lama/iklan jual/komponen, belum ada kutipan beli utuh yang sebanding. Nilai tidak dikarang."
+    }
+  ]
 }

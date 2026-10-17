@@ -15,7 +15,7 @@ export default defineConfig({
     },
     workbox: {
       navigateFallbackDenylist: [/^\/api/],
-      globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
+      globPatterns: ['**/*.{js,css,html,svg,png,webp,woff2}'],
       runtimeCaching: [{urlPattern: /\/api\/taxonomy(?:\/\d+)?$/, handler:'NetworkFirst', options:{cacheName:'eokay-catalog-v1',expiration:{maxEntries:30,maxAgeSeconds:86400},networkTimeoutSeconds:5}}],
     },
   })],
