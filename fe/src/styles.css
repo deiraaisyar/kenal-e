@@ -136,3 +136,7 @@
 .micro-guidance{margin-top:12px;font-size:11px}
 .micro-guidance>summary{cursor:pointer;color:var(--green);line-height:1.7}
 .micro-guidance .handling{margin-top:12px}
+
+.price-unavailable-block{padding:19px 0 24px}
+.price-unavailable-block>.price-unavailable{padding:0}
+.price-unavailable-block>.fine-print{margin:12px 0 0;text-align:left;line-height:1.8}
