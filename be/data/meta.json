@@ -1,1 +1,5839 @@
-{}
+{
+  "0": {
+    "name": "Microwave",
+    "description": "Perangkat pemanas makanan dengan ruang tertutup, pintu dan panel kontrol. Contoh beragam model; keadaan fungsi tidak diketahui.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "household"
+      ],
+      "sizes": [
+        "large"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "household"
+      ],
+      "sizes": [
+        "large"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "info": {
+      "weee": "Elektronik Rumah Tangga Besar",
+      "risk_level": "low",
+      "bag": "gray",
+      "hazard_note": "",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": {
+        "min": 300000,
+        "max": 700000,
+        "unit": "item",
+        "currency": "IDR",
+        "basis": "marketplace_asking",
+        "source_ids": [
+          "olx_microwave"
+        ],
+        "observation_ids": [
+          "market_micro1",
+          "market_micro2",
+          "market_micro3"
+        ],
+        "accessed_on": "2026-10-17",
+        "status": "web_researched",
+        "local_quote_verified": false,
+        "note": "Sampel harga penawaran, bukan transaksi. Berlaku hanya jika model sebanding, barang lengkap dan fungsi sudah diperiksa pemilik.",
+        "requires_confirmation": [
+          "model",
+          "function",
+          "completeness"
+        ]
+      },
+      "scrap": null,
+      "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "0_0",
+        "name": "Microwave",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 246,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "household"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "household"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "1": {
+    "name": "Mesin cuci",
+    "description": "Peralatan pencuci pakaian: bukaan depan, mini/dua tabung, dan bukaan atas. Kapasitas serta fungsi perlu diperiksa.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "household"
+      ],
+      "sizes": [
+        "large"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "household"
+      ],
+      "sizes": [
+        "large"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "info": {
+      "weee": "Elektronik Rumah Tangga Besar",
+      "risk_level": "low",
+      "bag": "gray",
+      "hazard_note": "",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": {
+        "min": 400000,
+        "max": 3000000,
+        "unit": "item",
+        "currency": "IDR",
+        "basis": "marketplace_asking",
+        "source_ids": [
+          "olx_washer"
+        ],
+        "observation_ids": [
+          "market_washer1",
+          "market_washer2",
+          "market_washer3"
+        ],
+        "accessed_on": "2026-10-17",
+        "status": "web_researched",
+        "local_quote_verified": false,
+        "note": "Sampel harga penawaran, bukan transaksi. Berlaku hanya jika model sebanding, barang lengkap dan fungsi sudah diperiksa pemilik.",
+        "requires_confirmation": [
+          "capacity",
+          "function",
+          "model"
+        ]
+      },
+      "scrap": {
+        "min": 25000,
+        "max": 50000,
+        "unit": "item",
+        "currency": "IDR",
+        "basis": "collector_buy",
+        "source_ids": [
+          "kepul",
+          "bandung"
+        ],
+        "observation_ids": [
+          "kepul_washer1",
+          "kepul_washer2",
+          "bandung_washer"
+        ],
+        "accessed_on": "2026-10-17",
+        "status": "web_researched",
+        "local_quote_verified": false,
+        "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran.",
+        "requires_confirmation": []
+      },
+      "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "1_0",
+        "name": "Mesin cuci bukaan depan",
+        "description": "Dominan pintu lingkaran di bagian depan.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 209,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "household"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "household"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "1": {
+        "id": 1,
+        "global_id": "1_1",
+        "name": "Mesin cuci mini/portabel dan dua tabung",
+        "description": "Mencakup tabung mini, perangkat portabel dan dua tabung; bukan satu kapasitas yang sama.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 22,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "blocked",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "household"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "household"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "2": {
+        "id": 2,
+        "global_id": "1_2",
+        "name": "Mesin cuci bukaan atas",
+        "description": "Dominan tutup di bagian atas.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 77,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "household"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "household"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "2": {
+    "name": "Printer struk dan label",
+    "description": "Printer kecil untuk struk atau label. Jenis mekanisme, lebar cetak dan fungsi belum dipastikan dari foto.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "office"
+      ],
+      "sizes": [
+        "medium"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "office"
+      ],
+      "sizes": [
+        "medium"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "info": {
+      "weee": "Elektronik Kantor/Cetak",
+      "risk_level": "low",
+      "bag": "gray",
+      "hazard_note": "",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": {
+        "min": 325000,
+        "max": 1300000,
+        "unit": "item",
+        "currency": "IDR",
+        "basis": "marketplace_asking",
+        "source_ids": [
+          "olx_thermal",
+          "olx_printer"
+        ],
+        "observation_ids": [
+          "market_thermal1",
+          "market_thermal2",
+          "market_thermal3"
+        ],
+        "accessed_on": "2026-10-17",
+        "status": "web_researched",
+        "local_quote_verified": false,
+        "note": "Sampel harga penawaran, bukan transaksi. Berlaku hanya jika model sebanding, barang lengkap dan fungsi sudah diperiksa pemilik.",
+        "requires_confirmation": [
+          "printer_type",
+          "function"
+        ]
+      },
+      "scrap": {
+        "min": 400,
+        "max": 400,
+        "unit": "kg",
+        "currency": "IDR",
+        "basis": "collector_buy",
+        "source_ids": [
+          "kepul"
+        ],
+        "observation_ids": [
+          "kepul_printer"
+        ],
+        "accessed_on": "2026-10-17",
+        "status": "web_researched",
+        "local_quote_verified": false,
+        "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran.",
+        "requires_confirmation": []
+      },
+      "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "2_0",
+        "name": "Printer struk dan label",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 22,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "office"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "office"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "3": {
+    "name": "Saklar, stopkontak dan terminal listrik",
+    "description": "Komponen sambungan listrik dinding dan terminal portabel. Pemasangan dan keamanan kelistrikan tidak dinilai dari foto.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "energy"
+      ],
+      "sizes": [
+        "small"
+      ],
+      "risks": [
+        "unknown"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "energy"
+      ],
+      "sizes": [
+        "small"
+      ],
+      "risks": [
+        "unknown"
+      ]
+    },
+    "info": {
+      "weee": "Komponen Elektrik/Energi",
+      "risk_level": "unknown",
+      "bag": "white",
+      "hazard_note": "",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": null,
+      "scrap": null,
+      "unavailable_reason": "Jenis saklar/terminal, kondisi dan kelengkapan belum cukup spesifik untuk acuan harga sebanding.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "3_0",
+        "name": "Saklar, stopkontak dan terminal listrik",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 28,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "4": {
+    "name": "Baterai silinder dan paket baterai kecil",
+    "description": "Sel silinder lepas maupun rangkaian beberapa sel. Kimia, tegangan dan kapasitas tidak ditentukan hanya dari bentuk.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "energy"
+      ],
+      "sizes": [
+        "small"
+      ],
+      "risks": [
+        "high"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "energy"
+      ],
+      "sizes": [
+        "small"
+      ],
+      "risks": [
+        "high"
+      ]
+    },
+    "info": {
+      "weee": "Komponen Elektrik/Energi",
+      "risk_level": "high",
+      "bag": "red",
+      "hazard_note": "Kimia dan kesehatan baterai perlu dibaca dari label atau diperiksa petugas; bentuk saja tidak cukup.",
+      "do": [
+        "Pisahkan dari elektronik lain dan konfirmasikan penerimaan baterai kepada pengelola.",
+        "Untuk baterai litium lepas yang utuh, lindungi terminal dengan selotip nonlogam tanpa menutupi label."
+      ],
+      "dont": [
+        "Jangan menusuk, menekan, membakar atau membuka paket baterai.",
+        "Jangan memasukkan baterai litium ke sampah rumah tangga atau wadah daur ulang umum."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_liion_management"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": null,
+      "scrap": null,
+      "unavailable_reason": "Kimia dan komposisi paket belum diketahui; belum ditemukan harga beli terkini yang sebanding untuk seluruh kelompok.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "4_0",
+        "name": "Sel silinder dan paket baterai kecil",
+        "description": "Contoh mencakup sel lepas dan beberapa sel yang dirangkai.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 41,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "1": {
+        "id": 1,
+        "global_id": "4_1",
+        "name": "Baterai silinder lepas",
+        "description": "Contoh dominan sel lepas dengan variasi ukuran; ukuran pasti perlu pembanding.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 5,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "5": {
+    "name": "Ponsel dan komponen campuran",
+    "description": "Mayoritas contoh berupa ponsel layar sentuh; satu mikro berisi komponen mirip kipas/pendingin. Identitas mikro perlu diperhatikan.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "small"
+      ],
+      "risks": [
+        "high"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "small"
+      ],
+      "risks": [
+        "high"
+      ]
+    },
+    "info": {
+      "weee": "Perangkat Komputasi",
+      "risk_level": "high",
+      "bag": "red",
+      "hazard_note": "Perangkat dapat menyimpan data pribadi dan mengandung baterai; keberadaan serta kondisinya perlu diperiksa.",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor.",
+        "Jika perangkat masih dapat diakses, cadangkan lalu hapus data pribadi sebelum diserahkan."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material.",
+        "Jangan mencungkil baterai yang terpasang permanen."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics",
+        "epa_liion"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": null,
+      "scrap": null,
+      "unavailable_reason": "Kelompok heterogen; harga perlu mengikuti identitas mikro yang cukup jelas atau penilaian manual.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "5_0",
+        "name": "Ponsel layar sentuh",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 46,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "override",
+        "needs_review": false,
+        "price": {
+          "mode": "ranges",
+          "whole": null,
+          "scrap": {
+            "min": 4000,
+            "max": 200000,
+            "unit": "item",
+            "currency": "IDR",
+            "basis": "collector_buy",
+            "source_ids": [
+              "bandung"
+            ],
+            "observation_ids": [
+              "bandung_phone_low",
+              "bandung_phone_high"
+            ],
+            "accessed_on": "2026-10-17",
+            "status": "web_researched",
+            "local_quote_verified": false,
+            "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran. Acuan HP mati; bukan untuk remote, router atau tablet.",
+            "requires_confirmation": []
+          },
+          "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+          "condition_factors": null,
+          "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+        },
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "1": {
+        "id": 1,
+        "global_id": "5_1",
+        "name": "Komponen mirip kipas/pendingin komputer",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi. Identitas berbeda/campuran; harga dan risiko makro tidak diterapkan otomatis.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 5,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "blocked",
+        "needs_review": true,
+        "info": {
+          "assessable": false,
+          "risk_level": "unknown",
+          "bag": "white",
+          "hazard_note": "Identitas kelompok perlu ditinjau; panduan khusus belum ditetapkan.",
+          "verified": false
+        },
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "internal"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facet_basis": "draft_visual_exception; proposal_facets preserved separately"
+      }
+    }
+  },
+  "6": {
+    "name": "Aki dan baterai kotak",
+    "description": "Baterai berbentuk kotak dengan beragam ukuran dan terminal. Tidak seluruhnya dapat dipastikan timbal-asam atau untuk kendaraan.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "energy"
+      ],
+      "sizes": [
+        "medium"
+      ],
+      "risks": [
+        "high"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "energy"
+      ],
+      "sizes": [
+        "medium"
+      ],
+      "risks": [
+        "high"
+      ]
+    },
+    "info": {
+      "weee": "Komponen Elektrik/Energi",
+      "risk_level": "high",
+      "bag": "red",
+      "hazard_note": "Kimia dan kesehatan baterai perlu dibaca dari label atau diperiksa petugas; bentuk saja tidak cukup.",
+      "do": [
+        "Pisahkan dari elektronik lain dan konfirmasikan penerimaan baterai kepada pengelola.",
+        "Untuk baterai litium lepas yang utuh, lindungi terminal dengan selotip nonlogam tanpa menutupi label."
+      ],
+      "dont": [
+        "Jangan menusuk, menekan, membakar atau membuka paket baterai.",
+        "Jangan memasukkan baterai litium ke sampah rumah tangga atau wadah daur ulang umum."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_liion_management"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": null,
+      "scrap": null,
+      "unavailable_reason": "Ada acuan aki kering pada Kepul, tetapi kimia dan aplikasi seluruh mikro belum terkonfirmasi. Tidak menerapkan harga timbal-asam pada semua baterai kotak.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "6_0",
+        "name": "Aki dan baterai kotak",
+        "description": "Deret ini berisi baterai kotak dengan bentuk/terminal beragam. Pembeda kimia atau aplikasi belum pasti; penamaan tidak didasarkan satu warna/merek contoh.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 2,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "1": {
+        "id": 1,
+        "global_id": "6_1",
+        "name": "Aki dan baterai kotak",
+        "description": "Deret ini berisi baterai kotak dengan bentuk/terminal beragam. Pembeda kimia atau aplikasi belum pasti; penamaan tidak didasarkan satu warna/merek contoh.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 3,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "2": {
+        "id": 2,
+        "global_id": "6_2",
+        "name": "Aki dan baterai kotak",
+        "description": "Deret ini berisi baterai kotak dengan bentuk/terminal beragam. Pembeda kimia atau aplikasi belum pasti; penamaan tidak didasarkan satu warna/merek contoh.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 2,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "3": {
+        "id": 3,
+        "global_id": "6_3",
+        "name": "Aki dan baterai kotak",
+        "description": "Deret ini berisi baterai kotak dengan bentuk/terminal beragam. Pembeda kimia atau aplikasi belum pasti; penamaan tidak didasarkan satu warna/merek contoh.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 7,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "4": {
+        "id": 4,
+        "global_id": "6_4",
+        "name": "Aki dan baterai kotak",
+        "description": "Deret ini berisi baterai kotak dengan bentuk/terminal beragam. Pembeda kimia atau aplikasi belum pasti; penamaan tidak didasarkan satu warna/merek contoh.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 5,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "5": {
+        "id": 5,
+        "global_id": "6_5",
+        "name": "Aki dan baterai kotak",
+        "description": "Deret ini berisi baterai kotak dengan bentuk/terminal beragam. Pembeda kimia atau aplikasi belum pasti; penamaan tidak didasarkan satu warna/merek contoh.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 6,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "6": {
+        "id": 6,
+        "global_id": "6_6",
+        "name": "Aki dan baterai kotak",
+        "description": "Deret ini berisi baterai kotak dengan bentuk/terminal beragam. Pembeda kimia atau aplikasi belum pasti; penamaan tidak didasarkan satu warna/merek contoh.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 1,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "7": {
+        "id": 7,
+        "global_id": "6_7",
+        "name": "Aki dan baterai kotak",
+        "description": "Deret ini berisi baterai kotak dengan bentuk/terminal beragam. Pembeda kimia atau aplikasi belum pasti; penamaan tidak didasarkan satu warna/merek contoh.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 3,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "8": {
+        "id": 8,
+        "global_id": "6_8",
+        "name": "Aki dan baterai kotak",
+        "description": "Deret ini berisi baterai kotak dengan bentuk/terminal beragam. Pembeda kimia atau aplikasi belum pasti; penamaan tidak didasarkan satu warna/merek contoh.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 9,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "9": {
+        "id": 9,
+        "global_id": "6_9",
+        "name": "Aki dan baterai kotak",
+        "description": "Deret ini berisi baterai kotak dengan bentuk/terminal beragam. Pembeda kimia atau aplikasi belum pasti; penamaan tidak didasarkan satu warna/merek contoh.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 2,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "7": {
+    "name": "Baterai ponsel lepas",
+    "description": "Baterai tipis lepas dengan beragam bentuk dan label. Kompatibilitas, kimia dan kesehatan baterai belum diperiksa.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "energy"
+      ],
+      "sizes": [
+        "small"
+      ],
+      "risks": [
+        "high"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "energy"
+      ],
+      "sizes": [
+        "small"
+      ],
+      "risks": [
+        "high"
+      ]
+    },
+    "info": {
+      "weee": "Komponen Elektrik/Energi",
+      "risk_level": "high",
+      "bag": "red",
+      "hazard_note": "Kimia dan kesehatan baterai perlu dibaca dari label atau diperiksa petugas; bentuk saja tidak cukup.",
+      "do": [
+        "Pisahkan dari elektronik lain dan konfirmasikan penerimaan baterai kepada pengelola.",
+        "Untuk baterai litium lepas yang utuh, lindungi terminal dengan selotip nonlogam tanpa menutupi label."
+      ],
+      "dont": [
+        "Jangan menusuk, menekan, membakar atau membuka paket baterai.",
+        "Jangan memasukkan baterai litium ke sampah rumah tangga atau wadah daur ulang umum."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_liion_management"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": null,
+      "scrap": null,
+      "unavailable_reason": "Belum ada harga beli terkini yang cukup sebanding untuk baterai ponsel beragam tipe dan kimia. Harga produk baru tidak dipakai.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "7_0",
+        "name": "Baterai ponsel lepas",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 32,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "1": {
+        "id": 1,
+        "global_id": "7_1",
+        "name": "Baterai ponsel lepas",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 24,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "energy"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "8": {
+    "name": "Pemutar piringan hitam dan gramofon",
+    "description": "Kelompok mencakup turntable, model koper/kabinet dan gramofon bercorong. Tidak semua contoh pasti menggunakan listrik.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "medium"
+      ],
+      "risks": [
+        "medium"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "medium"
+      ],
+      "risks": [
+        "medium"
+      ]
+    },
+    "info": {
+      "weee": "Media/Audio-Visual",
+      "risk_level": "medium",
+      "bag": "orange",
+      "hazard_note": "",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": {
+        "min": 750000,
+        "max": 3500000,
+        "unit": "item",
+        "currency": "IDR",
+        "basis": "marketplace_asking",
+        "source_ids": [
+          "olx_turntable"
+        ],
+        "observation_ids": [
+          "market_turn1",
+          "market_turn2",
+          "market_turn3"
+        ],
+        "accessed_on": "2026-10-17",
+        "status": "web_researched",
+        "local_quote_verified": false,
+        "note": "Sampel harga penawaran, bukan transaksi. Berlaku hanya jika model sebanding, barang lengkap dan fungsi sudah diperiksa pemilik. Tidak berlaku untuk gramofon mekanis/antik atau unit kabinet.",
+        "requires_confirmation": [
+          "model",
+          "mechanism",
+          "function"
+        ]
+      },
+      "scrap": null,
+      "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "8_0",
+        "name": "Pemutar piringan hitam dengan penutup",
+        "description": "Beragam pemutar dengan piringan dan penutup.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 32,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "1": {
+        "id": 1,
+        "global_id": "8_1",
+        "name": "Gramofon bercorong",
+        "description": "Contoh memiliki corong besar; penggerak mekanis/listrik belum dipastikan.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 11,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "blocked",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "2": {
+        "id": 2,
+        "global_id": "8_2",
+        "name": "Pemutar piringan hitam model kabinet kayu",
+        "description": "Contoh kabinet kayu dengan piringan dan panel depan.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 25,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "blocked",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "3": {
+        "id": 3,
+        "global_id": "8_3",
+        "name": "Pemutar piringan hitam model koper/portabel",
+        "description": "Contoh dominan perangkat portabel; mekanisme dan merek beragam.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 33,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "9": {
+    "name": "Keyboard komputer",
+    "description": "Papan ketik dengan variasi ukuran, bentuk tombol dan desain. Sebagian foto menyertakan mouse; fungsi tombol belum diuji.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "small"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "small"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "info": {
+      "weee": "Perangkat Komputasi",
+      "risk_level": "low",
+      "bag": "gray",
+      "hazard_note": "",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": {
+        "min": 80000,
+        "max": 150000,
+        "unit": "item",
+        "currency": "IDR",
+        "basis": "marketplace_asking",
+        "source_ids": [
+          "olx_keyboard"
+        ],
+        "observation_ids": [
+          "market_keyboard1",
+          "market_keyboard2",
+          "market_keyboard3"
+        ],
+        "accessed_on": "2026-10-17",
+        "status": "web_researched",
+        "local_quote_verified": false,
+        "note": "Sampel harga penawaran, bukan transaksi. Berlaku hanya jika model sebanding, barang lengkap dan fungsi sudah diperiksa pemilik. Sampel keyboard umum; keyboard premium/mekanis dapat berada di luar rentang.",
+        "requires_confirmation": [
+          "model",
+          "function"
+        ]
+      },
+      "scrap": {
+        "min": 500,
+        "max": 500,
+        "unit": "kg",
+        "currency": "IDR",
+        "basis": "collector_buy",
+        "source_ids": [
+          "kepul"
+        ],
+        "observation_ids": [
+          "kepul_keyboard"
+        ],
+        "accessed_on": "2026-10-17",
+        "status": "web_researched",
+        "local_quote_verified": false,
+        "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran.",
+        "requires_confirmation": []
+      },
+      "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "9_0",
+        "name": "Keyboard komputer",
+        "description": "Model keyboard beragam, dominan tampak atas.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 131,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "1": {
+        "id": 1,
+        "global_id": "9_1",
+        "name": "Keyboard komputer",
+        "description": "Kelompok foto banyak berorientasi vertikal; bukan jenis kerusakan tersendiri.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 11,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "2": {
+        "id": 2,
+        "global_id": "9_2",
+        "name": "Keyboard komputer",
+        "description": "Sebagian contoh menyertakan mouse, sebagian hanya keyboard.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 35,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "3": {
+        "id": 3,
+        "global_id": "9_3",
+        "name": "Keyboard komputer",
+        "description": "Terdapat desain gaming/berlampu dan model lain; tidak semua dipastikan mekanis.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 86,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "4": {
+        "id": 4,
+        "global_id": "9_4",
+        "name": "Keyboard komputer",
+        "description": "Campuran warna dan bentuk tombol; jenis switch belum dipastikan.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 35,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "10": {
+    "name": "Laptop tertutup",
+    "description": "Komputer portabel yang dominan difoto dalam posisi tertutup. Posisi tutup tidak menunjukkan kondisi mesin atau baterai.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "medium"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "medium"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "info": {
+      "weee": "Perangkat Komputasi",
+      "risk_level": "low",
+      "bag": "gray",
+      "hazard_note": "Perangkat dapat menyimpan data pribadi dan mengandung baterai; keberadaan serta kondisinya perlu diperiksa.",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor.",
+        "Jika perangkat masih dapat diakses, cadangkan lalu hapus data pribadi sebelum diserahkan."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material.",
+        "Jangan mencungkil baterai yang terpasang permanen."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics",
+        "epa_liion"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": null,
+      "scrap": {
+        "min": 15000,
+        "max": 15000,
+        "unit": "kg",
+        "currency": "IDR",
+        "basis": "collector_buy",
+        "source_ids": [
+          "kepul"
+        ],
+        "observation_ids": [
+          "kepul_laptop"
+        ],
+        "accessed_on": "2026-10-17",
+        "status": "web_researched",
+        "local_quote_verified": false,
+        "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran.",
+        "requires_confirmation": []
+      },
+      "unavailable_reason": "Harga utuh perlu merek, generasi, spesifikasi dan uji fungsi; contoh tertutup tidak membuktikan kondisi.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "10_0",
+        "name": "Laptop dalam posisi tertutup",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 29,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "11": {
+    "name": "Pemutar CD portabel",
+    "description": "Pemutar cakram ringkas, umumnya berbentuk bundar. Kelengkapan adaptor dan fungsi pembacaan cakram perlu diperiksa.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "medium"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "medium"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "info": {
+      "weee": "Media/Audio-Visual",
+      "risk_level": "low",
+      "bag": "gray",
+      "hazard_note": "",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": null,
+      "scrap": null,
+      "unavailable_reason": "Hanya satu sampel Discman Rp155.000 ditemukan; tidak digabung dengan boombox Rp1.750.000 karena beda barang.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "11_0",
+        "name": "Pemutar CD portabel",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 28,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "12": {
+    "name": "Unit audio/video rak",
+    "description": "Perangkat pemutar atau pengolah audio/video berbentuk kotak/rak. Jenis dan fungsi tiap unit perlu identifikasi model.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "medium"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "medium"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "info": {
+      "weee": "Media/Audio-Visual",
+      "risk_level": "low",
+      "bag": "gray",
+      "hazard_note": "",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": null,
+      "scrap": null,
+      "unavailable_reason": "Unit pemutar, receiver dan perangkat kotak belum homogen; perlu identifikasi model untuk harga utuh maupun rongsok.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "12_0",
+        "name": "Unit audio/video berbentuk rak",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 20,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "1": {
+        "id": 1,
+        "global_id": "12_1",
+        "name": "Unit audio/video berbentuk rak",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 29,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "2": {
+        "id": 2,
+        "global_id": "12_2",
+        "name": "Unit audio/video berbentuk rak",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 10,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "13": {
+    "name": "Papan sirkuit dan komponen elektronik",
+    "description": "Kelompok berisi PCB berkomponen, chip/IC lepas, serta timbunan papan. Jenis material dan grade nilai perlu penilaian terpisah.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "internal"
+      ],
+      "sizes": [
+        "small"
+      ],
+      "risks": [
+        "valuable"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "internal"
+      ],
+      "sizes": [
+        "small"
+      ],
+      "risks": [
+        "valuable"
+      ]
+    },
+    "info": {
+      "weee": "Komponen Internal",
+      "risk_level": "valuable",
+      "bag": "green",
+      "hazard_note": "Grade, bahan dan kandungan logam pada papan/chip berbeda-beda; jangan mengekstraksi material sendiri.",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": null,
+      "scrap": {
+        "min": 4000,
+        "max": 180000,
+        "unit": "kg",
+        "currency": "IDR",
+        "basis": "collector_grade_buy",
+        "source_ids": [
+          "aldi"
+        ],
+        "observation_ids": [
+          "aldi_gp_c",
+          "aldi_boncos_empty",
+          "aldi_boncos_populated",
+          "aldi_gp_b",
+          "aldi_gp_a",
+          "aldi_mix_c",
+          "aldi_mix_a",
+          "aldi_mix_super"
+        ],
+        "accessed_on": "2026-10-17",
+        "status": "web_researched",
+        "local_quote_verified": false,
+        "note": "Acuan beberapa grade PCB umum. Grade harus ditentukan pengepul; klaster ini tidak memastikan grade atau kandungan logam.",
+        "requires_confirmation": [
+          "pcb_grade"
+        ]
+      },
+      "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "13_0",
+        "name": "Papan sirkuit dengan komponen terpasang",
+        "description": "PCB dengan komponen masih terpasang; belum menetapkan grade logam.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 353,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "internal"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "valuable"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "internal"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "valuable"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "1": {
+        "id": 1,
+        "global_id": "13_1",
+        "name": "Chip/IC dan komponen lepas",
+        "description": "Chip/IC lepas beragam kemasan; kandungan logam tidak dapat ditentukan dari warna.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 7,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "blocked",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "internal"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "valuable"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "internal"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "valuable"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "2": {
+        "id": 2,
+        "global_id": "13_2",
+        "name": "Timbunan papan sirkuit dan komponen",
+        "description": "Banyak papan dan komponen dalam satu foto; belum homogen untuk penetapan harga.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 14,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "blocked",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "internal"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "valuable"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "internal"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "valuable"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "14": {
+    "name": "TV tabung CRT",
+    "description": "Televisi dengan kabinet tabung dan berbagai panel kontrol. Gambar yang terlihat pada contoh tidak membuktikan fungsi barang baru.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "large"
+      ],
+      "risks": [
+        "medium"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "large"
+      ],
+      "risks": [
+        "medium"
+      ]
+    },
+    "info": {
+      "weee": "Media/Audio-Visual",
+      "risk_level": "medium",
+      "bag": "orange",
+      "hazard_note": "Jika perangkat menggunakan tabung CRT, kaca tabung dapat mengandung timbal. Tipe layar perlu dikonfirmasi.",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material.",
+        "Jangan memecahkan layar atau membuka tabung."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics",
+        "epa_crt"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": {
+        "min": 100000,
+        "max": 750000,
+        "unit": "item",
+        "currency": "IDR",
+        "basis": "marketplace_asking",
+        "source_ids": [
+          "olx_crt"
+        ],
+        "observation_ids": [
+          "market_crt1",
+          "market_crt2",
+          "market_crt3"
+        ],
+        "accessed_on": "2026-10-17",
+        "status": "web_researched",
+        "local_quote_verified": false,
+        "note": "Sampel harga penawaran, bukan transaksi. Berlaku hanya jika model sebanding, barang lengkap dan fungsi sudah diperiksa pemilik.",
+        "requires_confirmation": [
+          "screen_size",
+          "function"
+        ]
+      },
+      "scrap": {
+        "min": 8000,
+        "max": 8000,
+        "unit": "item",
+        "currency": "IDR",
+        "basis": "collector_buy",
+        "source_ids": [
+          "kepul"
+        ],
+        "observation_ids": [
+          "kepul_crt_tv"
+        ],
+        "accessed_on": "2026-10-17",
+        "status": "web_researched",
+        "local_quote_verified": false,
+        "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran.",
+        "requires_confirmation": []
+      },
+      "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "14_0",
+        "name": "TV tabung CRT",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 29,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "1": {
+        "id": 1,
+        "global_id": "14_1",
+        "name": "TV tabung CRT",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 12,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "2": {
+        "id": 2,
+        "global_id": "14_2",
+        "name": "TV tabung CRT",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 51,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "3": {
+        "id": 3,
+        "global_id": "14_3",
+        "name": "TV tabung CRT",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 25,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "4": {
+        "id": 4,
+        "global_id": "14_4",
+        "name": "TV tabung CRT",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 46,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "15": {
+    "name": "TV dan monitor layar datar",
+    "description": "Perangkat layar datar dengan variasi ukuran dan dudukan. Teknologi panel serta fungsi tidak selalu dapat ditentukan dari foto.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "large"
+      ],
+      "risks": [
+        "medium"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "large"
+      ],
+      "risks": [
+        "medium"
+      ]
+    },
+    "info": {
+      "weee": "Media/Audio-Visual",
+      "risk_level": "medium",
+      "bag": "orange",
+      "hazard_note": "Teknologi panel dan bahan internal tidak dipastikan dari foto; tidak semua layar menggunakan lampu latar yang sama.",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": {
+        "min": 260000,
+        "max": 1800000,
+        "unit": "item",
+        "currency": "IDR",
+        "basis": "marketplace_asking",
+        "source_ids": [
+          "olx_monitor"
+        ],
+        "observation_ids": [
+          "market_lcd1",
+          "market_lcd2",
+          "market_lcd3",
+          "market_lcd4"
+        ],
+        "accessed_on": "2026-10-17",
+        "status": "web_researched",
+        "local_quote_verified": false,
+        "note": "Sampel harga penawaran, bukan transaksi. Berlaku hanya jika model sebanding, barang lengkap dan fungsi sudah diperiksa pemilik. Sampel monitor, bukan semua televisi layar datar.",
+        "requires_confirmation": [
+          "device_is_monitor",
+          "screen_size",
+          "function"
+        ]
+      },
+      "scrap": {
+        "min": 5000,
+        "max": 5000,
+        "unit": "item",
+        "currency": "IDR",
+        "basis": "collector_buy",
+        "source_ids": [
+          "kepul"
+        ],
+        "observation_ids": [
+          "kepul_lcd",
+          "kepul_tv_lcd"
+        ],
+        "accessed_on": "2026-10-17",
+        "status": "web_researched",
+        "local_quote_verified": false,
+        "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran.",
+        "requires_confirmation": []
+      },
+      "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "15_0",
+        "name": "TV dan monitor layar datar",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 104,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "16": {
+    "name": "Layar datar bekas dan campuran",
+    "description": "Foto mencakup monitor, bagian belakang layar, tumpukan, dan contoh retak. Sebagian contoh tidak memperlihatkan kerusakan.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "large"
+      ],
+      "risks": [
+        "medium"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "large"
+      ],
+      "risks": [
+        "medium"
+      ]
+    },
+    "info": {
+      "weee": "Media/Audio-Visual",
+      "risk_level": "medium",
+      "bag": "orange",
+      "hazard_note": "Teknologi panel dan bahan internal tidak dipastikan dari foto; tidak semua layar menggunakan lampu latar yang sama.",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": null,
+      "scrap": {
+        "min": 5000,
+        "max": 5000,
+        "unit": "item",
+        "currency": "IDR",
+        "basis": "collector_buy",
+        "source_ids": [
+          "kepul"
+        ],
+        "observation_ids": [
+          "kepul_lcd",
+          "kepul_tv_lcd"
+        ],
+        "accessed_on": "2026-10-17",
+        "status": "web_researched",
+        "local_quote_verified": false,
+        "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran. Penerimaan layar pecah perlu dikonfirmasi.",
+        "requires_confirmation": []
+      },
+      "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "16_0",
+        "name": "Monitor dan layar datar campuran",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 73,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "17": {
+    "name": "Set dan timbunan komputer/monitor",
+    "description": "Mikro terpisah antara timbunan perangkat dan set komputer di meja. Jumlah perangkat tidak disimpulkan otomatis dari foto.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "mixed"
+      ],
+      "sizes": [
+        "unidentified"
+      ],
+      "risks": [
+        "unknown"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "mixed"
+      ],
+      "sizes": [
+        "unidentified"
+      ],
+      "risks": [
+        "unknown"
+      ]
+    },
+    "info": {
+      "weee": "Timbunan/Campuran",
+      "risk_level": "unknown",
+      "bag": "white",
+      "hazard_note": "",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": null,
+      "scrap": null,
+      "unavailable_reason": "Kelompok heterogen; harga perlu mengikuti identitas mikro yang cukup jelas atau penilaian manual.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "17_0",
+        "name": "Timbunan komputer dan monitor",
+        "description": "Beragam komputer/monitor dalam timbunan.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 77,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "mixed"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "mixed"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "1": {
+        "id": 1,
+        "global_id": "17_1",
+        "name": "Set komputer di meja",
+        "description": "Monitor dengan keyboard dan perangkat komputer di meja; kelengkapan/fungsi belum diuji.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 49,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "override",
+        "needs_review": false,
+        "price": {
+          "mode": "ranges",
+          "whole": null,
+          "scrap": {
+            "min": 35000,
+            "max": 35000,
+            "unit": "item",
+            "currency": "IDR",
+            "basis": "collector_buy",
+            "source_ids": [
+              "kepul"
+            ],
+            "observation_ids": [
+              "kepul_computer_set"
+            ],
+            "accessed_on": "2026-10-17",
+            "status": "web_researched",
+            "local_quote_verified": false,
+            "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran.",
+            "requires_confirmation": []
+          },
+          "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+          "condition_factors": null,
+          "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+        },
+        "proposal_facets": {
+          "groups": [
+            "mixed"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "mixed"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "18": {
+    "name": "Timbunan campuran e-waste",
+    "description": "Banyak jenis perangkat dan material dalam satu kelompok foto. Perlu inventaris dan pemilahan sebelum panduan per barang atau harga.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "mixed"
+      ],
+      "sizes": [
+        "unidentified"
+      ],
+      "risks": [
+        "unknown"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "mixed"
+      ],
+      "sizes": [
+        "unidentified"
+      ],
+      "risks": [
+        "unknown"
+      ]
+    },
+    "info": {
+      "weee": "Timbunan/Campuran",
+      "risk_level": "unknown",
+      "bag": "white",
+      "hazard_note": "Campuran barang; risiko per komponen belum teridentifikasi.",
+      "do": [
+        "Minta inventaris dan penilaian pengelola sebelum menentukan penanganan per barang."
+      ],
+      "dont": [
+        "Jangan membakar atau mengolah timbunan campuran sendiri."
+      ],
+      "assessable": false,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": null,
+      "scrap": null,
+      "unavailable_reason": "Kelompok heterogen; harga perlu mengikuti identitas mikro yang cukup jelas atau penilaian manual.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "18_0",
+        "name": "Timbunan campuran e-waste",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 49,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "mixed"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "mixed"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "1": {
+        "id": 1,
+        "global_id": "18_1",
+        "name": "Timbunan campuran e-waste",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 33,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "mixed"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "mixed"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "2": {
+        "id": 2,
+        "global_id": "18_2",
+        "name": "Timbunan campuran e-waste",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 61,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "mixed"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "mixed"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "19": {
+    "name": "Printer dan perangkat cetak multifungsi",
+    "description": "Printer rumah/kantor, termasuk unit dengan pemindai. Teknologi tinta/laser dan fungsi cetak perlu verifikasi model.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "office"
+      ],
+      "sizes": [
+        "medium"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "office"
+      ],
+      "sizes": [
+        "medium"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "info": {
+      "weee": "Elektronik Kantor/Cetak",
+      "risk_level": "low",
+      "bag": "gray",
+      "hazard_note": "",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": {
+        "min": 600000,
+        "max": 1200000,
+        "unit": "item",
+        "currency": "IDR",
+        "basis": "marketplace_asking",
+        "source_ids": [
+          "olx_printer"
+        ],
+        "observation_ids": [
+          "market_printer1",
+          "market_printer2",
+          "market_printer3"
+        ],
+        "accessed_on": "2026-10-17",
+        "status": "web_researched",
+        "local_quote_verified": false,
+        "note": "Sampel harga penawaran, bukan transaksi. Berlaku hanya jika model sebanding, barang lengkap dan fungsi sudah diperiksa pemilik.",
+        "requires_confirmation": [
+          "printer_type",
+          "function",
+          "consumables"
+        ]
+      },
+      "scrap": {
+        "min": 400,
+        "max": 400,
+        "unit": "kg",
+        "currency": "IDR",
+        "basis": "collector_buy",
+        "source_ids": [
+          "kepul"
+        ],
+        "observation_ids": [
+          "kepul_printer"
+        ],
+        "accessed_on": "2026-10-17",
+        "status": "web_researched",
+        "local_quote_verified": false,
+        "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran.",
+        "requires_confirmation": []
+      },
+      "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "19_0",
+        "name": "Printer dan perangkat cetak multifungsi",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 249,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "office"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "office"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "20": {
+    "name": "Mouse komputer",
+    "description": "Perangkat penunjuk komputer yang difoto dari sisi atas atau bawah. Posisi foto bukan tingkat kerusakan.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "small"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "small"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "info": {
+      "weee": "Perangkat Komputasi",
+      "risk_level": "low",
+      "bag": "gray",
+      "hazard_note": "",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": null,
+      "scrap": {
+        "min": 500,
+        "max": 500,
+        "unit": "kg",
+        "currency": "IDR",
+        "basis": "collector_buy",
+        "source_ids": [
+          "kepul"
+        ],
+        "observation_ids": [
+          "kepul_mouse"
+        ],
+        "accessed_on": "2026-10-17",
+        "status": "web_researched",
+        "local_quote_verified": false,
+        "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran.",
+        "requires_confirmation": []
+      },
+      "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "20_0",
+        "name": "Mouse komputer, dominan tampak atas",
+        "description": "Sisi atas mouse lebih dominan.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 320,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "1": {
+        "id": 1,
+        "global_id": "20_1",
+        "name": "Mouse komputer, dominan tampak bawah",
+        "description": "Sisi bawah mouse lebih dominan; bukan indikasi rusak.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 21,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "21": {
+    "name": "Perangkat genggam dan elektronik kecil campuran",
+    "description": "Mayoritas ponsel/tablet; ada kelompok perangkat bertombol dan kotak elektronik kecil. Nama spesifik mengikuti mikro yang terpilih.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "small"
+      ],
+      "risks": [
+        "high"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "small"
+      ],
+      "risks": [
+        "high"
+      ]
+    },
+    "info": {
+      "weee": "Perangkat Komputasi",
+      "risk_level": "high",
+      "bag": "red",
+      "hazard_note": "Perangkat dapat menyimpan data pribadi dan mengandung baterai; keberadaan serta kondisinya perlu diperiksa.",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor.",
+        "Jika perangkat masih dapat diakses, cadangkan lalu hapus data pribadi sebelum diserahkan."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material.",
+        "Jangan mencungkil baterai yang terpasang permanen."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics",
+        "epa_liion"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": null,
+      "scrap": null,
+      "unavailable_reason": "Kelompok heterogen; harga perlu mengikuti identitas mikro yang cukup jelas atau penilaian manual.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "21_0",
+        "name": "Ponsel/perangkat genggam layar sentuh",
+        "description": "Dominan perangkat genggam dengan variasi posisi, latar dan tampilan. Nomor subklaster tidak menyatakan tingkat kondisi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 74,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "override",
+        "needs_review": true,
+        "price": {
+          "mode": "ranges",
+          "whole": null,
+          "scrap": {
+            "min": 4000,
+            "max": 200000,
+            "unit": "item",
+            "currency": "IDR",
+            "basis": "collector_buy",
+            "source_ids": [
+              "bandung"
+            ],
+            "observation_ids": [
+              "bandung_phone_low",
+              "bandung_phone_high"
+            ],
+            "accessed_on": "2026-10-17",
+            "status": "web_researched",
+            "local_quote_verified": false,
+            "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran. Acuan HP mati; bukan untuk remote, router atau tablet.",
+            "requires_confirmation": []
+          },
+          "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+          "condition_factors": null,
+          "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+        },
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "1": {
+        "id": 1,
+        "global_id": "21_1",
+        "name": "Perangkat elektronik kecil berbentuk kotak",
+        "description": "Dominan perangkat genggam dengan variasi posisi, latar dan tampilan. Nomor subklaster tidak menyatakan tingkat kondisi. Identitas berbeda/campuran; harga dan risiko makro tidak diterapkan otomatis.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 13,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "blocked",
+        "needs_review": true,
+        "info": {
+          "assessable": false,
+          "risk_level": "unknown",
+          "bag": "white",
+          "hazard_note": "Identitas kelompok perlu ditinjau; panduan khusus belum ditetapkan.",
+          "verified": false
+        },
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facet_basis": "draft_visual_exception; proposal_facets preserved separately"
+      },
+      "2": {
+        "id": 2,
+        "global_id": "21_2",
+        "name": "Perangkat genggam bertombol dan remote",
+        "description": "Dominan perangkat genggam dengan variasi posisi, latar dan tampilan. Nomor subklaster tidak menyatakan tingkat kondisi. Identitas berbeda/campuran; harga dan risiko makro tidak diterapkan otomatis.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 18,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "blocked",
+        "needs_review": true,
+        "info": {
+          "assessable": false,
+          "risk_level": "unknown",
+          "bag": "white",
+          "hazard_note": "Identitas kelompok perlu ditinjau; panduan khusus belum ditetapkan.",
+          "verified": false
+        },
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facet_basis": "draft_visual_exception; proposal_facets preserved separately"
+      },
+      "3": {
+        "id": 3,
+        "global_id": "21_3",
+        "name": "Ponsel/perangkat genggam layar sentuh",
+        "description": "Dominan perangkat genggam dengan variasi posisi, latar dan tampilan. Nomor subklaster tidak menyatakan tingkat kondisi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 14,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "override",
+        "needs_review": true,
+        "price": {
+          "mode": "ranges",
+          "whole": null,
+          "scrap": {
+            "min": 4000,
+            "max": 200000,
+            "unit": "item",
+            "currency": "IDR",
+            "basis": "collector_buy",
+            "source_ids": [
+              "bandung"
+            ],
+            "observation_ids": [
+              "bandung_phone_low",
+              "bandung_phone_high"
+            ],
+            "accessed_on": "2026-10-17",
+            "status": "web_researched",
+            "local_quote_verified": false,
+            "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran. Acuan HP mati; bukan untuk remote, router atau tablet.",
+            "requires_confirmation": []
+          },
+          "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+          "condition_factors": null,
+          "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+        },
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "4": {
+        "id": 4,
+        "global_id": "21_4",
+        "name": "Ponsel/perangkat genggam layar sentuh",
+        "description": "Dominan perangkat genggam dengan variasi posisi, latar dan tampilan. Nomor subklaster tidak menyatakan tingkat kondisi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 49,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "override",
+        "needs_review": true,
+        "price": {
+          "mode": "ranges",
+          "whole": null,
+          "scrap": {
+            "min": 4000,
+            "max": 200000,
+            "unit": "item",
+            "currency": "IDR",
+            "basis": "collector_buy",
+            "source_ids": [
+              "bandung"
+            ],
+            "observation_ids": [
+              "bandung_phone_low",
+              "bandung_phone_high"
+            ],
+            "accessed_on": "2026-10-17",
+            "status": "web_researched",
+            "local_quote_verified": false,
+            "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran. Acuan HP mati; bukan untuk remote, router atau tablet.",
+            "requires_confirmation": []
+          },
+          "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+          "condition_factors": null,
+          "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+        },
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "5": {
+        "id": 5,
+        "global_id": "21_5",
+        "name": "Ponsel yang dipegang; termasuk contoh layar retak",
+        "description": "Dominan perangkat genggam dengan variasi posisi, latar dan tampilan. Nomor subklaster tidak menyatakan tingkat kondisi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 20,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "override",
+        "needs_review": true,
+        "price": {
+          "mode": "ranges",
+          "whole": null,
+          "scrap": {
+            "min": 4000,
+            "max": 200000,
+            "unit": "item",
+            "currency": "IDR",
+            "basis": "collector_buy",
+            "source_ids": [
+              "bandung"
+            ],
+            "observation_ids": [
+              "bandung_phone_low",
+              "bandung_phone_high"
+            ],
+            "accessed_on": "2026-10-17",
+            "status": "web_researched",
+            "local_quote_verified": false,
+            "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran. Acuan HP mati; bukan untuk remote, router atau tablet.",
+            "requires_confirmation": []
+          },
+          "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+          "condition_factors": null,
+          "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+        },
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "6": {
+        "id": 6,
+        "global_id": "21_6",
+        "name": "Ponsel/perangkat genggam layar sentuh",
+        "description": "Dominan perangkat genggam dengan variasi posisi, latar dan tampilan. Nomor subklaster tidak menyatakan tingkat kondisi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 11,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "override",
+        "needs_review": true,
+        "price": {
+          "mode": "ranges",
+          "whole": null,
+          "scrap": {
+            "min": 4000,
+            "max": 200000,
+            "unit": "item",
+            "currency": "IDR",
+            "basis": "collector_buy",
+            "source_ids": [
+              "bandung"
+            ],
+            "observation_ids": [
+              "bandung_phone_low",
+              "bandung_phone_high"
+            ],
+            "accessed_on": "2026-10-17",
+            "status": "web_researched",
+            "local_quote_verified": false,
+            "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran. Acuan HP mati; bukan untuk remote, router atau tablet.",
+            "requires_confirmation": []
+          },
+          "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+          "condition_factors": null,
+          "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+        },
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "7": {
+        "id": 7,
+        "global_id": "21_7",
+        "name": "Ponsel dengan retakan layar terlihat",
+        "description": "Dominan perangkat genggam dengan variasi posisi, latar dan tampilan. Nomor subklaster tidak menyatakan tingkat kondisi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 10,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "override",
+        "needs_review": true,
+        "price": {
+          "mode": "ranges",
+          "whole": null,
+          "scrap": {
+            "min": 4000,
+            "max": 200000,
+            "unit": "item",
+            "currency": "IDR",
+            "basis": "collector_buy",
+            "source_ids": [
+              "bandung"
+            ],
+            "observation_ids": [
+              "bandung_phone_low",
+              "bandung_phone_high"
+            ],
+            "accessed_on": "2026-10-17",
+            "status": "web_researched",
+            "local_quote_verified": false,
+            "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran. Acuan HP mati; bukan untuk remote, router atau tablet.",
+            "requires_confirmation": []
+          },
+          "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+          "condition_factors": null,
+          "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+        },
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "8": {
+        "id": 8,
+        "global_id": "21_8",
+        "name": "Ponsel/perangkat genggam layar sentuh",
+        "description": "Dominan perangkat genggam dengan variasi posisi, latar dan tampilan. Nomor subklaster tidak menyatakan tingkat kondisi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 59,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "override",
+        "needs_review": true,
+        "price": {
+          "mode": "ranges",
+          "whole": null,
+          "scrap": {
+            "min": 4000,
+            "max": 200000,
+            "unit": "item",
+            "currency": "IDR",
+            "basis": "collector_buy",
+            "source_ids": [
+              "bandung"
+            ],
+            "observation_ids": [
+              "bandung_phone_low",
+              "bandung_phone_high"
+            ],
+            "accessed_on": "2026-10-17",
+            "status": "web_researched",
+            "local_quote_verified": false,
+            "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran. Acuan HP mati; bukan untuk remote, router atau tablet.",
+            "requires_confirmation": []
+          },
+          "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+          "condition_factors": null,
+          "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+        },
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "9": {
+        "id": 9,
+        "global_id": "21_9",
+        "name": "Ponsel/perangkat genggam layar sentuh",
+        "description": "Dominan perangkat genggam dengan variasi posisi, latar dan tampilan. Nomor subklaster tidak menyatakan tingkat kondisi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 12,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "override",
+        "needs_review": true,
+        "price": {
+          "mode": "ranges",
+          "whole": null,
+          "scrap": {
+            "min": 4000,
+            "max": 200000,
+            "unit": "item",
+            "currency": "IDR",
+            "basis": "collector_buy",
+            "source_ids": [
+              "bandung"
+            ],
+            "observation_ids": [
+              "bandung_phone_low",
+              "bandung_phone_high"
+            ],
+            "accessed_on": "2026-10-17",
+            "status": "web_researched",
+            "local_quote_verified": false,
+            "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran. Acuan HP mati; bukan untuk remote, router atau tablet.",
+            "requires_confirmation": []
+          },
+          "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+          "condition_factors": null,
+          "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+        },
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "10": {
+        "id": 10,
+        "global_id": "21_10",
+        "name": "Ponsel/perangkat genggam layar sentuh",
+        "description": "Dominan perangkat genggam dengan variasi posisi, latar dan tampilan. Nomor subklaster tidak menyatakan tingkat kondisi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 36,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "override",
+        "needs_review": true,
+        "price": {
+          "mode": "ranges",
+          "whole": null,
+          "scrap": {
+            "min": 4000,
+            "max": 200000,
+            "unit": "item",
+            "currency": "IDR",
+            "basis": "collector_buy",
+            "source_ids": [
+              "bandung"
+            ],
+            "observation_ids": [
+              "bandung_phone_low",
+              "bandung_phone_high"
+            ],
+            "accessed_on": "2026-10-17",
+            "status": "web_researched",
+            "local_quote_verified": false,
+            "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran. Acuan HP mati; bukan untuk remote, router atau tablet.",
+            "requires_confirmation": []
+          },
+          "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+          "condition_factors": null,
+          "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+        },
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "11": {
+        "id": 11,
+        "global_id": "21_11",
+        "name": "Ponsel/perangkat genggam layar sentuh",
+        "description": "Dominan perangkat genggam dengan variasi posisi, latar dan tampilan. Nomor subklaster tidak menyatakan tingkat kondisi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 27,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "override",
+        "needs_review": true,
+        "price": {
+          "mode": "ranges",
+          "whole": null,
+          "scrap": {
+            "min": 4000,
+            "max": 200000,
+            "unit": "item",
+            "currency": "IDR",
+            "basis": "collector_buy",
+            "source_ids": [
+              "bandung"
+            ],
+            "observation_ids": [
+              "bandung_phone_low",
+              "bandung_phone_high"
+            ],
+            "accessed_on": "2026-10-17",
+            "status": "web_researched",
+            "local_quote_verified": false,
+            "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran. Acuan HP mati; bukan untuk remote, router atau tablet.",
+            "requires_confirmation": []
+          },
+          "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+          "condition_factors": null,
+          "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+        },
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "12": {
+        "id": 12,
+        "global_id": "21_12",
+        "name": "Ponsel dan tablet",
+        "description": "Dominan perangkat genggam dengan variasi posisi, latar dan tampilan. Nomor subklaster tidak menyatakan tingkat kondisi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 71,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "13": {
+        "id": 13,
+        "global_id": "21_13",
+        "name": "Ponsel/perangkat genggam layar sentuh",
+        "description": "Dominan perangkat genggam dengan variasi posisi, latar dan tampilan. Nomor subklaster tidak menyatakan tingkat kondisi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 17,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "override",
+        "needs_review": true,
+        "price": {
+          "mode": "ranges",
+          "whole": null,
+          "scrap": {
+            "min": 4000,
+            "max": 200000,
+            "unit": "item",
+            "currency": "IDR",
+            "basis": "collector_buy",
+            "source_ids": [
+              "bandung"
+            ],
+            "observation_ids": [
+              "bandung_phone_low",
+              "bandung_phone_high"
+            ],
+            "accessed_on": "2026-10-17",
+            "status": "web_researched",
+            "local_quote_verified": false,
+            "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran. Acuan HP mati; bukan untuk remote, router atau tablet.",
+            "requires_confirmation": []
+          },
+          "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+          "condition_factors": null,
+          "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+        },
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "14": {
+        "id": 14,
+        "global_id": "21_14",
+        "name": "Ponsel/perangkat genggam layar sentuh",
+        "description": "Dominan perangkat genggam dengan variasi posisi, latar dan tampilan. Nomor subklaster tidak menyatakan tingkat kondisi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 41,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "override",
+        "needs_review": true,
+        "price": {
+          "mode": "ranges",
+          "whole": null,
+          "scrap": {
+            "min": 4000,
+            "max": 200000,
+            "unit": "item",
+            "currency": "IDR",
+            "basis": "collector_buy",
+            "source_ids": [
+              "bandung"
+            ],
+            "observation_ids": [
+              "bandung_phone_low",
+              "bandung_phone_high"
+            ],
+            "accessed_on": "2026-10-17",
+            "status": "web_researched",
+            "local_quote_verified": false,
+            "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran. Acuan HP mati; bukan untuk remote, router atau tablet.",
+            "requires_confirmation": []
+          },
+          "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+          "condition_factors": null,
+          "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+        },
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "15": {
+        "id": 15,
+        "global_id": "21_15",
+        "name": "Ponsel/perangkat genggam layar sentuh",
+        "description": "Dominan perangkat genggam dengan variasi posisi, latar dan tampilan. Nomor subklaster tidak menyatakan tingkat kondisi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 17,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "override",
+        "needs_review": true,
+        "price": {
+          "mode": "ranges",
+          "whole": null,
+          "scrap": {
+            "min": 4000,
+            "max": 200000,
+            "unit": "item",
+            "currency": "IDR",
+            "basis": "collector_buy",
+            "source_ids": [
+              "bandung"
+            ],
+            "observation_ids": [
+              "bandung_phone_low",
+              "bandung_phone_high"
+            ],
+            "accessed_on": "2026-10-17",
+            "status": "web_researched",
+            "local_quote_verified": false,
+            "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran. Acuan HP mati; bukan untuk remote, router atau tablet.",
+            "requires_confirmation": []
+          },
+          "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+          "condition_factors": null,
+          "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+        },
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "16": {
+        "id": 16,
+        "global_id": "21_16",
+        "name": "Tablet/perangkat layar sentuh lebar",
+        "description": "Dominan perangkat genggam dengan variasi posisi, latar dan tampilan. Nomor subklaster tidak menyatakan tingkat kondisi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 32,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "small"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "22": {
+    "name": "Baterai laptop lepas",
+    "description": "Baterai laptop dengan variasi bentuk memanjang, tonjolan dan konektor. Kapasitas serta keselamatan penggunaan ulang belum dinilai.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "medium"
+      ],
+      "risks": [
+        "high"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "medium"
+      ],
+      "risks": [
+        "high"
+      ]
+    },
+    "info": {
+      "weee": "Perangkat Komputasi",
+      "risk_level": "high",
+      "bag": "red",
+      "hazard_note": "Kimia dan kesehatan baterai perlu dibaca dari label atau diperiksa petugas; bentuk saja tidak cukup.",
+      "do": [
+        "Pisahkan dari elektronik lain dan konfirmasikan penerimaan baterai kepada pengelola.",
+        "Untuk baterai litium lepas yang utuh, lindungi terminal dengan selotip nonlogam tanpa menutupi label."
+      ],
+      "dont": [
+        "Jangan menusuk, menekan, membakar atau membuka paket baterai.",
+        "Jangan memasukkan baterai litium ke sampah rumah tangga atau wadah daur ulang umum."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_liion_management"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": null,
+      "scrap": null,
+      "unavailable_reason": "Listing penjualan scrap baterai laptop/18650 bukan harga beli pengepul; tidak dipakai sebagai janji nilai rongsok.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "22_0",
+        "name": "Baterai laptop lepas",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 28,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "1": {
+        "id": 1,
+        "global_id": "22_1",
+        "name": "Baterai laptop lepas",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 19,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "2": {
+        "id": 2,
+        "global_id": "22_2",
+        "name": "Baterai laptop lepas",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 17,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "high"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "23": {
+    "name": "Laptop dan detail perangkat campuran",
+    "description": "Mencakup laptop tertutup/terbuka, detail keyboard dan layar bergaris. Satu mikro berisi ponsel sehingga harga tidak boleh disamaratakan.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "medium"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "computing"
+      ],
+      "sizes": [
+        "medium"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "info": {
+      "weee": "Perangkat Komputasi",
+      "risk_level": "low",
+      "bag": "gray",
+      "hazard_note": "Perangkat dapat menyimpan data pribadi dan mengandung baterai; keberadaan serta kondisinya perlu diperiksa.",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor.",
+        "Jika perangkat masih dapat diakses, cadangkan lalu hapus data pribadi sebelum diserahkan."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material.",
+        "Jangan mencungkil baterai yang terpasang permanen."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics",
+        "epa_liion"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": null,
+      "scrap": {
+        "min": 15000,
+        "max": 15000,
+        "unit": "kg",
+        "currency": "IDR",
+        "basis": "collector_buy",
+        "source_ids": [
+          "kepul"
+        ],
+        "observation_ids": [
+          "kepul_laptop"
+        ],
+        "accessed_on": "2026-10-17",
+        "status": "web_researched",
+        "local_quote_verified": false,
+        "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran.",
+        "requires_confirmation": []
+      },
+      "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "23_0",
+        "name": "Laptop tertutup atau terbuka sebagian",
+        "description": "Contoh laptop tertutup atau tutup sedikit terbuka.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 41,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "1": {
+        "id": 1,
+        "global_id": "23_1",
+        "name": "Laptop terbuka",
+        "description": "Contoh laptop terbuka; sebagian layar menampilkan gambar, fungsi keseluruhan belum diuji.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 7,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "2": {
+        "id": 2,
+        "global_id": "23_2",
+        "name": "Ponsel layar sentuh",
+        "description": "Contoh berupa ponsel sehingga perlu label mikro tersendiri. Identitas berbeda/campuran; harga dan risiko makro tidak diterapkan otomatis.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 24,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "blocked",
+        "needs_review": true,
+        "info": {
+          "assessable": false,
+          "risk_level": "unknown",
+          "bag": "white",
+          "hazard_note": "Identitas kelompok perlu ditinjau; panduan khusus belum ditetapkan.",
+          "verified": false
+        },
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facet_basis": "draft_visual_exception; proposal_facets preserved separately"
+      },
+      "3": {
+        "id": 3,
+        "global_id": "23_3",
+        "name": "Detail keyboard dan bodi laptop",
+        "description": "Fokus pada keyboard/bodi; fungsi laptop dan kelengkapan tidak terlihat penuh.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 88,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "blocked",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "4": {
+        "id": 4,
+        "global_id": "23_4",
+        "name": "Laptop dengan gangguan tampilan layar",
+        "description": "Contoh menunjukkan garis/pola/gangguan visual; penyebab teknis belum diketahui.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 19,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "computing"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "24": {
+    "name": "Radio, speaker dan sistem audio",
+    "description": "Kelompok berisi boombox, unit audio berbentuk kotak, dan sistem stereo berspeaker terpisah. Identifikasi mengikuti mikro.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "medium"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "medium"
+      ],
+      "risks": [
+        "low"
+      ]
+    },
+    "info": {
+      "weee": "Media/Audio-Visual",
+      "risk_level": "low",
+      "bag": "gray",
+      "hazard_note": "",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": null,
+      "scrap": null,
+      "unavailable_reason": "Kelompok heterogen; harga perlu mengikuti identitas mikro yang cukup jelas atau penilaian manual.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "24_0",
+        "name": "Radio/boombox portabel",
+        "description": "Contoh dominan radio portabel dengan pegangan.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 70,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "blocked",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "1": {
+        "id": 1,
+        "global_id": "24_1",
+        "name": "Speaker dan unit audio berbentuk kotak",
+        "description": "Campuran speaker dan unit kotak; fungsi tepat perlu pemeriksaan model.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 5,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "override",
+        "needs_review": false,
+        "price": {
+          "mode": "ranges",
+          "whole": null,
+          "scrap": {
+            "min": 200,
+            "max": 200,
+            "unit": "kg",
+            "currency": "IDR",
+            "basis": "collector_buy",
+            "source_ids": [
+              "kepul"
+            ],
+            "observation_ids": [
+              "kepul_speaker"
+            ],
+            "accessed_on": "2026-10-17",
+            "status": "web_researched",
+            "local_quote_verified": false,
+            "note": "Harga beli publik pengepul luar Semarang. Berat aktual, kelengkapan dan penerimaan harus dikonfirmasi; bukan janji pembayaran. Hanya untuk kelompok speaker; bukan seluruh radio/boombox.",
+            "requires_confirmation": []
+          },
+          "unavailable_reason": "Data harga sebanding belum cukup; minta penawaran berdasarkan jenis, kondisi, dan lokasi.",
+          "condition_factors": null,
+          "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+        },
+        "proposal_facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "2": {
+        "id": 2,
+        "global_id": "24_2",
+        "name": "Sistem stereo dengan speaker terpisah",
+        "description": "Unit utama dan speaker terpisah; kelengkapan tiap barang baru perlu diperiksa.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 8,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "blocked",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "medium"
+          ],
+          "risks": [
+            "low"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "25": {
+    "name": "TV dalam konteks ruangan",
+    "description": "Televisi dengan latar rumah/ruangan. Latar foto bukan bukti kondisi fungsi; jenis tabung atau layar datar perlu dikonfirmasi.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "large"
+      ],
+      "risks": [
+        "medium"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "media"
+      ],
+      "sizes": [
+        "large"
+      ],
+      "risks": [
+        "medium"
+      ]
+    },
+    "info": {
+      "weee": "Media/Audio-Visual",
+      "risk_level": "medium",
+      "bag": "orange",
+      "hazard_note": "Jika perangkat menggunakan tabung CRT, kaca tabung dapat mengandung timbal. Tipe layar perlu dikonfirmasi.",
+      "do": [
+        "Simpan terpisah dari sampah rumah tangga.",
+        "Konfirmasikan jenis barang yang diterima sebelum menyetor."
+      ],
+      "dont": [
+        "Jangan membakar atau membongkar sendiri untuk mengambil material.",
+        "Jangan memecahkan layar atau membuka tabung."
+      ],
+      "assessable": true,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics",
+        "epa_crt"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": null,
+      "scrap": null,
+      "unavailable_reason": "Jenis layar dan model belum cukup homogen. Tidak menyamakan harga TV tabung dengan layar datar hanya karena latar ruangan.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "25_0",
+        "name": "TV dalam konteks ruangan",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 21,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "1": {
+        "id": 1,
+        "global_id": "25_1",
+        "name": "TV dalam konteks ruangan",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 11,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "inherit",
+        "needs_review": false,
+        "proposal_facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "media"
+          ],
+          "sizes": [
+            "large"
+          ],
+          "risks": [
+            "medium"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    }
+  },
+  "26": {
+    "name": "Lainnya / campuran heterogen",
+    "description": "Kelompok residual berisi timbunan, kamera, layar dan peralatan pengolahan. Dikecualikan dari pemberian identitas pasti, panduan khusus dan harga.",
+    "label_status": "draft_visual",
+    "source_ids": [
+      "proposal",
+      "visual_gallery"
+    ],
+    "proposal_facets": {
+      "groups": [
+        "mixed"
+      ],
+      "sizes": [
+        "unidentified"
+      ],
+      "risks": [
+        "unknown"
+      ]
+    },
+    "facets": {
+      "groups": [
+        "mixed"
+      ],
+      "sizes": [
+        "unidentified"
+      ],
+      "risks": [
+        "unknown"
+      ]
+    },
+    "info": {
+      "weee": "Timbunan/Campuran",
+      "risk_level": "unknown",
+      "bag": "white",
+      "hazard_note": "Campuran barang; risiko per komponen belum teridentifikasi.",
+      "do": [
+        "Minta inventaris dan penilaian pengelola sebelum menentukan penanganan per barang."
+      ],
+      "dont": [
+        "Jangan membakar atau mengolah timbunan campuran sendiri."
+      ],
+      "assessable": false,
+      "verified": false,
+      "source_ids": [
+        "proposal",
+        "epa_electronics"
+      ],
+      "risk_basis": "Kategori pemilahan proposal Tabel 5; bukan hasil pengukuran bahan atau penetapan hukum."
+    },
+    "price": {
+      "mode": "ranges",
+      "whole": null,
+      "scrap": null,
+      "unavailable_reason": "Kelompok heterogen; harga perlu mengikuti identitas mikro yang cukup jelas atau penilaian manual.",
+      "condition_factors": null,
+      "condition_factors_note": "Tidak dikalibrasi; ID mikro tidak menyatakan tingkat kondisi."
+    },
+    "subs": {
+      "0": {
+        "id": 0,
+        "global_id": "26_0",
+        "name": "Timbunan dan penyimpanan elektronik campuran",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 117,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "blocked",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "mixed"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "mixed"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "1": {
+        "id": 1,
+        "global_id": "26_1",
+        "name": "Kamera dan komponen kamera",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 12,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "blocked",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "mixed"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "mixed"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "2": {
+        "id": 2,
+        "global_id": "26_2",
+        "name": "TV/monitor berbagai bentuk",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 53,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "blocked",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "mixed"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "mixed"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      },
+      "3": {
+        "id": 3,
+        "global_id": "26_3",
+        "name": "Peralatan dan aktivitas pengolahan elektronik",
+        "description": "Nama merangkum satu deret contoh anggota subklaster; belum audit seluruh gambar atau uji fungsi.",
+        "label_status": "draft_visual",
+        "source_ids": [
+          "visual_gallery"
+        ],
+        "reference_rows": 15,
+        "condition_tier": null,
+        "condition_basis": "Tidak diestimasi dari ID mikro atau contoh galeri.",
+        "price_policy": "blocked",
+        "needs_review": true,
+        "proposal_facets": {
+          "groups": [
+            "mixed"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facets": {
+          "groups": [
+            "mixed"
+          ],
+          "sizes": [
+            "unidentified"
+          ],
+          "risks": [
+            "unknown"
+          ]
+        },
+        "facet_basis": "inherited_from_proposal_macro; visual identity remains draft"
+      }
+    },
+    "catalog_visible": false,
+    "recognition_policy": "reject_before_advice_and_price"
+  }
+}

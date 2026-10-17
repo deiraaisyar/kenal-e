@@ -22,7 +22,7 @@ Dokumentasi API: http://127.0.0.1:8000/docs.
 - Noise dan kandidat di bawah batas neighbor awal dihentikan. Batas itu hanya heuristik referensi, belum kalibrasi foto baru.
 - `data/thresholds.json` memiliki `calibrated=false`. Semua kandidat yang lolos tetap `borderline`; jangan mengubahnya menjadi `true` tanpa evaluasi independen. Tidak ada angka confidence di UI.
 - Metadata risiko awal mengikuti tabel spesifikasi pengguna. Semua penanganan berlabel draf. Risiko laptop tertutup/laptop perlu ditinjau terhadap baterai yang masih terpasang.
-- `data/meta.json` adalah override lokal per ID. Contoh struktur: `{"13":{"info":{"verified":false},"price":{"mode":"none"}}}`. Harga hanya tampil dengan `verified=true`, `show=true`, rentang valid, sumber, dan tanggal. Tidak ada angka harga bawaan.
+- `data/meta.json` adalah override lokal per ID. Contoh struktur: `{"13":{"info":{"verified":false},"price":{"mode":"none"}}}`. Format lama memakai `verified=true`, `show=true`, rentang valid, sumber, dan tanggal. Format riset `ranges` divalidasi terhadap observasi pada `research_sources.json` (lihat bagian metadata riset di bawah).
 - `data/drop_points.json` masih kosong. Hanya entri bersumber dengan tanggal verifikasi yang disajikan.
 - `/api/explain` mengembalikan `explain_unavailable`; tombol disembunyikan sampai metode makalah dan endpoint tersedia.
 
@@ -76,3 +76,56 @@ Gunakan ID jenis `office`, `household`, `computing`, `media`, `energy`, `interna
 label penyaringan. Frontend menerapkan OR antar pilihan dalam satu dimensi dan
 AND antar dimensi; pilihan “Semua” menghapus pembatas di dimensi itu.
 Deploy backend sebelum frontend agar label baru langsung tersedia.
+
+
+### Metadata riset makro, mikro, dan harga (17 Oktober 2026)
+
+`data/meta.json` kini memuat 27 makro dan 88 mikro dari CSV asli, termasuk makro
+26 yang disimpan untuk audit tetapi tetap ditolak sebelum panduan/harga.
+Katalog menampilkan 26 makro dengan 84 mikro. Satu mikro adalah satu deret galeri;
+beberapa mikro boleh mempunyai nama pengguna yang sama. ID dan urutan NPZ tidak
+diubah. `reference_rows` mencakup baris CSV asli; `size` pada respons API adalah
+jumlah referensi setelah deduplikasi.
+
+Setiap makro memuat `name`, `description`, `proposal_facets`, `facets`, `info`,
+`price`, dan `subs` (objek dengan kunci ID mikro lokal). Kategori fungsi/ukuran/
+risiko makro mengikuti Tabel 3–5 proposal semifinal. ID yang tidak tercantum
+risikonya tetap `unknown`. Mikro memiliki nama dan deskripsi draf berdasarkan
+galeri perwakilan, `needs_review`, serta kategori asal proposal. Pengecualian
+visual pada 5_1, 21_1, 21_2, dan 23_2 tidak otomatis menerima panduan/harga induk.
+Nama atau deskripsi ini belum merupakan anotasi terverifikasi seluruh anggota.
+
+`subs.<id>.price_policy` menentukan penerapan harga: `inherit` mengikuti induk,
+`override` memakai harga mikro tersendiri, `blocked` menghentikan pewarisan.
+`condition_tier` dan `condition_factors` tetap null: nomor mikro, layar gelap,
+posisi tutup laptop, dan sudut foto tidak diubah menjadi kondisi fungsi/harga.
+ARI level 2 pada proposal adalah 0,4142; belum ada kalibrasi faktor kondisi.
+
+Harga memakai `mode: "ranges"` dengan `whole` (jual utuh) dan `scrap` (rongsok).
+Masing-masing dapat null. Angka memiliki `unit` (`item` atau `kg`), `min`, `max`,
+`basis`, `source_ids`, `observation_ids`, `accessed_on`, `requires_confirmation`,
+dan `note`. Acuan harga utuh bersyarat pada fungsi dan model yang sebanding;
+foto tidak membuktikan fungsi. Acuan grade PCB bukan hasil deteksi grade.
+Rentang minimum–maksimum berasal dari sampel terpilih, bukan interval statistik,
+rata-rata pasar, ataupun harga transaksi. Harga tunggal tetap min=max.
+
+`data/research_sources.json` menyimpan sumber, tanggal akses/publikasi bila
+tersedia, cakupan wilayah, metode, dan 53 observasi angka harga. Tiga daftar
+pengepul berangka adalah Kepul, Rongsok Bandung, dan ALDI SCRAP; Prabu Recycle
+hanya menjadi rujukan satuan/metode karena tidak memasang angka. Iklan pembelian,
+produk baru, barang paket tidak sebanding, dan biaya jasa pengelolaan tidak
+dipakai sebagai harga barang utuh. Sebagian rincian iklan OLX tidak bisa dibuka;
+observasi tersebut berasal dari judul dan harga pada indeks listing, dan
+keterbatasannya dicatat. Tidak ada komunikasi atau konfirmasi penjual.
+
+Harga belum dikonfirmasi ke pengepul Semarang; belum ada janji pembayaran,
+verifikasi izin pengelola, atau pemeriksaan fungsi barang. `info.verified` tetap
+false. Nilai kosong bukan berarti tidak bernilai jual. Jangan mengisi harga
+kategori campuran hanya untuk membuat seluruh kartu mempunyai angka.
+
+`valid_price` memeriksa kanal, satuan, sumber, dan kecocokan batas harga dengan
+observasi tersimpan. API lama/simpanan perangkat dengan format satu harga tetap
+didukung. Frontend membaca nama/deskripsi mikro, memakai istilah kelompok visual,
+dan menampilkan dua kanal harga beserta sumber, tanggal akses, dan dasar estimasi.
+Deploy backend dan frontend bersama; tidak perlu melatih ulang encoder atau
+membuat ulang reference.npz.

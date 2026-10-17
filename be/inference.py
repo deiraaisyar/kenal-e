@@ -3,7 +3,7 @@ from pathlib import Path
 from urllib.parse import quote
 import numpy as np
 from .config import ARTIFACTS, DATA, REFERENCE_IMAGE_BASE_URL
-from .catalog import load_catalog
+from .catalog import load_catalog, resolve_metadata
 
 def normalized(values):
     values = np.asarray(values, dtype=np.float32)
@@ -35,11 +35,12 @@ class Gallery:
         self.centroids = {int(mid):normalized(self.vit[self.macro == mid].mean(axis=0)) for mid in np.unique(self.macro)}
         self.subcentroids = {}
         for mid, entry in self.catalog.items():
+            metadata = {row['id']:row for row in entry['subs']}
             subsets = []
             for sid in np.unique(self.sub[self.macro == mid]):
                 mask = (self.macro == mid) & (self.sub == sid)
                 self.subcentroids[mid,int(sid)] = normalized(self.dino[mask].mean(axis=0))
-                subsets.append({'id':int(sid),'size':int(mask.sum()),'rep_urls':[]})
+                subsets.append({**metadata.get(int(sid), {}),'id':int(sid),'size':int(mask.sum()),'rep_urls':[]})
             entry['subs'] = subsets
             entry['n_sub'] = len(subsets)
         # Local thumbnails can override the public HF reference-image URLs.
@@ -79,13 +80,21 @@ class Gallery:
             status = 'in_reference'
         entry = self.catalog[mid]
         sub = None
-        if entry['size'] >= 30 and entry['n_sub'] > 1:
+        sid = None
+        if entry['n_sub'] == 1:
+            sid = entry['subs'][0]['id']
+            sim = float(self.subcentroids[mid,sid] @ d)
+        elif entry['size'] >= 30 and entry['n_sub'] > 1:
             sid, sim = max(((sid,float(centroid @ d)) for (m,sid),centroid in self.subcentroids.items() if m == mid), key=lambda x:x[1])
-            sub = {'id':sid,'label':f'Kelompok kondisi {sid}','name':None,'sim':sim}
+        if sid is not None:
+            detail = next(row for row in entry['subs'] if row['id'] == sid)
+            label = detail.get('name', f'Kelompok visual {sid}')
+            sub = {'id':sid,'label':label,'name':label,'description':detail.get('description',''),'sim':sim,'condition_tier':None}
+        info, price = resolve_metadata(entry, sid)
         indices = np.flatnonzero(self.macro == mid)
         sims = self.dino[indices] @ d
         similar = [{'url':self.thumbnail(int(indices[i])),'macro':mid,'sub':int(self.sub[indices[i]]),'sim':float(sims[i])} for i in np.argsort(-sims,kind='stable')[:5]]
-        return {**base,'status':status,'macro':{'id':mid,'name':entry['name'],'vote_share':share,'centroid_sim':centroid_sim},'sub':sub,'info':entry['info'],'price':entry['price'],'similar':similar}
+        return {**base,'status':status,'macro':{'id':mid,'name':entry['name'],'vote_share':share,'centroid_sim':centroid_sim},'sub':sub,'info':info,'price':price,'similar':similar}
 
     def demo(self):
         index = int(np.flatnonzero(self.macro == 13)[0])

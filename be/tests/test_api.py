@@ -38,7 +38,10 @@ def test_real_encoder_contract_is_adapted_without_claiming_validation(client,mon
     assert body['status']=='borderline'
     assert body['macro']['id']==13
     assert body['info']['verified'] is False
-    assert body['price']=={'mode':'none'}
+    assert body['price']['mode']=='ranges'
+    assert body['price']['whole'] is None
+    assert body['price']['scrap']['estimate_only'] is True
+    assert body['sub']['name']=='Papan sirkuit dengan komponen terpasang'
     assert len(body['similar'])==5
     assert body['thresholds_calibrated'] is False
 

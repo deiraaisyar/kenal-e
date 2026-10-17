@@ -111,3 +111,24 @@
 .category-risks{display:flex;flex-wrap:wrap;gap:5px}
 .category-detail>.category-facet-labels{font-size:11px;margin:0 0 12px}
 .facet-options button small{display:block;font-size:9px;opacity:.78;margin-top:2px}
+
+.category-description{font-size:12px;line-height:1.85;color:#7c8b73;margin:12px 0 16px}
+.price-estimates{margin:20px 0;padding:17px;background:#eef4e5;border-radius:16px}
+.price-estimate{padding:15px 0;border-bottom:1px solid #dce5d3}
+.price-estimate h4{font-size:12px;font-weight:550;margin-bottom:8px}
+.price-estimate>strong{display:block;font-size:18px;line-height:1.6;letter-spacing:-.035em;overflow-wrap:anywhere}
+.price-estimate>strong small{font-size:11px;font-weight:450;letter-spacing:0}
+.price-estimate>p{font-size:10px;line-height:1.8;color:#7d8c72;margin-top:9px}
+.price-sources{display:flex;flex-wrap:wrap;gap:5px 12px;font-size:9px;line-height:1.8;margin-top:9px;color:#859476}
+.price-sources a{color:#476f3d;text-decoration:underline}
+.price-estimates>.fine-print{font-size:9px;text-align:left;line-height:1.8;margin-top:13px}
+.subcluster-card{padding:15px 0;border-bottom:1px solid var(--line)}
+.subcluster-card>strong{font-size:11px;line-height:1.7;display:block}
+.subcluster-card>small{font-size:9px;color:#98a28d;display:block;margin-top:3px}
+.subcluster-card>p{font-size:10px;color:#829176;line-height:1.8;margin:8px 0}
+.subcluster-card>div{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.subcluster-card img{object-fit:cover}
+
+.price-method{margin-top:9px;font-size:10px;color:#7d8c72;line-height:1.8}
+.price-method summary{cursor:pointer;color:#657d58}
+.price-method p{margin-top:6px}
