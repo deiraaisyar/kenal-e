@@ -3,14 +3,14 @@
   "researched_on": "2026-10-18",
   "sources": {
     "proposal": {
-      "title": "Proposal semifinal BDC 2026, Tabel 3–5",
-      "url": "proposal:semifinal-bdc-2026",
+      "title": "Laporan proyek, Tabel 3–5",
+      "url": "report:project-report",
       "kind": "user_document",
       "published_on": null,
       "accessed_on": "2026-10-17",
       "geographic_scope": "Kategori pada dataset penelitian",
       "access_note": "",
-      "file": "SD2026040000439_Semifinal BDC Satria Data 2026.docx.pdf",
+      "file": "report/report.pdf",
       "sha256": "9bcbf2b9415db4cd83734a7b7f9eada2785a9d73b236b4c010f5713a82e6cc04",
       "pages": [
         13,

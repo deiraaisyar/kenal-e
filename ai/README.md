@@ -15,86 +15,86 @@ models:
 
 # Still E-Okay AI
 
-Gradio Space untuk encoder dan kandidat kategori e-waste. Space privat sudah berjalan di
+Gradio Space for the e-waste encoders and category candidates. The private Space is running at
 [ayaayaa/still-e-okay-ai](https://huggingface.co/spaces/ayaayaa/still-e-okay-ai).
-Buka dengan akun HF `ayaayaa`. Laptop tidak perlu menjalankan app atau memasang Torch.
-API privat membutuhkan token pengguna yang memiliki akses Space.
+Open it with the HF account `ayaayaa`. You don't need to run the app or install Torch locally.
+The private API needs a token from a user with access to the Space.
 
-## Isi
+## Contents
 
-- `app.py`: halaman Gradio dan API `embed`, `predict`, `health`.
-- `encoder.py`: ViT-Base Level 1, DINOv3 Level 2 dengan empat view TTA; tanpa DINOv2.
-- `reference.py`: baseline nearest-reference untuk kandidat kategori dan subklaster.
-- `prepare_artifacts.py`: validasi ekspor Kaggle dan pembuatan paket referensi.
-- `artifacts/`: referensi 3.961 citra, 27 macro termasuk noise, 88 subklaster, metadata.
-- `tests/`: pengujian preprocessing, normalisasi, dan keluaran kandidat/tidak dikenal.
+- `app.py`: Gradio page and the `embed`, `predict`, `health` API.
+- `encoder.py`: ViT-Base for Level 1, DINOv3 with four TTA views for Level 2. No DINOv2.
+- `reference.py`: nearest-reference baseline for category and sub-cluster candidates.
+- `prepare_artifacts.py`: validates the Kaggle export and builds the reference package.
+- `artifacts/`: 3,961 reference images, 27 macro clusters (including noise), 88 sub-clusters, metadata.
+- `tests/`: tests for preprocessing, normalization, and candidate/unknown output.
 
-## Deploy ke Hugging Face
+## Deploy to Hugging Face
 
-1. Buat Space Gradio bernama `still-e-okay-ai` di akun `ayaayaa`.
-2. Pilih hardware **ZeroGPU** jika tersedia. `suggested_hardware` di atas hanya saran;
-   tidak otomatis mengaktifkan GPU atau mengubah billing.
-3. Upload **isi folder ini ke root Space**: `README.md`, `requirements.txt`,
-   `app.py`, `encoder.py`, `reference.py`, dan folder `artifacts`.
-   Paket `dist/still-e-okay-space.zip` berisi struktur ini; ekstrak lalu upload isinya.
-   Jangan upload ZIP sebagai pengganti file aplikasi.
-4. Di Settings → Variables and secrets, tambahkan **Secret** `HF_TOKEN` milik akun
-   yang sudah memperoleh akses DINOv3. Gunakan token read dengan akses model tersebut.
-   Jangan menaruh token dalam kode atau frontend. Token ini untuk memuat bobot;
-   autentikasi pengguna/kuota ZeroGPU adalah hal terpisah.
-5. Setelah build berstatus Running, cek `health`, lalu coba foto di halaman Space.
-   Jika model gagal dimuat, periksa token/akses/revisi di log; tidak ada fallback DINOv2.
+1. Create a Gradio Space named `still-e-okay-ai` under the `ayaayaa` account.
+2. Pick **ZeroGPU** hardware if available. `suggested_hardware` above is only a hint;
+   it does not enable a GPU or change billing.
+3. Upload the **contents of this folder to the Space root**: `README.md`, `requirements.txt`,
+   `app.py`, `encoder.py`, `reference.py`, and the `artifacts` folder.
+   `dist/still-e-okay-space.zip` has this structure; extract it and upload the contents.
+   Don't upload the ZIP in place of the app files.
+4. Under Settings → Variables and secrets, add a **Secret** `HF_TOKEN` from an account
+   that has DINOv3 access. Use a read token with access to that model.
+   Never put the token in code or the frontend. It is only for loading weights;
+   user authentication and ZeroGPU quota are separate.
+5. When the build shows Running, check `health`, then try a photo on the Space page.
+   If the model fails to load, check the token/access/revision in the logs. There is no DINOv2 fallback.
 
-Free ZeroGPU memiliki antrean dan kuota. Bila pilihan ZeroGPU tidak muncul pada akun,
-cek kelayakan melalui UI HF; jangan memilih hardware berbayar secara otomatis.
+Free ZeroGPU has a queue and a quota. If the ZeroGPU option doesn't appear on your account,
+check eligibility in the HF UI. Don't pick paid hardware automatically.
 
 ## API
 
 ```python
 from gradio_client import Client, handle_file
 
-client = Client("ayaayaa/still-e-okay-ai")  # setelah Space berhasil dipublikasikan
+client = Client("ayaayaa/still-e-okay-ai")  # once the Space is published
 status = client.predict(api_name="/health")
-embedding = client.predict(handle_file("foto.jpg"), "dinov3", api_name="/embed")
-both = client.predict(handle_file("foto.jpg"), "both", api_name="/embed")
-candidate = client.predict(handle_file("foto.jpg"), api_name="/predict")
+embedding = client.predict(handle_file("photo.jpg"), "dinov3", api_name="/embed")
+both = client.predict(handle_file("photo.jpg"), "both", api_name="/embed")
+candidate = client.predict(handle_file("photo.jpg"), api_name="/predict")
 ```
 
-`embed` menghasilkan vektor 768 dimensi per encoder. Pilihan `dinov3` hanya
-menjalankan DINOv3; `vit` hanya ViT; `both` keduanya. Model dimuat sekali saat startup.
-Empat view DINOv3 adalah asli, flip horizontal, rotasi ±10° (BICUBIC, gray fill).
-Token CLS tiap view dinormalisasi L2, dirata-ratakan, lalu dinormalisasi lagi.
-Input maksimal 12 MB / 20 megapiksel.
+`embed` returns a 768-dimensional vector per encoder. `dinov3` runs only DINOv3,
+`vit` only ViT, `both` runs both. Models load once at startup.
+The four DINOv3 views are the original, a horizontal flip, and rotations of ±10° (BICUBIC, gray fill).
+The CLS token of each view is L2-normalized, averaged, then normalized again.
+Input limit: 12 MB / 20 megapixels.
 
-`predict` mengembalikan `unknown` atau `needs_review`. Kandidat berisi ID/nama kategori,
-ID subklaster, dan cosine similarity. **Similarity bukan probabilitas.** `recognized`
-tetap false sampai pengenalan divalidasi; `condition` dan `price` selalu null.
-Tidak ada angka harga atau label kondisi yang ditebak dari nomor subklaster.
+`predict` returns `unknown` or `needs_review`. Candidates carry the category ID/name,
+sub-cluster ID, and cosine similarity. **Similarity is not a probability.** `recognized`
+stays false until recognition is validated; `condition` and `price` are always null.
+No price or condition label is guessed from a sub-cluster number.
 
-## Batas validasi
+## Validation limits
 
-Ini lapisan inferensi tambahan atas label final notebook, bukan eksekusi ulang
-UMAP/HDBSCAN beserta recursive split/merge. Kandidat Level 1 memakai tetangga
-referensi terdekat di ruang ViT; kandidat Level 2 memakai DINOv3 dalam macro terpilih.
-Kelompok noise ikut bersaing di Level 1. Ambang per macro berasal dari persentil 5
-similarity tetangga dalam macro dengan seluruh grup duplikat query dikeluarkan;
-setiap grup menyumbang satu median. Ini **heuristik referensi**, bukan kalibrasi OOD.
+This is an inference layer on top of the notebook's final labels. It does not re-run
+UMAP/HDBSCAN or the recursive split/merge. Level 1 candidates use the nearest
+reference neighbors in ViT space; Level 2 candidates use DINOv3 inside the chosen macro cluster.
+The noise group competes at Level 1. The per-macro threshold is the 5th percentile of
+neighbor similarity within the macro cluster, with all of the query's duplicate group excluded;
+each group contributes one median. This is a **reference heuristic**, not an OOD calibration.
 
-Revisi bobot dan versi paket deployment dikunci. Versi processor/library dari
-Kaggle tidak tersedia dalam ekspor, sehingga kesamaan embedding dengan cache perlu
-dibuktikan menggunakan gambar sumber yang sama. Sebelum status dikenali/harga
-diaktifkan: bandingkan embedding asli, uji foto baru dan foto di luar kategori,
-pisahkan grup duplikat saat evaluasi, lalu ukur tingkat salah terima/tolak.
+Weight revisions and the deployment package version are pinned. The processor/library versions
+from Kaggle are not in the export, so matching the cached embeddings has to be
+shown with the same source images. Before enabling the recognized status or prices:
+compare against the original embeddings, test new photos and out-of-category photos,
+separate duplicate groups during evaluation, then measure false accept/reject rates.
 
-Label bersumber dari output Kaggle script version `352645046`. File unduhan
-`facets_level2.txt` ternyata CSV valid dan disalin sebagai `facets_level2.csv`.
-Arsip galeri lama dengan 77 subklaster tidak digunakan untuk label.
-Metadata nama berasal dari mapping notebook dengan jumlah anggota macro yang cocok;
-pengecekan jumlah anggota saja tidak membuktikan kebenaran seluruh anotasi semantik.
+Labels come from Kaggle script version `352645046`. The downloaded file
+`facets_level2.txt` turned out to be a valid CSV and was copied as `facets_level2.csv`.
+The old gallery archive with 77 sub-clusters is not used for labels.
+Name metadata comes from the notebook mapping where the macro member counts match;
+a matching member count alone does not prove that every semantic annotation is correct.
 
-## Lokal
+## Local
 
-Gunakan Python 3.12 dalam virtual environment. Untuk CPU, install PyTorch CPU dahulu:
+Use Python 3.12 in a virtual environment. On CPU, install PyTorch CPU first:
 
 ```bash
 python3 -m venv .venv
@@ -105,39 +105,39 @@ hf auth login
 python app.py
 ```
 
-Login interaktif menyimpan kredensial lokal untuk pemuatan model tanpa menulis token
-ke source. Tanpa CUDA/ZeroGPU, encoder memakai CPU. FastAPI tidak perlu dikembangkan
-terpisah; Gradio membawa dependensi servernya sendiri.
+The interactive login stores credentials locally so models load without writing the token
+into source. Without CUDA/ZeroGPU the encoder runs on CPU. You don't need a separate
+FastAPI server; Gradio ships its own.
 
 ```bash
 python -m unittest discover -s tests -v
 PYTHONPATH=. python tests/smoke_api.py
 ```
 
-Pembuatan ulang referensi menerima file label berekstensi `.csv` maupun `.txt`:
+To rebuild the reference, pass the label file as `.csv` or `.txt`:
 
 ```bash
 python prepare_artifacts.py --vit /path/embeddings_vit_macro \
   --dinov3 /path/embeddings_dinov3_tta4v --labels /path/facets_level2.csv
 ```
 
-File biner referensi dan CSV diabaikan oleh Git agar tidak ter-push tanpa sengaja;
-tetap sertakan `artifacts/reference.npz`, `manifest.json`, dan `meta.json` saat
-deploy. `facets_level2.csv` hanya untuk audit lokal, tidak dibutuhkan oleh Space.
+Reference binaries and CSVs are ignored by Git so they aren't pushed by accident;
+still include `artifacts/reference.npz`, `manifest.json`, and `meta.json` when
+deploying. `facets_level2.csv` is only for local audit; the Space doesn't need it.
 
-## Verifikasi lokal 15 Oktober 2026
+## Local verification, 15 October 2026
 
-- Sembilan unit test lulus.
-- Upload file, `/health`, `/embed`, dan `/predict` lulus melalui Gradio client
-  dengan encoder tiruan yang hanya digunakan di test.
-- Alur processor → model → CLS → TTA menghasilkan vektor 768 dimensi bernorma 1
-  untuk ViT dan DINOv3 dengan model satu layer berbobot acak (uji kompatibilitas).
-- `pip check` lulus. API lokal ditutup setelah pengujian.
-- Deploy ke ZeroGPU privat `ayaayaa/still-e-okay-ai` berhasil. Endpoint `health` siap;
-  `embed` dengan bobot pretrained ViT dan DINOv3 menghasilkan masing-masing 768 dimensi
-  dengan norma 1. `predict` merespons `unknown` untuk gambar sintetis polos.
-  Ringkasan pengujian server ada di `remote_verification.json`. Ini uji integrasi,
-  bukan pengukuran akurasi atau bukti kesamaan embedding dengan cache Kaggle.
-- Log notebook menunjukkan processor ViT memakai PIL/slow. Deployment mengunci
-  backend PIL untuk ViT dan torchvision untuk DINOv3; kesamaan numerik dengan cache
-  tetap perlu diperiksa memakai foto sumber dan runtime Kaggle.
+- Nine unit tests pass.
+- File upload, `/health`, `/embed`, and `/predict` pass through the Gradio client
+  with a fake encoder used only in tests.
+- The processor → model → CLS → TTA flow produces 768-dimensional, norm-1 vectors
+  for ViT and DINOv3 with a one-layer random-weight model (compatibility test).
+- `pip check` passes. The local API was shut down after testing.
+- The private ZeroGPU deploy `ayaayaa/still-e-okay-ai` works. The `health` endpoint is ready;
+  `embed` with pretrained ViT and DINOv3 weights returns 768 dimensions
+  with norm 1 for each. `predict` returns `unknown` for a plain synthetic image.
+  The server test summary is in `remote_verification.json`. This is an integration test,
+  not an accuracy measurement or proof that embeddings match the Kaggle cache.
+- The notebook log shows the ViT processor using PIL/slow. The deployment pins the
+  PIL backend for ViT and torchvision for DINOv3; numerical agreement with the cache
+  still needs to be checked with source photos and the Kaggle runtime.

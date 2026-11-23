@@ -1,8 +1,8 @@
 # Kenal-E backend
 
-FastAPI untuk validasi foto, jembatan ke Space `ayaayaa/still-e-okay-ai`, keputusan kategori, dan katalog. Tidak memasang PyTorch atau menjalankan model di laptop.
+FastAPI service for photo validation, the bridge to the `ayaayaa/still-e-okay-ai` Space, category decisions, and the catalog. It does not install PyTorch or run any model on the laptop.
 
-Jalankan dari root repositori:
+Run from the repository root:
 
 ```bash
 python3 -m venv be/.venv
@@ -10,151 +10,151 @@ be/.venv/bin/pip install -r be/requirements-dev.txt
 be/.venv/bin/python -m uvicorn be.app:app --host 127.0.0.1 --port 8000 --reload
 ```
 
-Isi `HF_TOKEN` pada `.env` di root. File ini dibaca otomatis. Variabel opsional ada di `.env.example`. Token tidak dimasukkan ke respons atau frontend.
+Set `HF_TOKEN` in the `.env` file at the root. It is read automatically. Optional variables are listed in `.env.example`. The token is never included in responses or exposed to the frontend.
 
-Dokumentasi API: http://127.0.0.1:8000/docs.
+API docs: http://127.0.0.1:8000/docs.
 
-## Data dan keputusan
+## Data and decisions
 
-- Memuat `reference.npz`, `manifest.json`, dan nama kategori dari `meta.json`. Default memakai salinan deployment di `be/data/artifacts`; jika belum ada, memakai `ai/artifacts`. CSV hanya dibutuhkan saat menyiapkan metadata, bukan pada runtime deployment.
-- Satu wakil per `dup_group` menghasilkan 3.598 gambar independen. Label dari CSV run 88 subklaster; folder arsip gambar lama tidak dipakai sebagai label.
-- kNN ViT, k=10, cosine voting; centroid makro sebagai diagnostik; centroid DINOv3 terdekat dalam makro untuk subklaster. Kategori LEAF kecil tidak mendapat label kondisi.
-- Noise dan kandidat di bawah batas neighbor awal dihentikan. Batas itu hanya heuristik referensi, belum kalibrasi foto baru.
-- `data/thresholds.json` memiliki `calibrated=false`. Semua kandidat yang lolos tetap `borderline`; jangan mengubahnya menjadi `true` tanpa evaluasi independen. Tidak ada angka confidence di UI.
-- Metadata risiko awal mengikuti tabel spesifikasi pengguna. Semua penanganan berlabel draf. Risiko laptop tertutup/laptop perlu ditinjau terhadap baterai yang masih terpasang.
-- `data/meta.json` adalah override lokal per ID. Contoh struktur: `{"13":{"info":{"verified":false},"price":{"mode":"none"}}}`. Format lama memakai `verified=true`, `show=true`, rentang valid, sumber, dan tanggal. Format riset `ranges` divalidasi terhadap observasi pada `research_sources.json` (lihat bagian metadata riset di bawah).
-- `data/drop_points.json` masih kosong. Hanya entri bersumber dengan tanggal verifikasi yang disajikan.
-- `/api/explain` mengembalikan `explain_unavailable`; tombol disembunyikan sampai metode makalah dan endpoint tersedia.
+- Loads `reference.npz`, `manifest.json`, and category names from `meta.json`. By default it uses the deployment copy in `be/data/artifacts`; if that is missing, it falls back to `ai/artifacts`. The CSV is only needed when preparing metadata, not at deployment runtime.
+- One representative per `dup_group` yields 3,598 independent images. Labels come from the 88-sub-cluster run CSV; the old image archive folders are not used as labels.
+- ViT kNN with k=10 and cosine voting; macro centroids are used as a diagnostic; the nearest DINOv3 centroid within the macro cluster picks the sub-cluster. Small LEAF categories do not get a condition label.
+- Noise and candidates below the initial neighbor threshold are stopped. That threshold is only a reference heuristic and has not been calibrated on new photos.
+- `data/thresholds.json` has `calibrated=false`. Every candidate that passes is still `borderline`; do not change it to `true` without independent evaluation. The UI shows no confidence numbers.
+- Initial risk metadata follows the user's specification table. All handling guidance is labeled draft. The risk for a closed laptop/laptop needs review against a battery that may still be installed.
+- `data/meta.json` is a local per-ID override. Example structure: `{"13":{"info":{"verified":false},"price":{"mode":"none"}}}`. The legacy format uses `verified=true`, `show=true`, valid ranges, sources, and dates. The research `ranges` format is validated against the observations in `research_sources.json` (see the research metadata section below).
+- `data/drop_points.json` is still empty. Only entries with a source and a verification date are shown.
+- `/api/explain` returns `explain_unavailable`; the button stays hidden until the paper's method and the endpoint are available.
 
-## Foto referensi
+## Reference photos
 
-Foto referensi berasal dari dataset public `ayaayaa/kenal-e-thumbnails`, direktori `images`, pada commit `9800cac5b0554d5acfeb92d730e9791aee485a17`. Seluruh 3.961 nama file telah dicocokkan dengan `data/gallery_meta.json`, tanpa nama hilang atau ganda. Backend membuat URL dari nama file yang sesuai vektor, termasuk encoding spasi dan karakter khusus. Browser mengambil gambar langsung dari HF; backend tidak mengunduh seluruh dataset.
+Reference photos come from the public dataset `ayaayaa/kenal-e-thumbnails`, directory `images`, at commit `9800cac5b0554d5acfeb92d730e9791aee485a17`. All 3,961 file names were matched against `data/gallery_meta.json`, with no missing or duplicate names. The backend builds URLs from the file name that matches each vector, including encoding of spaces and special characters. The browser fetches images directly from HF; the backend does not download the whole dataset.
 
-`REFERENCE_IMAGE_BASE_URL` dapat mengganti lokasi/revisi gambar; nilai kosong menonaktifkan fallback gambar remote. Gambar saat ini masih beresolusi asli. Frontend memuat gambar referensi secara lazy. Jika nanti membuat thumbnail kecil, taruh di `data/thumbnails` dan isi `data/thumbnail_manifest.json` dengan mapping nama referensi ke nama thumbnail. Thumbnail lokal yang tersedia diprioritaskan; nama file thumbnail harus tanpa path. Alternatifnya, upload thumbnail ke HF lalu ubah base URL dengan tetap menjaga nama file.
+`REFERENCE_IMAGE_BASE_URL` can change the image location/revision; an empty value disables the remote image fallback. The images are currently at original resolution. The frontend loads reference images lazily. If you later create small thumbnails, put them in `data/thumbnails` and fill `data/thumbnail_manifest.json` with a mapping from reference file name to thumbnail name. Available local thumbnails take priority; thumbnail file names must not contain a path. Alternatively, upload the thumbnails to HF and change the base URL while keeping the file names.
 
-## Unggahan dan privasi
+## Uploads and privacy
 
-JPG/PNG/WEBP maksimal 5 MB; body multipart dibatasi; format diperiksa lewat Pillow. Gambar dikecilkan maksimal 1024 px, dikonversi JPEG dan metadata dibuang sebelum diteruskan. File sementara backend dihapus dalam `finally`. Space Gradio yang ada memakai pembersihan cache unggahan berkala, bukan jaminan tanpa penyimpanan server. Sesi Cek Laci hanya disimpan frontend di perangkat.
+JPG/PNG/WEBP up to 5 MB; the multipart body is limited; the format is checked with Pillow. Images are downscaled to at most 1024 px, converted to JPEG, and stripped of metadata before being forwarded. Backend temporary files are deleted in a `finally` block. The existing Gradio Space periodically cleans its upload cache, which is not a guarantee of no server-side storage. Cek Laci sessions are stored only on the user's device by the frontend.
 
-## Uji
+## Tests
 
 ```bash
 be/.venv/bin/python -m pytest be/tests -q
 be/.venv/bin/python -m be.scripts.check_space
 ```
 
-Pengujian API mengganti encoder dengan vektor referensi untuk menguji aturan keputusan, validasi, error, dan penahanan harga. `check_space` memeriksa kontrak `/embed(photo, selected)` serta `/health` Space aktual. Kontrak aktual mengembalikan `embeddings.vit` dan `embeddings.dinov3`.
+The API tests replace the encoder with reference vectors to test decision rules, validation, errors, and price withholding. `check_space` verifies the `/embed(photo, selected)` contract and `/health` of the live Space. The live contract returns `embeddings.vit` and `embeddings.dinov3`.
 
-Rujukan implementasi: [FastAPI uploads](https://fastapi.tiangolo.com/tutorial/request-files/), [Gradio client](https://www.gradio.app/docs/python-client/client).
+Implementation references: [FastAPI uploads](https://fastapi.tiangolo.com/tutorial/request-files/), [Gradio client](https://www.gradio.app/docs/python-client/client).
 
-## Deploy ke Render Free
+## Deploy to Render Free
 
-Konfigurasi `render.yaml` tersedia di root. Ikuti [DEPLOY_RENDER.md](DEPLOY_RENDER.md) untuk pengaturan, file NPZ/JSON wajib, dan secret. Backend tetap memakai satu worker dan satu thread NumPy agar sesuai anggaran RAM 512 MB. Health check `/api/ready` tidak memanggil Space. Uji memory lokal tersedia lewat `python -m be.scripts.profile_memory`.
+The `render.yaml` configuration is at the root. Follow [DEPLOY_RENDER.md](DEPLOY_RENDER.md) for settings, the required NPZ/JSON files, and secrets. The backend keeps a single worker and a single NumPy thread to fit the 512 MB RAM budget. The `/api/ready` health check does not call the Space. A local memory test is available via `python -m be.scripts.profile_memory`.
 
-URL deployment yang diberikan pengguna: `https://still-e-okay.onrender.com`. Frontend production otomatis memakai URL ini, dengan opsi override `VITE_API_BASE_URL`; tambahkan origin frontend yang aktif ke `CORS_ORIGINS` di Render.
+Deployment URL provided by the user: `https://still-e-okay.onrender.com`. The production frontend uses this URL automatically, with `VITE_API_BASE_URL` as an override; add the active frontend origin to `CORS_ORIGINS` on Render.
 
-### Label dan filter katalog
+### Catalog labels and filters
 
-`data/catalog_facets.json` memetakan ID klaster ke `groups` (jenis barang) dan
-`sizes` (ukuran visual), berdasarkan Tabel 3–4 paper semifinal BDC 2026. ID noise
-26 tetap dikecualikan dari katalog. Risiko awal mengikuti metadata penanganan
-(Tabel 5); ID tanpa klasifikasi risiko tetap `unknown`. Ukuran ini adalah label
-kelompok referensi, bukan pengukuran dimensi foto baru.
+`data/catalog_facets.json` maps cluster IDs to `groups` (item type) and
+`sizes` (visual size), based on Tables 3–4 of the project report (report/report.pdf). Noise ID
+26 stays excluded from the catalog. Initial risk follows the handling metadata
+(Table 5); IDs without a risk classification stay `unknown`. Sizes are labels
+for reference groups, not dimension measurements of a new photo.
 
-Endpoint daftar dan detail `/api/taxonomy` menyertakan `facets`, dengan tiga array:
-`groups`, `sizes`, dan `risks`. Satu barang dapat memiliki beberapa label.
-Tambahan label bisa diatur per ID di `data/meta.json`, misalnya struktur:
+The `/api/taxonomy` list and detail endpoints include `facets`, with three arrays:
+`groups`, `sizes`, and `risks`. One item can have several labels.
+Extra labels can be set per ID in `data/meta.json`, for example:
 
 ```json
 {"13":{"facets":{"groups":["internal"],"sizes":["small"],"risks":["valuable"]}}}
 ```
 
-Gunakan ID jenis `office`, `household`, `computing`, `media`, `energy`, `internal`,
-`mixed`; ukuran `small`, `medium`, `large`, `unidentified`; risiko `high`, `medium`,
-`valuable`, `low`, `unknown`. Tambahkan label hanya bila ada dasar datanya.
-`risk_level` pada panduan penanganan tetap menjadi risiko utama, terpisah dari
-label penyaringan. Frontend menerapkan OR antar pilihan dalam satu dimensi dan
-AND antar dimensi; pilihan “Semua” menghapus pembatas di dimensi itu.
-Deploy backend sebelum frontend agar label baru langsung tersedia.
+Use these type IDs: `office`, `household`, `computing`, `media`, `energy`, `internal`,
+`mixed`; sizes `small`, `medium`, `large`, `unidentified`; risks `high`, `medium`,
+`valuable`, `low`, `unknown`. Add labels only when there is data to back them.
+`risk_level` in the handling guidance remains the primary risk, separate from
+the filter labels. The frontend applies OR across selections within one dimension
+and AND across dimensions; choosing "All" removes the restriction for that dimension.
+Deploy the backend before the frontend so new labels are available immediately.
 
 
-### Metadata riset makro, mikro, dan harga (audit 18 Oktober 2026)
+### Macro, micro, and price research metadata (audit of 18 October 2026)
 
-`data/meta.json` kini memuat 27 makro dan 88 mikro dari CSV asli, termasuk makro
-26 yang disimpan untuk audit tetapi tetap ditolak sebelum panduan/harga.
-Katalog menampilkan 26 makro dengan 84 mikro. Satu mikro adalah satu deret galeri;
-beberapa mikro boleh mempunyai nama pengguna yang sama. ID dan urutan NPZ tidak
-diubah. `reference_rows` mencakup baris CSV asli; `size` pada respons API adalah
-jumlah referensi setelah deduplikasi.
+`data/meta.json` now holds 27 macro and 88 micro clusters from the original CSV, including macro
+26, which is kept for audit but still rejected before guidance/prices.
+The catalog shows 26 macro clusters with 84 micro clusters. One micro cluster is one gallery row;
+several micro clusters may share the same user-facing name. NPZ IDs and order
+are unchanged. `reference_rows` covers the original CSV rows; `size` in the API response is
+the number of references after deduplication.
 
-Setiap makro memuat `name`, `description`, `proposal_facets`, `facets`, `info`,
-`price`, dan `subs` (objek dengan kunci ID mikro lokal). Kategori fungsi/ukuran/
-risiko makro mengikuti Tabel 3–5 proposal semifinal. ID yang tidak tercantum
-risikonya tetap `unknown`. Mikro memiliki nama dan deskripsi berdasarkan audit sampel, `needs_review`,
-serta kategori asal proposal. Panduan setiap mikro diisi lengkap. Pengecualian
-visual memakai kategori dan kebijakan harga tersendiri: misalnya 9_1 dan 23_2
-adalah laptop, sementara 21_4 dan 24_1 campuran sehingga harga induk diblokir.
-Nama atau deskripsi ini belum merupakan anotasi terverifikasi seluruh anggota.
+Each macro cluster holds `name`, `description`, `proposal_facets`, `facets`, `info`,
+`price`, and `subs` (an object keyed by local micro ID). The macro function/size/
+risk categories follow Tables 3–5 of the semifinal report. IDs whose risk is not listed
+stay `unknown`. Micro clusters have a name and description based on the sample audit, `needs_review`,
+and the report category they came from. Guidance for every micro cluster is filled in. Visual
+exceptions use their own category and price policy: for example 9_1 and 23_2
+are laptops, while 21_4 and 24_1 are mixed, so the parent price is blocked.
+These names or descriptions are not yet verified annotations of all members.
 
-`subs.<id>.price_policy` menentukan penerapan harga: `inherit` mengikuti induk,
-`override` memakai harga mikro tersendiri, `blocked` menghentikan pewarisan.
-`condition_tier` dan `condition_factors` tetap null: nomor mikro, layar gelap,
-posisi tutup laptop, dan sudut foto tidak diubah menjadi kondisi fungsi/harga.
-ARI level 2 pada proposal adalah 0,4142; belum ada kalibrasi faktor kondisi.
+`subs.<id>.price_policy` controls how prices apply: `inherit` follows the parent,
+`override` uses the micro cluster's own price, `blocked` stops inheritance.
+`condition_tier` and `condition_factors` stay null: micro numbers, dark screens,
+laptop lid position, and photo angle are not turned into function/price condition.
+The Level 2 ARI in the report is 0.4142; condition factors have not been calibrated.
 
-Harga memakai `mode: "ranges"` dengan `whole` (jual utuh) dan `scrap` (rongsok).
-Masing-masing dapat null. Angka memiliki `unit` (`item` atau `kg`), `min`, `max`,
+Prices use `mode: "ranges"` with `whole` (sold as a whole) and `scrap`.
+Each can be null. Figures have `unit` (`item` or `kg`), `min`, `max`,
 `basis`, `source_ids`, `observation_ids`, `accessed_on`, `requires_confirmation`,
-`scope`, dan `note`. Cakupan grade ditampilkan langsung dekat harga. Acuan harga utuh bersyarat pada fungsi dan model yang sebanding;
-foto tidak membuktikan fungsi. Acuan grade PCB bukan hasil deteksi grade.
-Rentang minimum–maksimum berasal dari sampel terpilih, bukan interval statistik,
-rata-rata pasar, ataupun harga transaksi. Harga tunggal tetap min=max.
+`scope`, and `note`. The grade scope is shown right next to the price. Whole-item references are conditional on
+comparable function and model; a photo does not prove function. PCB grade references are not
+the result of grade detection. Min–max ranges come from selected samples, not a statistical interval,
+a market average, or a transaction price. A single price keeps min=max.
 
-`data/research_sources.json` menyimpan sumber, tanggal akses/publikasi bila
-tersedia, cakupan wilayah, metode, dan 57 observasi angka harga. Tiga daftar
-pengepul berangka adalah Kepul, Rongsok Bandung, dan ALDI SCRAP; Prabu Recycle
-hanya menjadi rujukan satuan/metode karena tidak memasang angka. Iklan pembelian,
-produk baru, barang paket tidak sebanding, dan biaya jasa pengelolaan tidak
-dipakai sebagai harga barang utuh. Sebagian rincian iklan OLX tidak bisa dibuka;
-observasi tersebut berasal dari judul dan harga pada indeks listing, dan
-keterbatasannya dicatat. Tidak ada komunikasi atau konfirmasi penjual.
+`data/research_sources.json` stores sources, access/publication dates where
+available, geographic scope, method, and 57 price observations. The three
+collectors with listed prices are Kepul, Rongsok Bandung, and ALDI SCRAP; Prabu Recycle
+is only a reference for units/method because it lists no figures. Purchase ads,
+new products, non-comparable bundled items, and management service fees are not
+used as whole-item prices. Some OLX ad details could not be opened; those
+observations come from the title and price on the listing index, and the
+limitation is recorded. There was no communication with or confirmation from sellers.
 
-Harga belum dikonfirmasi ke pengepul Semarang; belum ada janji pembayaran,
-verifikasi izin pengelola, atau pemeriksaan fungsi barang. `info.verified` tetap
-false. Nilai kosong bukan berarti tidak bernilai jual. Jangan mengisi harga
-kategori campuran hanya untuk membuat seluruh kartu mempunyai angka.
+Prices have not been confirmed with Semarang collectors; there is no payment promise,
+no verification of operator permits, and no check of item function. `info.verified` stays
+false. An empty value does not mean the item has no resale value. Do not fill in prices
+for mixed categories just to give every card a number.
 
-`valid_price` memeriksa kanal, satuan, sumber, dan kecocokan batas harga dengan
-observasi tersimpan. API lama/simpanan perangkat dengan format satu harga tetap
-didukung. Frontend membaca nama/deskripsi mikro, memakai istilah kelompok visual,
-dan menampilkan dua kanal harga beserta sumber, tanggal akses, dan dasar estimasi.
-Deploy backend dan frontend bersama; tidak perlu melatih ulang encoder atau
-membuat ulang reference.npz.
+`valid_price` checks the channel, unit, source, and whether the price bounds match the
+stored observations. The legacy API/device-stored single-price format is still
+supported. The frontend reads micro names/descriptions, uses the term visual group,
+and shows both price channels with their source, access date, and estimate basis.
+Deploy the backend and frontend together; there is no need to retrain the encoder or
+regenerate reference.npz.
 
-### Jejak audit visual dan evaluator
+### Visual audit trail and evaluator
 
-`data/cluster_audit_samples_2026-10-18.json` menyimpan 423 file dari 88 mikro
-dalam 27 makro. Tiap mikro diambil min(5, jumlah file), dengan seed 20261018.
-Sampling memprioritaskan kelompok duplikat berbeda, lalu memilih anggota secara
-acak; bila kelompok unik kurang dari lima, slot diisi dari file lain. Ini bukan
-sampel acak sederhana semua file dan bukan audit visual seluruh 3.961 gambar.
+`data/cluster_audit_samples_2026-10-18.json` stores 423 files from 88 micro clusters
+across 27 macro clusters. For each micro cluster it takes min(5, file count), with seed 20261018.
+Sampling prioritizes distinct duplicate groups, then picks members at
+random; if there are fewer than five unique groups, the slots are filled from other files. This is not
+a simple random sample of all files and not a visual audit of all 3,961 images.
 
-`data/cluster_audit_2026-10-18.json` memuat observasi per foto, perubahan label,
-pencocokan proposal, dan alasan pemilihan thumbnail. `proposal_facets` menyimpan
-Tabel 3–5 asli, sedangkan pengecualian mikro mengikuti bukti visual. Perbedaan
-judul makro23 pada Tabel2 dengan file aktual dicatat, bukan mengubah ID.
-`data/cluster_audit_evaluator_2026-10-18.json` adalah laporan evaluator independen
-yang memeriksa 423 sampel, 26 thumbnail, sumber, dan pewarisan harga. Hasil akhir
-pass tanpa temuan terbuka; ini tidak memverifikasi fungsi/kimia barang atau harga
-transaksi. `info.verified` tetap false.
+`data/cluster_audit_2026-10-18.json` holds per-photo observations, label changes,
+report matching, and the reasons for thumbnail selection. `proposal_facets` keeps
+the original Tables 3–5, while micro exceptions follow visual evidence. The difference
+between the macro 23 title in Table 2 and the actual file is recorded rather than changing the ID.
+`data/cluster_audit_evaluator_2026-10-18.json` is the independent evaluator's report,
+which checked the 423 samples, 26 thumbnails, sources, and price inheritance. The final result is
+a pass with no open findings; this does not verify item function/chemistry or transaction
+prices. `info.verified` stays false.
 
-Untuk mereproduksi sampel dan contact sheet dari root repositori:
+To reproduce the samples and contact sheets from the repository root:
 
 ```bash
 be/.venv/bin/python -m be.scripts.sample_cluster_audit --images-dir /path/to/1_Electronic --output-dir /tmp/kenal-audit --seed 20261018
 ```
 
-`data/catalog_representatives.json` menetapkan satu gambar yang diperiksa visual
-untuk tiap makro katalog. Backend memakai gambar penuh itu untuk detail; frontend
-memakai WebP lokal hasil generator. Kelompok visual pada detail menampilkan
-sampel audit beserta panduan/harga efektif masing-masing mikro.
+`data/catalog_representatives.json` assigns one visually checked image
+to each catalog macro cluster. The backend uses that full image for the detail view; the frontend
+uses the local WebP produced by the generator. The visual groups in the detail view show
+audit samples along with the effective guidance/price of each micro cluster.

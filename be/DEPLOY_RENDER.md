@@ -1,34 +1,34 @@
-# Deploy Kenal-E API ke Render Free
+# Deploy the Kenal-E API to Render Free
 
-Frontend tetap di Vercel; encoder tetap di Hugging Face. Render hanya menjalankan FastAPI, pencarian vektor NumPy, dan lookup JSON. Tidak memasang PyTorch, Transformers, atau bobot model.
+The frontend stays on Vercel; the encoder stays on Hugging Face. Render only runs FastAPI, NumPy vector search, and JSON lookups. It does not install PyTorch, Transformers, or model weights.
 
-## File yang harus ikut Git
+## Files that must be in Git
 
-- `render.yaml`, `be/requirements.txt`, serta kode `be/`.
-- `be/data/artifacts/reference.npz` (sekitar 21,5 MiB), `manifest.json`, `meta.json`.
+- `render.yaml`, `be/requirements.txt`, and the `be/` code.
+- `be/data/artifacts/reference.npz` (about 21.5 MiB), `manifest.json`, `meta.json`.
 - `be/data/gallery_meta.json`, `thresholds.json`, `meta.json`, `drop_points.json`.
-- `be/data/thumbnails/.gitkeep` untuk direktori thumbnail yang saat ini kosong.
+- `be/data/thumbnails/.gitkeep` for the thumbnail directory, which is currently empty.
 
-NPZ di `ai/artifacts` diabaikan Git. Salinan untuk deployment sengaja berada di `be/data/artifacts` agar dapat ikut commit. Salinan ini sudah disiapkan; jangan memasukkan `.env` atau `.venv`.
+The NPZ in `ai/artifacts` is ignored by Git. The deployment copy intentionally lives in `be/data/artifacts` so it can be committed. This copy is already prepared; do not commit `.env` or `.venv`.
 
-Untuk menyiapkan ulang dari hasil riset yang sudah ada, jalankan dari root:
+To prepare it again from the existing research output, run from the root:
 
 ```bash
 be/.venv/bin/python -m be.scripts.prepare_reference
 be/.venv/bin/python -m be.scripts.check_deploy
 ```
 
-Gunakan `--replace` pada perintah pertama hanya jika sengaja mengganti referensi dengan run baru yang sesuai metadata. Tidak ada pelatihan atau clustering ulang.
+Use `--replace` on the first command only if you deliberately replace the reference with a new run that matches the metadata. No training or re-clustering is involved.
 
-## Buat layanan
+## Create the service
 
-Pakai **New → Blueprint** dan pilih repo ini untuk membaca `render.yaml`, atau buat **New → Web Service** secara manual:
+Use **New → Blueprint** and choose this repo to read `render.yaml`, or create a **New → Web Service** manually:
 
-| Pengaturan | Nilai |
+| Setting | Value |
 | --- | --- |
 | Name | `kenal-e-api` |
 | Language | Python 3 |
-| Root Directory | Kosong, gunakan root repo |
+| Root Directory | Empty, use the repo root |
 | Region | Singapore |
 | Instance Type | Free |
 | Build Command | `pip install -r be/requirements.txt && python -m be.scripts.check_deploy` |
@@ -37,56 +37,56 @@ Pakai **New → Blueprint** dan pilih repo ini untuk membaca `render.yaml`, atau
 
 Environment variables:
 
-| Nama | Nilai |
+| Name | Value |
 | --- | --- |
-| `HF_TOKEN` | Token yang sudah ada di `.env`, masukkan sebagai secret Render |
+| `HF_TOKEN` | The token already in `.env`, entered as a Render secret |
 | `HF_SPACE_ID` | `ayaayaa/still-e-okay-ai` |
-| `CORS_ORIGINS` | `https://kenal-e.vercel.app`; tambahkan origin lokal jika perlu, dipisah koma dan tanpa slash penutup |
+| `CORS_ORIGINS` | `https://kenal-e.vercel.app`; add local origins if needed, comma-separated and without a trailing slash |
 | `PYTHON_VERSION` | `3.12.12` |
 | `AI_TIMEOUT_SECONDS` | `180` |
 | `OPENBLAS_NUM_THREADS` | `1` |
 | `OMP_NUM_THREADS` | `1` |
 | `MALLOC_ARENA_MAX` | `2` |
 
-Blueprint meminta nilai `HF_TOKEN` saat pembuatan; `CORS_ORIGINS` sudah berisi domain frontend dan origin lokal. Jika dibuat manual, isi seluruh pengaturan di atas. `/api/ready` hanya mengecek kesiapan backend; `/api/health` juga mengecek status Space.
+The Blueprint asks for the `HF_TOKEN` value at creation; `CORS_ORIGINS` already contains the frontend domain and local origins. If you create the service manually, fill in all the settings above. `/api/ready` only checks backend readiness; `/api/health` also checks the Space status.
 
-Backend deployment: `https://still-e-okay.onrender.com`. Cek `/api/ready`, `/api/taxonomy`, dan `/docs`. Frontend production memakai URL ini secara default. Jika Vercel sudah memiliki `VITE_API_BASE_URL`, samakan nilainya dengan URL tersebut atau hapus override lama, kemudian redeploy frontend. Jangan memberi frontend token HF.
+Backend deployment: `https://still-e-okay.onrender.com`. Check `/api/ready`, `/api/taxonomy`, and `/docs`. The production frontend uses this URL by default. If Vercel already has `VITE_API_BASE_URL`, set it to this URL or remove the old override, then redeploy the frontend. Never give the frontend the HF token.
 
-## RAM dan data sementara
+## RAM and temporary data
 
-Render Free menyediakan RAM 512 MB. Gunakan satu worker; setiap worker tambahan akan memuat salinan galeri. Pembacaan/decode foto dan analisis diserialkan; request lain mendapat `busy`. Uvicorn dibatasi maksimal 8 koneksi/tugas bersamaan untuk mengurangi penumpukan unggahan. NumPy/OpenBLAS dibatasi satu thread.
+Render Free provides 512 MB of RAM. Use a single worker; each extra worker loads another copy of the gallery. Photo reading/decoding and analysis are serialized; other requests get `busy`. Uvicorn is capped at 8 concurrent connections/tasks to reduce upload pile-up. NumPy/OpenBLAS is limited to one thread.
 
-Untuk pengukuran lokal:
+For local measurement:
 
 ```bash
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MALLOC_ARENA_MAX=2 be/.venv/bin/python -m be.scripts.profile_memory
 ```
 
-Uji ini mengukur proses Linux lokal dengan gambar 25 megapiksel dan vektor referensi sebagai pengganti panggilan HF. Ini bukan jaminan RAM di Render; pantau metrik setelah deployment.
+This test measures a local Linux process with a 25-megapixel image and reference vectors standing in for the HF call. It is not a guarantee of RAM on Render; monitor the metrics after deployment.
 
-Free service tidur setelah 15 menit tidak menerima trafik dan bangun sekitar satu menit pada request berikutnya. File upload/cache sementara dapat hilang saat restart, sehingga NPZ dan JSON harus berasal dari deployment/repo. Cek Laci tetap di perangkat pengguna.
+A free service sleeps after 15 minutes without traffic and wakes in about a minute on the next request. Temporary upload/cache files can be lost on restart, so the NPZ and JSON must come from the deployment/repo. Cek Laci stays on the user's device.
 
-Metadata tambahan bisa diisi kemudian melalui `be/data/meta.json` dan `drop_points.json`, lalu commit dan redeploy. Tidak perlu membuat embedding baru untuk memperbarui harga atau lokasi. Harga/lokasi kosong dan threshold belum terkalibrasi tetap ditandai sesuai kondisi saat ini.
+Additional metadata can be filled in later through `be/data/meta.json` and `drop_points.json`, then committed and redeployed. No new embeddings are needed to update prices or locations. Empty prices/locations and uncalibrated thresholds stay marked as they are today.
 
-Rujukan: [FastAPI di Render](https://render.com/docs/deploy-fastapi), [Free instances](https://render.com/docs/free), [Compute plans](https://render.com/docs/compute-plans).
+References: [FastAPI on Render](https://render.com/docs/deploy-fastapi), [Free instances](https://render.com/docs/free), [Compute plans](https://render.com/docs/compute-plans).
 
-## Diagnosis koneksi AI
+## Diagnosing the AI connection
 
-`/api/ready` hanya memeriksa backend dan referensi. Untuk koneksi HF, buka `/api/health`:
+`/api/ready` only checks the backend and the reference. For the HF connection, open `/api/health`:
 
-- `space_diagnostic.token_configured`: apakah token tersedia di proses Render (nilainya tidak ditampilkan).
-- `hf_http_status` 401/403: akses HF ditolak; periksa token dan izin Space. 404 juga bisa berarti Space privat atau ID salah.
-- `reason` `network_timeout`/`network_error`: koneksi jaringan ke HF gagal; ini terpisah dari masalah token.
-- `stage` `RUNNING` dan `space` `running`: Space dapat diakses. Kegagalan inferensi selanjutnya dicatat dengan tipe exception di log Render tanpa isi token.
+- `space_diagnostic.token_configured`: whether the token is available in the Render process (its value is not shown).
+- `hf_http_status` 401/403: HF access was denied; check the token and Space permissions. 404 can also mean the Space is private or the ID is wrong.
+- `reason` `network_timeout`/`network_error`: the network connection to HF failed; this is separate from a token problem.
+- `stage` `RUNNING` and `space` `running`: the Space is reachable. Later inference failures are logged with the exception type in the Render log, without the token contents.
 
-Perubahan environment membutuhkan restart/redeploy. Nama secret harus `HF_TOKEN`, nilainya hanya token, bukan `HF_TOKEN=...`, bukan awalan `Bearer`, dan tanpa tanda kutip. `HF_SPACE_ID` adalah `ayaayaa/still-e-okay-ai`; URL HF penuh juga dinormalisasi oleh backend.
+Environment changes need a restart/redeploy. The secret name must be `HF_TOKEN`, and its value must be only the token: not `HF_TOKEN=...`, no `Bearer` prefix, and no quotes. `HF_SPACE_ID` is `ayaayaa/still-e-okay-ai`; a full HF URL is also normalized by the backend.
 
-## Gambar referensi dari HF Dataset
+## Reference images from the HF Dataset
 
-Dataset public `ayaayaa/kenal-e-thumbnails` sudah dihubungkan ke 3.961 nama file referensi. Default `REFERENCE_IMAGE_BASE_URL`:
+The public dataset `ayaayaa/kenal-e-thumbnails` is already linked to the 3,961 reference file names. The default `REFERENCE_IMAGE_BASE_URL`:
 
 ```text
 https://huggingface.co/datasets/ayaayaa/kenal-e-thumbnails/resolve/9800cac5b0554d5acfeb92d730e9791aee485a17/images
 ```
 
-Deploy ulang backend untuk mengaktifkan URL gambar pada katalog, detail kelompok, dan lima referensi terdekat. Tidak perlu upload NPZ baru atau memasukkan token ke frontend untuk gambar public. Kode frontend memakai lazy loading untuk gambar referensi. Gambar yang diupload saat ini adalah gambar asli, sehingga versi thumbnail tetap dapat dibuat kemudian.
+Redeploy the backend to enable image URLs in the catalog, group details, and the five nearest references. There is no need to upload a new NPZ or put a token in the frontend for public images. The frontend code lazy-loads reference images. The uploaded images are currently originals, so thumbnail versions can still be created later.
