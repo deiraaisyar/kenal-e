@@ -46,7 +46,7 @@ Level 2: FPS gave 103 anchors, merged to 56 sub-clusters, then recursive split b
 ## Read more
 
 - [Full paper](report/report.pdf): method, all tables, attention-map figures, and the MLOps design.
-- Slides: [version 1](report/slides-v1.pptx) and [version 2](report/slides-v2.pptx), short overviews of the project.
+- Slides: [PPTX](report/slides.pptx) or [PDF](report/slides.pdf), short overview of the project.
 
 ## Run
 
